@@ -4,7 +4,8 @@ order: 1
 ---
 
 # Action Log
-Here you can know everything there is to realm bot logs, how to setup them and their related features
+Here you can know everything there is to realm bot logs, how to setup them and their related features 
+===
 
 ## Logs Channel 
   You can setup the channels where you want the logs for Ban, Kick, Warn, Automod, etc at the [dashboard](https://realmbot.dev) 
@@ -20,6 +21,7 @@ Here you can know everything there is to realm bot logs, how to setup them and t
   ![Example of kick log message](/images/kick_log.png)
   
   ![Example of warn log message](/images/warn_log.png)
+  ===
   
   
 ## Xbox message
