@@ -27,4 +27,10 @@ Here you can know everything there is to realm bot logs, how to setup them and t
    
    ![Example of the xbox message the bot sends](/images/kick.png)
    
+   You configure xbox message settings in the [dashboard](https://realmbot.dev) .
    
+   You can individually turn on or off xbox message for `kick`, `ban` and `unban` .
+   
+   You can also edit the message that is sent to the person individually for each command in the provided box 
+
+   ![](/images/xbox_msg.png)
