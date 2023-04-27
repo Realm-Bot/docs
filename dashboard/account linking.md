@@ -13,6 +13,7 @@ You can setup account linking in the [dashboard](https://realmbot.dev)
 
 ## Enabling Account linking 
   To enable account linking turn on `send messages` button on the account linking page 
+  
   ===
 
 ## Setting up Account linking
@@ -23,6 +24,7 @@ You can setup account linking in the [dashboard](https://realmbot.dev)
   You can individually choose the realms a person must be invited to when he links his xbox account
 
   You can set these realms in the `Invite to realm(s)` option in the account linking page 
+  
   ===
 
 ## In-game notification
@@ -35,4 +37,5 @@ You can setup account linking in the [dashboard](https://realmbot.dev)
    `say <the message>`
 
    ![](/images/acc_link2.png)
+   
    ===
