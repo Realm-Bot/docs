@@ -16,7 +16,7 @@ You can setup account linking in the [dashboard](https://realmbot.dev)
 ## Setting up Account linking
   You can make account linking mandatory by making the realm bot give your default member role to the person after linking their xbox account and turning off 'view channel' for '@everyone' in all channels.
   
-    You can add the role that must be given to the person that linked his account in the `Linked Xbox Account Roles` option in account linking page  
+   *You can add the role that must be given to the person that linked his account in the* `Linked Xbox Account Roles` *option in account linking page*  
   
   You can individually choose the realms a person must be invited to when he links his xbox account
 
