@@ -4,7 +4,7 @@ order: 1
 ---
  
 # Realm Bot Setup
-description: This will explain in detail how to setup realm bot in your guild 
+ This will explain in detail how to setup realm bot in your guild 
 
 ## STEP ONE 
  First you have to authorise the minecraft account that owns the realm to realm bot 
