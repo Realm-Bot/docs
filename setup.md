@@ -14,6 +14,7 @@ description: This will explain in detail how to setup realm bot in your guild
 ## STEP TWO 
   After you have authorised your account to realm bot the next step is to connect that account to realm bot in your server 
   to connect your account to your guild run `/connect` command in your guild 
+  
   ![](/images/connect.PNG)
 
 ## STEP THREE
