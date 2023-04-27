@@ -1,7 +1,6 @@
 ---
 label: Setup
 order: 1
-icon : ./images/logo.png
 ---
  
 # Realm Bot Setup
