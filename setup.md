@@ -7,7 +7,7 @@ order: 1
  This will explain in detail how to setup realm bot in your guild 
 
 ## STEP ONE 
- First you have to authorise the minecraft account that owns the realm to realm bot 
+ First you have to authorise the minecraft account that owns the realm to realm bot.
  You can do so [here](https://realmbot.dev/account)
  `If the wrong account is getting connected to realm bot go to https://www.xbox.com/live and login with the corret account there`
  
