@@ -5,6 +5,7 @@ order: 2
 
 # Account Linking
 ===
+
 Realm bot provides a feature called account linking in which the person will be asked to link their account to the guild 
 
 You can setup account linking in the [dashboard](https://realmbot.dev)
