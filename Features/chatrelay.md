@@ -6,6 +6,8 @@ order: 1
 # Chat Relay
 Chat relay is a feature which allows people in discord to talk with people in your realm and vice versa 
 
+Chat relay requires you to be a premium user 
+
 ---
 
 ## How it Works 
