@@ -6,7 +6,8 @@ order: 2
 # Console 
 Console is a feature that allows you to run ingame commands via the discord server 
 
-Console works with chat relay and is based on the bot being in the realm 
+Console requires premium and works with chat relay and is based on the bot being in the realm 
+
 
 ---
 
