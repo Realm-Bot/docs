@@ -1,6 +1,7 @@
 ---
 label: Setup
 order: 1
+icon : rocket
 ---
  
 # Realm Bot Setup
