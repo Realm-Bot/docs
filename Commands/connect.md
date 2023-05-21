@@ -17,4 +17,4 @@ order : 100
  ## Common Errors 
  1. `You don't have a xbox account authorized, authorize your xbox account at https://realmbot.dev/account and then run /connect` : as the error suggests you have not connected your xbox account to realm bot and you need to connect it [here]{https://realmbot.dev/account} and then run /connect 
  
- 2. `Failed to refresh realms` : this is caused due to your account not being liked properly to realm bot. To fix the issue go [here]{https://realmbot.dev/account and press unlink and relink and then run /connect again in your guild 
+ 2. `Failed to refresh realms` : this is caused due to your account not being liked properly to realm bot. To fix the issue go [here]{https://realmbot.dev/account} and press unlink and relink and then run /connect again in your guild 
