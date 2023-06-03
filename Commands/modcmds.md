@@ -27,3 +27,11 @@ order: 86
   ### Options
    **user** - to type the player you want to unban 
    
+   **realm** - the realm you want to unban them in 
+
+   **reason** - optional reason why you unbanned 
+   
+   ---
+   
+## 3) /realm kick 
+   
