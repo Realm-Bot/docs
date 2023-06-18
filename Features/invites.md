@@ -36,5 +36,5 @@ icon: link
 
   You can set the vanity link for your realm in guild dashboard in the vanity invites tab
 
-  [](/images/vanity.png)
+  ![](/images/vanity.png)
  
