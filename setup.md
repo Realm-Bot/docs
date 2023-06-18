@@ -1,6 +1,6 @@
 ---
 label: Setup
-order: 1
+order: 4
 icon : rocket
 ---
  
