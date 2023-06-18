@@ -30,5 +30,11 @@ icon: link
 ---
 
  ## Vanity Invite 
- 
+ ![Example of Vanity invite link](images/image.png)
+
+  Realmbot also provides a vanity invite link for your realm 
+
+  You can set the vanity link for your realm in guild dashboard in the vanity invites tab
+
+  [](images/vanity.png)
  
