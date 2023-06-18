@@ -36,9 +36,9 @@ order: 86
 ## 3) /realm kick 
    This command is used to revoke a players realm membership. They can however join back if they have an invite 
 
-   ### Options
-    **user** - The user you wanna kick 
+ ### Options
+   **user** - The user you wanna kick 
 
-    **realm** - *optional* the realm you want to kick them in if you own multiple realms, if you leave the option blank bot will kick the player in all the realms you own
+   **realm** - *optional* the realm you want to kick them in if you own multiple realms, if you leave the option blank bot will kick the player in all the realms you own
 
-    **reason** - *optional* reason for the kick 
+   **reason** - *optional* reason for the kick 
