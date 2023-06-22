@@ -4,15 +4,15 @@ order: 2
 ---
 
 # Console 
-Console is a feature that allows you to run ingame commands via the discord server 
+Console is a feature that allows you to run in-game commands via the Discord server 
 
-Console requires premium and works with chat relay and is based on the bot being in the realm 
+Console requires premium and works with chat relay and is based on Realmbot being in the realm 
 
 
 ---
 
 ## Configuring console 
- To turn on console feature you must turn on chat relay and make the bot join the world 
+ To turn on the console feature you must turn on chat relay and make Realmbot join the world 
  
  !!!
  
