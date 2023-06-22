@@ -19,7 +19,7 @@ icon : rocket
   
   To connect your account to your guild run the `/connect` command in your guild 
   
-  ![](/images/connect.PNG)
+  ![](/images/connect.png)
 
 ## STEP THREE
   After you have successfully linked your realm to your guild you can configure the bot like command permissions, ban logs, etc at our [dashboard](https://realmbot.dev)
