@@ -17,7 +17,7 @@ order: 86
    
    **reason** - to type the reason why you banned, this is optional 
    
-   **length** - type the time period you want to ban them for if you want the ban to be temporary. If you do not type a length the ban will be permanent untill you manually unban 
+   **length** - type the time period you want to ban them for if you want the ban to be temporary. If you do not type a length the ban will be permanent until you manually unban 
 
 ---
 
@@ -27,14 +27,14 @@ order: 86
   ### Options
    **user** - to type the player you want to unban 
    
-   **realm** - the realm you want to unban them in 
+   **realm** - the realm you want to unban them in if you own more than  
 
-   **reason** - optional reason why you unbanned 
+   **reason** - *optional* reason for the unban
    
    ---
    
 ## 3) /realm kick 
-   This command is used to revoke a players realm membership. They can however join back if they have an invite 
+   This command is used to revoke a player's realm membership, ie. they will be removed from the realm members. They can however join back if they have an invite 
 
  ### Options
    **user** - The user you wanna kick 
