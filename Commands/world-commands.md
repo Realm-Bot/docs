@@ -19,14 +19,14 @@ order: 85
   
   !!!
   
-  Do not type slash when you are typing in the command in the "command" criteria box
+  Do not type slash when you are typing in the command in the "command" criteria box.
   
   !!!
   
 ## 2) /world join 
   This command is used to make the bot join your realm 
   
-  `The bot will join with its own account only if alt joining is turned on in the dashboard else it joins with the owners account`
+  `The bot will join with its account only if alt joining is turned on in the dashboard else it joins with the owner's account`
 
 ## 3) /world leave 
   This command is used to make the bot leave the joined realms 
