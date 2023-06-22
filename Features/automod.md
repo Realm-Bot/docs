@@ -6,7 +6,7 @@ Order: 3
 # Automod
  Automod is a feature that allows you to protect your realm from hackers 
  
- When you have automod turned on the bot kicks anyone who joins the realm that dosnt meet the given criteria or breaks a given automod rule 
+ When you have automod turned on the bot kicks anyone who joins the realm that doesn't meet the given criteria or breaks a given automod rule 
 
 !!!
 
@@ -24,13 +24,13 @@ Automod is a premium feature and works only when the bot is in the realm
 ![](/images/create-rule-button.png)
  
 ### 1) Block certain devices 
-  You can set a automod rule to block certain devices from joining your realm 
+  You can set an automod rule to block certain devices from joining your realm 
 
    To block a device create a new automod rule and in the devices dropdown turn on devices and select the devices you want to block in the box
 
 ### 2) Prevent Alt Accounts 
   You can set Automod Rule to prevent possible alt accounts
   
-  Realmbot uses a varity of information like ip address,device information, etc to autonomosly calculate if a account is a alt of another account. This is highly accurate in most cases
+  Realmbot uses a variety of information like IP address, device information, etc to autonomously calculate if an account is an alt of another account. This is highly accurate in most cases
 
-  To create a automod rule against alt account. create a new automod rule and in the `Alt Score` dropdown turn it on and set the alt score it says how likely a said account is an alt 
+  To create an automod rule against alt accounts. Create a new automod rule and in the `Alt Score` dropdown turn it on and set the alt score it says how likely a said account is an alt 
