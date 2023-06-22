@@ -5,11 +5,11 @@ icon: link
 ---
 
 # Realm Bot custom realm invites
- Realm bot provides a more safer custom invite link for your realm 
+ Realmbot provides a safer custom invite link for your realm 
  
- With Realm bot provided realm invites you can track who joins your realm and also ip ban players 
+ With Realmbot-provided realm invites you can track who joins your realm and also ip ban players 
  
- Pressing the link will take you a site where you will be asked to complete a captcha and after that two buttons to join the realm and join your discord will be shown 
+ Pressing the link will take you to a site where you will be asked to complete a captcha and after that two buttons to join the realm and join your discord will be shown 
  
 ![](/images/invites-ui.png)
 
@@ -34,7 +34,7 @@ icon: link
 
   Realmbot also provides a vanity invite link for your realm 
 
-  You can set the vanity link for your realm in guild dashboard in the vanity invites tab
+  You can set the vanity link for your realm in the guild dashboard in the vanity invites tab
 
   ![](/images/vanity.png)
  
