@@ -42,3 +42,5 @@ order: 86
    **realm** - *optional* the realm you want to kick them in if you own multiple realms, if you leave the option blank bot will kick the player in all the realms you own
 
    **reason** - *optional* reason for the kick 
+
+   **attachment** - if you want to add any proof or reason for the kick as a file like an image or a video 
