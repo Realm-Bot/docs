@@ -10,11 +10,11 @@ Here you can know everything there is to realm bot logs, how to setup them and t
 ## Logs Channel 
   You can setup the channels where you want the logs for Ban, Kick, Warn, Automod, etc at the [dashboard](https://realmbot.dev) 
   
-  To setup logs go to `Log channels` tab in your server dashboard and individually set the channel for each command listed there
+  To setup logs go to the `Log channels` tab in your server dashboard and individually set the channel for each command listed there
   
   ![](/images/Log_channel.png)
   
-  The message that is sent to the log channel when you run a command will of the following type 
+  The message that is sent to the log channel when you run a command will be of the following type 
 
   ![Example of ban log message](/images/ban_log.png)
   
@@ -25,13 +25,13 @@ Here you can know everything there is to realm bot logs, how to setup them and t
   
   
 ## Xbox message
-   When a person is banned/kicked from the realm, Realm bot sends the person banned/kicked a message via the xbox app 
+   When a person is banned/kicked from the realm, Realmbot sends the person banned/kicked a message via the Xbox app 
    
-   ![Example of the xbox message the bot sends](/images/kick.png)
+   ![Example of the Xbox message the bot sends](/images/kick.png)
    
-   You configure xbox message settings in the [dashboard](https://realmbot.dev) .
+   You configure Xbox message settings in the [dashboard](https://realmbot.dev).
    
-   You can individually turn on or off xbox message for `kick`, `ban` and `unban` .
+   You can individually turn on or off Xbox messages for `kick`, `ban` and `unban`.
    
    You can also edit the message that is sent to the person individually for each command in the provided box 
 
