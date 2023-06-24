@@ -1,5 +1,5 @@
 ---
-label: premium 2
+label: Other paynent options
 order: 99
 ---
 
