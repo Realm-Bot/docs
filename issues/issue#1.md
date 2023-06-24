@@ -1,9 +1,9 @@
 ---
-label: premium 1
+label: Unable to use premium commands
 order: 100
 ---
 
-# Unable to use premium commands
+# I’ve bought premium, but I am unable to use premium commands.
 
 ---
 
