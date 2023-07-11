@@ -1,5 +1,5 @@
 ---
-label: Other paynent options
+label: Other payment options
 order: 99
 ---
 
