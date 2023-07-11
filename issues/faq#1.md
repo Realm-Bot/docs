@@ -1,5 +1,5 @@
 ---
-label: alternative ways to invite
+label: Alternative ways to invite
 order: 97
 ---
 
