@@ -1,5 +1,5 @@
 ---
-label: console
+label: Console
 order: 2
 ---
 
