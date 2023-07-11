@@ -1,5 +1,5 @@
 ---
-label: set logs channel
+label: Set logs channel
 order: 89
 ---
 
