@@ -1,5 +1,5 @@
 ---
-label: relay
+label: Chat relay
 order: 1
 ---
 
