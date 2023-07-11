@@ -1,5 +1,5 @@
 ---
-label: disconnect 
+label: /disconnect 
 order: 99
 ---
 
