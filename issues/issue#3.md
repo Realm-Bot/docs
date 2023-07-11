@@ -1,5 +1,5 @@
 ---
-label: vanity not working
+label: Vanity invite not working
 order: 98
 ---
 
