@@ -19,14 +19,14 @@ Chat relay requires you to be a premium user and needs the bot to be in the Real
 
   ![Example of normal relay message](/images/relay.png)  
   
-  ![Example of tellraw relay](images/tr_relay.png)
+  ![Example of tellraw relay](/images/tr_relay.png)
   
 ---
 
 ## Configuring chat relay 
   Chat relay can be configured via the [dashboard](https://realmbot.dev/)
   
-  For the commands related to chat relay see [Chat Relay](world.md) 
+  For the commands related to chat relay see [Chat Relay](/Commands/world-commands.md) 
   
   If you want the bot to rejoin automatically every time, go to the world joining tab in your server dashboard and turn on `Joins World Automatically` option 
   
