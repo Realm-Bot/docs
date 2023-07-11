@@ -1,5 +1,5 @@
 ---
-label : connect 
+label : /connect 
 order : 100 
 ---
 
