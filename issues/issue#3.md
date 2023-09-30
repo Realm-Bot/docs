@@ -1,6 +1,7 @@
 ---
 label: Vanity invite not working
 order: 98
+visibility: private
 ---
 
 # After setting up vanity invites, the link shows “Invite not found” on an error page. How do I fix it
