@@ -2,6 +2,7 @@
 label: Custom invites
 order: 4
 icon: link
+visibility: private
 ---
 
 # Realm Bot custom realm invites
