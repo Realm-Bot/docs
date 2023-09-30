@@ -7,4 +7,4 @@ order: 97
 
 ---
 
-Realm bot can invite members to your realm through vanity invites, verify embeds, or using /realm invite
+You can use the `/realm invite` command or the verify embed to invite players to your realm 
