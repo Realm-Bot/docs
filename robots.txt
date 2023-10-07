@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://docs.realmbot.dev/sitemap.xml.gz
+Sitemap: https://help.realmbot.dev/sitemap.xml.gz
