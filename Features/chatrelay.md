@@ -15,7 +15,7 @@ Chat relay requires you to be a premium user and needs the bot to be in the Real
   
   The bot does this by joining the realm on the realm owner's account or its own account *if you have alt account joining enabled* 
   
-  There are two ways how the bot sends messages from the realm to the discord. One as a normal message and as an embed (*also called tellraw relay*)
+  The bot sends messages from the realm to the discord in two ways. One as a normal message and as an embed (*also called tellraw relay*)
 
   ![Example of normal relay message](/images/relay.png)  
   
@@ -28,16 +28,18 @@ Chat relay requires you to be a premium user and needs the bot to be in the Real
   
   For the commands related to chat relay see [Chat Relay](/Commands/world-commands.md) 
   
-  If you want the bot to rejoin automatically every time, go to the world joining tab in your server dashboard and turn on `Joins World Automatically` option 
-  
-  By default, the bot joins the realm with the owner's account
+  To turn on chat relay go to your guild dashboard and locate your realm name from the tabs on the left of the page
 
-  If you want the bot to join with its own account instead of owner's account, turn on `Use Alternative account` option in the world joining tab in your server dashboard 
+  ![](/images/realms_tab.png)
+
+  Under **Modules** locate Chat Relay and press `settings` in the Chat Relay box, This will take you to the Chat Relay page and in there enable the button next to `Chat Relay`
   
-  ![world joining tab](/images/wrld_join.png)
-  
-  To turn on chat relay head over to the Chat Relay tab in your server dashboard and turn on `Chat Relay` option and set the channel you want the messages to be relayed in the `Relay Channel` box
-  
-  If you want the relayed messages to be sent as an embed turn on `Tellraw Relay` option 
-  
-  ![Chat Relay tab](/images/chat_relay_tab.png) 
+  ![](/images/chat_replaySetting.png)
+
+  ![](/images/turnRelayON.png)
+
+  From there you can set the channel you want to use for chat relay by selecting the desired channel from the `Relay Channel` box
+
+  You can also select what type of messages the bot Relays by turning on the respective buttons 
+
+  If you use Chat Ranks in your realm you can configure the bot to work with the chat rank pack by turning on `Detect & Relay Modified Chat Messages` and selecting the chat rank pack you use in the `Chat Modification Pack` dropdown under `Chat Ranks Detection` 
