@@ -25,11 +25,11 @@ Console requires premium and works with chat relay and is based on Realmbot bein
  !!!
 
  **NOTE**
->  Make sure the channel you have selected for console is private
+* Make sure the channel you have selected for console is private
 
->  Do not type / when typing commands in the console channel 
+* Do not type / when typing commands in the console channel 
 
->  For console to work the bot must be ingame. Run `/world join` for the bot to join
+* For console to work the bot must be ingame. Run `/world join` for the bot to join
 
  !!!
  
