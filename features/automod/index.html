@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.750587730821">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.750591239742">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -21,22 +21,22 @@
     <meta property="og:url" content="https://help.realmbot.dev/features/automod/">
     <meta property="og:title" content="Automod">
     <meta property="og:description" content="Automod is a feature that allows you to protect your realm from hackers">
-    <meta property="og:image" content="https://help.realmbot.dev/images/create-rule-button.png">
+    <meta property="og:image" content="https://help.realmbot.dev/images/membergate.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://help.realmbot.dev/features/automod/">
     <meta property="twitter:title" content="Automod">
     <meta property="twitter:description" content="Automod is a feature that allows you to protect your realm from hackers">
-    <meta property="twitter:image" content="https://help.realmbot.dev/images/create-rule-button.png">
+    <meta property="twitter:image" content="https://help.realmbot.dev/images/membergate.png">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.5.0.750587730821" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.750591239742" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.750587730821" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.750591239742" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.750587730821" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.750591239742" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -187,30 +187,15 @@
         <span>Details</span>
     </h2>
 </doc-anchor-target>
-<p>There are a bunch of automod rules you can set to prevent hackers and you can set those rules in the Automod tab in the <a href="https://realmbot.dev/guilds">Dashboard</a></p>
-<p>You can press the plus button in the automod tab in your guild dashboard to create a new automod rule</p>
+<p>To set automod rules, locate your realm from the panel on the left in your guild <a href="https://realmbot.dev/guilds">Dashboard</a> and from your realm config page under modules, locate <code v-pre>Member Gate</code> and press settings</p>
+<p><img src="../../images/membergate.png" alt="" /></p>
+<p>You can enable automod from here and create new automod rules by typing a name in the <code v-pre>Rule Name</code> box and then pressing  <code v-pre>Create Rule</code> button</p>
 <p><figure class="content-center">
     <img src="../../images/create-rule-button.png" alt="">
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
-<doc-anchor-target id="1-block-certain-devices">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#1-block-certain-devices">#</doc-anchor-trigger>
-        <span>1) Block certain devices</span>
-    </h3>
-</doc-anchor-target>
-<p>You can set an automod rule to block certain devices from joining your realm</p>
-<p>To block a device create a new automod rule and in the devices dropdown turn on devices and select the devices you want to block in the box</p>
-<doc-anchor-target id="2-prevent-alt-accounts">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#2-prevent-alt-accounts">#</doc-anchor-trigger>
-        <span>2) Prevent Alt Accounts</span>
-    </h3>
-</doc-anchor-target>
-<p>You can set Automod Rule to prevent possible alt accounts</p>
-<p>Realmbot uses a variety of information like IP address, device information, etc to autonomously calculate if an account is an alt of another account. This is highly accurate in most cases</p>
-<p>To create an automod rule against alt accounts. Create a new automod rule and in the <code v-pre>Alt Score</code> dropdown turn it on and set the alt score it says how likely a said account is an alt</p>
+<p>After pressing <code v-pre>Create Rule</code> a pop-up will appear and from there You can set the automod criteria/rule from the first box and the condition from the second box</p>
 
                                 
                                 <!-- Required only on API pages -->
