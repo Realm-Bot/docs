@@ -17,20 +17,12 @@ Automod is a premium feature and works only when the bot is in the realm
 ---
 
 ## Details
- There are a bunch of automod rules you can set to prevent hackers and you can set those rules in the Automod tab in the [Dashboard](https://realmbot.dev/guilds)
+ To set automod rules, locate your realm from the panel on the left in your guild [Dashboard](https://realmbot.dev/guilds) and from your realm config page under modules, locate `Member Gate` and press settings 
+
+ ![](/images/MemberGate.png)
  
- You can press the plus button in the automod tab in your guild dashboard to create a new automod rule 
+ You can enable automod from here and create new automod rules by typing a name in the `Rule Name` box and then pressing  `Create Rule` button
 
 ![](/images/create-rule-button.png)
  
-### 1) Block certain devices 
-  You can set an automod rule to block certain devices from joining your realm 
-
-   To block a device create a new automod rule and in the devices dropdown turn on devices and select the devices you want to block in the box
-
-### 2) Prevent Alt Accounts 
-  You can set Automod Rule to prevent possible alt accounts
-  
-  Realmbot uses a variety of information like IP address, device information, etc to autonomously calculate if an account is an alt of another account. This is highly accurate in most cases
-
-  To create an automod rule against alt accounts. Create a new automod rule and in the `Alt Score` dropdown turn it on and set the alt score it says how likely a said account is an alt 
+After pressing `Create Rule` a pop-up will appear and from there You can set the automod criteria/rule from the first box and the condition from the second box
