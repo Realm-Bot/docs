@@ -12,18 +12,22 @@ Console requires premium and works with chat relay and is based on Realmbot bein
 ---
 
 ## Configuring console 
- To turn on the console feature you must turn on chat relay and make Realmbot join the world 
- 
+ To turn on console head over to your guild dashboard and locate your realm from the tab on the left 
+
+ ![](/images/realms_tab.png)
+
+ In your realm config page, under `Modules` find `Realm Console` and press on settings 
+
+ ![](/images/Realm_consoleTab.png)
+
+ From there select the channel you want to set as the console channel from the provided box
+
+ !!!
+
+ **NOTE**
+>  Make sure the channel you have selected for console is private
+>  Do not type / when typing commands in the console channel 
+>  For console to work the bot must be ingame. Run `/world join` for the bot to join
+
  !!!
  
- To know how to turn on chat relay see [Chat Relay](chatrelay.md)
- 
- !!!
- 
- After you have turned on chat relay you should be able to see a box named `Console Channel` in Chat Relay tab in the [dashboard](https://realmbot.dev)
- 
- There you can set the channel where you type the commands to be run ingame 
- 
- *Note: do not include "/" when you type a command in that channel*
- 
- ![](/images/console.png)
