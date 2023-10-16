@@ -4,4 +4,4 @@ icon: ruby
 ---
 # Realmbot documentation
 
-Greetings and welcome to the official Realm Bot Documentation Website!
+Greetings and welcome to the official Realm Bot Documentation Website.
