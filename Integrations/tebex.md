@@ -1,5 +1,6 @@
 ---
 label: Tebex
+description: Realm Bot has the capability to seamlessly deliver in-game rewards, such as instantly giving a purchased rank from the store upon the user.
 order: 97
 author:
   name: Kaii
