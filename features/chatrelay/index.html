@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.751405477059">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.751414505939">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -11,7 +11,7 @@
     <!-- Primary Meta Tags -->
     <title>Chat Relay</title>
     <meta name="title" content="Chat Relay">
-    <meta name="description" content="Chat relay is a feature which allows people in Discord to talk with people in your realm and vice versa">
+    <meta name="description" content="This feature only works with Realm Bot Premium">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://help.realmbot.dev/features/chatrelay/">
@@ -20,23 +20,23 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://help.realmbot.dev/features/chatrelay/">
     <meta property="og:title" content="Chat Relay">
-    <meta property="og:description" content="Chat relay is a feature which allows people in Discord to talk with people in your realm and vice versa">
+    <meta property="og:description" content="This feature only works with Realm Bot Premium">
     <meta property="og:image" content="https://help.realmbot.dev/images/relay.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://help.realmbot.dev/features/chatrelay/">
     <meta property="twitter:title" content="Chat Relay">
-    <meta property="twitter:description" content="Chat relay is a feature which allows people in Discord to talk with people in your realm and vice versa">
+    <meta property="twitter:description" content="This feature only works with Realm Bot Premium">
     <meta property="twitter:image" content="https://help.realmbot.dev/images/relay.png">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.5.0.751405477059" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.751414505939" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.751405477059" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.751414505939" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.751405477059" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.751414505939" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -155,6 +155,24 @@
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="docs-sidebar-right-toggle"></div>
                                 <!-- Page content  -->
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>Premium Only</h5>
+<p>This feature only works with <strong>Realm Bot Premium</strong></p>
+        </div>
+    </div>
+</div>
 <doc-anchor-target id="chat-relay" class="break-words">
     <h1>
         <doc-anchor-trigger class="header-anchor-trigger" to="#chat-relay">#</doc-anchor-trigger>
@@ -173,8 +191,16 @@
 <p>Chat relay works by the Realmbot instantly sending messages sent in the realm to a dedicated channel in your discord and messages sent in that channel are sent to the realm instantly</p>
 <p>The bot does this by joining the realm on the realm owner&#x27;s account or its own account <em>if you have alt account joining enabled</em></p>
 <p>The bot sends messages from the realm to the discord in two ways. One as a normal message and as an embed (<em>also called tellraw relay</em>)</p>
-<p><img src="../../images/relay.png" alt="Example of normal relay message" /></p>
-<p><img src="../../images/tr_relay.png" alt="Example of tellraw relay" /></p>
+<p><figure class="content-center">
+    <img src="../../images/relay.png" alt="Example of normal relay message">
+    <figcaption class="caption">Example of normal relay message</figcaption>
+</figure>
+</p>
+<p><figure class="content-center">
+    <img src="../../images/tr_relay.png" alt="Example of tellraw relay">
+    <figcaption class="caption">Example of tellraw relay</figcaption>
+</figure>
+</p>
 <hr>
 <doc-anchor-target id="configuring-chat-relay">
     <h2>
@@ -185,10 +211,22 @@
 <p>Chat relay can be configured via the <a href="https://realmbot.dev/">dashboard</a></p>
 <p>For the commands related to chat relay see <a href="../../commands/world-commands/">Chat Relay</a></p>
 <p>To turn on chat relay go to your guild dashboard and locate your realm name from the tabs on the left of the page</p>
-<p><img src="../../images/realms_tab.png" alt="" /></p>
+<p><figure class="content-center">
+    <img src="../../images/realms_tab.png" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
 <p>Under <strong>Modules</strong> locate Chat Relay and press <code v-pre>settings</code> in the Chat Relay box, This will take you to the Chat Relay page and in there enable the button next to <code v-pre>Chat Relay</code></p>
-<p><img src="../../images/chat_replaysetting.png" alt="" /></p>
-<p><img src="../../images/turnrelayon.png" alt="" /></p>
+<p><figure class="content-center">
+    <img src="../../images/chat_replaysetting.png" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p><figure class="content-center">
+    <img src="../../images/turnrelayon.png" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
 <p>From there you can set the channel you want to use for chat relay by selecting the desired channel from the <code v-pre>Relay Channel</code> box</p>
 <p>You can also select what type of messages the bot Relays by turning on the respective buttons</p>
 <p>If you use Chat Ranks in your realm you can configure the bot to work with the chat rank pack by turning on <code v-pre>Detect &amp; Relay Modified Chat Messages</code> and selecting the chat rank pack you use in the <code v-pre>Chat Modification Pack</code> dropdown under <code v-pre>Chat Ranks Detection</code></p>
@@ -201,20 +239,20 @@
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../features/console/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../setup/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                                                <span class="block mt-1">Console</span>
+                                                <span class="block mt-1">Setup</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../dashboard/permissions/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../features/console/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">permission</span>
+                                                <span class="block mt-1">Console</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -258,6 +296,6 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Chat relay", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Chat Relay", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
