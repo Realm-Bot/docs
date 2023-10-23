@@ -1,27 +1,28 @@
 ---
 label: Setup
 order: 101
-icon : rocket
+icon: rocket
+authors:
+  - name: Kaii
+    avatar: https://avatars.githubusercontent.com/u/72093371?s=96&v=4
+  - name: SeaLeopard35302
+    avatar: https://avatars.githubusercontent.com/u/78130400?s=96&v=4
 ---
- 
+
 # Realm Bot Setup
- This will explain in detail how to setup Realmbot in your guild 
 
-## STEP ONE 
- First, you have to authorise the Minecraft account that owns the realm to Realmbot.
- 
- You can do so [here](https://realmbot.dev/account).
- 
- `If the wrong account is getting connected to Realmbot go to https://www.xbox.com/live and login with the correct account there`
- 
-## STEP TWO 
-  After you have authorised your account to Realmbot the next step is to connect that account to Realmbot on your server 
-  
-  To connect your account to your guild run the `/connect` command in your guild 
-  
-  ![](/images/connect.png)
+This will explain in detail how to setup Realmbot for your realm!
 
-## STEP THREE
-  After you have successfully linked your realm to your guild you can configure the bot like command permissions, ban logs, etc at our [dashboard](https://realmbot.dev)
-  
-  To know more on how to set up via the dashboard check `dashboard` for info 
+### Step 1
+
+- First, you need to authorize the Minecraft account that owns the realm to Realmbot. You can do so [here](https://realmbot.dev/account).
+
+### Step 2
+
+- Once you've authorized your account with Realmbot, the next step is to connect that account to Realmbot on your server. To do this, run the `/connect` command in your guild.
+  <br/>![Connect Image](/images/connect.png)
+
+### Step 3
+
+- After successfully linking your realm to your guild, you can configure the bot, including command permissions and ban logs, at our [dashboard](https://realmbot.dev).
+- For detailed instructions on setting up configurations via the dashboard, please refer to the 'dashboard' section for more information.
