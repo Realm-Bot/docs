@@ -11,6 +11,10 @@ authors:
 
 # Realm Bot Setup
 
+## Video Tutorial
+
+[!embed](https://www.youtube.com/embed/Gxvq8guB_hc)
+
 This will explain in detail how to setup Realmbot for your realm!
 
 ### Step 1
