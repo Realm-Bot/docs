@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.751581279137">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.751583008570">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -32,11 +32,11 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.5.0.751581279137" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.751583008570" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.751581279137" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.751583008570" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.751581279137" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.751583008570" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -188,9 +188,9 @@
         <span>How it Works</span>
     </h2>
 </doc-anchor-target>
-<p>Chat relay works by Realm Bot instantly relaying messages in the realm to a dedicated channel in your discord server and messages sent in the relay channel are sent back to the realm instantly.</p>
-<p>The bot does this by joining the realm on the realm owner&#x27;s account or its own account <em>if you have alt account joining enabled</em></p>
-<p>The bot sends messages from the realm to the discord in two ways. One as a normal message and as an embed (<em>also called tellraw relay</em>)</p>
+<p>Chat relay is a premium feature which works by relaying your in-game messages to discord in the dedicated channel of your choice. Realm Bot will also work the other way around; relaying your discord messages in the channel of your choice right back into the realm.
+The bot does this by joining the realm on the realm owner&#x27;s account or its own account <em>if you have alt account joining enabled</em></p>
+<p>The bot sends messages from the realm to the discord in two ways. One as a normal message and as an embed (<em>also called tellraw relay</em>).</p>
 <p><figure class="content-center">
     <img src="../../images/relay.png" alt="Example of normal relay message">
     <figcaption class="caption">Example of normal relay message</figcaption>
@@ -208,15 +208,15 @@
         <span>Configuring chat relay</span>
     </h2>
 </doc-anchor-target>
-<p>Chat relay can be configured via the <a href="https://realmbot.dev/">dashboard</a></p>
-<p>For the commands related to chat relay see <a href="../../commands/world-commands/">Chat Relay</a></p>
-<p>To turn on chat relay go to your guild dashboard and locate your realm name from the tabs on the left of the page</p>
+<p>Chat relay can be configured via the <a href="https://realmbot.dev/">dashboard</a>.</p>
+<p>For the commands related to chat relay see <a href="../../commands/world-commands/">Chat Relay</a>.</p>
+<p>If you wish to enable chat relay you will need to head go to your <a href="https://realmbot.dev/guilds">guild dashboard</a> and locate your realm name from the tabs on the left of the page.</p>
 <p><figure class="content-center">
     <img src="../../images/realms_tab.png" alt="">
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
-<p>Under <strong>Modules</strong> locate Chat Relay and press <code v-pre>settings</code> in the Chat Relay box, This will take you to the Chat Relay page and in there enable the button next to <code v-pre>Chat Relay</code></p>
+<p>Under <strong>Modules</strong> locate Chat Relay and press <code v-pre>settings</code> in the Chat Relay box. This will take you to the Chat Relay page and in there enable the button next to <code v-pre>Chat Relay</code>.</p>
 <p><figure class="content-center">
     <img src="../../images/chat_replaysetting.png" alt="">
     <figcaption class="caption"></figcaption>
@@ -227,9 +227,9 @@
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
-<p>From there you can set the channel you want to use for chat relay by selecting the desired channel from the <code v-pre>Relay Channel</code> box</p>
-<p>You can also select what type of messages the bot Relays by turning on the respective buttons</p>
-<p>If you use Chat Ranks in your realm you can configure the bot to work with the chat rank pack by turning on <code v-pre>Detect &amp; Relay Modified Chat Messages</code> and selecting the chat rank pack you use in the <code v-pre>Chat Modification Pack</code> dropdown under <code v-pre>Chat Ranks Detection</code></p>
+<p>From there you can set the channel you want to use for chat relay by selecting the desired channel from the <code v-pre>Relay Channel</code> box.</p>
+<p>You can also select what type of messages the bot Relays by turning on the respective buttons.</p>
+<p>If you use chat ranks please ensure that you enable tellraw relay so that all your messages will relay from in-game into your discord server properly.</p>
 
                                 
                                 <!-- Required only on API pages -->
