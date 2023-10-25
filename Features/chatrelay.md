@@ -11,13 +11,13 @@ This feature only works with **Realm Bot Premium**
 
 Chat relay is a feature which allows people in Discord to talk with people in your realm and vice versa
 
-Chat relay requires you to be a premium user and needs the bot to be in the Realm
+Chat relay requires you to be a premium user and needs the bot to be in the Realm.
 
 ---
 
 ## How it Works
 
-Chat relay works by the Realmbot instantly sending messages sent in the realm to a dedicated channel in your discord and messages sent in that channel are sent to the realm instantly
+Chat relay works by Realm Bot instantly relaying messages in the realm to a dedicated channel in your discord server and messages sent in the relay channel are sent back to the realm instantly.
 
 The bot does this by joining the realm on the realm owner's account or its own account _if you have alt account joining enabled_
 
