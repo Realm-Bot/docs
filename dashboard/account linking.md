@@ -13,11 +13,6 @@ You can setup account linking in the [dashboard](https://realmbot.dev)
 
 ---
 
-## Enabling Account linking 
-  To enable account linking turn on the `send messages` button on the account linking page 
-  
----
-  
 ## Setting up Account linking
   You can make account linking mandatory by making Realmbot give your default member role to the person after linking their Xbox account and turning off 'view channel' for '@everyone' in all channels.
   
@@ -29,15 +24,11 @@ You can setup account linking in the [dashboard](https://realmbot.dev)
   
   ---
   
-## In-game notification
-   You can choose to send a message to your realms or execute a command in your realm when a person links his Xbox account to your guild 
-   
-   To configure this you can start by pressing the `ADD COMMAND` button at the bottom of the account linking page
+  ## How to use Account Linking
+  To use the account linking feature, use the `/verify embed` command to send a double counter linke verification embed to the discord channel of your choice for people to verify 
 
-   To send a message you can do so like this 
-   
-   `say <the message>`
+  Alternately, you can also turn on the `send DM on join` option so that the bot DMs the members when they join your discord server
 
-   ![](/images/acc_link2.png)
-   
+  ![](/images/verify_embed.png)
 
+  ---

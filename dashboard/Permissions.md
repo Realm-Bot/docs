@@ -10,12 +10,10 @@ order: 3
   
 ---
 ## Adding role permissions 
- The individual commands are put into categories based on the basic function they serve.
-
- ![Command categories](/images/cmdperm_categories.png)
- 
- You can select any of these categories and individually add roles that should have access to these commands to them.
- 
- ![Example of how to configure command permissions](/images/cmd_perm.png)
- 
+  In order to set permissions for a specific role, first select the role from the dropdown 
   
+  ![](/images/cmd_role_selector.png)
+
+  Then simply select which commands the members with that role can run by simply pressing the button next to the commands.
+
+  ![](/images/cmd_permission_select.png)
