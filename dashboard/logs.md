@@ -1,38 +1,44 @@
 ---
-label: Logs
+label: Log Channels
 order: 1
+icon: log
+authors:
+  - name: Kaii
+    avatar: https://avatars.githubusercontent.com/u/72093371?s=96&v=4
+  - name: SeaLeopard35302
+    avatar: https://avatars.githubusercontent.com/u/78130400?s=96&v=4
 ---
 
 # Action Log
-Here you can know everything there is to realm bot logs, how to setup them and their related features 
-===
 
-## Logs Channel 
-  You can setup the channels where you want the logs for Ban, Kick, Warn, Automod, etc at the [dashboard](https://realmbot.dev) 
-  
-  To setup logs go to the `Log channels` tab in your server dashboard and individually set the channel for each command listed there
-  
-  ![](/images/Log_channel.png)
-  
-  The message that is sent to the log channel when you run a command will be of the following type 
+Here you can know everything there is to realm bot logs, how to setup them and their related features
 
-  ![Example of ban log message](/images/ban_log.png)
-  
-  ![Example of kick log message](/images/kick_log.png)
-  
-  ![Example of warn log message](/images/warn_log.png)
-  ===
-  
-  
+## Logs Channel
+
+You can setup the channels where you want the logs for Ban, Kick, Warn, Automod, etc at the [dashboard](https://realmbot.dev)
+
+To setup logs go to the `Log channels` tab in your server dashboard and individually set the channel for each command listed there
+
+![](/images/Log_channel.png)
+
+The message that is sent to the log channel when you run a command will be of the following type
+
+![Example of ban log message](/images/ban_log.png)
+
+![Example of kick log message](/images/kick_log.png)
+
+![Example of warn log message](/images/warn_log.png)
+
 ## Xbox message
-   When a person is banned/kicked from the realm, Realmbot sends the person banned/kicked a message via the Xbox app 
-   
-   ![Example of the Xbox message the bot sends](/images/kick.png)
-   
-   You configure Xbox message settings in the [dashboard](https://realmbot.dev).
-   
-   You can individually turn on or off Xbox messages for `kick`, `ban` and `unban`.
-   
-   You can also edit the message that is sent to the person individually for each command in the provided box 
 
-   ![](/images/xbox_msg.png)
+When a person is banned/kicked from the realm, Realmbot sends the person banned/kicked a message via the Xbox app
+
+![Example of the Xbox message the bot sends](/images/kick.png)
+
+You configure Xbox message settings in the [dashboard](https://realmbot.dev).
+
+You can individually turn on or off Xbox messages for `kick`, `ban` and `unban`.
+
+You can also edit the message that is sent to the person individually for each command in the provided box
+
+![](/images/xbox_msg.png)
