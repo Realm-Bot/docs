@@ -30,9 +30,7 @@ Realm Bot has the capability to seamlessly deliver in-game rewards, such as inst
 5.  Select the Tebex Module inside Realm Bot Dashboard
     ![Dashboard Tebex Module](/images/tebex/dash-5.png)
 6.  Tick Enabled then paste the Tebex secret into the box and then hit save
-    ![Dashboard Tebex Secret](/images/tebex/dash-6.png)
 7.  Both pages in Realm Bot and inside Tebex should say connected
-    ![Connected Status Realm Bot](/images/tebex/dash-7.png)
     ![Connected Status Tebex](/images/tebex/7.png)
 
 ### Creating Products on Tebex

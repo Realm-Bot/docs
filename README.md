@@ -52,18 +52,6 @@ Realm Bot is a versatile Discord bot designed to simplify the management of your
 
 Realm Bot is the perfect tool to streamline your Minecraft Bedrock Realm management, saving you time and effort. The best part? It's available for free with a premium tier that includes additional features.
 
-## Get Started with Realm Bot
-
-To harness the power of Realm Bot, follow these simple steps:
-
-1. **Add Realm Bot to Your Discord Server**: Visit the [Realm Bot website](https://www.realmbot.dev) and click the "Invite to Server" button.
-
-2. **Link Your Accounts**: To unlock all features, use the `/connect` command in Discord to link your Xbox and Discord accounts together.
-
-3. **Command List**: Discover the full range of Realm Bot commands by simply typing `/`
-
-Realm Bot is the ultimate companion for anyone managing a Minecraft Bedrock Realm. It not only saves you time but also enhances the overall player experience. Elevate your server management to the next level with Realm Bot today!
-
 ## Join Our Community
 
 <iframe src="https://discord.com/widget?id=700274742183329792&theme=dark" width="100%" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
