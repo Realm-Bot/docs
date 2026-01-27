@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.822800381735">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.822849816787">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -11,7 +11,7 @@
     <!-- Primary Meta Tags -->
     <title>Welcome to Realm Bot Documentation | Realm Bot Docs</title>
     <meta name="title" content="Welcome to Realm Bot Documentation | Realm Bot Docs">
-    <meta name="description" content="Realm Bot is a versatile Discord bot designed to simplify the management of your Minecraft Bedrock Realm directly from Discord.">
+    <meta name="description" content="Official Realm Bot documentation for managing Minecraft Bedrock Realms through Discord-setup guides, modules, security tools, and integrations.">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://help.realmbot.dev/">
@@ -20,23 +20,23 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://help.realmbot.dev/">
     <meta property="og:title" content="Welcome to Realm Bot Documentation | Realm Bot Docs">
-    <meta property="og:description" content="Realm Bot is a versatile Discord bot designed to simplify the management of your Minecraft Bedrock Realm directly from Discord.">
+    <meta property="og:description" content="Official Realm Bot documentation for managing Minecraft Bedrock Realms through Discord-setup guides, modules, security tools, and integrations.">
     <meta property="og:image" content="https://help.realmbot.dev/images/brand/banner.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://help.realmbot.dev/">
     <meta property="twitter:title" content="Welcome to Realm Bot Documentation | Realm Bot Docs">
-    <meta property="twitter:description" content="Realm Bot is a versatile Discord bot designed to simplify the management of your Minecraft Bedrock Realm directly from Discord.">
+    <meta property="twitter:description" content="Official Realm Bot documentation for managing Minecraft Bedrock Realms through Discord-setup guides, modules, security tools, and integrations.">
     <meta property="twitter:image" content="https://help.realmbot.dev/images/brand/banner.png">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
-    <link href="resources/css/retype.css?v=3.11.0.822800381735" rel="stylesheet">
+    <link href="resources/css/retype.css?v=3.11.0.822849816787" rel="stylesheet">
 
-    <script data-cfasync="false" src="resources/js/config.js?v=3.11.0.822800381735" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="resources/js/config.js?v=3.11.0.822849816787" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="resources/js/lunr.js?v=3.11.0.822800381735" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="resources/js/lunr.js?v=3.11.0.822849816787" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -177,6 +177,13 @@
           </div>
           <div class="ml-1 whitespace-nowrap text-gray-500 dark:text-dark-350">SeaLeopard35302</div>
         </div>
+        <div>,</div>
+        <div class="ml-2 flex items-center">
+          <div class="shrink-0 w-8 h-8 overflow-hidden rounded-full">
+            <img class="object-cover" src="https://avatars.githubusercontent.com/u/136254012?s=96&amp;v=4">
+          </div>
+          <div class="ml-1 whitespace-nowrap text-gray-500 dark:text-dark-350">Frazer</div>
+        </div>
     </div>
 </div>
 
@@ -185,95 +192,144 @@
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
+<p>Realm Bot is a Discord-first management platform for <strong>Minecraft Bedrock Realms</strong>, built to help owners and staff operate their Realm with greater consistency, speed, and visibility - without needing to be in-game at all times.</p>
+<p>This documentation explains how Realm Bot works, how to configure each feature, and how to run a Realm safely using recommended operational practices.</p>
+<hr>
 <doc-anchor-target id="what-is-realm-bot">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#what-is-realm-bot">#</doc-anchor-trigger>
         <span>What is Realm Bot?</span>
     </h2>
 </doc-anchor-target>
-<p>Realm Bot is a versatile Discord bot designed to simplify the management of your Minecraft Bedrock Realm directly from Discord. Whether you&#x27;re an experienced server owner or just starting out, Realm Bot offers a wide range of features to make your server administration a breeze. Here are some of the key features that Realm Bot provides:</p>
+<p>Realm Bot is a Discord bot designed to streamline Realm administration through a central dashboard and Discord-based tooling. It supports day-to-day moderation, structured automation, live chat connectivity, and optional premium modules intended for larger communities and public-code Realms.</p>
+<p>Realm Bot is suitable for:</p>
+<ul>
+<li>Small private Realms that want convenient management</li>
+<li>Public-code Realms that require stronger moderation and stability tooling</li>
+<li>Staffed communities that benefit from logging, workflows, and automation</li>
+<li>Competitive Realms that want structured leaderboards and progression</li>
+</ul>
+<hr>
+<doc-anchor-target id="core-capabilities">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#core-capabilities">#</doc-anchor-trigger>
+        <span>Core Capabilities</span>
+    </h2>
+</doc-anchor-target>
 <doc-anchor-target id="realm-management">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#realm-management">#</doc-anchor-trigger>
         <span>Realm Management</span>
     </h3>
 </doc-anchor-target>
+<p>Manage the fundamental operations of your Realm from Discord and the dashboard.</p>
 <ul>
-<li><strong>Start, Stop, and Restart</strong>: Control the status of your realm with ease, all from the comfort of your Discord server.</li>
-<li><strong>Invite and Remove Players</strong>: Easily manage your player roster by inviting or removing members right within Discord.</li>
+<li><strong>Start, Stop, and Restart</strong> your Realm when required.</li>
+<li><strong>Invite and remove players</strong> without manual in-game administration.</li>
+<li>Maintain a more consistent management workflow for staff teams.</li>
 </ul>
-<doc-anchor-target id="moderation">
+<doc-anchor-target id="moderation-and-access-control">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#moderation">#</doc-anchor-trigger>
-        <span>Moderation</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#moderation-and-access-control">#</doc-anchor-trigger>
+        <span>Moderation and Access Control</span>
     </h3>
 </doc-anchor-target>
+<p>Operate your Realm with clearer enforcement tools and reduced manual workload.</p>
 <ul>
-<li><strong>Mute, Kick, and Ban Players</strong>: Maintain a harmonious server environment by taking swift action when necessary.</li>
-<li><strong>Whitelist Control</strong>: Manage who can join your realm by setting up a whitelist from Discord.</li>
+<li><strong>Kick and ban</strong> actions for rapid incident response.</li>
+<li><strong>Whitelist-oriented control</strong> for communities that require curated entry.</li>
+<li>Optional automation modules (where available) to reduce repeat issues.</li>
 </ul>
-<doc-anchor-target id="chat-relay">
+<doc-anchor-target id="chat-relay-and-communication">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#chat-relay">#</doc-anchor-trigger>
-        <span>Chat Relay</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#chat-relay-and-communication">#</doc-anchor-trigger>
+        <span>Chat Relay and Communication</span>
     </h3>
 </doc-anchor-target>
+<p>Keep staff and community aligned across platforms.</p>
 <ul>
-<li><strong>Stay Connected</strong>: Relay chat messages between Discord and your realm, ensuring constant communication with your players.</li>
+<li>Relay chat between your Realm and Discord for <strong>real-time coordination</strong>.</li>
+<li>Improve visibility for staff who are online in Discord but not actively in-game.</li>
+<li>Create a reliable hub for conversations during events and peak traffic.</li>
 </ul>
-<doc-anchor-target id="game-settings">
+<doc-anchor-target id="game-settings-and-administration">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#game-settings">#</doc-anchor-trigger>
-        <span>Game Settings</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#game-settings-and-administration">#</doc-anchor-trigger>
+        <span>Game Settings and Administration</span>
     </h3>
 </doc-anchor-target>
+<p>Adjust operational settings without interrupting active play.</p>
 <ul>
-<li><strong>Gamemode and Difficulty</strong>: Adjust game settings like gamemode and difficulty without the need to log into the game.</li>
+<li>Configure key settings such as <strong>gamemode</strong> and <strong>difficulty</strong> when permitted.</li>
+<li>Make live adjustments faster during events and content cycles.</li>
 </ul>
-<doc-anchor-target id="broadcasting">
+<doc-anchor-target id="broadcasting-and-messaging">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#broadcasting">#</doc-anchor-trigger>
-        <span>Broadcasting</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#broadcasting-and-messaging">#</doc-anchor-trigger>
+        <span>Broadcasting and Messaging</span>
     </h3>
 </doc-anchor-target>
+<p>Send announcements and operational messages efficiently.</p>
 <ul>
-<li><strong>Direct Messages</strong>: Send messages directly to your realm players, even if they&#x27;re not in Discord.</li>
+<li>Push messages to players where supported by your configuration.</li>
+<li>Maintain consistent communication standards across staff and time zones.</li>
 </ul>
-<doc-anchor-target id="chat-logs">
+<doc-anchor-target id="logging-and-visibility">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#chat-logs">#</doc-anchor-trigger>
-        <span>Chat Logs</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#logging-and-visibility">#</doc-anchor-trigger>
+        <span>Logging and Visibility</span>
     </h3>
 </doc-anchor-target>
+<p>Preserve context and reduce reliance on screenshots.</p>
 <ul>
-<li><strong>Review Chat Activity</strong>: Keep an eye on what your players have been saying with the ability to view chat logs.</li>
+<li>Review chat activity where logging is enabled.</li>
+<li>Maintain an audit trail for staff operations and incident review.</li>
 </ul>
-<doc-anchor-target id="bot-control">
+<doc-anchor-target id="security-and-stability-tooling">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#bot-control">#</doc-anchor-trigger>
-        <span>Bot Control</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#security-and-stability-tooling">#</doc-anchor-trigger>
+        <span>Security and Stability Tooling</span>
     </h3>
 </doc-anchor-target>
+<p>Support Realms that are vulnerable to abuse, especially those using public codes.</p>
 <ul>
-<li><strong>Block Disruptive Bots</strong>: Prevent other bots from causing disruptions in your realm.</li>
+<li>Mitigation features for disruptive activity (where configured).</li>
+<li>Tools designed to improve response time and operational clarity during incidents.</li>
 </ul>
-<doc-anchor-target id="tebex-integration">
+<doc-anchor-target id="integrations">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#tebex-integration">#</doc-anchor-trigger>
-        <span>Tebex Integration</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#integrations">#</doc-anchor-trigger>
+        <span>Integrations</span>
     </h3>
 </doc-anchor-target>
+<p>Extend Realm Bot with connected services to automate routine tasks.</p>
 <ul>
-<li><strong>Monetization</strong>: Seamlessly integrate with Tebex, a popular Minecraft webstore platform, to sell in-game items and services to your players.</li>
+<li><strong>Tebex integration</strong> (Premium) for in-game fulfilment workflows where supported by your setup.</li>
 </ul>
-<p>Realm Bot is the perfect tool to streamline your Minecraft Bedrock Realm management, saving you time and effort. The best part? It&#x27;s available for free with a premium tier that includes additional features.</p>
-<doc-anchor-target id="join-our-community">
+<hr>
+<doc-anchor-target id="premium-modules">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#join-our-community">#</doc-anchor-trigger>
-        <span>Join Our Community</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#premium-modules">#</doc-anchor-trigger>
+        <span>Premium Modules</span>
     </h2>
 </doc-anchor-target>
+<p>Realm Bot includes a free tier, with a premium tier that unlocks advanced modules for larger Realms and staff teams. Premium modules are designed for:</p>
+<ul>
+<li>High-activity Realms</li>
+<li>Public-code communities</li>
+<li>Realms that require automation and operational tooling</li>
+</ul>
+<p>If you are uncertain whether you need Premium, start with the free tier and only upgrade once you know which modules your Realm actually benefits from.</p>
+<hr>
+<doc-anchor-target id="community-and-support">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#community-and-support">#</doc-anchor-trigger>
+        <span>Community and Support</span>
+    </h2>
+</doc-anchor-target>
+<p>If you need assistance, updates, or community resources, join the official Discord server below.</p>
 <iframe src="https://discord.com/widget?id=700274742183329792&theme=dark" width="100%" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+<hr>
 
                                 
                                 <!-- Required only on API pages -->
