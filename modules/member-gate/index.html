@@ -9,32 +9,34 @@
     <meta name="generator" content="Retype 3.11.0">
 
     <!-- Primary Meta Tags -->
-    <title>/leaderboard | Realm Bot Docs</title>
-    <meta name="title" content="/leaderboard | Realm Bot Docs">
-    <meta name="description" content="Provides a link to the server's web leaderboard.">
+    <title>Member Gate | Realm Bot Docs</title>
+    <meta name="title" content="Member Gate | Realm Bot Docs">
+    <meta name="description" content="Automatically kick or ban joining players based on Xbox profile signals—such as device platform, gamerscore, and social metrics—to enforce strict entry standards.">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://help.realmbot.dev/commands/stats/leaderboard/">
+    <link rel="canonical" href="https://help.realmbot.dev/modules/member-gate/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://help.realmbot.dev/commands/stats/leaderboard/">
-    <meta property="og:title" content="/leaderboard | Realm Bot Docs">
-    <meta property="og:description" content="Provides a link to the server's web leaderboard.">
+    <meta property="og:url" content="https://help.realmbot.dev/modules/member-gate/">
+    <meta property="og:title" content="Member Gate | Realm Bot Docs">
+    <meta property="og:description" content="Automatically kick or ban joining players based on Xbox profile signals—such as device platform, gamerscore, and social metrics—to enforce strict entry standards.">
+    <meta property="og:image" content="https://help.realmbot.dev/images/member-gate.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://help.realmbot.dev/commands/stats/leaderboard/">
-    <meta property="twitter:title" content="/leaderboard | Realm Bot Docs">
-    <meta property="twitter:description" content="Provides a link to the server's web leaderboard.">
+    <meta property="twitter:url" content="https://help.realmbot.dev/modules/member-gate/">
+    <meta property="twitter:title" content="Member Gate | Realm Bot Docs">
+    <meta property="twitter:description" content="Automatically kick or ban joining players based on Xbox profile signals—such as device platform, gamerscore, and social metrics—to enforce strict entry standards.">
+    <meta property="twitter:image" content="https://help.realmbot.dev/images/member-gate.png">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
-    <link href="../../../resources/css/retype.css?v=3.11.0.822795933223" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.11.0.822795933223" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.822795933223" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.822795933223" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.11.0.822795933223" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.11.0.822795933223" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -49,10 +51,10 @@
                 <!-- Logo -->
                 <div class="flex items-center justify-between h-full py-2 md:w-75">
                     <div class="flex items-center px-2 md:px-6">
-                        <a id="retype-branding-logo" href="../../../" class="flex items-center leading-snug text-2xl">
+                        <a id="retype-branding-logo" href="../../" class="flex items-center leading-snug text-2xl">
                             <span class="w-10 mr-2 grow-0 shrink-0 overflow-hidden">
-                                <img class="max-h-10 dark:hidden md:inline-block" src="../../../images/logo.png">
-                                <img class="max-h-10 hidden dark:inline-block" src="../../../images/logo.png">
+                                <img class="max-h-10 dark:hidden md:inline-block" src="../../images/logo.png">
+                                <img class="max-h-10 hidden dark:inline-block" src="../../images/logo.png">
                             </span>
                             <span class="dark:text-white font-bold line-clamp-1 md:line-clamp-2">Realm Bot</span>
                         </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">Docs</span>
@@ -153,10 +155,10 @@
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="retype-sidebar-right-toggle"></div>
                                 <!-- Page content  -->
-<doc-anchor-target id="leaderboard" class="break-words">
+<doc-anchor-target id="member-gate" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#leaderboard">#</doc-anchor-trigger>
-        <span><code v-pre>/leaderboard</code></span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#member-gate">#</doc-anchor-trigger>
+        <span>Member Gate</span>
     </h1>
 </doc-anchor-target>
 <div class="-mt-3 mb-12 flex flex-wrap text-sm text-gray-400 dark:text-dark-350 items-center print:justify-center">
@@ -164,21 +166,210 @@
         <div>By</div>
         <div class="ml-2 flex items-center">
           <div class="shrink-0 w-8 h-8 overflow-hidden rounded-full">
-            <img class="object-cover" src="https://avatars.githubusercontent.com/u/72093371?s=96&amp;v=4">
+            <img class="object-cover" src="https://avatars.githubusercontent.com/u/136254012?s=96&amp;v=4">
           </div>
-          <div class="ml-1 whitespace-nowrap text-gray-500 dark:text-dark-350">Kaii</div>
+          <div class="ml-1 whitespace-nowrap text-gray-500 dark:text-dark-350">Frazer</div>
         </div>
     </div>
 </div>
 
-<p>Provides a link to the server&#x27;s web leaderboard.</p>
+<doc-anchor-target id="what-is-member-gate">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#what-is-member-gate">#</doc-anchor-trigger>
+        <span>What is Member Gate?</span>
+    </h3>
+</doc-anchor-target>
+<p>Member Gate is an <strong>automated entry moderation system</strong> that evaluates players as they join your Realm and applies an action—typically <strong>Kick</strong> or <strong>Ban</strong> - based on rules you define. It is designed for Realm Owners who need stricter access control than invite codes alone can provide, especially for public or semi-public Realms.</p>
+<p>Member Gate is particularly effective for Realms that want to restrict gameplay to specific player types (for example, a <strong>Console-Only PvP Realm</strong>), or for communities that need basic automated filtering for suspicious join patterns.</p>
+<doc-anchor-target id="how-member-gate-works">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#how-member-gate-works">#</doc-anchor-trigger>
+        <span>How Member Gate Works</span>
+    </h3>
+</doc-anchor-target>
+<p>Member Gate operates using rule-based logic:</p>
 <ul>
-<li><strong>Permissions</strong>: Authorized Users Only</li>
-<li><strong>Usage</strong>: <code v-pre>/leaderboard</code></li>
+<li>You create one or more <strong>Moderation Rules</strong> in the dashboard.</li>
+<li>Each rule contains:
+<ul>
+<li>A <strong>Moderation Action</strong> (Kick or Ban)</li>
+<li>One or more <strong>Conditions</strong></li>
 </ul>
-<p><strong>Response</strong>:</p>
+</li>
+<li>When a player joins, Member Gate checks each rule.</li>
+<li>If a player matches the rule’s conditions, the configured action is executed.</li>
+</ul>
+<blockquote>
+<p><strong>Important:</strong> Member Gate requires the <strong>Relay Account</strong> to be <strong>in-game</strong> to execute kicks/bans. If the Relay Account is not online in the Realm, Member Gate cannot enforce rules.</p>
+</blockquote>
+<doc-anchor-target id="conditions-you-can-use">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#conditions-you-can-use">#</doc-anchor-trigger>
+        <span>Conditions You Can Use</span>
+    </h3>
+</doc-anchor-target>
+<p>Member Gate supports multiple condition types, allowing flexible rule construction. Rules may include <strong>any combination</strong> of supported conditions, and are intended to be configured based on your Realm’s requirements.</p>
+<p>Common condition categories include:</p>
 <ul>
-<li>A button linking to <code v-pre>https://dashboard.realmbot.dev/leaderboard/&lt;server_id&gt;</code>.</li>
+<li><p><strong>Device Platform</strong></p>
+<ul>
+<li>Device includes</li>
+<li>Device excludes</li>
+</ul>
+</li>
+<li><p><strong>Gamerscore Thresholds</strong></p>
+<ul>
+<li>Gamerscore greater than</li>
+<li>Gamerscore less than</li>
+</ul>
+</li>
+<li><p><strong>Social Metrics</strong></p>
+<ul>
+<li>Followers greater than / less than</li>
+<li>Following greater than / less than</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p><strong>Rule Logic:</strong> Within a single rule, <strong>all conditions must be met</strong> for the action to be executed. If any condition is not met, the rule will not trigger.</p>
+</blockquote>
+<doc-anchor-target id="supported-device-platforms">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#supported-device-platforms">#</doc-anchor-trigger>
+        <span>Supported Device Platforms</span>
+    </h3>
+</doc-anchor-target>
+<p>Device-based rules can be used to enforce platform-specific Realms. Supported platforms include:</p>
+<ul>
+<li>Android</li>
+<li>iOS</li>
+<li>Windows</li>
+<li>Xbox</li>
+<li>PlayStation</li>
+<li>Nintendo</li>
+</ul>
+<p>This makes Member Gate suitable for use-cases such as:</p>
+<ul>
+<li>Console-only PvP</li>
+<li>Mobile-only casual Realms</li>
+<li>Restricting Windows joins during targeted abuse periods</li>
+</ul>
+<doc-anchor-target id="requirements">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#requirements">#</doc-anchor-trigger>
+        <span>Requirements</span>
+    </h3>
+</doc-anchor-target>
+<p>To use Member Gate effectively, ensure the following are in place:</p>
+<ul>
+<li>The Realm is connected to Realm Bot via the authorised linking flow</li>
+<li>The <strong>Relay Account is actively in-game</strong></li>
+<li>A Discord channel is selected to receive enforcement logs (recommended)</li>
+</ul>
+<doc-anchor-target id="how-to-set-up">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#how-to-set-up">#</doc-anchor-trigger>
+        <span>How to Set Up</span>
+    </h3>
+</doc-anchor-target>
+<ol>
+<li>Open the <strong>Member Gate</strong> module inside the Realm Bot Dashboard.<br/>
+<img src="../../images/member-gate.png" alt="Member Gate Configuration" /></li>
+<li>Enable <strong>Member Gate</strong> using the main toggle.</li>
+<li>Set the <strong>Discord Destination</strong> channel.
+<ul>
+<li>Kick and ban actions will be logged to this channel for auditing and troubleshooting.</li>
+</ul>
+</li>
+<li>Under <strong>Moderation Rules</strong>, create a rule:
+<ul>
+<li>Provide a short, clear rule name (for example: <code v-pre>Console Only</code> or <code v-pre>Block Low Gamerscore</code>).</li>
+<li>Select the <strong>Moderation Action</strong>: <strong>Kick</strong> or <strong>Ban</strong>.</li>
+<li>Add one or more <strong>Conditions</strong> and configure their values.</li>
+</ul>
+</li>
+<li>Confirm your Relay Account is <strong>online in the Realm</strong>, then test by joining with a permitted account and (if possible) a non-permitted account.</li>
+</ol>
+<doc-anchor-target id="recommended-configuration-approach">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#recommended-configuration-approach">#</doc-anchor-trigger>
+        <span>Recommended Configuration Approach</span>
+    </h3>
+</doc-anchor-target>
+<p>To reduce disruption and avoid accidental over-enforcement:</p>
+<ul>
+<li>Start with <strong>Kick</strong> rather than Ban while tuning conditions.</li>
+<li>Add rules gradually and monitor results through your Discord Destination logs.</li>
+<li>Prefer device rules for “hard” restrictions (e.g., console-only), and threshold rules for “soft” filtering (e.g., suspicious profiles).</li>
+</ul>
+<doc-anchor-target id="example-rule-patterns">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#example-rule-patterns">#</doc-anchor-trigger>
+        <span>Example Rule Patterns</span>
+    </h3>
+</doc-anchor-target>
+<p><strong>Console-only Realm</strong></p>
+<ul>
+<li>Action: <strong>Kick</strong></li>
+<li>Conditions:
+<ul>
+<li>Device excludes: Android, iOS, Windows</li>
+</ul>
+</li>
+</ul>
+<p><strong>Filter low-signal accounts</strong></p>
+<ul>
+<li>Action: <strong>Kick</strong></li>
+<li>Conditions:
+<ul>
+<li>Gamerscore less than: <em>your chosen threshold</em></li>
+<li>Followers less than: <em>your chosen threshold</em></li>
+</ul>
+</li>
+</ul>
+<p><strong>High-trust access</strong></p>
+<ul>
+<li>Action: <strong>Kick</strong> or <strong>Ban</strong> (use caution)</li>
+<li>Conditions:
+<ul>
+<li>Gamerscore greater than: <em>threshold</em></li>
+<li>Followers greater than: <em>threshold</em></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong> Social and gamerscore thresholds can produce false positives depending on your community demographics (new players, alt accounts, privacy settings, etc.). Use conservative thresholds and iterate.</p>
+</blockquote>
+<doc-anchor-target id="best-practices">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#best-practices">#</doc-anchor-trigger>
+        <span>Best Practices</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li>Restrict who can modify Member Gate settings in your staff structure.</li>
+<li>Use a dedicated Discord log channel such as <code v-pre>#automod-logs</code>.</li>
+<li>Publish clear entry expectations to players if you enforce strict platform or profile requirements.</li>
+<li>Maintain a simple appeal path if a legitimate player is removed by automation.</li>
+</ul>
+<doc-anchor-target id="common-issues">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#common-issues">#</doc-anchor-trigger>
+        <span>Common Issues</span>
+    </h3>
+</doc-anchor-target>
+<p><strong>Member Gate is enabled, but no actions occur</strong></p>
+<ul>
+<li>Confirm the <strong>Relay Account is in-game</strong>.</li>
+<li>Verify the correct Realm is selected in the dashboard.</li>
+<li>Ensure rules are created and saved (and not empty).</li>
+<li>Check the Discord Destination channel for enforcement messages.</li>
+</ul>
+<p><strong>Legitimate players are being removed</strong></p>
+<ul>
+<li>Lower the strictness of gamerscore/follower thresholds.</li>
+<li>Switch from <strong>Ban</strong> to <strong>Kick</strong> while tuning.</li>
+<li>Prefer device-only restrictions if your goal is platform separation rather than profile filtering.</li>
 </ul>
 
                                 
@@ -189,20 +380,20 @@
                             
                                 <nav id="retype-nextprev" class="print:hidden flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../../commands/realm/unban/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../integrations/tebex/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-base-text-muted">Previous</span>
-                                                <span class="block mt-1">/realm unban</span>
+                                                <span class="block mt-1">Tebex</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../../commands/stats/rank/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../modules/bot-detection/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-base-text-muted">Next</span>
-                                                <span class="block mt-1">/rank</span>
+                                                <span class="block mt-1">Bot Detection</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -246,6 +437,6 @@
 
     <div id="retype-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "/leaderboard", level: 3, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Member Gate", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
