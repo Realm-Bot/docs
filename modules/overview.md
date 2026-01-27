@@ -1,7 +1,7 @@
 ---
 label: Overview
 description: A central hub for managing your Realm connection, bot join behaviour, Gametest pack dependencies, and all available Realm Modules.
-order: 1
+order: 7
 author:
   name: Frazer
   avatar: https://avatars.githubusercontent.com/u/136254012?s=96&v=4

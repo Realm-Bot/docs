@@ -1,7 +1,7 @@
 ---
 label: Bot Detection
 description: Mitigate malicious bot accounts joining public Realms by automatically detecting and removing suspicious connections. Includes an Experimental mode for advanced detection.
-order: 22
+order: 4
 author:
   name: Frazer
   avatar: https://avatars.githubusercontent.com/u/136254012?s=96&v=4

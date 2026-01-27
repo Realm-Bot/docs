@@ -1,7 +1,7 @@
 ---
 label: Scoreboard Leaderboards
 description: Publish live in-game scoreboard rankings to Discord, allowing players to track progress and compete through automated leaderboard embeds.
-order: 25
+order: 1
 author:
   name: Frazer
   avatar: https://avatars.githubusercontent.com/u/136254012?s=96&v=4

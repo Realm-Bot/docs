@@ -1,7 +1,7 @@
 ---
 label: Chat Relay
 description: Connect your Realm and Discord with a two-way chat bridge, allowing staff and players to stay aligned in real time across both platforms.
-order: 20
+order: 6
 author:
   name: Frazer
   avatar: https://avatars.githubusercontent.com/u/136254012?s=96&v=4
