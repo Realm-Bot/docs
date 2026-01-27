@@ -2,6 +2,7 @@
 label: Terms Of Service
 order: 2
 icon: alert
+visibility: hidden
 ---
 
 # Terms of service

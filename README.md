@@ -1,6 +1,7 @@
 ---
 label: Landing
 icon: home
+order: 150
 description: Official Realm Bot documentation for managing Minecraft Bedrock Realms through Discord-setup guides, modules, security tools, and integrations.
 authors:
   - name: Kaii

@@ -2,6 +2,7 @@
 label: Data & Privacy policy 
 order: 3
 icon: info 
+visibility: hidden
 ---
 
 # Data & Privacy policy
