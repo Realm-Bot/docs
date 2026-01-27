@@ -9,32 +9,34 @@
     <meta name="generator" content="Retype 3.11.0">
 
     <!-- Primary Meta Tags -->
-    <title>/allowlist check | Realm Bot Docs</title>
-    <meta name="title" content="/allowlist check | Realm Bot Docs">
-    <meta name="description" content="Check if a player is on the allowlist.">
+    <title>Leveling System | Realm Bot Docs</title>
+    <meta name="title" content="Leveling System | Realm Bot Docs">
+    <meta name="description" content="Award progressive XP based on playtime, automatically increasing difficulty at higher levels, with configurable in-game and Discord level-up announcements.">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://help.realmbot.dev/commands/allowlist/check/">
+    <link rel="canonical" href="https://help.realmbot.dev/modules/leveling-system/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://help.realmbot.dev/commands/allowlist/check/">
-    <meta property="og:title" content="/allowlist check | Realm Bot Docs">
-    <meta property="og:description" content="Check if a player is on the allowlist.">
+    <meta property="og:url" content="https://help.realmbot.dev/modules/leveling-system/">
+    <meta property="og:title" content="Leveling System | Realm Bot Docs">
+    <meta property="og:description" content="Award progressive XP based on playtime, automatically increasing difficulty at higher levels, with configurable in-game and Discord level-up announcements.">
+    <meta property="og:image" content="https://help.realmbot.dev/images/leveling-system.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://help.realmbot.dev/commands/allowlist/check/">
-    <meta property="twitter:title" content="/allowlist check | Realm Bot Docs">
-    <meta property="twitter:description" content="Check if a player is on the allowlist.">
+    <meta property="twitter:url" content="https://help.realmbot.dev/modules/leveling-system/">
+    <meta property="twitter:title" content="Leveling System | Realm Bot Docs">
+    <meta property="twitter:description" content="Award progressive XP based on playtime, automatically increasing difficulty at higher levels, with configurable in-game and Discord level-up announcements.">
+    <meta property="twitter:image" content="https://help.realmbot.dev/images/leveling-system.png">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
-    <link href="../../../resources/css/retype.css?v=3.11.0.822796799536" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.11.0.822796799536" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.822796799536" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.822796799536" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.11.0.822796799536" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.11.0.822796799536" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -49,10 +51,10 @@
                 <!-- Logo -->
                 <div class="flex items-center justify-between h-full py-2 md:w-75">
                     <div class="flex items-center px-2 md:px-6">
-                        <a id="retype-branding-logo" href="../../../" class="flex items-center leading-snug text-2xl">
+                        <a id="retype-branding-logo" href="../../" class="flex items-center leading-snug text-2xl">
                             <span class="w-10 mr-2 grow-0 shrink-0 overflow-hidden">
-                                <img class="max-h-10 dark:hidden md:inline-block" src="../../../images/logo.png">
-                                <img class="max-h-10 hidden dark:inline-block" src="../../../images/logo.png">
+                                <img class="max-h-10 dark:hidden md:inline-block" src="../../images/logo.png">
+                                <img class="max-h-10 hidden dark:inline-block" src="../../images/logo.png">
                             </span>
                             <span class="dark:text-white font-bold line-clamp-1 md:line-clamp-2">Realm Bot</span>
                         </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">Docs</span>
@@ -153,10 +155,10 @@
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="retype-sidebar-right-toggle"></div>
                                 <!-- Page content  -->
-<doc-anchor-target id="allowlist-check" class="break-words">
+<doc-anchor-target id="leveling-system" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#allowlist-check">#</doc-anchor-trigger>
-        <span><code v-pre>/allowlist check</code></span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#leveling-system">#</doc-anchor-trigger>
+        <span>Leveling System</span>
     </h1>
 </doc-anchor-target>
 <div class="-mt-3 mb-12 flex flex-wrap text-sm text-gray-400 dark:text-dark-350 items-center print:justify-center">
@@ -164,18 +166,132 @@
         <div>By</div>
         <div class="ml-2 flex items-center">
           <div class="shrink-0 w-8 h-8 overflow-hidden rounded-full">
-            <img class="object-cover" src="https://avatars.githubusercontent.com/u/72093371?s=96&amp;v=4">
+            <img class="object-cover" src="https://avatars.githubusercontent.com/u/136254012?s=96&amp;v=4">
           </div>
-          <div class="ml-1 whitespace-nowrap text-gray-500 dark:text-dark-350">Kaii</div>
+          <div class="ml-1 whitespace-nowrap text-gray-500 dark:text-dark-350">Frazer</div>
         </div>
     </div>
 </div>
 
-<p>Check if a player is on the allowlist.</p>
+<doc-anchor-target id="what-is-the-leveling-system">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#what-is-the-leveling-system">#</doc-anchor-trigger>
+        <span>What is the Leveling System?</span>
+    </h3>
+</doc-anchor-target>
+<p>The Leveling System is a progression module that awards players <strong>XP over time</strong> based on their <strong>in-game playtime</strong>. As players accumulate XP, they level up through a curve that naturally becomes more demanding at higher levels. This ensures early progression feels rewarding while long-term progression remains meaningful for committed players.</p>
+<doc-anchor-target id="how-xp-and-levels-work">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#how-xp-and-levels-work">#</doc-anchor-trigger>
+        <span>How XP and Levels Work</span>
+    </h3>
+</doc-anchor-target>
+<p>XP is awarded progressively as players remain active in-game. The system uses a <strong>progression curve</strong>, meaning:</p>
 <ul>
-<li><strong>Permissions</strong>: Authorized Users Only (Premium)</li>
-<li><strong>Usage</strong>: <code v-pre>/allowlist check &lt;user&gt;</code></li>
+<li>Lower levels are reached more quickly to support onboarding and early engagement.</li>
+<li>Higher levels require more XP, preventing rapid endgame progression and keeping long-term progression competitive.</li>
 </ul>
+<p>This makes the Leveling System suitable for:</p>
+<ul>
+<li>Long-running survival Realms</li>
+<li>Competitive communities seeking a consistent grind</li>
+<li>Staff-managed events where activity-based rewards matter</li>
+</ul>
+<doc-anchor-target id="level-up-announcements">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#level-up-announcements">#</doc-anchor-trigger>
+        <span>Level-Up Announcements</span>
+    </h3>
+</doc-anchor-target>
+<p>When a player levels up, Realm Bot can optionally announce this:</p>
+<ul>
+<li><strong>In-Game</strong> (Minecraft chat)</li>
+<li><strong>In Discord</strong> (a dedicated announcement channel)</li>
+</ul>
+<p>Both announcement destinations are configurable, allowing you to keep level-up messages visible without disrupting gameplay or staff operations.</p>
+<doc-anchor-target id="custom-level-up-message">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#custom-level-up-message">#</doc-anchor-trigger>
+        <span>Custom Level-Up Message</span>
+    </h3>
+</doc-anchor-target>
+<p>You may customise the message used for level-up announcements. The message supports variable placeholders that are replaced dynamically at runtime:</p>
+<ul>
+<li><code v-pre>{user}</code> - the player’s current username</li>
+<li><code v-pre>{level}</code> - the player’s new level</li>
+<li><code v-pre>{rank}</code> - the player’s ranking relative to others</li>
+</ul>
+<p>Example:</p>
+<p><code v-pre>Congratulations {user} for reaching level {level}! You are now ranked #{rank}.</code></p>
+<blockquote>
+<p><strong>Note:</strong> Use placeholders exactly as shown. Incorrect formatting may result in variables not being replaced as expected.</p>
+</blockquote>
+<doc-anchor-target id="requirements">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#requirements">#</doc-anchor-trigger>
+        <span>Requirements</span>
+    </h3>
+</doc-anchor-target>
+<p>To use the Leveling System:</p>
+<ul>
+<li>The module must be enabled in the Realm Bot Dashboard.</li>
+<li>Players must be actively playing in the Realm to accrue playtime-based XP.</li>
+</ul>
+<doc-anchor-target id="how-to-set-up">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#how-to-set-up">#</doc-anchor-trigger>
+        <span>How to Set Up</span>
+    </h3>
+</doc-anchor-target>
+<ol>
+<li>Open the <strong>Leveling System</strong> module inside the Realm Bot Dashboard.<br/>
+<img src="../../images/leveling-system.png" alt="Leveling System Configuration" /></li>
+<li>Enable the <strong>Leveling System</strong> toggle.</li>
+<li>(Optional) Select a <strong>Discord Destination</strong> channel for level-up announcements.</li>
+<li>Under <strong>Announcement Settings</strong>, choose whether to <strong>Send In-Game Messages</strong> for level-ups.</li>
+<li>Edit the <strong>Custom Level Up Message</strong> to match your community’s style, using <code v-pre>{user}</code>, <code v-pre>{level}</code>, and <code v-pre>{rank}</code> where appropriate.</li>
+</ol>
+<doc-anchor-target id="recommended-configuration">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#recommended-configuration">#</doc-anchor-trigger>
+        <span>Recommended Configuration</span>
+    </h3>
+</doc-anchor-target>
+<p>For community Realms:</p>
+<ul>
+<li>Enable <strong>in-game announcements</strong> if level-ups are a core part of the player experience.</li>
+<li>Use a dedicated Discord channel such as <code v-pre>#level-ups</code> to preserve visibility without cluttering general chat.</li>
+</ul>
+<p>For competitive or staff-heavy Realms:</p>
+<ul>
+<li>Consider disabling in-game announcements and using Discord only.</li>
+<li>Keep your message concise and consistent to avoid spam during peak activity.</li>
+</ul>
+<doc-anchor-target id="operational-notes">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#operational-notes">#</doc-anchor-trigger>
+        <span>Operational Notes</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li>The Leveling System is designed to reward sustained engagement rather than short bursts of play.</li>
+<li>The progression curve is intended to maintain long-term value; higher levels should remain an achievement.</li>
+<li>If you are migrating from older leveling data, use the dashboard migration option where available, and avoid resetting levels unless you intend to fully restart progression for the Realm.</li>
+</ul>
+<doc-anchor-target id="data-actions-and-safety">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#data-actions-and-safety">#</doc-anchor-trigger>
+        <span>Data Actions and Safety</span>
+    </h3>
+</doc-anchor-target>
+<p>The module may provide administrative actions such as:</p>
+<ul>
+<li><strong>Migrating data</strong> from a prior leveling system</li>
+<li><strong>Resetting all user levels</strong> for the Realm</li>
+</ul>
+<blockquote>
+<p><strong>Warning:</strong> Reset actions are typically permanent. Use resets only when you have confirmed your intent and communicated the change to your community in advance.</p>
+</blockquote>
 
                                 
                                 <!-- Required only on API pages -->
@@ -185,20 +301,20 @@
                             
                                 <nav id="retype-nextprev" class="print:hidden flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../../commands/allowlist/add/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../integrations/tebex/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-base-text-muted">Previous</span>
-                                                <span class="block mt-1">/allowlist add</span>
+                                                <span class="block mt-1">Tebex</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../../commands/allowlist/list/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../modules/member-gate/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-base-text-muted">Next</span>
-                                                <span class="block mt-1">/allowlist list</span>
+                                                <span class="block mt-1">Member Gate</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -242,6 +358,6 @@
 
     <div id="retype-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "/allowlist check", level: 3, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Leveling System", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
