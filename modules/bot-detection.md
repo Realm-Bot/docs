@@ -11,8 +11,6 @@ author:
 
 Bot Detection is a protective feature designed to mitigate malicious **bot accounts** that join Realms to cause **latency**, **performance degradation**, or **gameplay disruption**. It is primarily intended for Realms that use **public invite codes**, where automated join attempts are more likely to occur.
 
-{{ badge text="Beta Feature" type="warning" }}
-
 > **Important:** Bot Detection reduces risk and disruption, but it cannot guarantee absolute prevention. Minecraft Realms are subject to platform constraints, and detection is based on observable behaviour at join-time.
 
 ### When Bot Detection is Recommended

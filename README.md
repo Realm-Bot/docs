@@ -1,57 +1,108 @@
 ---
 label: Landing
 icon: home
+description: Official Realm Bot documentation for managing Minecraft Bedrock Realms through Discord-setup guides, modules, security tools, and integrations.
 authors:
   - name: Kaii
     avatar: https://avatars.githubusercontent.com/u/72093371?s=96&v=4
   - name: SeaLeopard35302
     avatar: https://avatars.githubusercontent.com/u/78130400?s=96&v=4
+  - name: Frazer
+    avatar: https://avatars.githubusercontent.com/u/136254012?s=96&v=4
+
 ---
 
 # Welcome to Realm Bot Documentation
 
 ![](/images/brand/banner.png)
 
+Realm Bot is a Discord-first management platform for **Minecraft Bedrock Realms**, built to help owners and staff operate their Realm with greater consistency, speed, and visibility - without needing to be in-game at all times.
+
+This documentation explains how Realm Bot works, how to configure each feature, and how to run a Realm safely using recommended operational practices.
+
+---
+
 ## What is Realm Bot?
 
-Realm Bot is a versatile Discord bot designed to simplify the management of your Minecraft Bedrock Realm directly from Discord. Whether you're an experienced server owner or just starting out, Realm Bot offers a wide range of features to make your server administration a breeze. Here are some of the key features that Realm Bot provides:
+Realm Bot is a Discord bot designed to streamline Realm administration through a central dashboard and Discord-based tooling. It supports day-to-day moderation, structured automation, live chat connectivity, and optional premium modules intended for larger communities and public-code Realms.
+
+Realm Bot is suitable for:
+- Small private Realms that want convenient management
+- Public-code Realms that require stronger moderation and stability tooling
+- Staffed communities that benefit from logging, workflows, and automation
+- Competitive Realms that want structured leaderboards and progression
+
+---
+
+## Core Capabilities
 
 ### Realm Management
+Manage the fundamental operations of your Realm from Discord and the dashboard.
 
-- **Start, Stop, and Restart**: Control the status of your realm with ease, all from the comfort of your Discord server.
-- **Invite and Remove Players**: Easily manage your player roster by inviting or removing members right within Discord.
+- **Start, Stop, and Restart** your Realm when required.
+- **Invite and remove players** without manual in-game administration.
+- Maintain a more consistent management workflow for staff teams.
 
-### Moderation
+### Moderation and Access Control
+Operate your Realm with clearer enforcement tools and reduced manual workload.
 
-- **Mute, Kick, and Ban Players**: Maintain a harmonious server environment by taking swift action when necessary.
-- **Whitelist Control**: Manage who can join your realm by setting up a whitelist from Discord.
+- **Kick and ban** actions for rapid incident response.
+- **Whitelist-oriented control** for communities that require curated entry.
+- Optional automation modules (where available) to reduce repeat issues.
 
-### Chat Relay
+### Chat Relay and Communication
+Keep staff and community aligned across platforms.
 
-- **Stay Connected**: Relay chat messages between Discord and your realm, ensuring constant communication with your players.
+- Relay chat between your Realm and Discord for **real-time coordination**.
+- Improve visibility for staff who are online in Discord but not actively in-game.
+- Create a reliable hub for conversations during events and peak traffic.
 
-### Game Settings
+### Game Settings and Administration
+Adjust operational settings without interrupting active play.
 
-- **Gamemode and Difficulty**: Adjust game settings like gamemode and difficulty without the need to log into the game.
+- Configure key settings such as **gamemode** and **difficulty** when permitted.
+- Make live adjustments faster during events and content cycles.
 
-### Broadcasting
+### Broadcasting and Messaging
+Send announcements and operational messages efficiently.
 
-- **Direct Messages**: Send messages directly to your realm players, even if they're not in Discord.
+- Push messages to players where supported by your configuration.
+- Maintain consistent communication standards across staff and time zones.
 
-### Chat Logs
+### Logging and Visibility
+Preserve context and reduce reliance on screenshots.
 
-- **Review Chat Activity**: Keep an eye on what your players have been saying with the ability to view chat logs.
+- Review chat activity where logging is enabled.
+- Maintain an audit trail for staff operations and incident review.
 
-### Bot Control
+### Security and Stability Tooling
+Support Realms that are vulnerable to abuse, especially those using public codes.
 
-- **Block Disruptive Bots**: Prevent other bots from causing disruptions in your realm.
+- Mitigation features for disruptive activity (where configured).
+- Tools designed to improve response time and operational clarity during incidents.
 
-### Tebex Integration
+### Integrations
+Extend Realm Bot with connected services to automate routine tasks.
 
-- **Monetization**: Seamlessly integrate with Tebex, a popular Minecraft webstore platform, to sell in-game items and services to your players.
+- **Tebex integration** (Premium) for in-game fulfilment workflows where supported by your setup.
 
-Realm Bot is the perfect tool to streamline your Minecraft Bedrock Realm management, saving you time and effort. The best part? It's available for free with a premium tier that includes additional features.
+---
 
-## Join Our Community
+## Premium Modules
+
+Realm Bot includes a free tier, with a premium tier that unlocks advanced modules for larger Realms and staff teams. Premium modules are designed for:
+- High-activity Realms
+- Public-code communities
+- Realms that require automation and operational tooling
+
+If you are uncertain whether you need Premium, start with the free tier and only upgrade once you know which modules your Realm actually benefits from.
+
+---
+
+## Community and Support
+
+If you need assistance, updates, or community resources, join the official Discord server below.
 
 <iframe src="https://discord.com/widget?id=700274742183329792&theme=dark" width="100%" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+
+---
