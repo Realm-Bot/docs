@@ -1,6 +1,6 @@
 ---
 label: Member Gate
-description: Automatically kick or ban joining players based on Xbox profile signals—such as device platform, gamerscore, and social metrics—to enforce strict entry standards.
+description: Automatically kick or ban joining players based on Xbox profile signals - such as device platform, gamerscore, and social metrics - to enforce strict entry standards.
 order: 23
 author:
   name: Frazer
@@ -9,7 +9,7 @@ author:
 
 ### What is Member Gate?
 
-Member Gate is an **automated entry moderation system** that evaluates players as they join your Realm and applies an action—typically **Kick** or **Ban** - based on rules you define. It is designed for Realm Owners who need stricter access control than invite codes alone can provide, especially for public or semi-public Realms.
+Member Gate is an **automated entry moderation system** that evaluates players as they join your Realm and applies an action -typically **Kick** or **Ban** - based on rules you define. It is designed for Realm Owners who need stricter access control than invite codes alone can provide, especially for public or semi-public Realms.
 
 Member Gate is particularly effective for Realms that want to restrict gameplay to specific player types (for example, a **Console-Only PvP Realm**), or for communities that need basic automated filtering for suspicious join patterns.
 
