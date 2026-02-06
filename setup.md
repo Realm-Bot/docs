@@ -1,6 +1,6 @@
 ---
 label: Getting Started
-description: Connect your Minecraft Bedrock Realm to Discord in three steps: link your Microsoft account, run the connect command, then configure modules and settings.
+description: Connect your Minecraft Bedrock Realm to Discord in three steps. Link your Microsoft account, run the connect command, then configure modules and settings.
 icon: rocket
 order: 101
 authors:
