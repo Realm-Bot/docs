@@ -3,40 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.823750884144">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.823751333737">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
 
     <!-- Primary Meta Tags -->
-    <title>Chat Relay | Realm Bot Docs</title>
-    <meta name="title" content="Chat Relay | Realm Bot Docs">
-    <meta name="description" content="Connect your Realm and Discord with a two-way chat bridge, allowing staff and players to stay aligned in real time across both platforms.">
+    <title>Realm Console | Realm Bot Docs</title>
+    <meta name="title" content="Realm Console | Realm Bot Docs">
+    <meta name="description" content="Execute Minecraft commands directly from a secured Discord channel, using your in-game Relay Account as the command runner.">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://help.realmbot.dev/modules/chat-relay/">
+    <link rel="canonical" href="https://help.realmbot.dev/realm-modules/realm-console/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://help.realmbot.dev/modules/chat-relay/">
-    <meta property="og:title" content="Chat Relay | Realm Bot Docs">
-    <meta property="og:description" content="Connect your Realm and Discord with a two-way chat bridge, allowing staff and players to stay aligned in real time across both platforms.">
-    <meta property="og:image" content="https://help.realmbot.dev/images/chat-relay.png">
+    <meta property="og:url" content="https://help.realmbot.dev/realm-modules/realm-console/">
+    <meta property="og:title" content="Realm Console | Realm Bot Docs">
+    <meta property="og:description" content="Execute Minecraft commands directly from a secured Discord channel, using your in-game Relay Account as the command runner.">
+    <meta property="og:image" content="https://help.realmbot.dev/images/realm-console.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://help.realmbot.dev/modules/chat-relay/">
-    <meta property="twitter:title" content="Chat Relay | Realm Bot Docs">
-    <meta property="twitter:description" content="Connect your Realm and Discord with a two-way chat bridge, allowing staff and players to stay aligned in real time across both platforms.">
-    <meta property="twitter:image" content="https://help.realmbot.dev/images/chat-relay.png">
+    <meta property="twitter:url" content="https://help.realmbot.dev/realm-modules/realm-console/">
+    <meta property="twitter:title" content="Realm Console | Realm Bot Docs">
+    <meta property="twitter:description" content="Execute Minecraft commands directly from a secured Discord channel, using your in-game Relay Account as the command runner.">
+    <meta property="twitter:image" content="https://help.realmbot.dev/images/realm-console.png">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
-    <link href="../../resources/css/retype.css?v=3.11.0.823750884144" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.11.0.823751333737" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.11.0.823750884144" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.11.0.823751333737" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.11.0.823750884144" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.11.0.823751333737" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -155,10 +155,10 @@
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="retype-sidebar-right-toggle"></div>
                                 <!-- Page content  -->
-<doc-anchor-target id="chat-relay" class="break-words">
+<doc-anchor-target id="realm-console" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#chat-relay">#</doc-anchor-trigger>
-        <span>Chat Relay</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#realm-console">#</doc-anchor-trigger>
+        <span>Realm Console</span>
     </h1>
 </doc-anchor-target>
 <div class="-mt-3 mb-12 flex flex-wrap text-sm text-gray-400 dark:text-dark-350 items-center print:justify-center">
@@ -173,27 +173,64 @@
     </div>
 </div>
 
-<doc-anchor-target id="what-is-chat-relay">
+<doc-anchor-target id="what-is-the-realm-console">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#what-is-chat-relay">#</doc-anchor-trigger>
-        <span>What is Chat Relay?</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#what-is-the-realm-console">#</doc-anchor-trigger>
+        <span>What is the Realm Console?</span>
     </h3>
 </doc-anchor-target>
-<p>Chat Relay is a <strong>two-way communication bridge</strong> between your <strong>Minecraft Bedrock Realm chat</strong> and a selected <strong>Discord channel</strong>. It is designed to maintain continuity between in-game activity and your community’s primary coordination space, enabling faster responses, better visibility, and more consistent moderation workflow.</p>
-<doc-anchor-target id="what-chat-relay-relays">
+<p>The Realm Console is a dedicated Discord channel that allows authorised users to execute <strong>Minecraft Bedrock commands</strong> directly into a connected Realm. Messages sent in the configured console channel are interpreted as commands and executed in-game through the <strong>Chat Relay Account</strong>.</p>
+<p>This module is designed for operational administration, rapid moderation actions, and streamlined management - without requiring staff to be actively in-game on a client.</p>
+<doc-anchor-target id="how-it-works">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#what-chat-relay-relays">#</doc-anchor-trigger>
-        <span>What Chat Relay Relays</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#how-it-works">#</doc-anchor-trigger>
+        <span>How it Works</span>
     </h3>
 </doc-anchor-target>
-<p>Chat Relay can relay multiple categories of activity from Minecraft to Discord, depending on your configuration:</p>
+<p>The Realm Console functions by using your Relay Account as the in-game command runner:</p>
 <ul>
-<li><strong>Player Chat Messages:</strong> Standard messages sent by players in Realm chat.</li>
-<li><strong>Tellraw Messages:</strong> Command-generated, formatted outputs (commonly used for announcements, rewards, systems output, and scripted events).</li>
-<li><strong>Death Messages:</strong> Player death notifications for visibility during gameplay and moderation review.</li>
+<li>A user sends a message in the designated <strong>Realm Console</strong> Discord channel.</li>
+<li>Realm Bot forwards the message to the Realm via the <strong>Chat Relay Account</strong>.</li>
+<li>The Relay Account executes the message as a command in Realm chat.</li>
+</ul>
+<p>Because the command is executed by the Relay Account, all command behaviour (permissions, targets, and side effects) follow the same rules as if the Relay Account typed the command manually in-game.</p>
+<p><figure class="content-center">
+    <img src="../../images/realm-console.png" alt="Realm Console" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption">Realm Console</figcaption>
+</figure>
+</p>
+<doc-anchor-target id="command-example">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#command-example">#</doc-anchor-trigger>
+        <span>Command Example</span>
+    </h3>
+</doc-anchor-target>
+<p>If a user types the following into the Realm Console channel:</p>
+<p><code v-pre>gamemode c @a</code></p>
+<p>The Realm will attempt to run:</p>
+<ul>
+<li><code v-pre>gamemode c @a</code><br />
+(Set all players to Creative Mode)</li>
+</ul>
+<doc-anchor-target id="relay-account-behaviour-and-targeting">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#relay-account-behaviour-and-targeting">#</doc-anchor-trigger>
+        <span>Relay Account Behaviour and Targeting</span>
+    </h3>
+</doc-anchor-target>
+<p>Commands are executed <strong>as the Relay Account</strong>. This is important when using selectors or player-specific commands.</p>
+<p>For example:</p>
+<ul>
+<li>If the Relay Account is Realm Bot and a command is run that targets the executor (such as a command that implicitly affects the sender), the Relay Account may be affected.</li>
+</ul>
+<p>This is most relevant when:</p>
+<ul>
+<li>Using <code v-pre>@s</code></li>
+<li>Running commands that assume the executor is a player</li>
+<li>Running commands without explicit targets</li>
 </ul>
 <blockquote>
-<p><strong>Note:</strong> Chat Relay is a communications utility. It does not independently “secure” or “protect” a Realm. All messages are still governed by your Realm rules and Discord policies.</p>
+<p><strong>Important:</strong> When running player-specific commands, always specify explicit targets (for example <code v-pre>@a</code>, <code v-pre>@p</code>, a username, or a tagged group) to avoid unintended effects on the Relay Account.</p>
 </blockquote>
 <doc-anchor-target id="requirements">
     <h3>
@@ -201,82 +238,66 @@
         <span>Requirements</span>
     </h3>
 </doc-anchor-target>
-<p>To use Chat Relay as intended, ensure the following are in place:</p>
+<p>To use the Realm Console, you must have:</p>
 <ul>
-<li>An <strong>active Premium subscription</strong>, where applicable to your deployment.</li>
-<li>A Realm that is successfully connected to Realm Bot via the authorised account-linking flow.</li>
-<li>A Discord channel designated for relay output (strongly recommended).</li>
+<li>A configured and functioning <strong>Chat Relay Account</strong> connected to the Realm.</li>
+<li>The Relay Account actively present in the Realm (in-game).</li>
+<li>A designated Discord channel selected as the Realm Console.</li>
 </ul>
-<doc-anchor-target id="how-to-set-up">
+<p>If the Relay Account is not in-game, commands cannot be executed.</p>
+<doc-anchor-target id="access-control-and-security">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#how-to-set-up">#</doc-anchor-trigger>
-        <span>How to Set Up</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#access-control-and-security">#</doc-anchor-trigger>
+        <span>Access Control and Security</span>
     </h3>
 </doc-anchor-target>
-<ol>
-<li>Open the <strong>Chat Relay</strong> module inside the Realm Bot Dashboard.<br/>
-<img src="../../images/chat-relay.png" alt="Chat Relay Configuration" /></li>
-<li>Enable <strong>Chat Relay</strong> using the <strong>Chat Relay Configuration</strong> toggle.</li>
-<li>Set the <strong>Discord Destination</strong> channel (this is where Realm messages will be posted).</li>
-<li>Under <strong>Message Types</strong>, enable the categories you want relayed to Discord:
+<p>The Realm Console is highly privileged by design. Any user who can send messages in the console channel can attempt to run commands in the Realm.</p>
+<p>For this reason, you should:</p>
 <ul>
-<li><strong>Player Chat Messages</strong></li>
-<li><strong>Tellraw Messages</strong></li>
-<li><strong>Death Messages</strong></li>
+<li>Restrict the channel so only <strong>trusted in-game Administrators</strong> can access it.</li>
+<li>Prevent general members from viewing or posting in the console channel.</li>
+<li>Treat console output as operational infrastructure, not community chat.</li>
 </ul>
-</li>
-</ol>
-<p>Once enabled, relay output should begin immediately when relevant messages occur in the Realm.</p>
-<doc-anchor-target id="recommended-configuration">
+<p>Failure to secure this channel may result in:</p>
+<ul>
+<li>Abuse of commands</li>
+<li>Griefing actions</li>
+<li>Unauthorised administrative changes</li>
+<li>Accidental disruption through misuse</li>
+</ul>
+<doc-anchor-target id="syntax-errors-and-safe-usage">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#recommended-configuration">#</doc-anchor-trigger>
-        <span>Recommended Configuration</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#syntax-errors-and-safe-usage">#</doc-anchor-trigger>
+        <span>Syntax Errors and Safe Usage</span>
     </h3>
 </doc-anchor-target>
-<p>For a clean, professional relay channel that remains usable during peak activity:</p>
+<p>If a message is not a valid command, or contains incorrect syntax, Minecraft will return a <strong>syntax error</strong>.</p>
+<p>This is expected behaviour.</p>
+<p>To avoid unnecessary disruption:</p>
 <ul>
-<li>Use a dedicated channel such as <code v-pre>#realm-chat</code>, <code v-pre>#chat-relay</code>, or <code v-pre>#realm-live</code>.</li>
-<li>Enable only the message types you operationally need:
-<ul>
-<li>Public communities: <strong>Player Chat</strong> + (optional) <strong>Death Messages</strong></li>
-<li>Staff operations: <strong>Player Chat</strong> + <strong>Tellraw</strong> (common for system events)</li>
+<li>Ensure your command is correct before sending it.</li>
+<li>Avoid conversational messages in the console channel.</li>
+<li>Use a strict format and consider pinning usage guidance at the top of the channel.</li>
 </ul>
-</li>
-<li>Consider Discord <strong>slowmode</strong> if you anticipate spam or high throughput.</li>
-<li>Treat the relay channel as an extension of in-game chat; apply the same behavioural standards.</li>
-</ul>
-<doc-anchor-target id="discord-permissions">
+<doc-anchor-target id="recommended-operational-practices">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#discord-permissions">#</doc-anchor-trigger>
-        <span>Discord Permissions</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#recommended-operational-practices">#</doc-anchor-trigger>
+        <span>Recommended Operational Practices</span>
     </h3>
 </doc-anchor-target>
-<p>Realm Bot must be able to operate in the destination channel. Ensure it has:</p>
+<p>To keep the Realm Console reliable and safe:</p>
 <ul>
-<li><strong>View Channel</strong></li>
-<li><strong>Send Messages</strong></li>
-<li><strong>Read Message History</strong></li>
+<li>Use a dedicated channel such as <code v-pre>#realm-console</code> or <code v-pre>#console</code>.</li>
+<li>Limit access to a small set of trusted staff.</li>
+<li>Encourage staff to test complex commands in a controlled environment before running them in production.</li>
+<li>Prefer targeted commands (<code v-pre>@a</code>, tags, usernames) over ambiguous or executor-dependent commands.</li>
 </ul>
-<p>If relay output does not appear, channel permissions should be the first item verified.</p>
-<doc-anchor-target id="operational-notes">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#operational-notes">#</doc-anchor-trigger>
-        <span>Operational Notes</span>
-    </h3>
-</doc-anchor-target>
-<p>Chat Relay is most effective when used to support:</p>
+<p>If you require assistance configuring the Realm Console for your Realm, open a support ticket and include:</p>
 <ul>
-<li><strong>Live moderation visibility</strong> (staff can follow incidents without joining immediately)</li>
-<li><strong>Event coordination</strong> (Discord staff can react to in-game developments in real time)</li>
-<li><strong>Community responsiveness</strong> (players receive timely answers without staff context-switching)</li>
-</ul>
-<p>If troubleshooting is required, confirm:</p>
-<ul>
-<li>The correct Realm is selected in the dashboard</li>
-<li>Chat Relay is enabled</li>
-<li>The destination channel is correct</li>
-<li>The Realm connection remains valid</li>
-<li>The required Discord permissions are present</li>
+<li>The Realm name</li>
+<li>The console channel name</li>
+<li>Confirmation that the Relay Account is in-game</li>
+<li>A sample command that is failing and the resulting error output (if any)</li>
 </ul>
 
                                 
@@ -287,20 +308,20 @@
                             
                                 <nav id="retype-nextprev" class="print:hidden flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../modules/overview/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../realm-modules/chat-relay/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-base-text-muted">Previous</span>
-                                                <span class="block mt-1">Overview</span>
+                                                <span class="block mt-1">Chat Relay</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../modules/realm-console/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../realm-modules/bot-detection/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-base-text-muted">Next</span>
-                                                <span class="block mt-1">Realm Console</span>
+                                                <span class="block mt-1">Bot Detection</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -344,6 +365,6 @@
 
     <div id="retype-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Chat Relay", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Realm Console", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
