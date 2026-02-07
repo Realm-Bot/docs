@@ -95,18 +95,18 @@ Recommended content:
 
 These templates are intentionally short, neutral, and procedural.
 
-### Kick (neutral)
+### Kick
 `{target}, you were removed from {realm}. Reason: {reason}. You may rejoin if you follow the rules.`
 
-### Kick (staff-signature style)
+### Kick 
 `{target} was kicked from {realm} by {user}. Reason: {reason}.`
 
 ---
 
-### Ban (temporary)
+### Ban 
 `{target}, you have been banned from {realm}. Reason: {reason}. Duration: {length}.`
 
-### Ban (permanent or unknown duration)
+### Ban
 `{target}, you have been banned from {realm}. Reason: {reason}. If you believe this is an error, contact staff in {guild}.`
 
 ---
@@ -116,10 +116,10 @@ These templates are intentionally short, neutral, and procedural.
 
 ---
 
-### Warn (clear + calm)
+### Warn 
 `{target}, you have received a warning in {guild}. Reason: {reason}. Please stop this behaviour to avoid further action.`
 
-### Warn (minimal)
+### Warn
 `Warning issued to {target}. Reason: {reason}.`
 
 ---
