@@ -1,7 +1,7 @@
 ---
 label: Realm Overview
 description: View essential Realm status, slots, settings, and recent activity from a single dashboard page, with quick access to official Realm management.
-order: 10
+order: 100
 authors:
   - name: Frazer
     avatar: https://avatars.githubusercontent.com/u/136254012?s=96&v=4
