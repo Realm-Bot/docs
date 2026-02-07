@@ -9,32 +9,34 @@
     <meta name="generator" content="Retype 3.11.0">
 
     <!-- Primary Meta Tags -->
-    <title>/world join | Realm Bot Docs</title>
-    <meta name="title" content="/world join | Realm Bot Docs">
-    <meta name="description" content="Connects the bot to the Realm's game server. This allows the bot to track chats, events, and interactions in real-time.">
+    <title>World Management | Realm Bot Docs</title>
+    <meta name="title" content="World Management | Realm Bot Docs">
+    <meta name="description" content="Manage your Realm’s active world slot, download backups, replace worlds, and control Behaviour/Resource packs (including upload, enable/disable, and pack priority).">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://help.realmbot.dev/commands/world/join/">
+    <link rel="canonical" href="https://help.realmbot.dev/realm-page/realm-world/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://help.realmbot.dev/commands/world/join/">
-    <meta property="og:title" content="/world join | Realm Bot Docs">
-    <meta property="og:description" content="Connects the bot to the Realm's game server. This allows the bot to track chats, events, and interactions in real-time.">
+    <meta property="og:url" content="https://help.realmbot.dev/realm-page/realm-world/">
+    <meta property="og:title" content="World Management | Realm Bot Docs">
+    <meta property="og:description" content="Manage your Realm’s active world slot, download backups, replace worlds, and control Behaviour/Resource packs (including upload, enable/disable, and pack priority).">
+    <meta property="og:image" content="https://help.realmbot.dev/images/world-management.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://help.realmbot.dev/commands/world/join/">
-    <meta property="twitter:title" content="/world join | Realm Bot Docs">
-    <meta property="twitter:description" content="Connects the bot to the Realm's game server. This allows the bot to track chats, events, and interactions in real-time.">
+    <meta property="twitter:url" content="https://help.realmbot.dev/realm-page/realm-world/">
+    <meta property="twitter:title" content="World Management | Realm Bot Docs">
+    <meta property="twitter:description" content="Manage your Realm’s active world slot, download backups, replace worlds, and control Behaviour/Resource packs (including upload, enable/disable, and pack priority).">
+    <meta property="twitter:image" content="https://help.realmbot.dev/images/world-management.png">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
-    <link href="../../../resources/css/retype.css?v=3.11.0.823746390011" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.11.0.823746390011" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.823746390011" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.823746390011" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.11.0.823746390011" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.11.0.823746390011" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -49,10 +51,10 @@
                 <!-- Logo -->
                 <div class="flex items-center justify-between h-full py-2 md:w-75">
                     <div class="flex items-center px-2 md:px-6">
-                        <a id="retype-branding-logo" href="../../../" class="flex items-center leading-snug text-2xl">
+                        <a id="retype-branding-logo" href="../../" class="flex items-center leading-snug text-2xl">
                             <span class="w-10 mr-2 grow-0 shrink-0 overflow-hidden">
-                                <img class="max-h-10 dark:hidden md:inline-block" src="../../../images/logo.png">
-                                <img class="max-h-10 hidden dark:inline-block" src="../../../images/logo.png">
+                                <img class="max-h-10 dark:hidden md:inline-block" src="../../images/logo.png">
+                                <img class="max-h-10 hidden dark:inline-block" src="../../images/logo.png">
                             </span>
                             <span class="dark:text-white font-bold line-clamp-1 md:line-clamp-2">Realm Bot</span>
                         </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">Docs</span>
@@ -153,10 +155,10 @@
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="retype-sidebar-right-toggle"></div>
                                 <!-- Page content  -->
-<doc-anchor-target id="world-join" class="break-words">
+<doc-anchor-target id="world-management" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#world-join">#</doc-anchor-trigger>
-        <span><code v-pre>/world join</code></span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#world-management">#</doc-anchor-trigger>
+        <span>World Management</span>
     </h1>
 </doc-anchor-target>
 <div class="-mt-3 mb-12 flex flex-wrap text-sm text-gray-400 dark:text-dark-350 items-center print:justify-center">
@@ -164,21 +166,213 @@
         <div>By</div>
         <div class="ml-2 flex items-center">
           <div class="shrink-0 w-8 h-8 overflow-hidden rounded-full">
-            <img class="object-cover" src="https://avatars.githubusercontent.com/u/72093371?s=96&amp;v=4">
+            <img class="object-cover" src="https://avatars.githubusercontent.com/u/136254012?s=96&amp;v=4">
           </div>
-          <div class="ml-1 whitespace-nowrap text-gray-500 dark:text-dark-350">Kaii</div>
+          <div class="ml-1 whitespace-nowrap text-gray-500 dark:text-dark-350">Frazer</div>
         </div>
     </div>
 </div>
 
-<p>Connects the bot to the Realm&#x27;s game server. This allows the bot to track chats, events, and interactions in real-time.</p>
+<p>The <strong>World Management</strong> area lets you manage the files and configuration tied to your Realm’s worlds. It is divided into four sections:</p>
+<ol>
+<li><strong>World Slot</strong> - choose which of your Realm’s world slots you are managing</li>
+<li><strong>World</strong> - download a backup and replace the active world file</li>
+<li><strong>Behaviour Packs</strong> - upload and manage behaviour packs for the active world</li>
+<li><strong>Resource Packs</strong> - upload and manage resource packs for the active world</li>
+</ol>
+<p><figure class="content-center">
+    <img src="../../images/world-management.png" alt="World Management Sections" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption">World Management Sections</figcaption>
+</figure>
+</p>
+<blockquote>
+<p><strong>Important:</strong> All actions in World Management apply to the <strong>currently selected World Slot</strong>. Always confirm you are modifying the correct slot before uploading, replacing, or changing pack order.</p>
+</blockquote>
+<hr>
+<doc-anchor-target id="world-slot">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#world-slot">#</doc-anchor-trigger>
+        <span>World Slot</span>
+    </h2>
+</doc-anchor-target>
+<p>Realms typically provide multiple world slots. The <strong>World Slot</strong> selector allows you to switch between slots and manage each slot independently.</p>
+<p><figure class="content-center">
+    <img src="../../images/world-slot.png" alt="World Slot Selector" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption">World Slot Selector</figcaption>
+</figure>
+</p>
+<p>Typical usage:</p>
 <ul>
-<li><strong>Permissions</strong>: Authorized Users Only (Premium)</li>
-<li><strong>Usage</strong>: <code v-pre>/world join [realm]</code></li>
+<li>Select the slot you want to manage (e.g., Slot 1, Slot 2, Slot 3).</li>
+<li>Confirm the slot name and game mode (e.g., Survival, Adventure) before making changes.</li>
 </ul>
-<p><strong>Arguments</strong>:</p>
+<p><strong>Best practice:</strong> Treat world slots as separate environments. Keep at least one slot reserved for backups/testing if your workflow allows it.</p>
+<hr>
+<doc-anchor-target id="world">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#world">#</doc-anchor-trigger>
+        <span>World</span>
+    </h2>
+</doc-anchor-target>
+<p>The <strong>World</strong> section is used for backups and world replacement on the active slot.</p>
+<p><figure class="content-center">
+    <img src="../../images/world-page.png" alt="World Page" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption">World Page</figcaption>
+</figure>
+</p>
+<doc-anchor-target id="download-world-backup">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#download-world-backup">#</doc-anchor-trigger>
+        <span>Download World (Backup)</span>
+    </h3>
+</doc-anchor-target>
+<p>Use <strong>Download World</strong> to export the current world from the selected slot.</p>
+<p>This is strongly recommended before you:</p>
 <ul>
-<li><code v-pre>realm</code> (Optional): The realm to join. Defaults to all.</li>
+<li>replace the world</li>
+<li>install significant packs</li>
+<li>make major gameplay changes that could require rollback</li>
+</ul>
+<doc-anchor-target id="replace-world">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#replace-world">#</doc-anchor-trigger>
+        <span>Replace World</span>
+    </h3>
+</doc-anchor-target>
+<p>Replace World allows you to upload a new world file to the active slot.</p>
+<ul>
+<li>Supported file type: <strong>.mcworld</strong></li>
+<li>Maximum file size: <strong>100MB</strong> (as displayed in the uploader)</li>
+</ul>
+<blockquote>
+<p><strong>Warning:</strong> Replacing the world will permanently delete the current world for that slot. Download a backup first to avoid losing progress.</p>
+</blockquote>
+<p>Operational guidance:</p>
+<ul>
+<li>Only replace worlds during low-activity windows.</li>
+<li>Announce downtime to staff/players if the Realm will be unavailable during the swap.</li>
+<li>Verify the correct slot is selected before upload.</li>
+</ul>
+<hr>
+<doc-anchor-target id="behaviour-packs">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#behaviour-packs">#</doc-anchor-trigger>
+        <span>Behaviour Packs</span>
+    </h2>
+</doc-anchor-target>
+<p>Behaviour Packs change gameplay logic and behaviour (systems, mechanics, rulesets, entities, etc.). This page lets you upload packs and control which are active on the current world slot.</p>
+<p><figure class="content-center">
+    <img src="../../images/behaviour-pack-tracker.png" alt="Behaviour Pack Tracker" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption">Behaviour Pack Tracker</figcaption>
+</figure>
+</p>
+<doc-anchor-target id="uploading-behaviour-packs">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#uploading-behaviour-packs">#</doc-anchor-trigger>
+        <span>Uploading Behaviour Packs</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li>Supported file types: <strong>.mcpack</strong> or <strong>.zip</strong></li>
+<li>Drag-and-drop is supported, or click to upload.</li>
+</ul>
+<doc-anchor-target id="enabled-vs-disabled-packs">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#enabled-vs-disabled-packs">#</doc-anchor-trigger>
+        <span>Enabled vs Disabled Packs</span>
+    </h3>
+</doc-anchor-target>
+<p>Behaviour Packs are organised into:</p>
+<ul>
+<li><strong>Enabled Behaviour Packs</strong> - active on the world</li>
+<li><strong>Disabled Behaviour Packs</strong> - available but not currently active</li>
+</ul>
+<doc-anchor-target id="pack-priority-order">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#pack-priority-order">#</doc-anchor-trigger>
+        <span>Pack Priority (Order)</span>
+    </h3>
+</doc-anchor-target>
+<p>The Enabled list supports reordering:</p>
+<ul>
+<li><strong>Drag packs to reorder</strong></li>
+<li>Packs <strong>higher</strong> in the list have <strong>higher priority</strong></li>
+</ul>
+<p>This matters when multiple packs modify overlapping content.</p>
+<doc-anchor-target id="management-actions">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#management-actions">#</doc-anchor-trigger>
+        <span>Management Actions</span>
+    </h3>
+</doc-anchor-target>
+<p>Depending on the pack entry controls, you can typically:</p>
+<ul>
+<li>remove/disable a pack from the enabled list</li>
+<li>delete a pack entry (where provided)</li>
+</ul>
+<p><strong>Best practice:</strong></p>
+<ul>
+<li>Introduce packs one at a time and test after each change.</li>
+<li>Keep a record of pack versions used in production.</li>
+<li>If a pack conflicts with another, adjust priority first before removing.</li>
+</ul>
+<hr>
+<doc-anchor-target id="resource-packs">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#resource-packs">#</doc-anchor-trigger>
+        <span>Resource Packs</span>
+    </h2>
+</doc-anchor-target>
+<p>Resource Packs affect presentation (textures, sounds, UI resources, and client-side assets). The Resource Packs page mirrors the Behaviour Packs workflow.</p>
+<p><figure class="content-center">
+    <img src="../../images/resource-pack-tracker.png" alt="Resource Pack Tracker" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption">Resource Pack Tracker</figcaption>
+</figure>
+</p>
+<doc-anchor-target id="uploading-resource-packs">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#uploading-resource-packs">#</doc-anchor-trigger>
+        <span>Uploading Resource Packs</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li>Supported file types: <strong>.mcpack</strong> or <strong>.zip</strong></li>
+<li>Drag-and-drop is supported, or click to upload.</li>
+</ul>
+<doc-anchor-target id="enabled-vs-disabled-packs-1">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#enabled-vs-disabled-packs-1">#</doc-anchor-trigger>
+        <span>Enabled vs Disabled Packs</span>
+    </h3>
+</doc-anchor-target>
+<p>Resource Packs are organised into:</p>
+<ul>
+<li><strong>Enabled Resource Packs</strong></li>
+<li><strong>Disabled Resource Packs</strong></li>
+</ul>
+<p>If no packs exist, you may see empty state messaging prompting you to enable packs from the disabled section.</p>
+<p><strong>Best practice:</strong></p>
+<ul>
+<li>Use resource packs cautiously if you require consistent visual parity across players.</li>
+<li>If you enforce custom visuals, ensure your world/server settings align with your intended “texture pack required” behaviour.</li>
+</ul>
+<hr>
+<doc-anchor-target id="safety-and-operational-notes">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#safety-and-operational-notes">#</doc-anchor-trigger>
+        <span>Safety and Operational Notes</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li><strong>Always download a backup</strong> before replacing a world or making major pack changes.</li>
+<li><strong>Confirm the active slot</strong> before uploading anything.</li>
+<li>If you run a public Realm, consider applying changes during quiet hours and communicating updates in advance.</li>
+<li>If something breaks after a change, revert by:
+<ul>
+<li>removing/disabling the most recent pack changes, or</li>
+<li>restoring a known-good world backup where available.</li>
+</ul>
+</li>
 </ul>
 
                                 
@@ -189,23 +383,16 @@
                             
                                 <nav id="retype-nextprev" class="print:hidden flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../../commands/world/execute/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../realm-page/realm-activity/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-base-text-muted">Previous</span>
-                                                <span class="block mt-1">/world execute</span>
+                                                <span class="block mt-1">Realm Activity</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../../commands/world/leave/">
-                                            <span>
-                                                <span class="block text-xs font-normal text-right text-base-text-muted">Next</span>
-                                                <span class="block mt-1">/world leave</span>
-                                            </span>
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
-                                        </a>
                                     </div>
                                 </nav>
                             </footer>
@@ -246,6 +433,6 @@
 
     <div id="retype-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "/world join", level: 3, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "World Management", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
