@@ -9,32 +9,34 @@
     <meta name="generator" content="Retype 3.11.0">
 
     <!-- Primary Meta Tags -->
-    <title>/realm members | Realm Bot Docs</title>
-    <meta name="title" content="/realm members | Realm Bot Docs">
-    <meta name="description" content="Lists all members of the Realm.">
+    <title>Account Linking | Realm Bot Docs</title>
+    <meta name="title" content="Account Linking | Realm Bot Docs">
+    <meta name="description" content="Configure how members link their Minecraft account to Discord, including automatic role assignment, optional nickname syncing, auto-invites to selected Realms, and join log reporting.">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://help.realmbot.dev/commands/realm/members/">
+    <link rel="canonical" href="https://help.realmbot.dev/server-dashboard/server-account-linking/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://help.realmbot.dev/commands/realm/members/">
-    <meta property="og:title" content="/realm members | Realm Bot Docs">
-    <meta property="og:description" content="Lists all members of the Realm.">
+    <meta property="og:url" content="https://help.realmbot.dev/server-dashboard/server-account-linking/">
+    <meta property="og:title" content="Account Linking | Realm Bot Docs">
+    <meta property="og:description" content="Configure how members link their Minecraft account to Discord, including automatic role assignment, optional nickname syncing, auto-invites to selected Realms, and join log reporting.">
+    <meta property="og:image" content="https://help.realmbot.dev/images/server-account-linking.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://help.realmbot.dev/commands/realm/members/">
-    <meta property="twitter:title" content="/realm members | Realm Bot Docs">
-    <meta property="twitter:description" content="Lists all members of the Realm.">
+    <meta property="twitter:url" content="https://help.realmbot.dev/server-dashboard/server-account-linking/">
+    <meta property="twitter:title" content="Account Linking | Realm Bot Docs">
+    <meta property="twitter:description" content="Configure how members link their Minecraft account to Discord, including automatic role assignment, optional nickname syncing, auto-invites to selected Realms, and join log reporting.">
+    <meta property="twitter:image" content="https://help.realmbot.dev/images/server-account-linking.png">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
-    <link href="../../../resources/css/retype.css?v=3.11.0.823748879737" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.11.0.823748879737" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.823748879737" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.823748879737" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.11.0.823748879737" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.11.0.823748879737" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -49,10 +51,10 @@
                 <!-- Logo -->
                 <div class="flex items-center justify-between h-full py-2 md:w-75">
                     <div class="flex items-center px-2 md:px-6">
-                        <a id="retype-branding-logo" href="../../../" class="flex items-center leading-snug text-2xl">
+                        <a id="retype-branding-logo" href="../../" class="flex items-center leading-snug text-2xl">
                             <span class="w-10 mr-2 grow-0 shrink-0 overflow-hidden">
-                                <img class="max-h-10 dark:hidden md:inline-block" src="../../../images/logo.png">
-                                <img class="max-h-10 hidden dark:inline-block" src="../../../images/logo.png">
+                                <img class="max-h-10 dark:hidden md:inline-block" src="../../images/logo.png">
+                                <img class="max-h-10 hidden dark:inline-block" src="../../images/logo.png">
                             </span>
                             <span class="dark:text-white font-bold line-clamp-1 md:line-clamp-2">Realm Bot</span>
                         </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">Docs</span>
@@ -153,10 +155,10 @@
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="retype-sidebar-right-toggle"></div>
                                 <!-- Page content  -->
-<doc-anchor-target id="realm-members" class="break-words">
+<doc-anchor-target id="account-linking" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#realm-members">#</doc-anchor-trigger>
-        <span><code v-pre>/realm members</code></span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#account-linking">#</doc-anchor-trigger>
+        <span>Account Linking</span>
     </h1>
 </doc-anchor-target>
 <div class="-mt-3 mb-12 flex flex-wrap text-sm text-gray-400 dark:text-dark-350 items-center print:justify-center">
@@ -164,24 +166,180 @@
         <div>By</div>
         <div class="ml-2 flex items-center">
           <div class="shrink-0 w-8 h-8 overflow-hidden rounded-full">
-            <img class="object-cover" src="https://avatars.githubusercontent.com/u/72093371?s=96&amp;v=4">
+            <img class="object-cover" src="https://avatars.githubusercontent.com/u/136254012?s=96&amp;v=4">
           </div>
-          <div class="ml-1 whitespace-nowrap text-gray-500 dark:text-dark-350">Kaii</div>
+          <div class="ml-1 whitespace-nowrap text-gray-500 dark:text-dark-350">Frazer</div>
         </div>
     </div>
 </div>
 
-<p>Lists all members of the Realm.</p>
+<p>Account Linking allows members to associate their <strong>Minecraft (Microsoft/Xbox)</strong> identity with their <strong>Discord</strong> account. Once enabled, Realm Bot can automate common onboarding tasks such as <strong>role assignment</strong> and <strong>Realm invitations</strong>, while providing clear audit logs for staff.</p>
+<p><figure class="content-center">
+    <img src="../../images/server-account-linking.png" alt="Account Linking Configuration" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption">Account Linking Configuration</figcaption>
+</figure>
+</p>
+<hr>
+<doc-anchor-target id="what-account-linking-is-for">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#what-account-linking-is-for">#</doc-anchor-trigger>
+        <span>What Account Linking is for</span>
+    </h2>
+</doc-anchor-target>
+<p>Account Linking is designed to help you:</p>
 <ul>
-<li><strong>Permissions</strong>: Authorized Users Only</li>
-<li><strong>Usage</strong>: <code v-pre>/realm members &lt;realm&gt; [filter] [name]</code></li>
+<li>Verify that a Discord member controls the Minecraft account they claim</li>
+<li>Automatically grant roles when a member successfully links</li>
+<li>Optionally sync Discord nicknames to match Minecraft usernames</li>
+<li>Automatically invite linked users to one or more connected Realms</li>
+<li>Log linking events to a dedicated channel for transparency</li>
 </ul>
-<p><strong>Arguments</strong>:</p>
+<hr>
+<doc-anchor-target id="user-settings">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#user-settings">#</doc-anchor-trigger>
+        <span>User Settings</span>
+    </h2>
+</doc-anchor-target>
+<p>These settings control whether linking is enabled and how it behaves for users.</p>
+<doc-anchor-target id="account-linking-1">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#account-linking-1">#</doc-anchor-trigger>
+        <span>Account Linking</span>
+    </h3>
+</doc-anchor-target>
+<p>When enabled, members can link their Minecraft account to Discord using the Realm Bot linking flow.</p>
+<p><strong>Recommended:</strong> Enable this for most communities, especially public or semi-public servers, as it supports verification and automation.</p>
+<doc-anchor-target id="change-nickname">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#change-nickname">#</doc-anchor-trigger>
+        <span>Change Nickname</span>
+    </h3>
+</doc-anchor-target>
+<p>When enabled, Realm Bot will update a user’s <strong>Discord nickname</strong> to match their Minecraft username after linking.</p>
+<p><strong>Before enabling, ensure:</strong></p>
 <ul>
-<li><code v-pre>realm</code> (Required): The realm to view members of.</li>
-<li><code v-pre>filter</code> (Optional): Filter by <code v-pre>Visitor</code>, <code v-pre>Member</code>, <code v-pre>Operator</code>, or <code v-pre>Banned Players</code>.</li>
-<li><code v-pre>name</code> (Optional): Search for a specific gamertag.<em>Note: You cannot use <code v-pre>filter</code> and <code v-pre>name</code> at the same time.</em></li>
+<li>Realm Bot has <strong>Manage Nicknames</strong> permission in your Discord server</li>
+<li>Realm Bot’s role is <strong>above</strong> the roles of users whose nicknames it needs to edit (Discord role hierarchy)</li>
+<li>Your server rules allow nickname automation (some communities prefer members to control nicknames themselves)</li>
 </ul>
+<blockquote>
+<p><strong>Note:</strong> If permissions or role hierarchy prevent nickname changes, linking can still succeed, but nickname syncing may fail.</p>
+</blockquote>
+<hr>
+<doc-anchor-target id="server-integration">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#server-integration">#</doc-anchor-trigger>
+        <span>Server Integration</span>
+    </h2>
+</doc-anchor-target>
+<p>These settings define what happens <em>after</em> an account is linked.</p>
+<doc-anchor-target id="linked-account-roles">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#linked-account-roles">#</doc-anchor-trigger>
+        <span>Linked Account Roles</span>
+    </h3>
+</doc-anchor-target>
+<p>Select one or more Discord roles to automatically assign when a member successfully links.</p>
+<p>Common uses:</p>
+<ul>
+<li>Grant access to member-only channels after verification</li>
+<li>Separate verified players from unverified users</li>
+<li>Apply moderation or gameplay roles tied to account ownership</li>
+</ul>
+<p><strong>Best practice:</strong> Assign only the minimum role(s) needed for access. Keep staff roles manual.</p>
+<doc-anchor-target id="auto-invite-to-realms">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#auto-invite-to-realms">#</doc-anchor-trigger>
+        <span>Auto-invite to Realms</span>
+    </h3>
+</doc-anchor-target>
+<p>Choose which connected Realm(s) should automatically invite users when they link their account.</p>
+<p>This is ideal for:</p>
+<ul>
+<li>Whitelisted Realms</li>
+<li>Member-only Realms</li>
+<li>Servers that want a “link → join instantly” onboarding flow</li>
+</ul>
+<p><strong>Operational notes:</strong></p>
+<ul>
+<li>Auto-invite should be limited to trusted Realms (avoid auto-inviting to testing/admin Realms).</li>
+<li>If a Realm is missing from the dropdown, confirm it is connected and visible under your linked Xbox account context.</li>
+</ul>
+<doc-anchor-target id="join-logs-channel">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#join-logs-channel">#</doc-anchor-trigger>
+        <span>Join Logs Channel</span>
+    </h3>
+</doc-anchor-target>
+<p>Select a Discord channel where Realm Bot will post account linking events (e.g., successful links, key outcomes, and related system messages as supported).</p>
+<p><strong>Recommended setup:</strong></p>
+<ul>
+<li>Use a staff-only channel (e.g., <code v-pre>#join-logs</code> or <code v-pre>#verification-logs</code>)</li>
+<li>Ensure Realm Bot has:
+<ul>
+<li><strong>View Channel</strong></li>
+<li><strong>Send Messages</strong></li>
+<li><strong>Read Message History</strong> (recommended)</li>
+</ul>
+</li>
+</ul>
+<hr>
+<doc-anchor-target id="recommended-configuration">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#recommended-configuration">#</doc-anchor-trigger>
+        <span>Recommended Configuration</span>
+    </h2>
+</doc-anchor-target>
+<p>For most servers, this is the cleanest configuration:</p>
+<ol>
+<li>Enable <strong>Account Linking</strong></li>
+<li>Set <strong>Linked Account Roles</strong> to a standard member role (e.g., <code v-pre>Member</code> / <code v-pre>Verified</code>)</li>
+<li>Enable <strong>Auto-invite to Realms</strong> only for your primary public/member Realm</li>
+<li>Set a dedicated <strong>Join Logs Channel</strong></li>
+<li>Enable <strong>Change Nickname</strong> only if your staff team wants enforced identity consistency</li>
+</ol>
+<hr>
+<doc-anchor-target id="troubleshooting">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#troubleshooting">#</doc-anchor-trigger>
+        <span>Troubleshooting</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="roles-are-not-being-assigned">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#roles-are-not-being-assigned">#</doc-anchor-trigger>
+        <span>Roles are not being assigned</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li>Confirm the selected role exists and is still selected.</li>
+<li>Ensure Realm Bot’s role is <strong>above</strong> the target role(s) in Discord role hierarchy.</li>
+<li>Verify Realm Bot has <strong>Manage Roles</strong> permission.</li>
+</ul>
+<doc-anchor-target id="nicknames-are-not-changing">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#nicknames-are-not-changing">#</doc-anchor-trigger>
+        <span>Nicknames are not changing</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li>Ensure <strong>Change Nickname</strong> is enabled.</li>
+<li>Ensure Realm Bot has <strong>Manage Nicknames</strong> permission.</li>
+<li>Check role hierarchy: Realm Bot must be above the member’s highest role.</li>
+</ul>
+<doc-anchor-target id="auto-invite-is-not-sending-invites">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#auto-invite-is-not-sending-invites">#</doc-anchor-trigger>
+        <span>Auto-invite is not sending invites</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li>Confirm the Realm is selected under <strong>Auto-invite to Realms</strong>.</li>
+<li>Verify the Realm is connected and available under the linked Xbox account context.</li>
+<li>If your Realm has strict membership limits, ensure you have capacity for new invites.</li>
+</ul>
+<hr>
 
                                 
                                 <!-- Required only on API pages -->
@@ -191,20 +349,20 @@
                             
                                 <nav id="retype-nextprev" class="print:hidden flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../../commands/realm/lastseen/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../server-dashboard/server-logs/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-base-text-muted">Previous</span>
-                                                <span class="block mt-1">/realm lastseen</span>
+                                                <span class="block mt-1">Log Channels</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../../commands/realm/nickname/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../realm-page/realm-overview/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-base-text-muted">Next</span>
-                                                <span class="block mt-1">/realm nickname</span>
+                                                <span class="block mt-1">Realm Overview</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -248,6 +406,6 @@
 
     <div id="retype-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "/realm members", level: 3, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Account Linking", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
