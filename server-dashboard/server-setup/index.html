@@ -3,40 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.823746390011">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.823748212539">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
 
     <!-- Primary Meta Tags -->
-    <title>Tebex | Realm Bot Docs</title>
-    <meta name="title" content="Tebex | Realm Bot Docs">
-    <meta name="description" content="Integrate Tebex with Realm Bot to automate in-game reward delivery (e.g., ranks and perks) after a successful store purchase.">
+    <title>Server Setup | Realm Bot Docs</title>
+    <meta name="title" content="Server Setup | Realm Bot Docs">
+    <meta name="description" content="Complete the recommended setup checklist for your Discord server, including logging, permissions, warn presets, and account linking.">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://help.realmbot.dev/configuration/allowlist/">
+    <link rel="canonical" href="https://help.realmbot.dev/server-dashboard/server-setup/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://help.realmbot.dev/configuration/allowlist/">
-    <meta property="og:title" content="Tebex | Realm Bot Docs">
-    <meta property="og:description" content="Integrate Tebex with Realm Bot to automate in-game reward delivery (e.g., ranks and perks) after a successful store purchase.">
-    <meta property="og:image" content="https://help.realmbot.dev/images/tebex/1.png">
+    <meta property="og:url" content="https://help.realmbot.dev/server-dashboard/server-setup/">
+    <meta property="og:title" content="Server Setup | Realm Bot Docs">
+    <meta property="og:description" content="Complete the recommended setup checklist for your Discord server, including logging, permissions, warn presets, and account linking.">
+    <meta property="og:image" content="https://help.realmbot.dev/images/server-setup.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://help.realmbot.dev/configuration/allowlist/">
-    <meta property="twitter:title" content="Tebex | Realm Bot Docs">
-    <meta property="twitter:description" content="Integrate Tebex with Realm Bot to automate in-game reward delivery (e.g., ranks and perks) after a successful store purchase.">
-    <meta property="twitter:image" content="https://help.realmbot.dev/images/tebex/1.png">
+    <meta property="twitter:url" content="https://help.realmbot.dev/server-dashboard/server-setup/">
+    <meta property="twitter:title" content="Server Setup | Realm Bot Docs">
+    <meta property="twitter:description" content="Complete the recommended setup checklist for your Discord server, including logging, permissions, warn presets, and account linking.">
+    <meta property="twitter:image" content="https://help.realmbot.dev/images/server-setup.png">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
-    <link href="../../resources/css/retype.css?v=3.11.0.823746390011" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.11.0.823748212539" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.11.0.823746390011" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.11.0.823748212539" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.11.0.823746390011" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.11.0.823748212539" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -155,22 +155,15 @@
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="retype-sidebar-right-toggle"></div>
                                 <!-- Page content  -->
-<doc-anchor-target id="tebex" class="break-words">
+<doc-anchor-target id="server-setup" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#tebex">#</doc-anchor-trigger>
-        <span>Tebex</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#server-setup">#</doc-anchor-trigger>
+        <span>Server Setup</span>
     </h1>
 </doc-anchor-target>
 <div class="-mt-3 mb-12 flex flex-wrap text-sm text-gray-400 dark:text-dark-350 items-center print:justify-center">
     <div class="flex items-center">
         <div>By</div>
-        <div class="ml-2 flex items-center">
-          <div class="shrink-0 w-8 h-8 overflow-hidden rounded-full">
-            <img class="object-cover" src="https://avatars.githubusercontent.com/u/72093371?s=96&amp;v=4">
-          </div>
-          <div class="ml-1 whitespace-nowrap text-gray-500 dark:text-dark-350">Kaii</div>
-        </div>
-        <div>,</div>
         <div class="ml-2 flex items-center">
           <div class="shrink-0 w-8 h-8 overflow-hidden rounded-full">
             <img class="object-cover" src="https://avatars.githubusercontent.com/u/136254012?s=96&amp;v=4">
@@ -180,85 +173,124 @@
     </div>
 </div>
 
-<p>Tebex (formerly known as <strong>Buycraft</strong>) is a dedicated webstore and monetization platform used by Minecraft communities to sell <strong>ranks</strong>, <strong>perks</strong>, <strong>cosmetics</strong>, and other digital products. Realm Bot integrates with Tebex to support <strong>automated fulfilment</strong>, allowing eligible purchases to be delivered in-game with minimal staff intervention.</p>
-<blockquote>
-<p><strong>Important:</strong> You are responsible for ensuring your store configuration and products comply with all applicable Minecraft / Microsoft monetization requirements, as well as your own server rules and policies.</p>
-</blockquote>
+<p>The <strong>Server Setup</strong> page is a guided checklist designed to help you configure the essential server-wide settings required for Realm Bot to operate cleanly and securely. It provides a clear progress indicator and direct links into each configuration area.</p>
+<p><figure class="content-center">
+    <img src="../../images/server-setup.png" alt="Server Setup Page" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption">Server Setup Page</figcaption>
+</figure>
+</p>
 <hr>
-<doc-anchor-target id="what-this-integration-does">
+<doc-anchor-target id="what-server-setup-does">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#what-this-integration-does">#</doc-anchor-trigger>
-        <span>What This Integration Does</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#what-server-setup-does">#</doc-anchor-trigger>
+        <span>What Server Setup Does</span>
     </h2>
 </doc-anchor-target>
-<p>When connected, Realm Bot can fulfil Tebex purchases by delivering configured rewards in your Realm (for example, issuing a purchased rank to the correct player).</p>
-<p>This is intended to:</p>
+<p>Server Setup consolidates core configuration into one place so you can:</p>
 <ul>
-<li>Reduce manual staff workload (“granting ranks by hand”).</li>
-<li>Improve delivery speed and consistency.</li>
-<li>Provide a clearer audit trail when paired with your moderation/logging workflow.</li>
+<li>Confirm the minimum required settings are in place</li>
+<li>Set up auditing and moderation foundations before enabling advanced modules</li>
+<li>Reduce misconfiguration (missing logs, incorrect permissions, incomplete linking)</li>
+<li>Revisit and review settings at any time as your staff structure evolves</li>
 </ul>
 <hr>
-<doc-anchor-target id="requirements">
+<doc-anchor-target id="setup-progress">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#requirements">#</doc-anchor-trigger>
-        <span>Requirements</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#setup-progress">#</doc-anchor-trigger>
+        <span>Setup Progress</span>
     </h2>
 </doc-anchor-target>
-<p>To use the Tebex integration:</p>
+<p>At the top of the page you will see a <strong>Setup Progress</strong> bar indicating how many steps are completed (for example, <strong>3 of 4 steps completed</strong>). Each step is shown as a card with a brief description and an action button.</p>
+<p>Status indicators typically appear as:</p>
 <ul>
-<li><strong>Realm Bot Premium</strong> must be active.</li>
-<li>You must have a Tebex store with a configured <strong>Game Server</strong>.</li>
-<li>You must obtain your Tebex <strong>Secret Key</strong> (sometimes shown as “Secret Code”) and keep it private.</li>
+<li><strong>Completed</strong> (checkmark) — the step has been configured</li>
+<li><strong>Incomplete</strong> (pending icon) — the step still requires setup</li>
+<li><strong>Review</strong> — the step is complete and can be reviewed</li>
+<li><strong>Configure</strong> — the step requires action</li>
+</ul>
+<hr>
+<doc-anchor-target id="setup-steps">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#setup-steps">#</doc-anchor-trigger>
+        <span>Setup Steps</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="1-logging">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#1-logging">#</doc-anchor-trigger>
+        <span>1) Logging</span>
+    </h3>
+</doc-anchor-target>
+<p>Logging is the audit foundation of your server configuration. It ensures staff actions and automated events can be reviewed when investigating incidents.</p>
+<p>Use this step to:</p>
+<ul>
+<li>Select appropriate log channels</li>
+<li>Ensure the bot can post to those channels</li>
+<li>Create separation between moderation logs and general activity logs (recommended)</li>
+</ul>
+<p><strong>Best practice:</strong> Keep log channels staff-only and non-chatty to preserve signal-to-noise.</p>
+<hr>
+<doc-anchor-target id="2-permissions">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#2-permissions">#</doc-anchor-trigger>
+        <span>2) Permissions</span>
+    </h3>
+</doc-anchor-target>
+<p>Permissions determine who can access server features and who can make high-impact changes.</p>
+<p>Use this step to:</p>
+<ul>
+<li>Assign management access to trusted roles only</li>
+<li>Restrict configuration access (dashboard and sensitive modules)</li>
+<li>Prevent accidental misuse by general staff or members</li>
+</ul>
+<p><strong>Best practice:</strong> Apply least privilege. Start strict, then expand access intentionally.</p>
+<hr>
+<doc-anchor-target id="3-warn-settings">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#3-warn-settings">#</doc-anchor-trigger>
+        <span>3) Warn Settings</span>
+    </h3>
+</doc-anchor-target>
+<p>Warn Settings allow you to configure preset warning behaviour for administrators and moderators. This ensures consistent discipline actions and reduces ambiguity across staff.</p>
+<p>Use this step to:</p>
+<ul>
+<li>Configure your default warning preset(s)</li>
+<li>Align warning actions with your server rules</li>
+<li>Ensure moderators operate under the same standards</li>
 </ul>
 <blockquote>
-<p><strong>Security Notice:</strong> The Secret Key authorises access to your Tebex server integration. Do not share it publicly, do not paste it in general channels, and rotate it immediately if you believe it has been exposed.</p>
+<p><strong>Operational Note:</strong> If you are running a public community, consistent warning policies reduce disputes and improve staff coordination.</p>
 </blockquote>
 <hr>
-<doc-anchor-target id="how-to-set-up">
+<doc-anchor-target id="4-account-linking">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#4-account-linking">#</doc-anchor-trigger>
+        <span>4) Account Linking</span>
+    </h3>
+</doc-anchor-target>
+<p>Account Linking ties your operational identity to Realm Bot so the bot can reliably verify members and connect your server to the correct Realm access context.</p>
+<p>Use this step to:</p>
+<ul>
+<li>Confirm linking flows are complete</li>
+<li>Ensure the correct Discord and Microsoft/Xbox accounts are connected</li>
+<li>Enable workflows that depend on verified identity and Realm access</li>
+</ul>
+<p><strong>Best practice:</strong> Only link trusted administrative accounts. Treat linking as privileged access.</p>
+<hr>
+<doc-anchor-target id="recommended-order">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#how-to-set-up">#</doc-anchor-trigger>
-        <span>How to Set Up</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#recommended-order">#</doc-anchor-trigger>
+        <span>Recommended Order</span>
     </h2>
 </doc-anchor-target>
+<p>Although Server Setup is flexible, the recommended order is:</p>
 <ol>
-<li><p>Create a Tebex account and create a <strong>Game Server</strong> in Tebex.<br />
-<img src="../../images/tebex/1.png" alt="Tebex Game Server Setup" /></p>
-</li>
-<li><p>Select <strong>Minecraft</strong> as the platform for your webstore.<br />
-<img src="../../images/tebex/2.png" alt="Tebex Select Minecraft" /></p>
-</li>
-<li><p>Choose <strong>Minecraft: Bedrock Edition</strong>.<br />
-<img src="../../images/tebex/3.png" alt="Tebex Select Minecraft" /></p>
-</li>
-<li><p>Copy the <strong>Secret Key / Secret Code</strong> only.<br />
-<img src="../../images/tebex/4.png" alt="Tebex Secret Key" /></p>
-</li>
-<li><p>Open the <strong>Tebex</strong> module inside the Realm Bot Dashboard.<br />
-<img src="../../images/tebex/dash-5.png" alt="Dashboard Tebex Module" /></p>
-</li>
-<li><p>Enable the module, paste your Tebex <strong>Secret Key</strong>, then select <strong>Save</strong>.</p>
-</li>
-<li><p>Confirm that both Realm Bot and Tebex show a <strong>Connected</strong> status.<br />
-<img src="../../images/tebex/7.png" alt="Connected Status Tebex" /></p>
-</li>
+<li><strong>Logging</strong> (audit first)</li>
+<li><strong>Permissions</strong> (control access)</li>
+<li><strong>Warn Settings</strong> (standardise moderation workflow)</li>
+<li><strong>Account Linking</strong> (finalise identity + Realm access flows)</li>
 </ol>
-<hr>
-<doc-anchor-target id="creating-products-on-tebex">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#creating-products-on-tebex">#</doc-anchor-trigger>
-        <span>Creating Products on Tebex</span>
-    </h2>
-</doc-anchor-target>
-<p>Once the integration is connected, create products on Tebex (ranks, bundles, subscriptions, etc.) and configure the fulfilment method required by your Realm Bot setup.</p>
-<p>Operational recommendations:</p>
-<ul>
-<li>Use clear, consistent product naming (e.g., <code v-pre>Rank: Knight</code>, <code v-pre>Rank: Emperor</code>).</li>
-<li>Keep “rank” products separate from “consumable” products (keys, crates, boosts) for easier support.</li>
-<li>Maintain an internal list of products and their intended in-game outcomes for staff reference.</li>
-</ul>
-<p>For full Tebex store configuration and product tooling, refer to the official Tebex documentation:
-<a href="https://docs.tebex.io/">https://docs.tebex.io/</a></p>
+<p>This sequence ensures the server is secure and auditable before more advanced features are enabled.</p>
 <hr>
 <doc-anchor-target id="troubleshooting">
     <h2>
@@ -266,46 +298,30 @@
         <span>Troubleshooting</span>
     </h2>
 </doc-anchor-target>
-<doc-anchor-target id="not-connected--connection-failed">
+<doc-anchor-target id="a-step-shows-as-incomplete-after-configuration">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#not-connected--connection-failed">#</doc-anchor-trigger>
-        <span>“Not connected” / “Connection failed”</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#a-step-shows-as-incomplete-after-configuration">#</doc-anchor-trigger>
+        <span>A step shows as incomplete after configuration</span>
     </h3>
 </doc-anchor-target>
 <ul>
-<li>Re-check that you copied the <strong>Secret Key</strong> (not other identifiers).</li>
-<li>Ensure there are no extra spaces before/after the key when pasted.</li>
-<li>Re-save the module settings after pasting the key.</li>
+<li>Re-open the step and confirm you saved changes.</li>
+<li>Ensure Realm Bot has the required Discord permissions for the feature (especially for logging).</li>
+<li>Refresh the dashboard to confirm the state updates.</li>
 </ul>
-<doc-anchor-target id="purchases-are-not-delivering">
+<doc-anchor-target id="review-buttons-work-but-modules-still-fail">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#purchases-are-not-delivering">#</doc-anchor-trigger>
-        <span>Purchases are not delivering</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#review-buttons-work-but-modules-still-fail">#</doc-anchor-trigger>
+        <span>Review buttons work, but modules still fail</span>
     </h3>
 </doc-anchor-target>
+<p>Server Setup covers foundational configuration. Some Realm modules additionally require:</p>
 <ul>
-<li>Confirm the Tebex module remains <strong>Enabled</strong> in the dashboard.</li>
-<li>Confirm the purchase is marked as <strong>Completed</strong> in Tebex.</li>
-<li>Verify the product is configured correctly and maps to the intended in-game reward flow.</li>
-<li>If your Realm Bot environment requires an in-game delivery path (depending on your configuration), confirm the required components are online and operational.</li>
+<li>Realm-specific configuration (inside the Realm dashboard)</li>
+<li>A Relay Account to be in-game (for certain modules)</li>
+<li>Gametest Pack dependencies (for advanced Realm features)</li>
 </ul>
-<doc-anchor-target id="incorrect-player-received-the-reward">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#incorrect-player-received-the-reward">#</doc-anchor-trigger>
-        <span>Incorrect player received the reward</span>
-    </h3>
-</doc-anchor-target>
-<ul>
-<li>Ensure the store instructions clearly tell buyers what identity (username / gamertag) must be provided at checkout.</li>
-<li>Avoid ambiguous naming conventions and ensure staff have a consistent process for resolving mis-claims.</li>
-</ul>
-<p>If you need support, include:</p>
-<ul>
-<li>Your Tebex store/server name</li>
-<li>A screenshot of the module connection status</li>
-<li>The order ID (or transaction reference) from Tebex</li>
-<li>The expected outcome vs the observed outcome</li>
-</ul>
+<hr>
 
                                 
                                 <!-- Required only on API pages -->
@@ -325,10 +341,10 @@
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../realm-page/realm-overview/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../server-dashboard/overview/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-base-text-muted">Next</span>
-                                                <span class="block mt-1">Realm Overview</span>
+                                                <span class="block mt-1">Overview</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -372,6 +388,6 @@
 
     <div id="retype-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Allowlist", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Server Setup", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
