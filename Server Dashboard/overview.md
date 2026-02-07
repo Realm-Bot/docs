@@ -1,7 +1,7 @@
 ---
 label: Overview
 description: Understand the Server Dashboard overview, including Premium status, linked account details, connected Realms, and where to configure server-wide settings.
-order: 13
+order: 100
 authors:
   - name: Frazer
     avatar: https://avatars.githubusercontent.com/u/136254012?s=96&v=4

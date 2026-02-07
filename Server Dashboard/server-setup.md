@@ -1,7 +1,7 @@
 ---
 label: Server Setup
 description: Complete the recommended setup checklist for your Discord server, including logging, permissions, warn presets, and account linking.
-order: 14
+order: 99
 authors:
   - name: Frazer
     avatar: https://avatars.githubusercontent.com/u/136254012?s=96&v=4
@@ -31,10 +31,10 @@ Server Setup consolidates core configuration into one place so you can:
 At the top of the page you will see a **Setup Progress** bar indicating how many steps are completed (for example, **3 of 4 steps completed**). Each step is shown as a card with a brief description and an action button.
 
 Status indicators typically appear as:
-- **Completed** (checkmark) — the step has been configured
-- **Incomplete** (pending icon) — the step still requires setup
-- **Review** — the step is complete and can be reviewed
-- **Configure** — the step requires action
+- **Completed** (checkmark) - the step has been configured
+- **Incomplete** (pending icon) - the step still requires setup
+- **Review** - the step is complete and can be reviewed
+- **Configure** - the step requires action
 
 ---
 
