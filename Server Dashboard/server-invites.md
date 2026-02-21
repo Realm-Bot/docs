@@ -96,12 +96,12 @@ Once created, links appear in the Invite Links table.
 
 Each entry typically shows:
 
-- **Realm** — which Realm the link targets  
-- **Slug / URL** — the short link players will open  
-- **Uses** — current uses vs limit (or unlimited)  
-- **Expires In** — time until expiry (or “Never”)  
-- **Status** — toggle to enable/disable the link quickly  
-- **Actions** — common actions include copying the link and deleting it
+- **Realm** - which Realm the link targets  
+- **Slug / URL** - the short link players will open  
+- **Uses** - current uses vs limit (or unlimited)  
+- **Expires In** - time until expiry (or “Never”)  
+- **Status** - toggle to enable/disable the link quickly  
+- **Actions** - common actions include copying the link and deleting it
 
 ### Recommended Workflow
 - If a link is being abused, **disable it immediately** using the Status toggle.
