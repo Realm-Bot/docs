@@ -40,7 +40,7 @@ Key options include:
 - **Enable Bot to Join as Alt Account**  
   Allows Realm Bot to join using an alternative account. This is commonly used when your primary Relay Account must remain reserved for specific workflows or when redundancy is required.
 
-> **Important:** Many modules (for example, Chat Relay, Realm Console, Bot Detection, and Member Gate) require an in-game Relay Account to perform actions. If the bot is not in-game, these modules may not function.
+> **Important:** Many modules (for example, Chat Relay, Realm Console, Bot Detection, Member Gate, and Skin Filtering) require an in-game Relay Account to perform actions. If the bot is not in-game, these modules may not function.
 
 ---
 
@@ -82,11 +82,12 @@ From here you can configure all Realm Modules currently available for your Realm
 - **Member Gate** - rule-based auto-moderation for join restrictions using device, gamerscore, and social metrics
 - **Realm Console** - run Minecraft commands through a secured Discord console channel
 - **Scoreboard Leaderboards** - publish in-game scoreboard rankings to Discord
+- **Skin Filtering** - detect and remove players using irregular or exploit-oriented skins
 - **Vanity URL** - create a branded, stable invite entry point for your Realm
 
 If you also use monetization tooling, see the separate **Tebex** integration page for store fulfilment setup.
 
-> **Operational Guidance:** Restrict access to high-impact modules (such as Realm Console and Member Gate) to trusted administrators. These features can directly affect gameplay, player access, and server stability.
+> **Operational Guidance:** Restrict access to high-impact modules (such as Realm Console, Member Gate, and Skin Filtering) to trusted administrators. These features can directly affect gameplay, player access, and server stability.
 
 ---
 

@@ -87,6 +87,7 @@ Recommended configuration sequence:
    - Realm Console
    - Bot Detection
    - Member Gate
+   - Skin Filtering
    - Leveling
    - Scoreboard Leaderboards
    - (Optional) Tebex Integration

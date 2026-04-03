@@ -1,6 +1,6 @@
 ---
 label: Allowlist
-description: Maintain an allowlist of trusted users who can bypass automated enforcement systems such as Member Gate and Bot Detection.
+description: Maintain an allowlist of trusted users who can bypass automated enforcement systems such as Member Gate, Bot Detection, and Skin Filtering.
 order: 92
 authors:
   - name: Frazer
@@ -21,10 +21,12 @@ When a user is on the allowlist:
 
 - They can bypass **Member Gate**
 - They can bypass **Bot Detection**
+- They can bypass **Skin Filtering**
 
 This is particularly useful if you:
 - run strict Member Gate rules (device locks, gamerscore thresholds, etc.)
 - enable Experimental Bot Detection and want protection against false positives
+- use Skin Filtering and want to protect trusted players from Beta false positives
 - have trusted alt accounts, testers, or staff joining frequently
 
 > **Important:** The allowlist is designed for exceptions. Adding too many users reduces the effectiveness of your automated protections.
@@ -74,7 +76,7 @@ If many legitimate players are being blocked, consider:
 ## Common Questions
 
 ### “Does allowlisting bypass bans?”
-No. The allowlist is intended to bypass automated gatekeeping systems such as Member Gate and Bot Detection. It does not override manual bans or realm-level enforcement actions.
+No. The allowlist is intended to bypass automated gatekeeping systems such as Member Gate, Bot Detection, and Skin Filtering. It does not override manual bans or realm-level enforcement actions.
 
 ### “Should we allowlist all staff?”
 Only staff who need reliable access should be allowlisted. For larger teams, consider allowlisting senior roles only, and rely on correct Member Gate rules for everyone else.

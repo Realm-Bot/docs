@@ -123,4 +123,4 @@ If you are setting up or extending your Realm configuration, the following pages
 - **Getting Started** (initial account linking and connection)
 - **Bot Join Settings** (how the Relay Account joins)
 - **Gametest Pack Management** (required for certain advanced features)
-- **Realm Modules** (Chat Relay, Realm Console, Bot Detection, Member Gate, Leveling, Scoreboards)
+- **Realm Modules** (Chat Relay, Realm Console, Bot Detection, Member Gate, Skin Filtering, Leveling, Scoreboards, Live Playerlist, Vanity URL)
