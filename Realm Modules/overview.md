@@ -1,7 +1,7 @@
 ---
 label: Overview
 description: A central hub for managing your Realm connection, bot join behaviour, Gametest pack dependencies, and all available Realm Modules.
-order: 7
+order: 100
 author:
   name: Frazer
   avatar: https://avatars.githubusercontent.com/u/136254012?s=96&v=4
@@ -73,15 +73,18 @@ The Realm Modules section contains all configurable feature modules available fo
 
 ![Realm Modules](/images/overview-realm-modules.png)
 
-From here you can configure modules such as:
+From here you can configure all Realm Modules currently available for your Realm:
 
-- **Chat Relay** - two-way chat bridge between Realm and Discord
+- **Bot Detection** - mitigation for malicious bot accounts, including an Experimental mode for stricter detection
+- **Chat Relay** - a two-way chat bridge between your Realm and Discord
+- **Leveling System** - playtime-based XP progression with configurable level-up announcements
+- **Live Playerlist** - automatically publish and refresh a Discord view of which players are online
+- **Member Gate** - rule-based auto-moderation for join restrictions using device, gamerscore, and social metrics
 - **Realm Console** - run Minecraft commands through a secured Discord console channel
-- **Bot Detection** - mitigation for malicious bot accounts (including Experimental mode)
-- **Member Gate** - rule-based auto-moderation for join restrictions (device, gamerscore, and social metrics)
-- **Leveling** - playtime-based XP with configurable announcements and message variables
-- **Scoreboard Leaderboard** - publish in-game scoreboard rankings to Discord
-- **Tebex Integration** - automate store fulfilment for eligible purchases
+- **Scoreboard Leaderboards** - publish in-game scoreboard rankings to Discord
+- **Vanity URL** - create a branded, stable invite entry point for your Realm
+
+If you also use monetization tooling, see the separate **Tebex** integration page for store fulfilment setup.
 
 > **Operational Guidance:** Restrict access to high-impact modules (such as Realm Console and Member Gate) to trusted administrators. These features can directly affect gameplay, player access, and server stability.
 

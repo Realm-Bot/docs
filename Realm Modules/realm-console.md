@@ -1,7 +1,7 @@
 ---
 label: Realm Console
 description: Execute Minecraft commands directly from a secured Discord channel, using your in-game Relay Account as the command runner.
-order: 5
+order: 80
 author:
   name: Frazer
   avatar: https://avatars.githubusercontent.com/u/136254012?s=96&v=4

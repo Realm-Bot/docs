@@ -1,7 +1,7 @@
 ---
 label: Leveling System
 description: Award progressive XP based on playtime, automatically increasing difficulty at higher levels, with configurable in-game and Discord level-up announcements.
-order: 2
+order: 20
 author:
   name: Frazer
   avatar: https://avatars.githubusercontent.com/u/136254012?s=96&v=4

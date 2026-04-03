@@ -1,7 +1,7 @@
 ---
 label: Vanity URL
 description: Create a custom, memorable realmbot.link vanity URL for your Realm, with the same protection options as Invite Links, including bot mitigation and VPN, hosting, Tor blocking.
-order: 1
+order: 40
 authors:
   - name: Kaii
     avatar: https://avatars.githubusercontent.com/u/72093371?s=96&v=4
