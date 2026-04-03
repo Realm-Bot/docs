@@ -10,35 +10,41 @@
     <meta name="generator" content="Retype 4.4.0">
 
     <!-- Primary Meta Tags -->
-    <title>/warn remove | Realm Bot Docs</title>
-    <meta name="title" content="/warn remove | Realm Bot Docs">
-    <meta name="description" content="Remove a warning from a player.">
+    <title>Live Playerlist | Realm Bot Docs</title>
+    <meta name="title" content="Live Playerlist | Realm Bot Docs">
+    <meta name="description" content="Publish an automatically updating list of online Realm players to a Discord channel, with optional playtime and device identification.">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://help.realmbot.dev/commands/warn/remove/">
+    <link rel="canonical" href="https://help.realmbot.dev/realm-modules/live-playerlist/">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://help.realmbot.dev/commands/warn/remove/">
-    <meta property="og:title" content="/warn remove | Realm Bot Docs">
-    <meta property="og:description" content="Remove a warning from a player.">
+    <meta property="og:url" content="https://help.realmbot.dev/realm-modules/live-playerlist/">
+    <meta property="og:title" content="Live Playerlist | Realm Bot Docs">
+    <meta property="og:description" content="Publish an automatically updating list of online Realm players to a Discord channel, with optional playtime and device identification.">
+    <meta property="og:image" content="https://help.realmbot.dev/images/live-playerlist-example.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Live Playerlist | Realm Bot Docs">
     <meta property="og:site_name" content="Realm Bot">
     <meta property="og:locale" content="en_US">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://help.realmbot.dev/commands/warn/remove/">
-    <meta name="twitter:title" content="/warn remove | Realm Bot Docs">
-    <meta name="twitter:description" content="Remove a warning from a player.">
+    <meta name="twitter:url" content="https://help.realmbot.dev/realm-modules/live-playerlist/">
+    <meta name="twitter:title" content="Live Playerlist | Realm Bot Docs">
+    <meta name="twitter:description" content="Publish an automatically updating list of online Realm players to a Discord channel, with optional playtime and device identification.">
+    <meta name="twitter:image" content="https://help.realmbot.dev/images/live-playerlist-example.png">
+    <meta name="twitter:image:alt" content="Live Playerlist | Realm Bot Docs">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
-    <link id="retype-favicon" rel="icon" href="../../../favicon.ico" />
-    <link href="../../../resources/css/retype.css?v=4.4.0.828571377503" rel="stylesheet">
+    <link id="retype-favicon" rel="icon" href="../../favicon.ico" />
+    <link href="../../resources/css/retype.css?v=4.4.0.828571377503" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.4.0.828571377503" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../../../resources/js/retype.js?v=4.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.4.0.828571377503" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.4.0.828571377503" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/retype.js?v=4.4.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.4.0.828571377503" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -55,7 +61,7 @@
                 <div class="flex items-center px-2 md:px-6">
                     <a id="retype-branding-logo" href="https://help.realmbot.dev/" class="flex items-center leading-snug text-2xl">
                         <span class="w-10 mr-2 grow-0 shrink-0 overflow-hidden">
-                            <img class="max-h-10 md:inline-block" src="../../../images/logo.png" alt="" width="40" height="40">
+                            <img class="max-h-10 md:inline-block" src="../../images/logo.png" alt="" width="40" height="40">
                         </span>
                         <span class="dark:text-white font-bold line-clamp-1 md:line-clamp-2">Realm Bot</span>
                     </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">Docs</span>
@@ -131,29 +137,130 @@
                 <!-- Rendered if sidebar right is enabled -->
                 <div id="retype-sidebar-right-toggle"></div>
                 <!-- Page content  -->
-<h1 id="warn-remove"><code translate="no" v-pre>/warn remove</code></h1>
+<h1 id="live-playerlist">Live Playerlist</h1>
 <div class="-mt-3 mb-12 flex flex-wrap text-sm text-gray-400 dark:text-dark-350 items-center">
     <div class="flex items-center">
         <div>By</div>
         <div class="ml-2 flex items-center">
           <div class="shrink-0 w-8 h-8 overflow-hidden rounded-full">
-            <img class="object-cover" src="https://avatars.githubusercontent.com/u/72093371?s=96&amp;v=4">
+            <img class="object-cover" src="https://avatars.githubusercontent.com/u/136254012?s=96&amp;v=4">
           </div>
-          <div class="ml-1 whitespace-nowrap text-gray-500 dark:text-dark-350">Kaii</div>
+          <div class="ml-1 whitespace-nowrap text-gray-500 dark:text-dark-350">Frazer</div>
         </div>
     </div>
 </div>
 
-<p>Remove a warning from a player.</p>
+<div id="retype-page-description" class="description-display text-description font-description leading-description mb-description-margin-bottom mt-description-margin-top tracking-description text-transform-description">Publish an automatically updating list of online Realm players to a Discord channel, with optional playtime and device identification.</div>
+<p>Live Playerlist publishes a near-real-time view of who is currently online in your Realm to a selected Discord channel. It is designed for staff awareness and community visibility, providing a consistent &quot;who&#x27;s online&quot; reference without requiring players to be in-game to check.</p>
+<p>This feature is located under <strong>Realm Modules</strong> and can be enabled per Realm.</p>
+<hr>
+<h2 id="what-live-playerlist-does">What Live Playerlist Does</h2>
+<p>When enabled, Realm Bot will:</p>
 <ul>
-<li><strong>Permissions</strong>: Authorized Users Only</li>
-<li><strong>Usage</strong>: <code translate="no" v-pre>/warn remove &lt;user&gt; &lt;reason&gt; [realm]</code></li>
+<li>Post a live list of players currently online in the Realm</li>
+<li>Update the output automatically every <strong>5 minutes</strong></li>
+<li>Maintain a single message that refreshes over time (where supported by your configuration), keeping the channel clean</li>
 </ul>
-<p><strong>Arguments</strong>:</p>
+<p>This makes it suitable for:</p>
 <ul>
-<li><code translate="no" v-pre>user</code> (Required): The player to remove warning from.</li>
-<li><code translate="no" v-pre>reason</code> (Required): The original warning reason to remove.</li>
+<li>moderation coverage (knowing when activity is high)</li>
+<li>event coordination (confirming attendance)</li>
+<li>community engagement (players can see who is active)</li>
 </ul>
+<hr>
+<h2 id="example-output">Example Output</h2>
+<figure class="content-center">
+    <img src="../../images/live-playerlist-example.png" alt="Live Playerlist Example" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="368" height="147" />
+    <figcaption class="caption">Live Playerlist Example</figcaption>
+</figure>
+<p>Depending on your configuration, the player list can include:</p>
+<ul>
+<li>the player name (gamertag)</li>
+<li>optional device/platform indicators (e.g., Android, Windows)</li>
+<li>optional current session playtime</li>
+</ul>
+<hr>
+<h2 id="configuration">Configuration</h2>
+<figure class="content-center">
+    <img src="../../images/live-playerlist.png" alt="Live Playerlist Configuration" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="902" height="548" />
+    <figcaption class="caption">Live Playerlist Configuration</figcaption>
+</figure>
+<h3 id="enable-live-playerlist">Enable Live Playerlist</h3>
+<p>Use the primary toggle at the top of the module to enable or disable Live Playerlist for the selected Realm.</p>
+<h3 id="discord-destination">Discord Destination</h3>
+<p>Select the Discord channel where the live playerlist will be posted and updated.</p>
+<p>Recommended channel choices:</p>
+<ul>
+<li><code translate="no" v-pre>#players-online</code></li>
+<li><code translate="no" v-pre>#realm-status</code></li>
+<li><code translate="no" v-pre>#realm-activity</code></li>
+</ul>
+<p>Ensure the bot has:</p>
+<ul>
+<li><strong>View Channel</strong></li>
+<li><strong>Send Messages</strong></li>
+<li><strong>Embed Links</strong> (recommended for clean formatting)</li>
+</ul>
+<h3 id="display-settings">Display Settings</h3>
+<p>You can control which information appears alongside each player entry:</p>
+<h4 id="display-playtime">Display Playtime</h4>
+<p>When enabled, the playerlist includes a playtime indicator showing how long the player has been active (as supported by your deployment).</p>
+<p>Use this if you want:</p>
+<ul>
+<li>clearer staff context during incidents</li>
+<li>session visibility for activity monitoring</li>
+</ul>
+<h4 id="device-identification">Device Identification</h4>
+<p>When enabled, the playerlist displays each player&#x27;s device/platform indicator (where detectable), such as:</p>
+<ul>
+<li>Android</li>
+<li>Windows</li>
+<li>Console platforms (where supported)</li>
+</ul>
+<p>Use this if you want:</p>
+<ul>
+<li>platform visibility for staff (especially when running device-restricted communities)</li>
+<li>quick indicators when investigating suspicious join patterns</li>
+</ul>
+<hr>
+<h2 id="update-interval">Update Interval</h2>
+<p>Live Playerlist updates every <strong>5 minutes</strong>. This interval is designed to balance:</p>
+<ul>
+<li>reasonably current visibility</li>
+<li>minimal spam and operational overhead</li>
+<li>predictable refresh timing for staff</li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong> The playerlist is &quot;live&quot; in the operational sense (regular refresh), not second-by-second.</p>
+</blockquote>
+<hr>
+<h2 id="best-practices">Best Practices</h2>
+<ul>
+<li>Use a dedicated channel and keep it low-noise.</li>
+<li>Restrict who can post in the destination channel (optional) so the output remains easy to read.</li>
+<li>Enable <strong>Device Identification</strong> if you enforce platform-specific rules or run competitive modes where device context matters.</li>
+<li>Enable <strong>Display Playtime</strong> if your staff workflow benefits from session context.</li>
+</ul>
+<hr>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<h3 id="the-playerlist-does-not-appear">The playerlist does not appear</h3>
+<ul>
+<li>Confirm Live Playerlist is enabled in the module.</li>
+<li>Confirm a Discord Destination channel is selected.</li>
+<li>Verify permissions: View Channel, Send Messages (and Embed Links if required).</li>
+<li>Confirm the Realm is connected and functioning.</li>
+</ul>
+<h3 id="the-playerlist-is-not-updating">The playerlist is not updating</h3>
+<ul>
+<li>Updates occur every 5 minutes; wait for the next cycle.</li>
+<li>Confirm the bot remains online and has access to the destination channel.</li>
+</ul>
+<h3 id="deviceplaytime-fields-are-missing">Device/playtime fields are missing</h3>
+<ul>
+<li>Ensure the corresponding Display Settings toggles are enabled.</li>
+<li>Some fields may depend on what information is available from the Realm at the time of update.</li>
+</ul>
+<hr>
 
                 
                 <!-- Required only on API pages -->
@@ -163,20 +270,20 @@
             
                 <nav id="retype-nextprev" class="print:hidden flex mt-14">
                     <div class="w-1/2">
-                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../../commands/warn/lookup/">
+                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../realm-modules/leveling-system/">
                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                             <span>
                                 <span class="block text-xs font-normal text-base-text-muted">Previous</span>
-                                <span class="block mt-1">/warn lookup</span>
+                                <span class="block mt-1">Leveling System</span>
                             </span>
                         </a>
                     </div>
             
                     <div class="w-1/2">
-                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../../commands/world/broadcast/">
+                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../realm-page/realm-overview/">
                             <span>
                                 <span class="block text-xs font-normal text-right text-base-text-muted">Next</span>
-                                <span class="block mt-1">/world broadcast</span>
+                                <span class="block mt-1">Realm Overview</span>
                             </span>
                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                         </a>
@@ -220,6 +327,6 @@
 
     <div id="retype-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "/warn remove", level: 3, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Live Playerlist", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
