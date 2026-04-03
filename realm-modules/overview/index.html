@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.4.0.828571377503">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.4.0.828575766368">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.4.0">
@@ -40,11 +40,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../favicon.ico" />
-    <link href="../../resources/css/retype.css?v=4.4.0.828571377503" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.4.0.828575766368" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.4.0.828571377503" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.4.0.828575766368" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=4.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.4.0.828571377503" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.4.0.828575766368" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -180,7 +180,7 @@ Allows Realm Bot to join using an alternative account. This is commonly used whe
 </li>
 </ul>
 <blockquote>
-<p><strong>Important:</strong> Many modules (for example, Chat Relay, Realm Console, Bot Detection, and Member Gate) require an in-game Relay Account to perform actions. If the bot is not in-game, these modules may not function.</p>
+<p><strong>Important:</strong> Many modules (for example, Chat Relay, Realm Console, Bot Detection, Member Gate, and Skin Filtering) require an in-game Relay Account to perform actions. If the bot is not in-game, these modules may not function.</p>
 </blockquote>
 <hr>
 <h2 id="gametest-pack-management">Gametest Pack Management</h2>
@@ -224,11 +224,12 @@ Automatically updates the pack when new versions are available (recommended if y
 <li><strong>Member Gate</strong> - rule-based auto-moderation for join restrictions using device, gamerscore, and social metrics</li>
 <li><strong>Realm Console</strong> - run Minecraft commands through a secured Discord console channel</li>
 <li><strong>Scoreboard Leaderboards</strong> - publish in-game scoreboard rankings to Discord</li>
+<li><strong>Skin Filtering</strong> - detect and remove players using irregular or exploit-oriented skins</li>
 <li><strong>Vanity URL</strong> - create a branded, stable invite entry point for your Realm</li>
 </ul>
 <p>If you also use monetization tooling, see the separate <strong>Tebex</strong> integration page for store fulfilment setup.</p>
 <blockquote>
-<p><strong>Operational Guidance:</strong> Restrict access to high-impact modules (such as Realm Console and Member Gate) to trusted administrators. These features can directly affect gameplay, player access, and server stability.</p>
+<p><strong>Operational Guidance:</strong> Restrict access to high-impact modules (such as Realm Console, Member Gate, and Skin Filtering) to trusted administrators. These features can directly affect gameplay, player access, and server stability.</p>
 </blockquote>
 <hr>
 <h2 id="recommended-setup-order">Recommended Setup Order</h2>

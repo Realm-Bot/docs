@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.4.0.828571377503">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.4.0.828575766368">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.4.0">
@@ -12,7 +12,7 @@
     <!-- Primary Meta Tags -->
     <title>Allowlist | Realm Bot Docs</title>
     <meta name="title" content="Allowlist | Realm Bot Docs">
-    <meta name="description" content="Maintain an allowlist of trusted users who can bypass automated enforcement systems such as Member Gate and Bot Detection.">
+    <meta name="description" content="Maintain an allowlist of trusted users who can bypass automated enforcement systems such as Member Gate, Bot Detection, and Skin Filtering.">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://help.realmbot.dev/server-dashboard/server-allowlist/">
@@ -21,7 +21,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://help.realmbot.dev/server-dashboard/server-allowlist/">
     <meta property="og:title" content="Allowlist | Realm Bot Docs">
-    <meta property="og:description" content="Maintain an allowlist of trusted users who can bypass automated enforcement systems such as Member Gate and Bot Detection.">
+    <meta property="og:description" content="Maintain an allowlist of trusted users who can bypass automated enforcement systems such as Member Gate, Bot Detection, and Skin Filtering.">
     <meta property="og:image" content="https://help.realmbot.dev/images/server-allowlist.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -33,18 +33,18 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://help.realmbot.dev/server-dashboard/server-allowlist/">
     <meta name="twitter:title" content="Allowlist | Realm Bot Docs">
-    <meta name="twitter:description" content="Maintain an allowlist of trusted users who can bypass automated enforcement systems such as Member Gate and Bot Detection.">
+    <meta name="twitter:description" content="Maintain an allowlist of trusted users who can bypass automated enforcement systems such as Member Gate, Bot Detection, and Skin Filtering.">
     <meta name="twitter:image" content="https://help.realmbot.dev/images/server-allowlist.png">
     <meta name="twitter:image:alt" content="Allowlist | Realm Bot Docs">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../favicon.ico" />
-    <link href="../../resources/css/retype.css?v=4.4.0.828571377503" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.4.0.828575766368" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.4.0.828571377503" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.4.0.828575766368" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=4.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.4.0.828571377503" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.4.0.828575766368" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -150,7 +150,7 @@
     </div>
 </div>
 
-<div id="retype-page-description" class="description-display text-description font-description leading-description mb-description-margin-bottom mt-description-margin-top tracking-description text-transform-description">Maintain an allowlist of trusted users who can bypass automated enforcement systems such as Member Gate and Bot Detection.</div>
+<div id="retype-page-description" class="description-display text-description font-description leading-description mb-description-margin-bottom mt-description-margin-top tracking-description text-transform-description">Maintain an allowlist of trusted users who can bypass automated enforcement systems such as Member Gate, Bot Detection, and Skin Filtering.</div>
 <p>The <strong>Allowlist</strong> is a safety control that marks specific users as trusted. Users added to the allowlist can <strong>bypass automated enforcement</strong>, ensuring that legitimate players (staff, creators, testers, known community members) are not incorrectly removed by security systems.</p>
 <figure class="content-center">
     <img src="../../images/server-allowlist.png" alt="Allowlist" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="1476" height="615" />
@@ -162,11 +162,13 @@
 <ul>
 <li>They can bypass <strong>Member Gate</strong></li>
 <li>They can bypass <strong>Bot Detection</strong></li>
+<li>They can bypass <strong>Skin Filtering</strong></li>
 </ul>
 <p>This is particularly useful if you:</p>
 <ul>
 <li>run strict Member Gate rules (device locks, gamerscore thresholds, etc.)</li>
 <li>enable Experimental Bot Detection and want protection against false positives</li>
+<li>use Skin Filtering and want to protect trusted players from Beta false positives</li>
 <li>have trusted alt accounts, testers, or staff joining frequently</li>
 </ul>
 <blockquote>
@@ -208,7 +210,7 @@
 <hr>
 <h2 id="common-questions">Common Questions</h2>
 <h3 id="does-allowlisting-bypass-bans">“Does allowlisting bypass bans?”</h3>
-<p>No. The allowlist is intended to bypass automated gatekeeping systems such as Member Gate and Bot Detection. It does not override manual bans or realm-level enforcement actions.</p>
+<p>No. The allowlist is intended to bypass automated gatekeeping systems such as Member Gate, Bot Detection, and Skin Filtering. It does not override manual bans or realm-level enforcement actions.</p>
 <h3 id="should-we-allowlist-all-staff">“Should we allowlist all staff?”</h3>
 <p>Only staff who need reliable access should be allowlisted. For larger teams, consider allowlisting senior roles only, and rely on correct Member Gate rules for everyone else.</p>
 <hr>
