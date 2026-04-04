@@ -1,79 +1,144 @@
 ---
 label: Chat Relay
-description: Connect your Realm and Discord with a two-way chat bridge, allowing staff and players to stay aligned in real time across both platforms.
-order: 90
-author:
-  name: Frazer
-  avatar: https://avatars.githubusercontent.com/u/136254012?s=96&v=4
+description: Connect your Realm and Discord with a two-way chat bridge, including configurable message types, emote relaying, and built-in anti-spam controls.
+order: 86
+authors:
+  - name: Frazer
+    avatar: https://avatars.githubusercontent.com/u/136254012?s=96&v=4
 ---
 
-### What is Chat Relay?
+# Chat Relay
 
-Chat Relay is a **two-way communication bridge** between your **Minecraft Bedrock Realm chat** and a selected **Discord channel**. It is designed to maintain continuity between in-game activity and your community’s primary coordination space, enabling faster responses, better visibility, and more consistent moderation workflow.
+Chat Relay is a **two-way communication bridge** between your **Minecraft Bedrock Realm chat** and a selected **Discord channel**. It is designed to keep staff and community members aligned in real time, reducing platform switching, improving response time, and providing better visibility during incidents and events.
 
-### What Chat Relay Relays
+---
+
+## What Chat Relay Relays
 
 Chat Relay can relay multiple categories of activity from Minecraft to Discord, depending on your configuration:
 
-- **Player Chat Messages:** Standard messages sent by players in Realm chat.
-- **Tellraw Messages:** Command-generated, formatted outputs (commonly used for announcements, rewards, systems output, and scripted events).
-- **Death Messages:** Player death notifications for visibility during gameplay and moderation review.
+- **Player Chat Messages** - standard messages sent by players in Realm chat
+- **Tellraw Messages** - command-generated formatted outputs (announcements, scripted events, systems output)
+- **Death Messages** - player death notifications for gameplay visibility and moderation review
+- **Player Emotes** - player emotes performed in-game (useful for social visibility and activity context)
 
-> **Note:** Chat Relay is a communications utility. It does not independently “secure” or “protect” a Realm. All messages are still governed by your Realm rules and Discord policies.
+> **Note:** Chat Relay is a communications utility. It does not independently "secure" or "protect" a Realm. All relayed content remains subject to your Realm rules and Discord policies.
 
-### Requirements
+---
 
-To use Chat Relay as intended, ensure the following are in place:
+## Requirements
 
-- An **active Premium subscription**, where applicable to your deployment.
-- A Realm that is successfully connected to Realm Bot via the authorised account-linking flow.
-- A Discord channel designated for relay output (strongly recommended).
+To use Chat Relay reliably, ensure the following are in place:
 
-### How to Set Up
+- A Realm connected to Realm Bot via the authorised account-linking flow
+- A Discord channel designated for relay output (strongly recommended)
+- Any required in-game execution components for your deployment (for example, if your configuration requires an in-game relay presence)
 
-1.  Open the **Chat Relay** module inside the Realm Bot Dashboard.<br/>
-    ![Chat Relay Configuration](/images/chat-relay.png)
-2.  Enable **Chat Relay** using the **Chat Relay Configuration** toggle.
-3.  Set the **Discord Destination** channel (this is where Realm messages will be posted).
-4.  Under **Message Types**, enable the categories you want relayed to Discord:
-    - **Player Chat Messages**
-    - **Tellraw Messages**
-    - **Death Messages**
+---
 
-Once enabled, relay output should begin immediately when relevant messages occur in the Realm.
+## How to Set Up
 
-### Recommended Configuration
+1. Open the **Chat Relay** module inside the Realm Bot Dashboard.  
+   ![Chat Relay Configuration](/images/chat-relay.png)
+
+2. Enable **Chat Relay** using the main toggle.
+
+3. Set the **Discord Destination** channel (this is where Realm messages will be posted).
+
+4. Under **Message Types**, enable the categories you want relayed:
+   - Player Chat Messages
+   - Tellraw Messages
+   - Death Messages
+   - Player Emotes
+
+Once enabled, relay output begins when relevant events occur in the Realm.
+
+---
+
+## Anti-Spam Configuration
+
+Chat Relay includes an **Anti-Spam** system designed to reduce Discord-side spam and prevent the relay channel from being flooded during high activity or abuse attempts.
+
+The anti-spam controls apply a simple threshold rule:
+
+- **Message Threshold** - the maximum number of messages allowed before the system triggers
+- **Window (seconds)** - the time window used to count messages
+
+Example logic:
+- If **Threshold = 10** and **Window = 10 seconds**, then more than 10 relay events within 10 seconds will trigger the anti-spam behaviour for that window.
+
+Operational guidance:
+- Start conservative for public communities (e.g., 10-15 messages in 10-15 seconds)
+- Increase thresholds for high-volume servers where relay spam is expected during events
+- Pair anti-spam with Discord slowmode if your relay channel is public-facing
+
+> **Important:** Setting threshold/window to extremely low values can suppress legitimate activity. Tune this gradually based on real traffic.
+
+---
+
+## Player Emotes
+
+When **Player Emotes** are enabled, Chat Relay will relay emotes performed by players in-game to the Discord destination channel.
+
+This is useful for:
+- giving staff a clearer picture of in-game interaction (especially social spaces)
+- improving community "presence" in Discord without joining in-game
+- reinforcing activity awareness during events
+
+Recommendations:
+- Enable Emotes only if your relay channel is community-facing or if staff explicitly want behavioural context
+- Disable Emotes in staff-only operational channels where signal-to-noise is critical
+
+---
+
+## Recommended Configuration
 
 For a clean, professional relay channel that remains usable during peak activity:
 
 - Use a dedicated channel such as `#realm-chat`, `#chat-relay`, or `#realm-live`.
-- Enable only the message types you operationally need:
-  - Public communities: **Player Chat** + (optional) **Death Messages**
-  - Staff operations: **Player Chat** + **Tellraw** (common for system events)
-- Consider Discord **slowmode** if you anticipate spam or high throughput.
-- Treat the relay channel as an extension of in-game chat; apply the same behavioural standards.
+- Enable only the message types you actually need:
+  - Public communities: **Player Chat** + (optional) **Death Messages** + (optional) **Emotes**
+  - Staff operations: **Player Chat** + **Tellraw** (systems/events), usually without Emotes
+- Enable **Anti-Spam** if your Realm experiences bursts of activity or repeated disruption attempts.
+- Treat the relay channel as an extension of in-game chat; enforce the same rules.
 
-### Discord Permissions
+---
 
-Realm Bot must be able to operate in the destination channel. Ensure it has:
+## Discord Permissions
+
+Realm Bot must have these permissions in the destination channel:
 
 - **View Channel**
 - **Send Messages**
 - **Read Message History**
 
-If relay output does not appear, channel permissions should be the first item verified.
+Recommended (depending on formatting/output):
+- **Embed Links** (if relay uses embed-style output in your deployment)
 
-### Operational Notes
+If relay output does not appear, channel permissions should be the first thing verified.
 
-Chat Relay is most effective when used to support:
+---
 
-- **Live moderation visibility** (staff can follow incidents without joining immediately)
-- **Event coordination** (Discord staff can react to in-game developments in real time)
-- **Community responsiveness** (players receive timely answers without staff context-switching)
+## Troubleshooting
 
-If troubleshooting is required, confirm:
-- The correct Realm is selected in the dashboard
-- Chat Relay is enabled
-- The destination channel is correct
-- The Realm connection remains valid
-- The required Discord permissions are present
+### Nothing is relaying
+
+Check the following in order:
+- Chat Relay is enabled for the correct Realm
+- The correct Discord Destination channel is selected
+- Realm Bot has View Channel + Send Messages permission
+- Any required in-game dependencies for your configuration are online/connected
+
+### Relay is too noisy
+
+- Disable **Emotes**
+- Enable **Anti-Spam** with a moderate threshold/window
+- Consider Discord slowmode
+- Restrict who can speak in the relay channel (if Discord -> Realm relaying is enabled in your setup)
+
+### Messages appear delayed or inconsistent
+
+- Confirm the Realm is stable and the relay account/session is not disconnecting
+- Ensure the anti-spam threshold is not suppressing legitimate output during normal use
+
+---
