@@ -1,0 +1,545 @@
+{
+  "version": "4.4.0",
+  "created": "2026-04-05T15:53:43Z",
+  "files": [
+    {
+      "path": ".nojekyll"
+    },
+    {
+      "path": "404.html"
+    },
+    {
+      "path": "CNAME"
+    },
+    {
+      "path": "commands\\allowlist\\add\\index.html"
+    },
+    {
+      "path": "commands\\allowlist\\check\\index.html"
+    },
+    {
+      "path": "commands\\allowlist\\list\\index.html"
+    },
+    {
+      "path": "commands\\allowlist\\remove\\index.html"
+    },
+    {
+      "path": "commands\\banlist\\all\\index.html"
+    },
+    {
+      "path": "commands\\banlist\\lookup\\index.html"
+    },
+    {
+      "path": "commands\\player\\lookup\\index.html"
+    },
+    {
+      "path": "commands\\realm\\backup-create\\index.html"
+    },
+    {
+      "path": "commands\\realm\\ban\\index.html"
+    },
+    {
+      "path": "commands\\realm\\close\\index.html"
+    },
+    {
+      "path": "commands\\realm\\code-manage\\index.html"
+    },
+    {
+      "path": "commands\\realm\\invite\\index.html"
+    },
+    {
+      "path": "commands\\realm\\kick\\index.html"
+    },
+    {
+      "path": "commands\\realm\\lastseen\\index.html"
+    },
+    {
+      "path": "commands\\realm\\members\\index.html"
+    },
+    {
+      "path": "commands\\realm\\nickname\\index.html"
+    },
+    {
+      "path": "commands\\realm\\open\\index.html"
+    },
+    {
+      "path": "commands\\realm\\permission\\index.html"
+    },
+    {
+      "path": "commands\\realm\\players\\index.html"
+    },
+    {
+      "path": "commands\\realm\\playtime\\index.html"
+    },
+    {
+      "path": "commands\\realm\\recents\\index.html"
+    },
+    {
+      "path": "commands\\realm\\rename\\index.html"
+    },
+    {
+      "path": "commands\\realm\\sessions\\index.html"
+    },
+    {
+      "path": "commands\\realm\\slot\\index.html"
+    },
+    {
+      "path": "commands\\realm\\unban\\index.html"
+    },
+    {
+      "path": "commands\\stats\\leaderboard\\index.html"
+    },
+    {
+      "path": "commands\\stats\\rank\\index.html"
+    },
+    {
+      "path": "commands\\utility\\connect\\index.html"
+    },
+    {
+      "path": "commands\\utility\\dashboard\\index.html"
+    },
+    {
+      "path": "commands\\utility\\disconnect\\index.html"
+    },
+    {
+      "path": "commands\\utility\\help\\index.html"
+    },
+    {
+      "path": "commands\\utility\\invite\\index.html"
+    },
+    {
+      "path": "commands\\utility\\premium\\index.html"
+    },
+    {
+      "path": "commands\\utility\\shard\\index.html"
+    },
+    {
+      "path": "commands\\warn\\add\\index.html"
+    },
+    {
+      "path": "commands\\warn\\lookup\\index.html"
+    },
+    {
+      "path": "commands\\warn\\remove\\index.html"
+    },
+    {
+      "path": "commands\\world\\broadcast\\index.html"
+    },
+    {
+      "path": "commands\\world\\execute\\index.html"
+    },
+    {
+      "path": "commands\\world\\join\\index.html"
+    },
+    {
+      "path": "commands\\world\\leave\\index.html"
+    },
+    {
+      "path": "favicon.ico"
+    },
+    {
+      "path": "images\\acc_link1.png"
+    },
+    {
+      "path": "images\\acc_link2.png"
+    },
+    {
+      "path": "images\\activity-search.png"
+    },
+    {
+      "path": "images\\ban_log.png"
+    },
+    {
+      "path": "images\\behaviour-pack-tracker.png"
+    },
+    {
+      "path": "images\\bot-detection.png"
+    },
+    {
+      "path": "images\\brand\\banner.png"
+    },
+    {
+      "path": "images\\brand\\icon.png"
+    },
+    {
+      "path": "images\\chat_relay_tab.png"
+    },
+    {
+      "path": "images\\chat_replaysetting.png"
+    },
+    {
+      "path": "images\\chat-relay.png"
+    },
+    {
+      "path": "images\\cmd_permission_select.png"
+    },
+    {
+      "path": "images\\cmd_role_selector.png"
+    },
+    {
+      "path": "images\\connect.png"
+    },
+    {
+      "path": "images\\console.png"
+    },
+    {
+      "path": "images\\create-rule-button.png"
+    },
+    {
+      "path": "images\\daily-activity.png"
+    },
+    {
+      "path": "images\\dashhome.png"
+    },
+    {
+      "path": "images\\dcauth.png"
+    },
+    {
+      "path": "images\\getting-started-step-1.png"
+    },
+    {
+      "path": "images\\getting-started-step-2.png"
+    },
+    {
+      "path": "images\\image.png"
+    },
+    {
+      "path": "images\\invites-ui.png"
+    },
+    {
+      "path": "images\\invites-ui2.png"
+    },
+    {
+      "path": "images\\kick_log.png"
+    },
+    {
+      "path": "images\\kick.png"
+    },
+    {
+      "path": "images\\leveling-system.png"
+    },
+    {
+      "path": "images\\live-playerlist-example.png"
+    },
+    {
+      "path": "images\\live-playerlist.png"
+    },
+    {
+      "path": "images\\log_channel.png"
+    },
+    {
+      "path": "images\\logch1.png"
+    },
+    {
+      "path": "images\\logch2.png"
+    },
+    {
+      "path": "images\\logo.png"
+    },
+    {
+      "path": "images\\member-gate.png"
+    },
+    {
+      "path": "images\\membergate.png"
+    },
+    {
+      "path": "images\\ninvite.png"
+    },
+    {
+      "path": "images\\overview-bot.png"
+    },
+    {
+      "path": "images\\overview-gametest.png"
+    },
+    {
+      "path": "images\\overview-realm-modules.png"
+    },
+    {
+      "path": "images\\overview-realm.png"
+    },
+    {
+      "path": "images\\peak-hours.png"
+    },
+    {
+      "path": "images\\perm_tab.png"
+    },
+    {
+      "path": "images\\realm_consoletab.png"
+    },
+    {
+      "path": "images\\realm-console.png"
+    },
+    {
+      "path": "images\\realm-invite-accept.png"
+    },
+    {
+      "path": "images\\realm-invites-create-link.png"
+    },
+    {
+      "path": "images\\realm-invites-management.png"
+    },
+    {
+      "path": "images\\realm-invites-table.png"
+    },
+    {
+      "path": "images\\realm-overview.png"
+    },
+    {
+      "path": "images\\realms_tab.png"
+    },
+    {
+      "path": "images\\realms-vanity-link.png"
+    },
+    {
+      "path": "images\\recent-sessions.png"
+    },
+    {
+      "path": "images\\relay.png"
+    },
+    {
+      "path": "images\\resource-pack-tracker.png"
+    },
+    {
+      "path": "images\\scoreboard-definitions.png"
+    },
+    {
+      "path": "images\\scoreboard.png"
+    },
+    {
+      "path": "images\\server-account-linking.png"
+    },
+    {
+      "path": "images\\server-allowlist.png"
+    },
+    {
+      "path": "images\\server-command-settings.png"
+    },
+    {
+      "path": "images\\server-dashboard-list.png"
+    },
+    {
+      "path": "images\\server-dashboard-overview.png"
+    },
+    {
+      "path": "images\\server-logs.png"
+    },
+    {
+      "path": "images\\server-message-actions-explanation.png"
+    },
+    {
+      "path": "images\\server-message-actions-messages.png"
+    },
+    {
+      "path": "images\\server-mod-logs.png"
+    },
+    {
+      "path": "images\\server-permissions-roles.png"
+    },
+    {
+      "path": "images\\server-permissions-settings.png"
+    },
+    {
+      "path": "images\\server-setup.png"
+    },
+    {
+      "path": "images\\server-warnings.png"
+    },
+    {
+      "path": "images\\skin-filtering-example-context.png"
+    },
+    {
+      "path": "images\\skin-filtering-example.png"
+    },
+    {
+      "path": "images\\skin-filtering.png"
+    },
+    {
+      "path": "images\\tebex\\1.png"
+    },
+    {
+      "path": "images\\tebex\\2.png"
+    },
+    {
+      "path": "images\\tebex\\3.png"
+    },
+    {
+      "path": "images\\tebex\\4.png"
+    },
+    {
+      "path": "images\\tebex\\7.png"
+    },
+    {
+      "path": "images\\tebex\\dash-5.png"
+    },
+    {
+      "path": "images\\tr_relay.png"
+    },
+    {
+      "path": "images\\turnrelayon.png"
+    },
+    {
+      "path": "images\\vanity.png"
+    },
+    {
+      "path": "images\\verify_embed.png"
+    },
+    {
+      "path": "images\\warn_log.png"
+    },
+    {
+      "path": "images\\world-management.png"
+    },
+    {
+      "path": "images\\world-page.png"
+    },
+    {
+      "path": "images\\world-slot.png"
+    },
+    {
+      "path": "images\\wrld_join.png"
+    },
+    {
+      "path": "images\\xbox_msg.png"
+    },
+    {
+      "path": "index.html"
+    },
+    {
+      "path": "integrations\\tebex\\index.html"
+    },
+    {
+      "path": "integrations\\troubleshooting\\index.html",
+      "old": true
+    },
+    {
+      "path": "integrations\\troubleshooting\\private-title-history\\index.html",
+      "old": true
+    },
+    {
+      "path": "privacy\\index.html"
+    },
+    {
+      "path": "realm-modules\\bot-detection\\index.html"
+    },
+    {
+      "path": "realm-modules\\chat-relay\\index.html"
+    },
+    {
+      "path": "realm-modules\\leveling-system\\index.html"
+    },
+    {
+      "path": "realm-modules\\live-playerlist\\index.html"
+    },
+    {
+      "path": "realm-modules\\member-gate\\index.html"
+    },
+    {
+      "path": "realm-modules\\overview\\index.html"
+    },
+    {
+      "path": "realm-modules\\realm-console\\index.html"
+    },
+    {
+      "path": "realm-modules\\scoreboard-leaderboards\\index.html"
+    },
+    {
+      "path": "realm-modules\\skin-filtering\\index.html"
+    },
+    {
+      "path": "realm-modules\\vanity-url\\index.html"
+    },
+    {
+      "path": "realm-page\\realm-activity\\index.html"
+    },
+    {
+      "path": "realm-page\\realm-overview\\index.html"
+    },
+    {
+      "path": "realm-page\\realm-world\\index.html"
+    },
+    {
+      "path": "resources\\css\\retype.css"
+    },
+    {
+      "path": "resources\\fonts\\Inter-italic-latin-var.woff2"
+    },
+    {
+      "path": "resources\\fonts\\Inter-roman-latin-var.woff2"
+    },
+    {
+      "path": "resources\\js\\config.js"
+    },
+    {
+      "path": "resources\\js\\lunr.js"
+    },
+    {
+      "path": "resources\\js\\retype.js"
+    },
+    {
+      "path": "resources\\js\\search.json"
+    },
+    {
+      "path": "resources\\lunr.js.LICENSE.txt"
+    },
+    {
+      "path": "resources\\mermaid.js.LICENSE.txt"
+    },
+    {
+      "path": "resources\\prism.js.LICENSE.txt"
+    },
+    {
+      "path": "resources\\retype.js.LICENSE.txt"
+    },
+    {
+      "path": "resources\\retype.LICENSE.txt"
+    },
+    {
+      "path": "robots.txt"
+    },
+    {
+      "path": "server-dashboard\\overview\\index.html"
+    },
+    {
+      "path": "server-dashboard\\server-account-linking\\index.html"
+    },
+    {
+      "path": "server-dashboard\\server-allowlist\\index.html"
+    },
+    {
+      "path": "server-dashboard\\server-command-settings\\index.html"
+    },
+    {
+      "path": "server-dashboard\\server-invites\\index.html"
+    },
+    {
+      "path": "server-dashboard\\server-logs\\index.html"
+    },
+    {
+      "path": "server-dashboard\\server-message-actions\\index.html"
+    },
+    {
+      "path": "server-dashboard\\server-mod-logs\\index.html"
+    },
+    {
+      "path": "server-dashboard\\server-permissions\\index.html"
+    },
+    {
+      "path": "server-dashboard\\server-setup\\index.html"
+    },
+    {
+      "path": "server-dashboard\\server-warnings\\index.html"
+    },
+    {
+      "path": "setup\\index.html"
+    },
+    {
+      "path": "sitemap.xml.gz"
+    },
+    {
+      "path": "tos\\index.html"
+    },
+    {
+      "path": "troubleshooting\\private-title-history\\index.html"
+    }
+  ]
+}
