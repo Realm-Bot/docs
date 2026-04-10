@@ -2,6 +2,7 @@
 label: Skin Filtering
 description: Automatically detect and remove players using irregular skins (small, invisible/transparent, or 4D/Horion-style skins) to improve fairness and reduce exploit abuse.
 order: 30
+image: /images/custom/skinfiltering.png
 authors:
   - name: Frazer
     avatar: https://avatars.githubusercontent.com/u/136254012?s=96&v=4
