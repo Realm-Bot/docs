@@ -2,6 +2,7 @@
 label: Live Playerlist
 description: Publish an automatically updating list of online Realm players to a Discord channel, with optional playtime and device identification.
 order: 10
+image: /images/custom/liveplayerlist.png
 authors:
   - name: Frazer
     avatar: https://avatars.githubusercontent.com/u/136254012?s=96&v=4
