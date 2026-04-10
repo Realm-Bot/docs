@@ -2,6 +2,7 @@
 label: Member Gate
 description: Automatically kick or ban joining players based on Xbox profile signals - such as device platform, gamerscore, and social metrics - to enforce strict entry standards.
 order: 60
+image: /images/custom/membergate.png
 author:
   name: Frazer
   avatar: https://avatars.githubusercontent.com/u/136254012?s=96&v=4
