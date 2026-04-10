@@ -2,6 +2,7 @@
 label: Chat Relay
 description: Connect your Realm and Discord with a two-way chat bridge, including configurable message types, emote relaying, and built-in anti-spam controls.
 order: 86
+image: ../images/custom/chat-relay.png
 authors:
   - name: Frazer
     avatar: https://avatars.githubusercontent.com/u/136254012?s=96&v=4
