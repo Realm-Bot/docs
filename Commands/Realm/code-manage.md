@@ -12,6 +12,9 @@ Manage active invite codes for the Realm interactively.
 - **Permissions**: Authorized Users Only
 - **Usage**: `/realm code-manage <realm>`
 
+**Arguments**:
+- `realm` (Optional): The Realm to manage.
+
 **Interactive Features**:
 - **Add Code**: Create a new invite link.
 - **Disable/Enable**: specific codes.
