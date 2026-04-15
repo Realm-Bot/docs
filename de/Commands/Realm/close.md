@@ -7,10 +7,10 @@ authors:
 
 # `/realm close`
 
-Closes the Realm, preventing players from joining.
+Schließt den Realm. Verhindert Spieler zum eintretten.
 
-- **Permissions**: Authorized Users Only
-- **Usage**: `/realm close [realm]`
+- **Erlaubnis**: Nur Erlaubte Personal.
+- **Nutzung**: `/realm close [realm]`
 
-**Arguments**:
-- `realm` (Optional): The realm to close.
+**Argumente**:
+- `realm` (Optional): Den Realm zum schließen.
