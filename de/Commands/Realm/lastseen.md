@@ -1,5 +1,5 @@
 ---
-label: "/realm close"
+label: "/realm lastseen"
 authors:
   - name: Kaii
     avatar: https://avatars.githubusercontent.com/u/72093371?s=96&v=4
@@ -7,12 +7,14 @@ authors:
     avatar: https://avatars.githubusercontent.com/u/126988925?s=96&v=4
 ---
 
-# `/realm close`
+# `/realm lastseen`
 
-Schließt den Realm. Verhindert Spieler zum eintretten.
+Überprüfen, wann ein bestimmter Spieler zuletzt gesehen wurde.
 
 - **Erlaubnis**: Nur Erlaubte Personal.
-- **Nutzung**: `/realm close [realm]`
+- **Nutzung**: `/realm lastseen <user>`
 
 **Argumente**:
-- `realm` (Optional): Den Realm zum schließen.
+- `user` (erforderlich): Den Spieler zum überprüfen.
+
+*Notiz: Beschränkt auf die letzten 1000 Spieler.*
