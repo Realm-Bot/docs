@@ -15,5 +15,5 @@ Kicks ein Spieler von dem Realm (Entfert dem Spieler von der Spielerliste).
 
 **Argumente**:
 - `user` (Erforderlich): Den Spieler zum kicken.
-- `realm` (Optional): Der Realm wo der Kick passiert. Standardmäßig sind alle ausgewählt.
+- `realm` (Optional): Der Realm wo der Kick passiert. 
 - `reason` (Optional): Der Grund für den Kick.
