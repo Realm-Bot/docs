@@ -1,5 +1,5 @@
 ---
-label: "/realm nickname"
+label: "/realm playtime"
 authors:
   - name: Kaii
     avatar: https://avatars.githubusercontent.com/u/72093371?s=96&v=4
@@ -7,12 +7,9 @@ authors:
     avatar: https://avatars.githubusercontent.com/u/126988925?s=96&v=4
 ---
 
-# `/realm open`
+# `/realm playtime`
 
-Öffnet den Realm für Spieler zum beitretten.
+Zeig ein Spielers gesamte SPielzeit in den letzten Monat.
 
 - **Erlaubnis**: Nur Erlaubte Personal.
-- **Nutzung**: `/realm open [realm]`
-
-**Argumente**:
-- `realm` (Optional): Dem Realm zum öffenen. Standardmäßig sind alle ausgewählt.
+- **Nutzung**: `/realm playtime <user> <realm>`
