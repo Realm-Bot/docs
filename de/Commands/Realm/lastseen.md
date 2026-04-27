@@ -15,6 +15,6 @@ authors:
 - **Nutzung**: `/realm lastseen <user>`
 
 **Argumente**:
-- `user` (erforderlich): Den Spieler zum überprüfen.
+- `user` (erforderlich): Der Spieler zum überprüfen.
 
 *Notiz: Beschränkt auf die letzten 1000 Spieler.*

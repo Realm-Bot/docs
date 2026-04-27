@@ -15,5 +15,5 @@ Zeige die Aktuel online Spieler an.
 - **Nutzung**: `/realm players [realm]`
 
 **Arguments**:
-- `realm` (Optional): Den Realm zu zeigen. Standardmäßig sind alle ausgewählt.
+- `realm` (Optional): Der Realm zu zeigen. Standardmäßig sind alle ausgewählt.
 *Notiz:Anzeigeformat (Compact gegen Detailed) ist configuried in deine Server Einstelungen.*

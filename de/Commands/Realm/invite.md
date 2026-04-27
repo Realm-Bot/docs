@@ -15,5 +15,5 @@ Ladet ein Spieler zu den Realm.
 - **Nutzung**: `/realm invite <user> [realm]`
 
 **Argumente**:
-- `user` (Erforderlich): Den Spieler zum einladen.
-- `realm` (Optional): Den Realm zu dem eingeladen werden soll. Standardmäßig sind alle ausgewählt.
+- `user` (Erforderlich): Der Spieler zum einladen.
+- `realm` (Optional): Der Realm zu dem eingeladen werden soll. Standardmäßig sind alle ausgewählt.

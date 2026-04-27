@@ -1,5 +1,5 @@
 ---
-label: "/realm nickname"
+label: "/leaderboard"
 authors:
   - name: Kaii
     avatar: https://avatars.githubusercontent.com/u/72093371?s=96&v=4
@@ -7,12 +7,12 @@ authors:
     avatar: https://avatars.githubusercontent.com/u/126988925?s=96&v=4
 ---
 
-# `/realm open`
+# `/leaderboard`
 
-Öffnet den Realm für Spieler zum beitretten.
+Bietet einen Link zur Web-Rangliste des Servers.
 
 - **Erlaubnis**: Nur Erlaubte Personal.
-- **Nutzung**: `/realm open [realm]`
+- **Nutzung**: `/leaderboard`
 
-**Argumente**:
-- `realm` (Optional): Der Realm zum öffenen. Standardmäßig sind alle ausgewählt.
+**Antwort**:
+- Ein Knopf verlinked zu `https://dashboard.realmbot.dev/leaderboard/<server_id>`.

@@ -15,4 +15,4 @@ Schließt den Realm. Verhindert Spieler zum eintretten.
 - **Nutzung**: `/realm close [realm]`
 
 **Argumente**:
-- `realm` (Optional): Den Realm zum schließen.
+- `realm` (Optional): Der Realm zum schließen.

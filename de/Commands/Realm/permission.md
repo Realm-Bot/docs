@@ -15,6 +15,6 @@ authors:
 - **Nutzung**: `/realm permission <user> <permission> [realm]`
 
 **Argumente**:
-- `user` (Erforderlich): Den Spieler zu ändern.
+- `user` (Erforderlich): Der Spieler zu ändern.
 - `permission` (Erforderlich): Der Erlaubnislevel: `Besucher`, `Mitglied`, oder `Operator`.
-- `realm` (Optional): Den Realm wo die Änderung stattfindet. Standardmäßig sind alle ausgewählt.
+- `realm` (Optional): Der Realm wo die Änderung stattfindet. Standardmäßig sind alle ausgewählt.

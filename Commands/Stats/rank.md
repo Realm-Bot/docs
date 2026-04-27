@@ -13,5 +13,5 @@ Displays a rank card for a user, showing their level and XP earned through playi
 - **Usage**: `/rank <realm> [user]`
 
 **Arguments**:
-- `realm` (Required): The realm to check rank on.
-- `user` (Optional): The user to check. Defaults to yourself.
+- `realm` (Required): Der Realm  in dem der Rang überprüft werden soll.
+- `user` (Optional): Der us to check. Defaults to yourself.

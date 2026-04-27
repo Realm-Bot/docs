@@ -15,4 +15,4 @@ Zeigt Spieler die letztens online waren.
 - **Nutzung**: `/realm recents <realm>`
 
 **Argumente**:
-- `realm` (Required): Den Realm zu überprüfung.
+- `realm` (Required): Der Realm zu überprüfung.

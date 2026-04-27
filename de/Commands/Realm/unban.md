@@ -15,8 +15,8 @@ Unblockiert ein Spieler von den Realm.
 - **Nutzung**: `/realm unban <user> [realm] [reason] [attachment] [silent]`
 
 **Arguments**:
-- `user` (Erforderlich): Den Spieler zu unblockieren.
-- `realm` (Optional): Den Realm zu unblockieren auf. Standardmäßig alle.
+- `user` (Erforderlich): Der Spieler zu unblockieren.
+- `realm` (Optional): Der Realm zu unblockieren auf. Standardmäßig alle.
 - `reason` (Optional): Der Grund für die Unblockierung.
 - `attachment` (Optional): Beweiß für die Unblockierung.
 - `silent` (Optional): Wenn war, die Unblockierung wird nicht im Protokollkanal vermerkt.

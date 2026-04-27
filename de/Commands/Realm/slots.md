@@ -15,5 +15,5 @@ authors:
 - **Nutzung**: `/realm slot <realm> <slot>`
 
 **Arguments**:
-- `realm` (Erforderlich): Den Realm zum ändern.
+- `realm` (Erforderlich): Der Realm zum ändern.
 - `slot` (Erforderlich): `1`, `2`, or `3`.

@@ -15,5 +15,5 @@ authors:
 - **Nutzung**: `/realm nickname <realm> <nickname>`
 
 **Arguments**:
-- `realm` (Erforderlich): The realm to nickname.
+- `realm` (Erforderlich): Der Realm zu Stichname zu ändert.
 - `nickname` (Erforderlich): The neue Stichname (max 32 chars).

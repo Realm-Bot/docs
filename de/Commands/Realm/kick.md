@@ -14,6 +14,6 @@ Kicks ein Spieler von dem Realm (Entfert dem Spieler von der Spielerliste).
 - **Nutzung**: `/realm kick <user> [realm] [reason]`
 
 **Argumente**:
-- `user` (Erforderlich): Den Spieler zum kicken.
+- `user` (Erforderlich): Der Spieler zum kicken.
 - `realm` (Optional): Der Realm wo der Kick passiert. 
 - `reason` (Optional): Der Grund für den Kick.

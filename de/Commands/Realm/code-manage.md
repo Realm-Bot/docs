@@ -14,8 +14,8 @@ Verwalte aktiviere Einladungslinks für den Realm interaktiv.
 - **Erlaubnis**: Nur Erlaubte Personal.
 - **Nutzung**: `/realm code-manage <realm>`
 
-**Arguments**:
-- `realm` (Optional): Den Realm zum Verwalten.
+**Argumente**:
+- `realm` (Optional): Der Realm zum Verwalten.
 
 **Interactive Funktionen**:
 - **Neuer Einladungslink**: Neuer Einladungslink herstellen.
