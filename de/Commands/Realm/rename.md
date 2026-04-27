@@ -1,5 +1,5 @@
 ---
-label: "/realm recents"
+label: "/realm rename"
 authors:
   - name: Kaii
     avatar: https://avatars.githubusercontent.com/u/72093371?s=96&v=4
@@ -7,12 +7,13 @@ authors:
     avatar: https://avatars.githubusercontent.com/u/126988925?s=96&v=4
 ---
 
-# `/realm recents`
+# `/realm rename`
 
-Zeigt Spieler die letztens online waren.
+Nenne den Realm um.
 
 - **Erlbnis**: Nur Erlaubte Personal.
-- **Nutzung**: `/realm recents <realm>`
+- **Nutzung**: `/realm rename <realm> <new_name>`
 
-**Argumente**:
-- `realm` (Required): Den Realm zu überprüfung.
+**Arguments**:
+- `realm` (Erforderlich): Der Realm zu umbennen.
+- `new_name` (Erforderlich): Der neue Name (max 32 chara).

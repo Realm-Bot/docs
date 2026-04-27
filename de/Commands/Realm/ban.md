@@ -20,4 +20,4 @@ Blockiert ein Spieler von den Realm.
 - `reason` (Optional): Der Grund für die Blockierung.
 - `duration` (Optional): Dauer der Blockierung (z.b., "1d", "1h"). Standardmäßig zu dauerhaft.
 - `attachment` (Optional): Beweisse für die Blockierung (Foto/Video).
-- `silent` (Optional): Wenn was, wird nicht im Protokollkanal vermerkt. 
+- `silent` (Optional): Wenn war, wird nicht im Protokollkanal vermerkt. 
