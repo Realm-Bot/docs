@@ -9,7 +9,7 @@ authors:
 
 # `/disconnect`
 
-Trenne dein Xbox Konto vom Discord Server.
+Trenne dein Xbox Profil vom Discord Server.
 
 - **Erlaubnis**: Nur Erlaubte Personal.
 - **Nutzung**: `/disconnect [guild]`

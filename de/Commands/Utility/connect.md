@@ -9,8 +9,8 @@ authors:
 
 # `/connect`
 
-Verbinde dein Xbox Konto zu dein Discord Server. Das ist ein **notwendiger Schritt** für benuzung meiste Realm Bot funktionen.
+Verbinde dein Xbox Profil zu dein Discord Server. Das ist ein **notwendiger Schritt** für benuzung meiste Realm Bot funktionen.
 
 - **Erlaubnis**: Nur Erlaubte Personal.
 - **Nutzung**: `/connect`
-- **Antwort**: Überprüft ob dein Xbox Konto verbunden ist zu dein Realm Bot Dashboard Konto. Wenn es verbunden ist, verbindet es den Discord Server zu dein Konto, dabei gibt es zugang den Bot zugang zu dein Realm.
+- **Antwort**: Überprüft ob dein Xbox Profil verbunden ist zu dein Realm Bot Dashboard Konto. Wenn es verbunden ist, verbindet es den Discord Server zu dein Konto, dabei gibt es zugang den Bot zugang zu dein Realm.
