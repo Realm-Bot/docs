@@ -9,7 +9,7 @@ authors:
 
 # `/banlist lookup`
 
-Kuckt ob ein bestimmter Spieler blockiert ist auf den Realm.
+Überprüft, ob ein bestimmter Spieler auf dem Realm gebannt ist.
 
-- **Erlaubnis**: Nur Erlaubte Personal (Premium)
+- **Erlaubnis**: Nur autorisierte Benutzer (Premium)
 - **Nutzung**: `/banlist lookup <user> [realm]`

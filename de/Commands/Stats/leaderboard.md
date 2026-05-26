@@ -11,8 +11,8 @@ authors:
 
 Bietet einen Link zur Web-Rangliste des Servers.
 
-- **Erlaubnis**: Nur Erlaubte Personal.
+- **Erlaubnis**: Nur autorisierte Benutzer.
 - **Nutzung**: `/leaderboard`
 
 **Antwort**:
-- Ein Knopf verlinked zu `https://dashboard.realmbot.dev/leaderboard/<server_id>`.
+- Ein Knopf, der zu `https://dashboard.realmbot.dev/leaderboard/<server_id>` verlinkt.

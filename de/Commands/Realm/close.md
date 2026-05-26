@@ -9,10 +9,10 @@ authors:
 
 # `/realm close`
 
-Schließt den Realm. Verhindert Spieler zum eintretten.
+Schließt den Realm. Verhindert, dass Spieler beitreten können.
 
-- **Erlaubnis**: Nur Erlaubte Personal.
+- **Erlaubnis**: Nur autorisierte Benutzer.
 - **Nutzung**: `/realm close [realm]`
 
 **Argumente**:
-- `realm` (Optional): Der Realm zum schließen.
+- `realm` (Optional): Der Realm, der geschlossen werden soll.

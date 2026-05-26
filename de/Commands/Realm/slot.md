@@ -9,11 +9,11 @@ authors:
 
 # `/realm slot`
 
-Ändert die aktive Welt-Slot von den Realm.
+Ändert den aktiven Welt-Slot des Realms.
 
-- **Erlaubnis**: Nur Erlaubte Personal.
+- **Erlaubnis**: Nur autorisierte Benutzer.
 - **Nutzung**: `/realm slot <realm> <slot>`
 
-**Arguments**:
-- `realm` (Erforderlich): Der Realm zum ändern.
-- `slot` (Erforderlich): `1`, `2`, or `3`.
+**Argumente**:
+- `realm` (Erforderlich): Der Realm, der geändert werden soll.
+- `slot` (Erforderlich): `1`, `2` oder `3`.

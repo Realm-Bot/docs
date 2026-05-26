@@ -9,7 +9,7 @@ authors:
 
 # `/allowlist add`
 
-Fügt ein Spieler zu der Erlaubliste.
+Fügt einen Spieler zur Erlaubtliste des Bots hinzu.
 
-- **Erlaubnis**: Nur Erlaubte Personal (Premium)
+- **Erlaubnis**: Nur autorisierte Benutzer (Premium)
 - **Nutzung**: `/allowlist add <user>`

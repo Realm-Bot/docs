@@ -9,15 +9,15 @@ authors:
 
 # `/realm ban`
 
-Blockiert ein Spieler von den Realm.
+Bannt einen Spieler vom Realm.
 
-- **Erlaubnis**: Nur Erlaubte Personal.
+- **Erlaubnis**: Nur autorisierte Benutzer.
 - **Nutzung**: `/realm ban <user> [realm] [reason] [duration] [attachment] [silent]`
 
-**Arguments**:
-- `user` (Erforderlich): Der Spieler zu blockieren. Unterstützt Name or XUID.
-- `realm` (Optional): Der Realm wo die Blockierung stattfindet. Standardmäßig alle.
-- `reason` (Optional): Der Grund für die Blockierung.
-- `duration` (Optional): Dauer der Blockierung (z.b., "1d", "1h"). Standardmäßig zu dauerhaft.
-- `attachment` (Optional): Beweisse für die Blockierung (Foto/Video).
-- `silent` (Optional): Wenn war, wird nicht im Protokollkanal vermerkt. 
+**Argumente**:
+- `user` (Erforderlich): Der Spieler, der gebannt werden soll. Unterstützt Name oder XUID.
+- `realm` (Optional): Der Realm, auf dem der Bann stattfindet. Standardmäßig alle.
+- `reason` (Optional): Der Grund für den Bann.
+- `duration` (Optional): Dauer des Banns (z.B. "1d", "1h"). Standardmäßig dauerhaft.
+- `attachment` (Optional): Beweise für den Bann (Foto/Video).
+- `silent` (Optional): Wenn wahr, wird der Bann nicht im Protokollkanal vermerkt.

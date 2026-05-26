@@ -9,7 +9,7 @@ authors:
 
 # `/realm sessions`
 
-View a player's sessions in the past month.
+Zeigt die Sitzungen eines Spielers im letzten Monat an.
 
-- **Erlaubnis**: Nur Erlaubte Personal.
+- **Erlaubnis**: Nur autorisierte Benutzer.
 - **Nutzung**: `/realm sessions <user> <realm>`

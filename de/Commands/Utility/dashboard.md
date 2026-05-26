@@ -9,7 +9,7 @@ authors:
 
 # `/dashboard`
 
-Hier finden Sie Links zum Web-Dashboard.
+Hier findest du Links zum Web-Dashboard.
 
 - **Nutzung**: `/dashboard`
-- **Antwort**: Knopf der zur Startseite des Dashboards, zu ihren Kontoeinstellungen und zu den Einstellungen des aktuellen Servers führen (wenn möglich).
+- **Antwort**: Knöpfe, die zur Startseite des Dashboards, zu deinen Kontoeinstellungen und zu den Einstellungen des aktuellen Servers führen (wenn möglich).

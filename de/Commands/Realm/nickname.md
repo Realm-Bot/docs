@@ -9,11 +9,11 @@ authors:
 
 # `/realm nickname`
 
-Ändert den Stichname des Realms in den Roboter (Discord Befehle Liste).
+Ändert den Spitznamen des Realms im Bot (Discord-Befehlsliste).
 
-- **Erlaubnis**: Nur Erlaubte Personal.
+- **Erlaubnis**: Nur autorisierte Benutzer.
 - **Nutzung**: `/realm nickname <realm> <nickname>`
 
-**Arguments**:
-- `realm` (Erforderlich): Der Realm zu Stichname zu ändert.
-- `nickname` (Erforderlich): The neue Stichname (max 32 chars).
+**Argumente**:
+- `realm` (Erforderlich): Der Realm, dessen Spitzname geändert werden soll.
+- `nickname` (Erforderlich): Der neue Spitzname (max. 32 Zeichen).

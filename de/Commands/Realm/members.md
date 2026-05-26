@@ -9,13 +9,13 @@ authors:
 
 # `/realm members`
 
-Liste von allen Spielern von den Realm.
+Liste aller Spieler des Realms.
 
-- **Erlaubnis**: Nur Erlaubte Personal.
+- **Erlaubnis**: Nur autorisierte Benutzer.
 - **Nutzung**: `/realm members <realm> [filter] [name]`
 
 **Argumente**:
-- `realm` (Erforderlich): Der Realm von dem die Spieler gezeigt werden.
-- `filter` (Optional): Filted von `Visitor`, `Member`, `Operator`, or `Banned Players`.
-- `name` (Optional): Sucht für ein bestimten Gamertag.
-*Notiz: Do kannst nicht `filter` und `name` gleichzeitig benuzen.*
+- `realm` (Erforderlich): Der Realm, dessen Spieler angezeigt werden sollen.
+- `filter` (Optional): Filtere nach `Visitor`, `Member`, `Operator` oder `Banned Players`.
+- `name` (Optional): Sucht nach einem bestimmten Gamertag.
+*Hinweis: Du kannst nicht `filter` und `name` gleichzeitig benutzen.*

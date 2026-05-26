@@ -9,11 +9,11 @@ authors:
 
 # `/realm rename`
 
-Nenne den Realm um.
+Benennt den Realm um.
 
-- **Erlbnis**: Nur Erlaubte Personal.
+- **Erlaubnis**: Nur autorisierte Benutzer.
 - **Nutzung**: `/realm rename <realm> <new_name>`
 
-**Arguments**:
-- `realm` (Erforderlich): Der Realm zu umbennen.
-- `new_name` (Erforderlich): Der neue Name (max 32 chara).
+**Argumente**:
+- `realm` (Erforderlich): Der Realm, der umbenannt werden soll.
+- `new_name` (Erforderlich): Der neue Name (max. 32 Zeichen).

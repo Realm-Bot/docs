@@ -9,11 +9,11 @@ authors:
 
 # `/realm backup-create`
 
-Erstellt einen neuen Spielstand von den Realm.
+Erstellt einen neuen Spielstand des Realms.
 
-- **Erlaubnis**: Nur Erlaubte Personal.
+- **Erlaubnis**: Nur autorisierte Benutzer.
 - **Nutzung**: `/realm backup-create <realm> [name]`
 
 **Argumente**:
-- `realm` (Erforderlich): Der Realm von den Spielstand.
-- `name` (Optional): Ein Freigewähltennamen für den Spielstand.
+- `realm` (Erforderlich): Der Realm, für den ein Spielstand erstellt werden soll.
+- `name` (Optional): Ein frei wählbarer Name für den Spielstand.

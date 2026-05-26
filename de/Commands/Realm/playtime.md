@@ -9,7 +9,7 @@ authors:
 
 # `/realm playtime`
 
-Zeig ein Spielers gesamte SPielzeit in den letzten Monat.
+Zeigt die gesamte Spielzeit eines Spielers im letzten Monat an.
 
-- **Erlaubnis**: Nur Erlaubte Personal.
+- **Erlaubnis**: Nur autorisierte Benutzer.
 - **Nutzung**: `/realm playtime <user> <realm>`

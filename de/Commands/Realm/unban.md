@@ -9,14 +9,14 @@ authors:
 
 # `/realm unban`
 
-Unblockiert ein Spieler von den Realm.
+Entbannt einen Spieler vom Realm.
 
-- **Erlaubnis**: Nur Erlaubte Personal.
+- **Erlaubnis**: Nur autorisierte Benutzer.
 - **Nutzung**: `/realm unban <user> [realm] [reason] [attachment] [silent]`
 
-**Arguments**:
-- `user` (Erforderlich): Der Spieler zu unblockieren.
-- `realm` (Optional): Der Realm zu unblockieren auf. Standardmäßig alle.
-- `reason` (Optional): Der Grund für die Unblockierung.
-- `attachment` (Optional): Beweiß für die Unblockierung.
-- `silent` (Optional): Wenn war, die Unblockierung wird nicht im Protokollkanal vermerkt.
+**Argumente**:
+- `user` (Erforderlich): Der Spieler, der entbannt werden soll.
+- `realm` (Optional): Der Realm, auf dem die Entbannung stattfindet. Standardmäßig alle.
+- `reason` (Optional): Der Grund für die Entbannung.
+- `attachment` (Optional): Beweis für die Entbannung.
+- `silent` (Optional): Wenn wahr, wird die Entbannung nicht im Protokollkanal vermerkt.

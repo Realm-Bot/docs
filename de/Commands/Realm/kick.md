@@ -6,14 +6,15 @@ authors:
   - name: Seif (Übersetzer)
     avatar: https://avatars.githubusercontent.com/u/126988925?s=96&v=4
 ---
+
 # `/realm kick`
 
-Kicks ein Spieler von dem Realm (Entfert dem Spieler von der Spielerliste).
+Kickt einen Spieler vom Realm (entfernt den Spieler von der Spielerliste).
 
-- **Erlaubnis**: Nur Erlaubte Personal.
+- **Erlaubnis**: Nur autorisierte Benutzer.
 - **Nutzung**: `/realm kick <user> [realm] [reason]`
 
 **Argumente**:
-- `user` (Erforderlich): Der Spieler zum kicken.
-- `realm` (Optional): Der Realm wo der Kick passiert. 
+- `user` (Erforderlich): Der Spieler, der gekickt werden soll.
+- `realm` (Optional): Der Realm, auf dem der Kick stattfindet.
 - `reason` (Optional): Der Grund für den Kick.

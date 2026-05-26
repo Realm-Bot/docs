@@ -9,10 +9,10 @@ authors:
 
 # `/disconnect`
 
-Trenne dein Xbox Konto vom Discord Server.
+Trennt dein Xbox-Konto vom Discord-Server.
 
-- **Erlaubnis**: Nur Erlaubte Personal.
+- **Erlaubnis**: Nur autorisierte Benutzer.
 - **Nutzung**: `/disconnect [guild]`
 
 **Argumente**:
-- `guild` (Optional): Wenn `True`, wird es alle Daten verbunden mit diesen Server von der Datenbank. Standardmäßig ist es `False` (Trent nur den Konto).
+- `guild` (Optional): Wenn `True`, werden alle mit diesem Server verknüpften Daten aus der Datenbank gelöscht. Standardmäßig `False` (trennt nur das Konto).

@@ -9,12 +9,12 @@ authors:
 
 # `/realm permission`
 
-Ändert ein Spielers Erlaubnislevel auf dem Realm.
+Ändert die Berechtigungsstufe eines Spielers auf dem Realm.
 
-- **Erlaubnis**: Nur Erlaubte Personal.
+- **Erlaubnis**: Nur autorisierte Benutzer.
 - **Nutzung**: `/realm permission <user> <permission> [realm]`
 
 **Argumente**:
-- `user` (Erforderlich): Der Spieler zu ändern.
-- `permission` (Erforderlich): Der Erlaubnislevel: `Besucher`, `Mitglied`, oder `Operator`.
-- `realm` (Optional): Der Realm wo die Änderung stattfindet. Standardmäßig sind alle ausgewählt.
+- `user` (Erforderlich): Der Spieler, dessen Berechtigung geändert werden soll.
+- `permission` (Erforderlich): Die Berechtigungsstufe: `Besucher`, `Mitglied` oder `Operator`.
+- `realm` (Optional): Der Realm, auf dem die Änderung stattfindet. Standardmäßig sind alle ausgewählt.

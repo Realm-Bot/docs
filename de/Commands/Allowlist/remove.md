@@ -9,7 +9,7 @@ authors:
 
 # `/allowlist remove`
 
-Entfernt ein Spieler von der Erlaubliste.
+Entfernt einen Spieler von der Erlaubtliste.
 
-- **Erlaubnis**: Nur Erlaubte Personal (Premium)
+- **Erlaubnis**: Nur autorisierte Benutzer (Premium)
 - **Nutzung**: `/allowlist remove <user>`

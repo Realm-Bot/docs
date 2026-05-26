@@ -9,10 +9,10 @@ authors:
 
 # `/allowlist list`
 
-Zeigt die ganze Erlaubliste. 
+Zeigt die gesamte Erlaubtliste an.
 
-- **Erlaubnis**: Nur Erlaubte Personal (Premium)
+- **Erlaubnis**: Nur autorisierte Benutzer (Premium)
 - **Nutzung**: `/allowlist list [from]`
 
 **Argumente**:
-- `from` (Optional): Paginierungsversatz (start von index X).
+- `from` (Optional): Paginierungsversatz (Start ab Index X).

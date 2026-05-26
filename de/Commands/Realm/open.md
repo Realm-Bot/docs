@@ -1,5 +1,5 @@
 ---
-label: "/realm nickname"
+label: "/realm open"
 authors:
   - name: Kaii
     avatar: https://avatars.githubusercontent.com/u/72093371?s=96&v=4
@@ -9,10 +9,10 @@ authors:
 
 # `/realm open`
 
-Öffnet den Realm für Spieler zum beitretten.
+Öffnet den Realm, damit Spieler beitreten können.
 
-- **Erlaubnis**: Nur Erlaubte Personal.
+- **Erlaubnis**: Nur autorisierte Benutzer.
 - **Nutzung**: `/realm open [realm]`
 
 **Argumente**:
-- `realm` (Optional): Der Realm zum öffenen. Standardmäßig sind alle ausgewählt.
+- `realm` (Optional): Der Realm, der geöffnet werden soll. Standardmäßig sind alle ausgewählt.

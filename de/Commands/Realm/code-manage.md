@@ -9,17 +9,17 @@ authors:
 
 # `/realm code-manage`
 
-Verwalte aktiviere Einladungslinks für den Realm interaktiv.
+Verwalte aktive Einladungslinks für den Realm interaktiv.
 
-- **Erlaubnis**: Nur Erlaubte Personal.
+- **Erlaubnis**: Nur autorisierte Benutzer.
 - **Nutzung**: `/realm code-manage <realm>`
 
 **Argumente**:
 - `realm` (Optional): Der Realm zum Verwalten.
 
-**Interactive Funktionen**:
-- **Neuer Einladungslink**: Neuer Einladungslink herstellen.
-- **Deactivieren/Aktevieren**: Bestimmte Codes Deactivieren/Aktevieren.
-- **Unendlich Machen**: Ablaufdatum entfernen.
-- **Ablauf Festlegen**: Festlegen, wann ein Code abläuft (30m - 7d).
-- **Löschen**: Löschen von ein Code.
+**Interaktive Funktionen**:
+- **Neuer Einladungslink**: Einen neuen Einladungslink erstellen.
+- **Deaktivieren/Aktivieren**: Bestimmte Codes deaktivieren oder aktivieren.
+- **Unendlich machen**: Ablaufdatum entfernen.
+- **Ablauf festlegen**: Festlegen, wann ein Code abläuft (30m - 7d).
+- **Löschen**: Einen Code löschen.

@@ -9,12 +9,12 @@ authors:
 
 # `/realm lastseen`
 
-Überprüfen, wann ein bestimmter Spieler zuletzt gesehen wurde.
+Überprüft, wann ein bestimmter Spieler zuletzt gesehen wurde.
 
-- **Erlaubnis**: Nur Erlaubte Personal.
+- **Erlaubnis**: Nur autorisierte Benutzer.
 - **Nutzung**: `/realm lastseen <user>`
 
 **Argumente**:
-- `user` (erforderlich): Der Spieler zum überprüfen.
+- `user` (Erforderlich): Der Spieler zum Überprüfen.
 
-*Notiz: Beschränkt auf die letzten 1000 Spieler.*
+*Hinweis: Beschränkt auf die letzten 1000 Spieler.*

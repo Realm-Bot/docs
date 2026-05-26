@@ -9,11 +9,11 @@ authors:
 
 # `/realm players`
 
-Zeige die Aktuel online Spieler an.
+Zeigt die aktuell online befindlichen Spieler an.
 
-- **Erlaubnis**: Nur Erlaubte Personal.
+- **Erlaubnis**: Nur autorisierte Benutzer.
 - **Nutzung**: `/realm players [realm]`
 
-**Arguments**:
-- `realm` (Optional): Der Realm zu zeigen. Standardmäßig sind alle ausgewählt.
-*Notiz:Anzeigeformat (Compact gegen Detailed) ist configuried in deine Server Einstelungen.*
+**Argumente**:
+- `realm` (Optional): Der Realm, der angezeigt werden soll. Standardmäßig sind alle ausgewählt.
+*Hinweis: Das Anzeigeformat (Kompakt oder Detailliert) wird in deinen Servereinstellungen konfiguriert.*

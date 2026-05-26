@@ -9,11 +9,11 @@ authors:
 
 # `/realm invite`
 
-Ladet ein Spieler zu den Realm.
+Lädt einen Spieler zum Realm ein.
 
-- **Erlaubnis**: Nur Erlaubte Personal.
+- **Erlaubnis**: Nur autorisierte Benutzer.
 - **Nutzung**: `/realm invite <user> [realm]`
 
 **Argumente**:
-- `user` (Erforderlich): Der Spieler zum einladen.
-- `realm` (Optional): Der Realm zu dem eingeladen werden soll. Standardmäßig sind alle ausgewählt.
+- `user` (Erforderlich): Der Spieler, der eingeladen werden soll.
+- `realm` (Optional): Der Realm, zu dem eingeladen werden soll. Standardmäßig sind alle ausgewählt.

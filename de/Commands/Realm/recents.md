@@ -9,10 +9,10 @@ authors:
 
 # `/realm recents`
 
-Zeigt Spieler die letztens online waren.
+Zeigt Spieler, die kürzlich online waren.
 
-- **Erlbnis**: Nur Erlaubte Personal.
+- **Erlaubnis**: Nur autorisierte Benutzer.
 - **Nutzung**: `/realm recents <realm>`
 
 **Argumente**:
-- `realm` (Required): Der Realm zu überprüfung.
+- `realm` (Erforderlich): Der Realm zum Überprüfen.

@@ -9,7 +9,7 @@ authors:
 
 # `/allowlist check`
 
-Zeigt ob ein Spieler in der Erlaubtliste ist.
+Zeigt an, ob ein Spieler auf der Erlaubtliste steht.
 
--  **Erlaubnis**: Nur Erlaubte Personal (Premium)
+- **Erlaubnis**: Nur autorisierte Benutzer (Premium)
 - **Nutzung**: `/allowlist check <user>`
