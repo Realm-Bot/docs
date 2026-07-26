@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.5.3.829162161635">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.838421677849">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.5.3">
+    <meta name="generator" content="Retype 4.6.0">
 
     <!-- Primary Meta Tags -->
     <title>Chat Relay | Realm Bot Docs</title>
@@ -44,11 +44,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../favicon.ico" />
-    <link href="../../resources/css/retype.css?v=4.5.3.829162161635" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.6.0.838421677849" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.5.3.829162161635" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../../resources/js/retype.js?v=4.5.3" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.5.3.829162161635" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.838421677849" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.838421677849" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -170,6 +170,20 @@
 <blockquote>
 <p><strong>Note:</strong> Chat Relay is a communications utility. It does not independently &quot;secure&quot; or &quot;protect&quot; a Realm. All relayed content remains subject to your Realm rules and Discord policies.</p>
 </blockquote>
+<hr>
+<h2 id="leveling-system-integration">Leveling System Integration</h2>
+<p>Chat Relay can also support the <strong>Leveling System</strong> by allowing in-game chat participation to contribute to player progression.</p>
+<p>When this integration is enabled and operating correctly:</p>
+<ul>
+<li>Messages sent by players in the Realm&#x27;s in-game chat can award <strong>XP</strong></li>
+<li>That XP contributes to the player&#x27;s broader progression alongside <strong>playtime-based XP</strong></li>
+<li>As with standard Leveling System progression, accumulated XP affects a player&#x27;s <strong>level</strong> and relative <strong>ranking</strong></li>
+</ul>
+<p>This is intended to recognise active participation in the Realm, not just time spent online.</p>
+<blockquote>
+<p><strong>Important:</strong> XP is only awarded when both the <strong>Leveling System</strong> and the relevant <strong>Chat Relay</strong> functionality are enabled and operational for that Realm.</p>
+</blockquote>
+<p>Chat-based XP should not be treated as a reason to allow spam. <strong>Anti-Spam</strong> controls, moderation rules, and any existing community behaviour standards still apply. If a Realm experiences excessive message volume or abuse, tune Chat Relay accordingly and enforce the same standards you would apply to normal in-game chat.</p>
 <hr>
 <h2 id="requirements">Requirements</h2>
 <p>To use Chat Relay reliably, ensure the following are in place:</p>
