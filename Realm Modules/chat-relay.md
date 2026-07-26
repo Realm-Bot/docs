@@ -27,6 +27,24 @@ Chat Relay can relay multiple categories of activity from Minecraft to Discord, 
 
 ---
 
+## Leveling System Integration
+
+Chat Relay can also support the **Leveling System** by allowing in-game chat participation to contribute to player progression.
+
+When this integration is enabled and operating correctly:
+
+- Messages sent by players in the Realm's in-game chat can award **XP**
+- That XP contributes to the player's broader progression alongside **playtime-based XP**
+- As with standard Leveling System progression, accumulated XP affects a player's **level** and relative **ranking**
+
+This is intended to recognise active participation in the Realm, not just time spent online.
+
+> **Important:** XP is only awarded when both the **Leveling System** and the relevant **Chat Relay** functionality are enabled and operational for that Realm.
+
+Chat-based XP should not be treated as a reason to allow spam. **Anti-Spam** controls, moderation rules, and any existing community behaviour standards still apply. If a Realm experiences excessive message volume or abuse, tune Chat Relay accordingly and enforce the same standards you would apply to normal in-game chat.
+
+---
+
 ## Requirements
 
 To use Chat Relay reliably, ensure the following are in place:
