@@ -1,17 +1,44 @@
 ---
 label: "/warn remove"
+description: Record a warning-removal event for a player and selected Realm scope.
+order: 95
 authors:
   - name: Kaii
     avatar: https://avatars.githubusercontent.com/u/72093371?s=96&v=4
+  - name: Frazer
+    avatar: https://avatars.githubusercontent.com/u/136254012?s=96&v=4
 ---
 
 # `/warn remove`
 
-Remove a warning from a player.
+Records a warning-removal event for a Minecraft player. It preserves moderation history rather than deleting an earlier record.
 
-- **Permissions**: Authorized Users Only
-- **Usage**: `/warn remove <user> <reason> [realm]`
+## Syntax
 
-**Arguments**:
-- `user` (Required): The player to remove warning from.
-- `reason` (Required): The original warning reason to remove.
+`/warn remove <user> <reason> [realm]`
+
+## Arguments
+
+| Argument | Required | Description |
+|---|---:|---|
+| `user` | Yes | The player's Xbox gamertag. |
+| `reason` | Yes | The reason associated with the removal record. |
+| `realm` | No | One Realm to process. If omitted, every connected Realm is processed. |
+
+## Requirements
+
+- The Discord server must be connected to a Microsoft/Xbox account.
+- The member must have `command.warn.remove`, or be a Discord Administrator.
+- Premium and an active Relay Account are not required.
+
+## Current Limitation
+
+> **Current limitation:** The command does not necessarily deactivate or delete the original warning in the current implementation. It may therefore leave threshold totals unchanged.
+
+After recording a removal, use [`/warn lookup`](lookup.md) and verify the player's warning totals before relying on the change. Select one Realm explicitly to avoid unintended all-Realm scope.
+
+## Related Commands
+
+- [`/warn lookup`](lookup.md)
+- [`/warn add`](add.md)
+- [Command Troubleshooting](../troubleshooting.md)

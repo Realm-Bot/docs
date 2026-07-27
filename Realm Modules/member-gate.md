@@ -1,134 +1,86 @@
 ---
 label: Member Gate
-description: Automatically kick or ban joining players based on Xbox profile signals - such as device platform, gamerscore, and social metrics - to enforce strict entry standards.
+description: Evaluate joining players against device, gamerscore, and social-profile rules, with private-title-history and automated entry checks.
 order: 60
 image: /images/custom/membergate.png
-author:
-  name: Frazer
-  avatar: https://avatars.githubusercontent.com/u/136254012?s=96&v=4
+authors:
+  - name: Frazer
+    avatar: https://avatars.githubusercontent.com/u/136254012?s=96&v=4
 ---
 
-### What is Member Gate?
+# Member Gate
 
-Member Gate is an **automated entry moderation system** that evaluates players as they join your Realm and applies an action -typically **Kick** or **Ban** - based on rules you define. It is designed for Realm Owners who need stricter access control than invite codes alone can provide, especially for public or semi-public Realms.
+Member Gate evaluates players as they join a Realm and removes those who match configured entry rules. It is intended for communities that apply platform restrictions or cautious profile-based onboarding.
 
-Member Gate is particularly effective for Realms that want to restrict gameplay to specific player types (for example, a **Console-Only PvP Realm**), or for communities that need basic automated filtering for suspicious join patterns.
+> **Important:** Profile signals can be incomplete or private and may produce false positives. Member Gate should support, not replace, staff review and a clear appeal process.
 
-### How Member Gate Works
+## How Rules Work
 
-Member Gate operates using rule-based logic:
+- A Realm can have up to **20 rules**.
+- Each rule can contain up to **10 conditions**.
+- All conditions within a rule must match before the rule triggers.
+- Users on the Realm Bot allowlist are exempt.
+- Actions are recorded in the configured Automod logging channel.
 
-- You create one or more **Moderation Rules** in the dashboard.
-- Each rule contains:
-  - A **Moderation Action** (Kick or Ban)
-  - One or more **Conditions**
-- When a player joins, Member Gate checks each rule.
-- If a player matches the rule’s conditions, the configured action is executed.
+Although the dashboard may display Kick and Ban choices, current rule enforcement removes matching players with a **kick**. Do not rely on a Ban selection for persistent enforcement.
 
-> **Important:** Member Gate requires the **Relay Account** to be **in-game** to execute kicks/bans. If the Relay Account is not online in the Realm, Member Gate cannot enforce rules.
+Realm Bot may also apply additional account-consistency checks while Member Gate is enabled. These checks are intentionally not exposed in detail.
 
-### Conditions You Can Use
+## Available Conditions
 
-Member Gate supports multiple condition types, allowing flexible rule construction. Rules may include **any combination** of supported conditions, and are intended to be configured based on your Realm’s requirements.
+Rules can evaluate:
 
-Common condition categories include:
+- **Device includes** or **device excludes**
+- **Gamerscore above** or **below** a selected value
+- **Followers above** or **below** a selected value
+- **Following above** or **below** a selected value
 
-- **Device Platform**
-  - Device includes
-  - Device excludes
+Supported platform information may include Android, iOS, Windows, Xbox, PlayStation, and Nintendo where it is available from the connection.
 
-- **Gamerscore Thresholds**
-  - Gamerscore greater than
-  - Gamerscore less than
+## Private Title History
 
-- **Social Metrics**
-  - Followers greater than / less than
-  - Following greater than / less than
+Member Gate can require public Xbox game and app history. If this profile signal is private, Realm Bot may be unable to confirm device context and may remove the player.
 
-> **Rule Logic:** Within a single rule, **all conditions must be met** for the action to be executed. If any condition is not met, the rule will not trigger.
+Players affected by this reason should follow [Private Title History troubleshooting](../Troubleshooting/private-title-history.md).
 
-### Supported Device Platforms
+## Requirements
 
-Device-based rules can be used to enforce platform-specific Realms. Supported platforms include:
+- An active Realm Bot Premium subscription
+- Member Gate enabled for the correct Realm
+- A Relay Account connected to and present in the Realm
+- Access to the player's Xbox profile information
+- A Discord Automod destination for enforcement records
 
-- Android
-- iOS
-- Windows
-- Xbox
-- PlayStation
-- Nintendo
+The GameTest Pack is not required for Member Gate.
 
-This makes Member Gate suitable for use-cases such as:
-- Console-only PvP
-- Mobile-only casual Realms
-- Restricting Windows joins during targeted abuse periods
+## How to Set Up
 
-### Requirements
+1. Open **Member Gate** in the Realm Bot Dashboard.
+   ![Member Gate Configuration](/images/member-gate.png)
+2. Enable the module and select an Automod destination.
+3. Configure whether private title history should be checked.
+4. Create a clearly named rule and add only the conditions required for that policy.
+5. Save the rule, then test with both a permitted and a deliberately non-matching account.
 
-To use Member Gate effectively, ensure the following are in place:
+## Recommended Configuration
 
-- The Realm is connected to Realm Bot via the authorised linking flow
-- The **Relay Account is actively in-game**
-- A Discord channel is selected to receive enforcement logs (recommended)
+- Start with one conservative rule and review its logs before adding more.
+- Prefer device rules for explicit platform policies.
+- Avoid aggressive gamerscore or social thresholds for communities with new or younger accounts.
+- Publish entry requirements and provide an appeal route.
 
-### How to Set Up
+## Troubleshooting
 
-1.  Open the **Member Gate** module inside the Realm Bot Dashboard.<br/>
-    ![Member Gate Configuration](/images/member-gate.png)
-2.  Enable **Member Gate** using the main toggle.
-3.  Set the **Discord Destination** channel.
-    - Kick and ban actions will be logged to this channel for auditing and troubleshooting.
-4.  Under **Moderation Rules**, create a rule:
-    - Provide a short, clear rule name (for example: `Console Only` or `Block Low Gamerscore`).
-    - Select the **Moderation Action**: **Kick** or **Ban**.
-    - Add one or more **Conditions** and configure their values.
-5.  Confirm your Relay Account is **online in the Realm**, then test by joining with a permitted account and (if possible) a non-permitted account.
+### Rules do not trigger
 
-### Recommended Configuration Approach
+- Confirm Member Gate is enabled for the selected Realm.
+- Confirm the Relay Account is online and receiving join events.
+- Check that every condition in the rule is intended to match.
+- Confirm the player is not allowlisted.
 
-To reduce disruption and avoid accidental over-enforcement:
+### Legitimate players are removed
 
-- Start with **Kick** rather than Ban while tuning conditions.
-- Add rules gradually and monitor results through your Discord Destination logs.
-- Prefer device rules for “hard” restrictions (e.g., console-only), and threshold rules for “soft” filtering (e.g., suspicious profiles).
-
-### Example Rule Patterns
-
-**Console-only Realm**
-- Action: **Kick**
-- Conditions:
-  - Device excludes: Android, iOS, Windows
-
-**Filter low-signal accounts**
-- Action: **Kick**
-- Conditions:
-  - Gamerscore less than: *your chosen threshold*
-  - Followers less than: *your chosen threshold*
-
-**High-trust access**
-- Action: **Kick** or **Ban** (use caution)
-- Conditions:
-  - Gamerscore greater than: *threshold*
-  - Followers greater than: *threshold*
-
-> **Note:** Social and gamerscore thresholds can produce false positives depending on your community demographics (new players, alt accounts, privacy settings, etc.). Use conservative thresholds and iterate.
-
-### Best Practices
-
-- Restrict who can modify Member Gate settings in your staff structure.
-- Use a dedicated Discord log channel such as `#automod-logs`.
-- Publish clear entry expectations to players if you enforce strict platform or profile requirements.
-- Maintain a simple appeal path if a legitimate player is removed by automation.
-
-### Common Issues
-
-**Member Gate is enabled, but no actions occur**
-- Confirm the **Relay Account is in-game**.
-- Verify the correct Realm is selected in the dashboard.
-- Ensure rules are created and saved (and not empty).
-- Check the Discord Destination channel for enforcement messages.
-
-**Legitimate players are being removed**
-- Lower the strictness of gamerscore/follower thresholds.
-- Switch from **Ban** to **Kick** while tuning.
-- Prefer device-only restrictions if your goal is platform separation rather than profile filtering.
+- Review the exact rule recorded in the Automod log.
+- Relax profile thresholds or test one condition at a time.
+- Check whether Xbox privacy settings are hiding required profile data.
+- Add a verified trusted player to the allowlist where appropriate.

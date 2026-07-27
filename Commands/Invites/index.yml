@@ -1,0 +1,7 @@
+label: Invites
+description: Create, review, and remove Realm Bot managed web invite links.
+order: 96
+expanded: false
+authors:
+  - name: Frazer
+    avatar: https://avatars.githubusercontent.com/u/136254012?s=96&v=4

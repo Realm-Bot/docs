@@ -1,0 +1,7 @@
+label: Allowlist
+description: Manage Realm Bot's server-level exemption list for supported automated systems.
+order: 100
+expanded: false
+authors:
+  - name: Frazer
+    avatar: https://avatars.githubusercontent.com/u/136254012?s=96&v=4

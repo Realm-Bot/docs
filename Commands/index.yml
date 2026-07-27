@@ -1,3 +1,8 @@
+label: Commands
+description: Use Realm Bot's Discord slash commands to manage connected Minecraft Bedrock Realms, players, activity, and live Relay features.
 order: 97
 expanded: false
 icon: cpu
+authors:
+  - name: Frazer
+    avatar: https://avatars.githubusercontent.com/u/136254012?s=96&v=4

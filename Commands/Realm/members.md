@@ -1,19 +1,52 @@
 ---
 label: "/realm members"
+description: Display official Realm members and blocked players, with currently limited filtering and search.
+order: 85
 authors:
   - name: Kaii
     avatar: https://avatars.githubusercontent.com/u/72093371?s=96&v=4
+  - name: Frazer
+    avatar: https://avatars.githubusercontent.com/u/136254012?s=96&v=4
 ---
 
 # `/realm members`
 
-Lists all members of the Realm.
+Displays official membership and blocklist information for one selected Realm.
 
-- **Permissions**: Authorized Users Only
-- **Usage**: `/realm members <realm> [filter] [name]`
+## Syntax
 
-**Arguments**:
-- `realm` (Required): The realm to view members of.
-- `filter` (Optional): Filter by `Visitor`, `Member`, `Operator`, or `Banned Players`.
-- `name` (Optional): Search for a specific gamertag.
-*Note: You cannot use `filter` and `name` at the same time.*
+`/realm members <realm> [filter] [name]`
+
+## Arguments
+
+| Argument | Required | Description |
+|---|---:|---|
+| `realm` | Yes | The Realm whose members will be displayed. |
+| `filter` | No | `Visitor`, `Member`, `Operator`, or `Banned`. |
+| `name` | No | A gamertag to search for. |
+
+Do not provide `filter` and `name` together.
+
+## Requirements
+
+- The Discord server must be connected to a Microsoft/Xbox account with access to the Realm.
+- The member must have `command.realm.members`, or be a Discord Administrator.
+- Premium and an active Relay Account are not required.
+
+## Member Categories
+
+- **Visitor** - limited Minecraft Realm access.
+- **Member** - standard player access.
+- **Operator** - elevated in-game authority.
+- **Banned** - players on the official Realm blocklist.
+
+The command presents the results in interactive pages, normally with up to ten entries per page.
+
+> **Current limitation:** A supplied filter or name can be accepted without being reflected correctly in the displayed list. Treat the unfiltered list as the most reliable output and verify filtered decisions in the official Realm member interface.
+
+## Related Commands
+
+- [`/realm players`](players.md)
+- [`/realm permission`](permission.md)
+- [`/banlist all`](../Banlist/all.md)
+- [Command Troubleshooting](../troubleshooting.md)

@@ -42,9 +42,11 @@ Key options include:
 
 > **Important:** Many modules (for example, Chat Relay, Realm Console, Bot Detection, Member Gate, and Skin Filtering) require an in-game Relay Account to perform actions. If the bot is not in-game, these modules may not function.
 
+An active Realm Bot Premium subscription is required for the connected Relay Account workflow. Connection-dependent features may pause during Realm disconnections or Microsoft/Xbox authentication failures.
+
 ---
 
-## Gametest Pack Management
+## GameTest Pack Management
 
 Gametest Pack Management controls the dependency pack used for advanced Realm features that require in-game scripting capabilities. Where a module relies on the Gametest pack, it must be installed and active.
 
@@ -55,15 +57,19 @@ This section includes:
 - **Beta API Requirement**  
   Some Gametest functionality requires **Beta APIs** to be enabled in your Realm settings. If prompted, enable **Use Beta APIs** under your Realm’s experimental features.
 
-- **Auto Update Gametest Pack**  
-  Automatically updates the pack when new versions are available (recommended if you prefer minimal maintenance).
+- **Auto Update GameTest Pack**
+  Installs an available update when Realm Bot next joins the Realm. This is not a continuous background update.
 
 - **Pack Actions**
   - **Install Pack** - installs the dependency pack into the Realm
+  - **Update Pack** - installs the latest available version
+  - **Remove Pack** - removes the managed pack
   - **Manual Download** - provides a download option for manual deployment workflows
   - **Check For Updates** - checks whether a newer pack version is available
 
 > **Note:** If a module is not behaving as expected and it depends on Gametest, first confirm the pack is installed, enabled, and current.
+
+See [Relay Account and GameTest Dependencies](relay-account-and-gametest.md) for installation requirements and the feature dependency matrix.
 
 ---
 
@@ -76,16 +82,20 @@ The Realm Modules section contains all configurable feature modules available fo
 From here you can configure all Realm Modules currently available for your Realm:
 
 - **Bot Detection** - mitigation for malicious bot accounts, including an Experimental mode for stricter detection
-- **Chat Relay** - a two-way chat bridge between your Realm and Discord
-- **Leveling System** - playtime-based XP progression with configurable level-up announcements
+- **Chat Relay** - a two-way chat bridge with category-specific channels, custom messages, Fun Mode, and Anti-Spam
+- **Leveling System** - chat and online-activity XP with persistent rankings and configurable announcements
 - **Live Playerlist** - automatically publish and refresh a Discord view of which players are online
-- **Member Gate** - rule-based auto-moderation for join restrictions using device, gamerscore, and social metrics
+- **Member Gate** - rule-based entry moderation using device, gamerscore, social metrics, and private-title-history checks
 - **Realm Console** - run Minecraft commands through a secured Discord console channel
 - **Scoreboard Leaderboards** - publish in-game scoreboard rankings to Discord
 - **Skin Filtering** - detect and remove players using irregular or exploit-oriented skins
 - **Vanity URL** - create a branded, stable invite entry point for your Realm
 
-If you also use monetization tooling, see the separate **Tebex** integration page for store fulfilment setup.
+Also see:
+
+- [Relay Account and GameTest Dependencies](relay-account-and-gametest.md) for shared operational requirements
+- [Tebex](../Integrations/tebex.md) for store fulfilment
+- [Embed Panel](../Tools/embed-panel.md) for persistent Discord panels with link or Realm-action buttons
 
 > **Operational Guidance:** Restrict access to high-impact modules (such as Realm Console, Member Gate, and Skin Filtering) to trusted administrators. These features can directly affect gameplay, player access, and server stability.
 

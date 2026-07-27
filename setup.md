@@ -90,6 +90,8 @@ Recommended configuration sequence:
    - Skin Filtering
    - Leveling
    - Scoreboard Leaderboards
+   - Live Playerlist
+   - Vanity URL
    - (Optional) Tebex Integration
 
 You can also view command help in Discord at any time:
@@ -119,4 +121,9 @@ If linking or Realm access fails, review your Xbox privacy settings to ensure ex
 
 ## Next Steps
 
-Once setup is complete, proceed to the **Overview** page to learn
+Once setup is complete:
+
+- Open the [Realm Modules Overview](<Realm Modules/overview.md>) to configure features.
+- Review [Relay Account and GameTest Dependencies](<Realm Modules/relay-account-and-gametest.md>) before enabling live or GameTest-dependent modules.
+- Configure [Permissions](<Server Dashboard/server-permissions.md>) and Discord channel access before giving staff operational control.
+- Use [Troubleshooting](Troubleshooting/private-title-history.md) when an automated entry check reports private title history.

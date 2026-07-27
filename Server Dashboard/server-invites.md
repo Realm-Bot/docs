@@ -42,6 +42,8 @@ To accept the invite, the user will be asked to securely sign in with their **Mi
 - the Realm appears in their **Minecraft Realms list** in-game
 - they can join the Realm normally through Minecraft
 
+Server **Account Linking** can also support automatic invitations, but it is a separate Microsoft verification workflow rather than the same public Invite Link acceptance page.
+
 > **Security Clarification:** Users authenticate through Microsoft’s standard login flow. Players should only sign in on pages they trust and should verify the domain before proceeding.
 
 ---
@@ -75,7 +77,7 @@ When creating a link, you can configure:
 
 - **Max Uses** (optional)  
   Limit how many successful joins the link can be used for.  
-  Leave empty for unlimited.
+  A value of `0` means unlimited.
 
 - **Expiration Date** (optional)  
   Set a date/time when the link stops working automatically.  
@@ -102,6 +104,8 @@ Each entry typically shows:
 - **Expires In** - time until expiry (or “Never”)  
 - **Status** - toggle to enable/disable the link quickly  
 - **Actions** - common actions include copying the link and deleting it
+
+Disabled links, expired links, and links that have reached their maximum use count cannot accept further joins.
 
 ### Recommended Workflow
 - If a link is being abused, **disable it immediately** using the Status toggle.

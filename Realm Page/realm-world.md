@@ -32,6 +32,8 @@ Typical usage:
 - Select the slot you want to manage (e.g., Slot 1, Slot 2, Slot 3).
 - Confirm the slot name and game mode (e.g., Survival, Adventure) before making changes.
 
+Realm slots are numbered **1 through 3**. Every upload, replacement, and pack action is scoped to the currently active slot.
+
 **Best practice:** Treat world slots as separate environments. Keep at least one slot reserved for backups/testing if your workflow allows it.
 
 ---
@@ -73,6 +75,7 @@ Behaviour Packs change gameplay logic and behaviour (systems, mechanics, ruleset
 
 ### Uploading Behaviour Packs
 - Supported file types: **.mcpack** or **.zip**
+- Maximum upload size: **25 MB** on Free plans or **50 MB** with Premium
 - Drag-and-drop is supported, or click to upload.
 
 ### Enabled vs Disabled Packs
@@ -108,6 +111,7 @@ Resource Packs affect presentation (textures, sounds, UI resources, and client-s
 
 ### Uploading Resource Packs
 - Supported file types: **.mcpack** or **.zip**
+- Maximum upload size: **25 MB** on Free plans or **50 MB** with Premium
 - Drag-and-drop is supported, or click to upload.
 
 ### Enabled vs Disabled Packs

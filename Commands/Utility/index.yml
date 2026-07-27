@@ -1,0 +1,7 @@
+label: Utility
+description: Connect Realm Bot, open service resources, review subscription information, and view bot status.
+order: 94
+expanded: false
+authors:
+  - name: Frazer
+    avatar: https://avatars.githubusercontent.com/u/136254012?s=96&v=4

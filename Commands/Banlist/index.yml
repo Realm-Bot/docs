@@ -1,0 +1,7 @@
+label: Banlist
+description: Inspect official Minecraft Realm blocklists and submit players for Realm Bot Global Ban review.
+order: 99
+expanded: false
+authors:
+  - name: Frazer
+    avatar: https://avatars.githubusercontent.com/u/136254012?s=96&v=4

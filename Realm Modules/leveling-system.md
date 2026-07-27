@@ -1,86 +1,103 @@
 ---
 label: Leveling System
-description: Award progressive XP based on playtime, automatically increasing difficulty at higher levels, with configurable in-game and Discord level-up announcements.
+description: Award XP for eligible chat activity and online play, with persistent levels, rankings, leaderboards, and configurable level-up announcements.
 order: 20
-author:
-  name: Frazer
-  avatar: https://avatars.githubusercontent.com/u/136254012?s=96&v=4
+authors:
+  - name: Frazer
+    avatar: https://avatars.githubusercontent.com/u/136254012?s=96&v=4
 ---
 
-### What is the Leveling System?
+# Leveling System
 
-The Leveling System is a progression module that awards players **XP over time** based on their **in-game playtime**. As players accumulate XP, they level up through a curve that naturally becomes more demanding at higher levels. This ensures early progression feels rewarding while long-term progression remains meaningful for committed players.
+The Leveling System records persistent player progression for a Realm. Eligible in-game chat activity and time spent online can award XP, which contributes to levels, rankings, and the Realm leaderboard.
 
-### How XP and Levels Work
+## How XP Is Awarded
 
-XP is awarded progressively as players remain active in-game. The system uses a **progression curve**, meaning:
+When the module is enabled and the Relay Account connection is operational:
 
-- Lower levels are reached more quickly to support onboarding and early engagement.
-- Higher levels require more XP, preventing rapid endgame progression and keeping long-term progression competitive.
+- **Chat activity:** an eligible in-game message awards a random **15-25 XP**, at most once per player per minute.
+- **Online activity:** online players receive a random **15-25 XP** during a progression check approximately every **5 minutes**.
+- **Relay Account:** messages and activity from the Realm Bot Relay Account do not receive XP.
 
-This makes the Leveling System suitable for:
-- Long-running survival Realms
-- Competitive communities seeking a consistent grind
-- Staff-managed events where activity-based rewards matter
+These awards recognise normal participation. Repeated messages are not a reliable progression method, and Chat Relay Anti-Spam controls and Realm moderation rules still apply.
 
-### Level-Up Announcements
+## Levels, Ranks, and Leaderboards
+
+Each level requires more XP than the previous level. XP and levels are stored for the Realm and used by:
+
+- Player rank displays
+- The Leveling leaderboard
+- Level-up announcements
+
+Players with a higher level are ranked first; XP determines ordering between players at the same level.
+
+## Level-Up Announcements
 
 When a player levels up, Realm Bot can optionally announce this:
 
-- **In-Game** (Minecraft chat)
-- **In Discord** (a dedicated announcement channel)
+- **In-game** through Minecraft chat
+- **In Discord** through a selected announcement channel
 
-Both announcement destinations are configurable, allowing you to keep level-up messages visible without disrupting gameplay or staff operations.
+Both destinations are configurable.
 
-### Custom Level-Up Message
+## Custom Level-Up Message
 
-You may customise the message used for level-up announcements. The message supports variable placeholders that are replaced dynamically at runtime:
+The level-up message supports these placeholders:
 
-- `{user}` - the player’s current username
-- `{level}` - the player’s new level
-- `{rank}` - the player’s ranking relative to others
+- `{user}` - the player's current username
+- `{level}` - the player's new level
+- `{rank}` - the player's ranking relative to others
 
 Example:
 
 `Congratulations {user} for reaching level {level}! You are now ranked #{rank}.`
 
-> **Note:** Use placeholders exactly as shown. Incorrect formatting may result in variables not being replaced as expected.
+> **Note:** Use placeholders exactly as shown. Incorrect formatting may prevent a value from being replaced.
 
-### Requirements
+## Requirements
 
 To use the Leveling System:
-- The module must be enabled in the Realm Bot Dashboard.
-- Players must be actively playing in the Realm to accrue playtime-based XP.
 
-### How to Set Up
+- An active Realm Bot Premium subscription is required.
+- The module must be enabled for the correct Realm.
+- The Relay Account must be connected and receiving live Realm events.
+- Players must be online for online-activity awards or send an eligible in-game message for chat awards.
 
-1.  Open the **Leveling System** module inside the Realm Bot Dashboard.<br/>
-    ![Leveling System Configuration](/images/leveling-system.png)
-2.  Enable the **Leveling System** toggle.
-3.  (Optional) Select a **Discord Destination** channel for level-up announcements.
-4.  Under **Announcement Settings**, choose whether to **Send In-Game Messages** for level-ups.
-5.  Edit the **Custom Level Up Message** to match your community’s style, using `{user}`, `{level}`, and `{rank}` where appropriate.
+The GameTest Pack is not required for Leveling progression.
 
-### Recommended Configuration
+## How to Set Up
 
-For community Realms:
-- Enable **in-game announcements** if level-ups are a core part of the player experience.
-- Use a dedicated Discord channel such as `#level-ups` to preserve visibility without cluttering general chat.
+1. Open the **Leveling System** module inside the Realm Bot Dashboard.
+   ![Leveling System Configuration](/images/leveling-system.png)
+2. Enable the **Leveling System** toggle.
+3. Optionally select a **Discord Destination** for level-up announcements.
+4. Choose whether to **Send In-Game Messages** for level-ups.
+5. Customise the message using `{user}`, `{level}`, and `{rank}` where appropriate.
 
-For competitive or staff-heavy Realms:
-- Consider disabling in-game announcements and using Discord only.
-- Keep your message concise and consistent to avoid spam during peak activity.
+## Recommended Configuration
 
-### Operational Notes
+- Use a dedicated Discord channel such as `#level-ups` if announcements would clutter general chat.
+- Keep the level-up message concise during busy periods.
+- Apply normal moderation rules to chat; XP should reward participation rather than message volume.
 
-- The Leveling System is designed to reward sustained engagement rather than short bursts of play.
-- The progression curve is intended to maintain long-term value; higher levels should remain an achievement.
-- If you are migrating from older leveling data, use the dashboard migration option where available, and avoid resetting levels unless you intend to fully restart progression for the Realm.
+## Data Actions and Safety
 
-### Data Actions and Safety
+The dashboard provides an action to **reset all user levels** for the selected Realm.
 
-The module may provide administrative actions such as:
-- **Migrating data** from a prior leveling system
-- **Resetting all user levels** for the Realm
+> **Warning:** Resetting levels is irreversible. Confirm the selected Realm and communicate the change before proceeding.
 
-> **Warning:** Reset actions are typically permanent. Use resets only when you have confirmed your intent and communicated the change to your community in advance.
+## Troubleshooting
+
+### XP is not updating
+
+- Confirm Leveling is enabled for the correct Realm.
+- Confirm the Relay Account is online and the Realm connection is healthy.
+- For chat XP, wait at least one minute between eligible awards.
+- For online XP, allow at least five minutes for the next progression check.
+- Confirm the player is not the Relay Account.
+
+### Announcements do not appear
+
+- Confirm a Discord destination is selected for Discord announcements.
+- Verify Realm Bot can **View Channel**, **Send Messages**, and **Embed Links**.
+- Confirm **Send In-Game Messages** is enabled if an in-game announcement is expected.

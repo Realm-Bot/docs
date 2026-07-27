@@ -1,0 +1,7 @@
+label: Player
+description: Retrieve enriched live player information or the most recent stored fallback record.
+order: 98
+expanded: false
+authors:
+  - name: Frazer
+    avatar: https://avatars.githubusercontent.com/u/136254012?s=96&v=4
