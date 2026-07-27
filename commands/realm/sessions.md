@@ -1,6 +1,33 @@
 # `/realm sessions`
 
-View a player's sessions in the past month.
+Displays recorded activity intervals for one player and Realm, grouped by day.
 
-- **Permissions**: Authorized Users Only
-- **Usage**: `/realm sessions <user> <realm>`
+## Syntax
+
+`/realm sessions <user> <realm>`
+
+## Arguments
+
+| Argument | Required | Description |
+|---|---:|---|
+| `user` | Yes | The player's Xbox gamertag. |
+| `realm` | Yes | The Realm whose activity will be displayed. |
+
+## Requirements
+
+- The Discord server must be connected to a Microsoft/Xbox account.
+- The member must have `command.realm.sessions`, or be a Discord Administrator.
+- Activity must have been collected for the player.
+- Premium and a currently active Relay Account are not required to read existing data.
+
+## Output
+
+Each day can include session start, end, duration, and a daily total. Interactive pages display up to **five days per page**.
+
+The upstream activity service defines the available date range. Stored sessions can be incomplete if collection was unavailable while the player was active.
+
+## Related Commands
+
+- [`/realm playtime`](playtime.md)
+- [`/realm recents`](recents.md)
+- [Command Troubleshooting](../troubleshooting.md)

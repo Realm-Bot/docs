@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.838421677849">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.838438362497">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -44,11 +44,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../favicon.ico" />
-    <link href="../../resources/css/retype.css?v=4.6.0.838421677849" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.6.0.838438362497" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.838421677849" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.838438362497" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.838421677849" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.838438362497" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -178,8 +178,10 @@
 <ul>
 <li>The Realm Bot <strong>Relay Account</strong> to be <strong>in-game</strong></li>
 <li>Skin Filtering enabled within the Realm&#x27;s modules section</li>
+<li>An active Realm Bot Premium subscription</li>
 </ul>
 <p>If the Relay Account is not in-game, the system cannot reliably enforce filtering actions.</p>
+<p>The GameTest Pack is not required for Skin Filtering. Players on the Realm Bot allowlist are intended to bypass filtering.</p>
 <hr>
 <h2 id="filter-settings">Filter Settings</h2>
 <p>You can enable filtering per category. These categories are designed to target common exploit-oriented skin patterns.</p>
@@ -211,7 +213,7 @@
 </blockquote>
 <hr>
 <h2 id="what-enforcement-looks-like">What Enforcement Looks Like</h2>
-<p>When a player is detected using a disallowed skin type, Realm Bot can take an automated action and record the outcome. In Discord, this typically appears as an automated moderation entry showing the player connection context and the reason for removal.</p>
+<p>When a player is detected using a disallowed skin type, Realm Bot removes the player with the reason <strong>Unfair Skin</strong> and records the outcome in the configured Automod channel.</p>
 <figure class="content-center">
     <img src="../../images/skin-filtering-example.png" alt="Skin Filtering Example (Discord Output)" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="473" height="327" />
     <figcaption class="caption">Skin Filtering Example (Discord Output)</figcaption>
@@ -267,12 +269,14 @@
 <li>Confirm the Relay Account is <strong>in-game</strong></li>
 <li>Confirm Skin Filtering is enabled for the correct Realm</li>
 <li>Ensure at least one filter category is toggled on</li>
+<li>Confirm the player is not on the Realm Bot allowlist</li>
 </ul>
 <h3 id="legitimate-players-are-being-removed">Legitimate players are being removed</h3>
 <ul>
 <li>Disable the most aggressive category first (commonly 4D/Horion)</li>
 <li>Re-test with a smaller scope (enable one filter at a time)</li>
 <li>Treat early Beta enforcement as reviewable until detection stabilises</li>
+<li>If an allowlisted player is affected, record the gamertag and timestamp and contact support</li>
 </ul>
 <hr>
 

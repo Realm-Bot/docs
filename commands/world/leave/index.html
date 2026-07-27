@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.838421677849">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.838438362497">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -12,7 +12,7 @@
     <!-- Primary Meta Tags -->
     <title>/world leave | Realm Bot Docs</title>
     <meta name="title" content="/world leave | Realm Bot Docs">
-    <meta name="description" content="Disconnects the bot from the Realm's game server.">
+    <meta name="description" content="Disable persistent joining and disconnect the Relay Account from one or all selected Realms.">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://help.realmbot.dev/commands/world/leave/">
@@ -22,7 +22,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://help.realmbot.dev/commands/world/leave/">
     <meta property="og:title" content="/world leave | Realm Bot Docs">
-    <meta property="og:description" content="Disconnects the bot from the Realm's game server.">
+    <meta property="og:description" content="Disable persistent joining and disconnect the Relay Account from one or all selected Realms.">
     <meta property="og:site_name" content="Realm Bot">
     <meta property="og:locale" content="en_US">
 
@@ -30,7 +30,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://help.realmbot.dev/commands/world/leave/">
     <meta name="twitter:title" content="/world leave | Realm Bot Docs">
-    <meta name="twitter:description" content="Disconnects the bot from the Realm's game server.">
+    <meta name="twitter:description" content="Disable persistent joining and disconnect the Relay Account from one or all selected Realms.">
 
     <!-- Alternate Markdown -->
     <link rel="alternate" type="text/markdown" href="https://help.realmbot.dev/commands/world/leave.md">
@@ -38,11 +38,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../../favicon.ico" />
-    <link href="../../../resources/css/retype.css?v=4.6.0.838421677849" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=4.6.0.838438362497" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.6.0.838421677849" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.6.0.838438362497" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.6.0.838421677849" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.6.0.838438362497" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -147,17 +147,45 @@
           </div>
           <div class="ml-1 whitespace-nowrap text-gray-500 dark:text-dark-350">Kaii</div>
         </div>
+        <div>,</div>
+        <div class="ml-2 flex items-center">
+          <div class="shrink-0 w-8 h-8 overflow-hidden rounded-full">
+            <img class="object-cover" src="https://avatars.githubusercontent.com/u/136254012?s=96&amp;v=4">
+          </div>
+          <div class="ml-1 whitespace-nowrap text-gray-500 dark:text-dark-350">Frazer</div>
+        </div>
     </div>
 </div>
 
-<p>Disconnects the bot from the Realm&#x27;s game server.</p>
+<div id="retype-page-description" class="description-display text-description font-description leading-description mb-description-margin-bottom mt-description-margin-top tracking-description text-transform-description">Disable persistent joining and disconnect the Relay Account from one or all selected Realms.</div>
+<p>Disables persistent standard joining for the selected Realm rows and requests that the Relay Account disconnect.</p>
+<h2 id="syntax">Syntax</h2>
+<p><code translate="no" v-pre>/world leave [realm]</code></p>
+<p>The optional <code translate="no" v-pre>realm</code> argument selects one Realm. If omitted, every Realm associated with the connected server account is targeted.</p>
+<h2 id="requirements">Requirements</h2>
 <ul>
-<li><strong>Permissions</strong>: Authorized Users Only (Premium)</li>
-<li><strong>Usage</strong>: <code translate="no" v-pre>/world leave [realm]</code></li>
+<li>The Discord server must be connected to a Microsoft/Xbox account.</li>
+<li>Realm Bot Premium must be active.</li>
+<li>The member must have <code translate="no" v-pre>command.world.leave</code>, or be a Discord Administrator.</li>
 </ul>
-<p><strong>Arguments</strong>:</p>
+<h2 id="operational-impact">Operational Impact</h2>
+<blockquote>
+<p><strong>Warning:</strong> There is no confirmation. Omitting <code translate="no" v-pre>realm</code> disables joining and requests disconnection for all connected Realms.</p>
+</blockquote>
+<p>Connection-dependent features stop for the affected Realm, including:</p>
 <ul>
-<li><code translate="no" v-pre>realm</code> (Optional): The realm to leave. Defaults to all.</li>
+<li>Chat Relay</li>
+<li>Realm Console</li>
+<li>World broadcast and execute</li>
+<li>Live GameTest requests</li>
+<li>Other live event-driven moderation or progression systems</li>
+</ul>
+<p>Use <a href="../join/"><code translate="no" v-pre>/world join</code></a> when the Relay Account should reconnect and persistent joining should resume.</p>
+<h2 id="related-commands">Related Commands</h2>
+<ul>
+<li><a href="../join/"><code translate="no" v-pre>/world join</code></a></li>
+<li><a href="../../../realm-modules/relay-account-and-gametest/">Relay Account and GameTest Dependencies</a></li>
+<li><a href="../../troubleshooting/">Command Troubleshooting</a></li>
 </ul>
 
                 
@@ -178,10 +206,10 @@
                     </div>
             
                     <div class="w-1/2">
-                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../../integrations/tebex/">
+                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../../commands/world/broadcast/">
                             <span>
                                 <span class="block text-xs font-normal text-right text-base-text-muted">Next</span>
-                                <span class="block mt-1">Tebex</span>
+                                <span class="block mt-1">/world broadcast</span>
                             </span>
                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                         </a>

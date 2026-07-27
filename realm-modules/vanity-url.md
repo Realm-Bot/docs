@@ -45,7 +45,7 @@ These protections are intended to reduce common invite abuse patterns that occur
 3. Enter your desired custom slug (for example, `my-cool-realm`).
 4. Copy your Vanity URL and begin advertising it.
 
-Once configured, your Vanity URL remains active until you change or disable it.
+Once configured, your Vanity URL remains active until you change or disable it. Vanity URLs are intended as stable, unlimited links and do not expose the maximum-use and expiration controls available when creating a standard Invite Link.
 
 ---
 

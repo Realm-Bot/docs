@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.838421677849">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.838438362497">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -12,7 +12,7 @@
     <!-- Primary Meta Tags -->
     <title>/realm members | Realm Bot Docs</title>
     <meta name="title" content="/realm members | Realm Bot Docs">
-    <meta name="description" content="Lists all members of the Realm.">
+    <meta name="description" content="Display official Realm members and blocked players, with currently limited filtering and search.">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://help.realmbot.dev/commands/realm/members/">
@@ -22,7 +22,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://help.realmbot.dev/commands/realm/members/">
     <meta property="og:title" content="/realm members | Realm Bot Docs">
-    <meta property="og:description" content="Lists all members of the Realm.">
+    <meta property="og:description" content="Display official Realm members and blocked players, with currently limited filtering and search.">
     <meta property="og:site_name" content="Realm Bot">
     <meta property="og:locale" content="en_US">
 
@@ -30,7 +30,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://help.realmbot.dev/commands/realm/members/">
     <meta name="twitter:title" content="/realm members | Realm Bot Docs">
-    <meta name="twitter:description" content="Lists all members of the Realm.">
+    <meta name="twitter:description" content="Display official Realm members and blocked players, with currently limited filtering and search.">
 
     <!-- Alternate Markdown -->
     <link rel="alternate" type="text/markdown" href="https://help.realmbot.dev/commands/realm/members.md">
@@ -38,11 +38,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../../favicon.ico" />
-    <link href="../../../resources/css/retype.css?v=4.6.0.838421677849" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=4.6.0.838438362497" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.6.0.838421677849" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.6.0.838438362497" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.6.0.838421677849" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.6.0.838438362497" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -147,20 +147,79 @@
           </div>
           <div class="ml-1 whitespace-nowrap text-gray-500 dark:text-dark-350">Kaii</div>
         </div>
+        <div>,</div>
+        <div class="ml-2 flex items-center">
+          <div class="shrink-0 w-8 h-8 overflow-hidden rounded-full">
+            <img class="object-cover" src="https://avatars.githubusercontent.com/u/136254012?s=96&amp;v=4">
+          </div>
+          <div class="ml-1 whitespace-nowrap text-gray-500 dark:text-dark-350">Frazer</div>
+        </div>
     </div>
 </div>
 
-<p>Lists all members of the Realm.</p>
+<div id="retype-page-description" class="description-display text-description font-description leading-description mb-description-margin-bottom mt-description-margin-top tracking-description text-transform-description">Display official Realm members and blocked players, with currently limited filtering and search.</div>
+<p>Displays official membership and blocklist information for one selected Realm.</p>
+<h2 id="syntax">Syntax</h2>
+<p><code translate="no" v-pre>/realm members &lt;realm&gt; [filter] [name]</code></p>
+<h2 id="arguments">Arguments</h2>
+<retype-table copy-text="| Argument | Required | Description |
+|---|---:|---|
+| `realm` | Yes | The Realm whose members will be displayed. |
+| `filter` | No | `Visitor`, `Member`, `Operator`, or `Banned`. |
+| `name` | No | A gamertag to search for. |">
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Argument</th>
+<th style="text-align: right;">Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code translate="no" v-pre>realm</code></td>
+<td style="text-align: right;">Yes</td>
+<td>The Realm whose members will be displayed.</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>filter</code></td>
+<td style="text-align: right;">No</td>
+<td><code translate="no" v-pre>Visitor</code>, <code translate="no" v-pre>Member</code>, <code translate="no" v-pre>Operator</code>, or <code translate="no" v-pre>Banned</code>.</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>name</code></td>
+<td style="text-align: right;">No</td>
+<td>A gamertag to search for.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</retype-table>
+<p>Do not provide <code translate="no" v-pre>filter</code> and <code translate="no" v-pre>name</code> together.</p>
+<h2 id="requirements">Requirements</h2>
 <ul>
-<li><strong>Permissions</strong>: Authorized Users Only</li>
-<li><strong>Usage</strong>: <code translate="no" v-pre>/realm members &lt;realm&gt; [filter] [name]</code></li>
+<li>The Discord server must be connected to a Microsoft/Xbox account with access to the Realm.</li>
+<li>The member must have <code translate="no" v-pre>command.realm.members</code>, or be a Discord Administrator.</li>
+<li>Premium and an active Relay Account are not required.</li>
 </ul>
-<p><strong>Arguments</strong>:</p>
+<h2 id="member-categories">Member Categories</h2>
 <ul>
-<li><code translate="no" v-pre>realm</code> (Required): The realm to view members of.</li>
-<li><code translate="no" v-pre>filter</code> (Optional): Filter by <code translate="no" v-pre>Visitor</code>, <code translate="no" v-pre>Member</code>, <code translate="no" v-pre>Operator</code>, or <code translate="no" v-pre>Banned Players</code>.</li>
-<li><code translate="no" v-pre>name</code> (Optional): Search for a specific gamertag.
-<em>Note: You cannot use <code translate="no" v-pre>filter</code> and <code translate="no" v-pre>name</code> at the same time.</em></li>
+<li><strong>Visitor</strong> - limited Minecraft Realm access.</li>
+<li><strong>Member</strong> - standard player access.</li>
+<li><strong>Operator</strong> - elevated in-game authority.</li>
+<li><strong>Banned</strong> - players on the official Realm blocklist.</li>
+</ul>
+<p>The command presents the results in interactive pages, normally with up to ten entries per page.</p>
+<blockquote>
+<p><strong>Current limitation:</strong> A supplied filter or name can be accepted without being reflected correctly in the displayed list. Treat the unfiltered list as the most reliable output and verify filtered decisions in the official Realm member interface.</p>
+</blockquote>
+<h2 id="related-commands">Related Commands</h2>
+<ul>
+<li><a href="../players/"><code translate="no" v-pre>/realm players</code></a></li>
+<li><a href="../permission/"><code translate="no" v-pre>/realm permission</code></a></li>
+<li><a href="../../banlist/all/"><code translate="no" v-pre>/banlist all</code></a></li>
+<li><a href="../../troubleshooting/">Command Troubleshooting</a></li>
 </ul>
 
                 
@@ -171,20 +230,20 @@
             
                 <nav id="retype-nextprev" class="print:hidden flex mt-14">
                     <div class="w-1/2">
-                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../../commands/realm/lastseen/">
+                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../../commands/realm/players/">
                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                             <span>
                                 <span class="block text-xs font-normal text-base-text-muted">Previous</span>
-                                <span class="block mt-1">/realm lastseen</span>
+                                <span class="block mt-1">/realm players</span>
                             </span>
                         </a>
                     </div>
             
                     <div class="w-1/2">
-                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../../commands/realm/nickname/">
+                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../../commands/realm/recents/">
                             <span>
                                 <span class="block text-xs font-normal text-right text-base-text-muted">Next</span>
-                                <span class="block mt-1">/realm nickname</span>
+                                <span class="block mt-1">/realm recents</span>
                             </span>
                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                         </a>

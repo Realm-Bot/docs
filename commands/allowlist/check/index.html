@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.838421677849">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.838438362497">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -12,7 +12,7 @@
     <!-- Primary Meta Tags -->
     <title>/allowlist check | Realm Bot Docs</title>
     <meta name="title" content="/allowlist check | Realm Bot Docs">
-    <meta name="description" content="Check if a player is on the allowlist.">
+    <meta name="description" content="Check whether a Minecraft player is on Realm Bot's server-level allowlist.">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://help.realmbot.dev/commands/allowlist/check/">
@@ -22,7 +22,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://help.realmbot.dev/commands/allowlist/check/">
     <meta property="og:title" content="/allowlist check | Realm Bot Docs">
-    <meta property="og:description" content="Check if a player is on the allowlist.">
+    <meta property="og:description" content="Check whether a Minecraft player is on Realm Bot's server-level allowlist.">
     <meta property="og:site_name" content="Realm Bot">
     <meta property="og:locale" content="en_US">
 
@@ -30,7 +30,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://help.realmbot.dev/commands/allowlist/check/">
     <meta name="twitter:title" content="/allowlist check | Realm Bot Docs">
-    <meta name="twitter:description" content="Check if a player is on the allowlist.">
+    <meta name="twitter:description" content="Check whether a Minecraft player is on Realm Bot's server-level allowlist.">
 
     <!-- Alternate Markdown -->
     <link rel="alternate" type="text/markdown" href="https://help.realmbot.dev/commands/allowlist/check.md">
@@ -38,11 +38,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../../favicon.ico" />
-    <link href="../../../resources/css/retype.css?v=4.6.0.838421677849" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=4.6.0.838438362497" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.6.0.838421677849" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.6.0.838438362497" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.6.0.838421677849" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.6.0.838438362497" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -147,13 +147,39 @@
           </div>
           <div class="ml-1 whitespace-nowrap text-gray-500 dark:text-dark-350">Kaii</div>
         </div>
+        <div>,</div>
+        <div class="ml-2 flex items-center">
+          <div class="shrink-0 w-8 h-8 overflow-hidden rounded-full">
+            <img class="object-cover" src="https://avatars.githubusercontent.com/u/136254012?s=96&amp;v=4">
+          </div>
+          <div class="ml-1 whitespace-nowrap text-gray-500 dark:text-dark-350">Frazer</div>
+        </div>
     </div>
 </div>
 
-<p>Check if a player is on the allowlist.</p>
+<div id="retype-page-description" class="description-display text-description font-description leading-description mb-description-margin-bottom mt-description-margin-top tracking-description text-transform-description">Check whether a Minecraft player is on Realm Bot's server-level allowlist.</div>
+<p>Checks whether a resolved Minecraft player is currently on Realm Bot&#x27;s allowlist for the Discord server.</p>
+<h2 id="syntax">Syntax</h2>
+<p><code translate="no" v-pre>/allowlist check &lt;user&gt;</code></p>
+<p>The required <code translate="no" v-pre>user</code> argument is the player&#x27;s Xbox gamertag.</p>
+<h2 id="requirements">Requirements</h2>
 <ul>
-<li><strong>Permissions</strong>: Authorized Users Only (Premium)</li>
-<li><strong>Usage</strong>: <code translate="no" v-pre>/allowlist check &lt;user&gt;</code></li>
+<li>The Discord server must be connected to a Microsoft/Xbox account.</li>
+<li>Realm Bot Premium must be active.</li>
+<li>No Realm Bot custom command-role permission is required.</li>
+</ul>
+<p>The result is posted publicly in the channel where the command is used.</p>
+<h2 id="example">Example</h2>
+<p><code translate="no" v-pre>/allowlist check user:ExamplePlayer</code></p>
+<p>Realm Bot reports whether the player is in the allowlist. This is a read-only check and does not change membership or exemptions.</p>
+<h2 id="common-issues">Common Issues</h2>
+<h3 id="the-player-cannot-be-found">The player cannot be found</h3>
+<p>Confirm the gamertag and the connected Microsoft/Xbox account. See <a href="../../troubleshooting/">Command Troubleshooting</a> if profile lookups continue to fail.</p>
+<h2 id="related-commands">Related Commands</h2>
+<ul>
+<li><a href="../add/"><code translate="no" v-pre>/allowlist add</code></a></li>
+<li><a href="../list/"><code translate="no" v-pre>/allowlist list</code></a></li>
+<li><a href="../remove/"><code translate="no" v-pre>/allowlist remove</code></a></li>
 </ul>
 
                 

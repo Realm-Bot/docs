@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.838421677849">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.838438362497">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -12,7 +12,7 @@
     <!-- Primary Meta Tags -->
     <title>/realm code-manage | Realm Bot Docs</title>
     <meta name="title" content="/realm code-manage | Realm Bot Docs">
-    <meta name="description" content="Manage active invite codes for the Realm interactively.">
+    <meta name="description" content="Interactively create and manage official invite codes for a selected Minecraft Realm.">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://help.realmbot.dev/commands/realm/code-manage/">
@@ -22,7 +22,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://help.realmbot.dev/commands/realm/code-manage/">
     <meta property="og:title" content="/realm code-manage | Realm Bot Docs">
-    <meta property="og:description" content="Manage active invite codes for the Realm interactively.">
+    <meta property="og:description" content="Interactively create and manage official invite codes for a selected Minecraft Realm.">
     <meta property="og:site_name" content="Realm Bot">
     <meta property="og:locale" content="en_US">
 
@@ -30,7 +30,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://help.realmbot.dev/commands/realm/code-manage/">
     <meta name="twitter:title" content="/realm code-manage | Realm Bot Docs">
-    <meta name="twitter:description" content="Manage active invite codes for the Realm interactively.">
+    <meta name="twitter:description" content="Interactively create and manage official invite codes for a selected Minecraft Realm.">
 
     <!-- Alternate Markdown -->
     <link rel="alternate" type="text/markdown" href="https://help.realmbot.dev/commands/realm/code-manage.md">
@@ -38,11 +38,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../../favicon.ico" />
-    <link href="../../../resources/css/retype.css?v=4.6.0.838421677849" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=4.6.0.838438362497" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.6.0.838421677849" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.6.0.838438362497" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.6.0.838421677849" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.6.0.838438362497" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -147,21 +147,50 @@
           </div>
           <div class="ml-1 whitespace-nowrap text-gray-500 dark:text-dark-350">Kaii</div>
         </div>
+        <div>,</div>
+        <div class="ml-2 flex items-center">
+          <div class="shrink-0 w-8 h-8 overflow-hidden rounded-full">
+            <img class="object-cover" src="https://avatars.githubusercontent.com/u/136254012?s=96&amp;v=4">
+          </div>
+          <div class="ml-1 whitespace-nowrap text-gray-500 dark:text-dark-350">Frazer</div>
+        </div>
     </div>
 </div>
 
-<p>Manage active invite codes for the Realm interactively.</p>
+<div id="retype-page-description" class="description-display text-description font-description leading-description mb-description-margin-bottom mt-description-margin-top tracking-description text-transform-description">Interactively create and manage official invite codes for a selected Minecraft Realm.</div>
+<p>Opens an interactive manager for a selected Realm&#x27;s official Minecraft invite codes. These codes are separate from Realm Bot managed <code translate="no" v-pre>realmbot.link</code> invitations.</p>
+<h2 id="syntax">Syntax</h2>
+<p><code translate="no" v-pre>/realm code-manage &lt;realm&gt;</code></p>
+<p>The required <code translate="no" v-pre>realm</code> argument selects one Realm.</p>
+<h2 id="requirements">Requirements</h2>
 <ul>
-<li><strong>Permissions</strong>: Authorized Users Only</li>
-<li><strong>Usage</strong>: <code translate="no" v-pre>/realm code-manage &lt;realm&gt;</code></li>
+<li>The Discord server must be connected to a Microsoft/Xbox account with permission to manage the Realm.</li>
+<li>The member must have <code translate="no" v-pre>command.realm.code-manage</code>, or be a Discord Administrator.</li>
+<li>Premium and an active Relay Account are not required.</li>
 </ul>
-<p><strong>Interactive Features</strong>:</p>
+<h2 id="available-actions">Available Actions</h2>
+<p>The interface displays and supports up to <strong>five codes</strong>. Depending on the selected code, you can:</p>
 <ul>
-<li><strong>Add Code</strong>: Create a new invite link.</li>
-<li><strong>Disable/Enable</strong>: specific codes.</li>
-<li><strong>Make Permanent</strong>: Remove expiration.</li>
-<li><strong>Set Expiration</strong>: Set when a code expires (30m - 7d).</li>
-<li><strong>Delete</strong>: Remove a code.</li>
+<li>Create another code when the flow and limit allow it</li>
+<li>Enable or disable a code</li>
+<li>Remove its expiry to make it permanent</li>
+<li>Set an expiry of <code translate="no" v-pre>30m</code>, <code translate="no" v-pre>1h</code>, <code translate="no" v-pre>6h</code>, <code translate="no" v-pre>12h</code>, <code translate="no" v-pre>1d</code>, or <code translate="no" v-pre>7d</code></li>
+<li>Permanently delete the code</li>
+</ul>
+<p>Only the member who ran the command can use its controls. The controls expire after approximately 60 seconds.</p>
+<h2 id="safety">Safety</h2>
+<blockquote>
+<p><strong>Warning:</strong> Anyone with an active official Realm code can use it as a join path. Code deletion is immediate, permanent within this flow, and has no separate confirmation.</p>
+</blockquote>
+<p>Confirm the selected code before changing or deleting it. Use Realm Bot&#x27;s <a href="../../../server-dashboard/server-invites/">Invite Links</a> when you need a managed web link with usage and expiry controls.</p>
+<blockquote>
+<p><strong>Current limitation:</strong> If the Realm has no existing codes, the interface may not offer the action needed to create its first code. Use the official Realm management interface or contact support.</p>
+</blockquote>
+<h2 id="related-commands">Related Commands</h2>
+<ul>
+<li><a href="../../invites/create/"><code translate="no" v-pre>/invites create</code></a></li>
+<li><a href="../../invites/list/"><code translate="no" v-pre>/invites list</code></a></li>
+<li><a href="../../troubleshooting/">Command Troubleshooting</a></li>
 </ul>
 
                 
@@ -172,20 +201,20 @@
             
                 <nav id="retype-nextprev" class="print:hidden flex mt-14">
                     <div class="w-1/2">
-                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../../commands/realm/close/">
+                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../../commands/realm/slot/">
                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                             <span>
                                 <span class="block text-xs font-normal text-base-text-muted">Previous</span>
-                                <span class="block mt-1">/realm close</span>
+                                <span class="block mt-1">/realm slot</span>
                             </span>
                         </a>
                     </div>
             
                     <div class="w-1/2">
-                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../../commands/realm/invite/">
+                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../../commands/realm/players/">
                             <span>
                                 <span class="block text-xs font-normal text-right text-base-text-muted">Next</span>
-                                <span class="block mt-1">/realm invite</span>
+                                <span class="block mt-1">/realm players</span>
                             </span>
                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                         </a>

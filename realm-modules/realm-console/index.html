@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.838421677849">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.838438362497">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -44,11 +44,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../favicon.ico" />
-    <link href="../../resources/css/retype.css?v=4.6.0.838421677849" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.6.0.838438362497" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.838421677849" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.838438362497" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.838421677849" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.838438362497" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -157,7 +157,6 @@
 </div>
 
 <div id="retype-page-description" class="description-display text-description font-description leading-description mb-description-margin-bottom mt-description-margin-top tracking-description text-transform-description">Execute Minecraft commands directly from a secured Discord channel, using your in-game Relay Account as the command runner.</div>
-<h3 id="what-is-the-realm-console">What is the Realm Console?</h3>
 <p>The Realm Console is a dedicated Discord channel that allows authorised users to execute <strong>Minecraft Bedrock commands</strong> directly into a connected Realm. Messages sent in the configured console channel are interpreted as commands and executed in-game through the <strong>Chat Relay Account</strong>.</p>
 <p>This module is designed for operational administration, rapid moderation actions, and streamlined management - without requiring staff to be actively in-game on a client.</p>
 <h3 id="how-it-works">How it Works</h3>
@@ -200,16 +199,20 @@
 <ul>
 <li>A configured and functioning <strong>Chat Relay Account</strong> connected to the Realm.</li>
 <li>The Relay Account actively present in the Realm (in-game).</li>
+<li>An active Realm Bot Premium subscription.</li>
+<li>Sufficient in-game operator and command privileges for the intended commands.</li>
 <li>A designated Discord channel selected as the Realm Console.</li>
 </ul>
 <p>If the Relay Account is not in-game, commands cannot be executed.</p>
 <h3 id="access-control-and-security">Access Control and Security</h3>
 <p>The Realm Console is highly privileged by design. Any user who can send messages in the console channel can attempt to run commands in the Realm.</p>
+<p>Discord channel write access is the primary access control. Realm Bot&#x27;s slash-command role permissions do not automatically restrict messages posted in the Realm Console channel.</p>
 <p>For this reason, you should:</p>
 <ul>
 <li>Restrict the channel so only <strong>trusted in-game Administrators</strong> can access it.</li>
 <li>Prevent general members from viewing or posting in the console channel.</li>
 <li>Treat console output as operational infrastructure, not community chat.</li>
+<li>Never configure the Realm Console in a publicly writable channel.</li>
 </ul>
 <p>Failure to secure this channel may result in:</p>
 <ul>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.838421677849">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.838438362497">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -12,7 +12,7 @@
     <!-- Primary Meta Tags -->
     <title>Bot Detection | Realm Bot Docs</title>
     <meta name="title" content="Bot Detection | Realm Bot Docs">
-    <meta name="description" content="Mitigate malicious bot accounts joining public Realms by automatically detecting and removing suspicious connections. Includes an Experimental mode for advanced detection.">
+    <meta name="description" content="Detect and remove suspected automated accounts from connected public Realms, with optional experimental checks and automatic bans.">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://help.realmbot.dev/realm-modules/bot-detection/">
@@ -22,7 +22,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://help.realmbot.dev/realm-modules/bot-detection/">
     <meta property="og:title" content="Bot Detection | Realm Bot Docs">
-    <meta property="og:description" content="Mitigate malicious bot accounts joining public Realms by automatically detecting and removing suspicious connections. Includes an Experimental mode for advanced detection.">
+    <meta property="og:description" content="Detect and remove suspected automated accounts from connected public Realms, with optional experimental checks and automatic bans.">
     <meta property="og:image" content="https://help.realmbot.dev/images/custom/botdetection.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -34,7 +34,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://help.realmbot.dev/realm-modules/bot-detection/">
     <meta name="twitter:title" content="Bot Detection | Realm Bot Docs">
-    <meta name="twitter:description" content="Mitigate malicious bot accounts joining public Realms by automatically detecting and removing suspicious connections. Includes an Experimental mode for advanced detection.">
+    <meta name="twitter:description" content="Detect and remove suspected automated accounts from connected public Realms, with optional experimental checks and automatic bans.">
     <meta name="twitter:image" content="https://help.realmbot.dev/images/custom/botdetection.png">
     <meta name="twitter:image:alt" content="Bot Detection | Realm Bot Docs">
 
@@ -44,11 +44,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../favicon.ico" />
-    <link href="../../resources/css/retype.css?v=4.6.0.838421677849" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.6.0.838438362497" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.838421677849" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.838438362497" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.838421677849" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.838438362497" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -156,89 +156,59 @@
     </div>
 </div>
 
-<div id="retype-page-description" class="description-display text-description font-description leading-description mb-description-margin-bottom mt-description-margin-top tracking-description text-transform-description">Mitigate malicious bot accounts joining public Realms by automatically detecting and removing suspicious connections. Includes an Experimental mode for advanced detection.</div>
-<h3 id="what-is-bot-detection">What is Bot Detection?</h3>
-<p>Bot Detection is a protective feature designed to mitigate malicious <strong>bot accounts</strong> that join Realms to cause <strong>latency</strong>, <strong>performance degradation</strong>, or <strong>gameplay disruption</strong>. It is primarily intended for Realms that use <strong>public invite codes</strong>, where automated join attempts are more likely to occur.</p>
+<div id="retype-page-description" class="description-display text-description font-description leading-description mb-description-margin-bottom mt-description-margin-top tracking-description text-transform-description">Detect and remove suspected automated accounts from connected public Realms, with optional experimental checks and automatic bans.</div>
+<p>Bot Detection is a <strong>Beta</strong> moderation module for Realms affected by automated joins or disruptive bot activity. It evaluates live connection activity and may remove an account when its behaviour is consistent with automation.</p>
 <blockquote>
-<p><strong>Important:</strong> Bot Detection reduces risk and disruption, but it cannot guarantee absolute prevention. Minecraft Realms are subject to platform constraints, and detection is based on observable behaviour at join-time.</p>
+<p><strong>Important:</strong> Automated detection reduces common disruption but cannot guarantee complete prevention. False positives remain possible, particularly when experimental checks are enabled.</p>
 </blockquote>
-<h3 id="when-bot-detection-is-recommended">When Bot Detection is Recommended</h3>
-<p>Bot Detection is best suited to:</p>
+<h2 id="current-behaviour">Current Behaviour</h2>
 <ul>
-<li><strong>Public-code Realms</strong> (open access, frequently shared codes)</li>
-<li>Realms experiencing repeated <strong>join floods</strong>, <strong>lag spikes</strong>, or <strong>suspicious new accounts</strong></li>
-<li>Communities that require better stability during peak activity or events</li>
+<li>Suspected bot accounts are removed from the Realm with a kick by default.</li>
+<li><strong>Auto Ban</strong> can additionally ban accounts identified by the detector.</li>
+<li><strong>Experimental Detection</strong> adds more aggressive checks and may increase false positives.</li>
+<li>Users on the Realm Bot allowlist are exempt.</li>
+<li>Enforcement events are recorded in the configured Automod logging channel.</li>
 </ul>
-<p>For private invite-only Realms, Bot Detection may be unnecessary unless you are actively experiencing suspicious join patterns.</p>
-<h3 id="how-bot-detection-works">How Bot Detection Works</h3>
-<p>When enabled, Bot Detection observes join activity and applies automated mitigation to accounts that appear to be malicious or automated. This is intended to keep your Realm stable by reducing disruptive join behaviour commonly associated with bot activity.</p>
-<p>Bot Detection requires a <strong>Relay Account to be in-game</strong> to function. If the Relay Account is not online in the Realm, Bot Detection cannot execute its mitigation actions.</p>
-<h3 id="detection-modes">Detection Modes</h3>
-<p>Bot Detection currently includes two detection modes:</p>
+<p>The dashboard&#x27;s master enable control is currently limited. Treat the available detection settings and connected Relay Account state as the practical controls, and contact support before relying on a master switch to suspend all detection.</p>
+<h2 id="requirements">Requirements</h2>
+<p>Bot Detection requires:</p>
 <ul>
-<li>
-<p><strong>Regular Bot Detection</strong><br />
-The standard detection mode. This is the recommended default and is generally sufficient for most public Realms.</p>
-</li>
-<li>
-<p><strong>Experimental Bot Detection (Beta)</strong><br />
-A more aggressive detection mode intended to identify more sophisticated bot behaviour.<br />
-<strong>This mode may occasionally flag legitimate player accounts.</strong> Enable with caution and only when necessary.</p>
-</li>
+<li>An active Realm Bot Premium subscription</li>
+<li>A Relay Account connected to and present in the correct Realm</li>
+<li>A healthy Realm event connection</li>
+<li>A configured Automod logging channel for staff visibility</li>
 </ul>
-<blockquote>
-<p><strong>Caution:</strong> If you enable Experimental Bot Detection, ensure staff are prepared to respond quickly to reports of legitimate players being affected.</p>
-</blockquote>
-<h3 id="requirements">Requirements</h3>
-<p>To use Bot Detection, you must have:</p>
+<p>The GameTest Pack is not required for Bot Detection.</p>
+<h2 id="configuration">Configuration</h2>
+<figure class="content-center">
+    <img src="../../images/bot-detection.png" alt="Bot Detection Configuration" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="1567" height="599" />
+    <figcaption class="caption">Bot Detection Configuration</figcaption>
+</figure>
+<h3 id="experimental-detection">Experimental Detection</h3>
+<p>Enable this only when standard detection is not sufficient and staff can review appeals. It broadens the checks used against suspected automation but carries a higher false-positive risk.</p>
+<h3 id="auto-ban">Auto Ban</h3>
+<p>When enabled, detected accounts may be banned in addition to being removed. Begin with kick-only enforcement while evaluating behaviour in your community.</p>
+<h2 id="recommended-use">Recommended Use</h2>
 <ul>
-<li>A configured <strong>Relay Account</strong> that is actively <strong>in-game</strong>.</li>
-<li>Bot Detection enabled within the Realm Bot Dashboard.</li>
+<li>Use Bot Detection primarily for public or widely advertised Realms.</li>
+<li>Keep the Relay Account online during high-risk periods.</li>
+<li>Maintain a clear appeal process and record the player&#x27;s gamertag and join time.</li>
+<li>Use controlled Invite Links and other access measures alongside detection.</li>
 </ul>
-<h3 id="how-to-set-up">How to Set Up</h3>
-<ol>
-<li>Open the <strong>Bot Detection</strong> module in the Realm Bot Dashboard.<br/>
-<img src="../../images/bot-detection.png" alt="Bot Detection Configuration" class="max-w-full h-auto" width="1567" height="599" /></li>
-<li>Enable <strong>Bot Detection</strong> using the main toggle.</li>
-<li>Under <strong>Detection Settings</strong>, choose one of the following:
+<h2 id="troubleshooting">Troubleshooting</h2>
+<h3 id="suspected-bots-are-not-removed">Suspected bots are not removed</h3>
 <ul>
-<li>By default, <strong>Regular Bot Detection</strong> is enabled</li>
-<li>Optionally enable <strong>Experimental Bot Detection (Beta)</strong> if your Realm continues to experience bot activity</li>
+<li>Confirm the Relay Account is online in the selected Realm.</li>
+<li>Confirm the Realm connection is receiving live events.</li>
+<li>Check the configured Automod log channel for errors or enforcement records.</li>
+<li>Reconnect the Microsoft/Xbox account if authentication has expired.</li>
 </ul>
-</li>
-<li>Confirm your Relay Account is <strong>online in the Realm</strong>, as Bot Detection requires an in-game executor to operate.</li>
-</ol>
-<h3 id="recommended-configuration">Recommended Configuration</h3>
-<p>For most public Realms:</p>
+<h3 id="a-legitimate-player-is-removed">A legitimate player is removed</h3>
 <ul>
-<li>Enable <strong>Regular Bot Detection</strong></li>
-<li>Leave <strong>Experimental Bot Detection</strong> disabled unless bot activity persists</li>
-</ul>
-<p>Enable <strong>Experimental Bot Detection</strong> only when:</p>
-<ul>
-<li>Regular mode is insufficient against repeated bot activity</li>
-<li>You can tolerate the risk of occasional false positives</li>
-<li>Staff are available to handle disputes quickly and professionally</li>
-</ul>
-<h3 id="best-practices">Best Practices</h3>
-<ul>
-<li>Restrict access to public codes where possible (rotate codes if abuse is ongoing).</li>
-<li>Keep the Relay Account reliably online during high-risk periods (peak times, events, after a code is shared publicly).</li>
-<li>Treat Experimental detection as an escalation tool, not a default setting.</li>
-<li>Maintain a clear staff procedure for handling reports of false positives (collect the player name, time of join, and what they observed).</li>
-</ul>
-<h3 id="common-issues">Common Issues</h3>
-<p><strong>Bot Detection is enabled, but nothing happens</strong></p>
-<ul>
-<li>Confirm the Relay Account is <strong>in-game</strong>.</li>
-<li>Verify the correct Realm is selected in the dashboard.</li>
-<li>Ensure the module toggles are saved and remain enabled.</li>
-</ul>
-<p><strong>Legitimate players are being flagged</strong></p>
-<ul>
-<li>Disable <strong>Experimental Bot Detection</strong> immediately.</li>
-<li>Continue using <strong>Regular Bot Detection</strong> while monitoring join behaviour.</li>
-<li>If false positives persist, keep the feature in Regular mode and consider additional access controls (e.g., limiting code distribution).</li>
+<li>Disable <strong>Experimental Detection</strong> first.</li>
+<li>Disable <strong>Auto Ban</strong> while reviewing false positives.</li>
+<li>Add a confirmed trusted player to the allowlist where appropriate.</li>
+<li>Provide support with the gamertag and approximate join time.</li>
 </ul>
 
                 

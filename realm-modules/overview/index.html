@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.838421677849">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.838438362497">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -44,11 +44,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../favicon.ico" />
-    <link href="../../resources/css/retype.css?v=4.6.0.838421677849" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.6.0.838438362497" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.838421677849" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.838438362497" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.838421677849" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.838438362497" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -191,8 +191,9 @@ Allows Realm Bot to join using an alternative account. This is commonly used whe
 <blockquote>
 <p><strong>Important:</strong> Many modules (for example, Chat Relay, Realm Console, Bot Detection, Member Gate, and Skin Filtering) require an in-game Relay Account to perform actions. If the bot is not in-game, these modules may not function.</p>
 </blockquote>
+<p>An active Realm Bot Premium subscription is required for the connected Relay Account workflow. Connection-dependent features may pause during Realm disconnections or Microsoft/Xbox authentication failures.</p>
 <hr>
-<h2 id="gametest-pack-management">Gametest Pack Management</h2>
+<h2 id="gametest-pack-management">GameTest Pack Management</h2>
 <p>Gametest Pack Management controls the dependency pack used for advanced Realm features that require in-game scripting capabilities. Where a module relies on the Gametest pack, it must be installed and active.</p>
 <figure class="content-center">
     <img src="../../images/overview-gametest.png" alt="Gametest Pack Management" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="1410" height="444" />
@@ -205,13 +206,15 @@ Allows Realm Bot to join using an alternative account. This is commonly used whe
 Some Gametest functionality requires <strong>Beta APIs</strong> to be enabled in your Realm settings. If prompted, enable <strong>Use Beta APIs</strong> under your Realm’s experimental features.</p>
 </li>
 <li>
-<p><strong>Auto Update Gametest Pack</strong><br />
-Automatically updates the pack when new versions are available (recommended if you prefer minimal maintenance).</p>
+<p><strong>Auto Update GameTest Pack</strong>
+Installs an available update when Realm Bot next joins the Realm. This is not a continuous background update.</p>
 </li>
 <li>
 <p><strong>Pack Actions</strong></p>
 <ul>
 <li><strong>Install Pack</strong> - installs the dependency pack into the Realm</li>
+<li><strong>Update Pack</strong> - installs the latest available version</li>
+<li><strong>Remove Pack</strong> - removes the managed pack</li>
 <li><strong>Manual Download</strong> - provides a download option for manual deployment workflows</li>
 <li><strong>Check For Updates</strong> - checks whether a newer pack version is available</li>
 </ul>
@@ -220,6 +223,7 @@ Automatically updates the pack when new versions are available (recommended if y
 <blockquote>
 <p><strong>Note:</strong> If a module is not behaving as expected and it depends on Gametest, first confirm the pack is installed, enabled, and current.</p>
 </blockquote>
+<p>See <a href="../relay-account-and-gametest/">Relay Account and GameTest Dependencies</a> for installation requirements and the feature dependency matrix.</p>
 <hr>
 <h2 id="realm-modules">Realm Modules</h2>
 <p>The Realm Modules section contains all configurable feature modules available for your Realm. Premium modules are clearly marked and can be opened directly via <strong>Configure</strong>.</p>
@@ -230,16 +234,21 @@ Automatically updates the pack when new versions are available (recommended if y
 <p>From here you can configure all Realm Modules currently available for your Realm:</p>
 <ul>
 <li><strong>Bot Detection</strong> - mitigation for malicious bot accounts, including an Experimental mode for stricter detection</li>
-<li><strong>Chat Relay</strong> - a two-way chat bridge between your Realm and Discord</li>
-<li><strong>Leveling System</strong> - playtime-based XP progression with configurable level-up announcements</li>
+<li><strong>Chat Relay</strong> - a two-way chat bridge with category-specific channels, custom messages, Fun Mode, and Anti-Spam</li>
+<li><strong>Leveling System</strong> - chat and online-activity XP with persistent rankings and configurable announcements</li>
 <li><strong>Live Playerlist</strong> - automatically publish and refresh a Discord view of which players are online</li>
-<li><strong>Member Gate</strong> - rule-based auto-moderation for join restrictions using device, gamerscore, and social metrics</li>
+<li><strong>Member Gate</strong> - rule-based entry moderation using device, gamerscore, social metrics, and private-title-history checks</li>
 <li><strong>Realm Console</strong> - run Minecraft commands through a secured Discord console channel</li>
 <li><strong>Scoreboard Leaderboards</strong> - publish in-game scoreboard rankings to Discord</li>
 <li><strong>Skin Filtering</strong> - detect and remove players using irregular or exploit-oriented skins</li>
 <li><strong>Vanity URL</strong> - create a branded, stable invite entry point for your Realm</li>
 </ul>
-<p>If you also use monetization tooling, see the separate <strong>Tebex</strong> integration page for store fulfilment setup.</p>
+<p>Also see:</p>
+<ul>
+<li><a href="../relay-account-and-gametest/">Relay Account and GameTest Dependencies</a> for shared operational requirements</li>
+<li><a href="../../integrations/tebex/">Tebex</a> for store fulfilment</li>
+<li><a href="../../tools/embed-panel/">Embed Panel</a> for persistent Discord panels with link or Realm-action buttons</li>
+</ul>
 <blockquote>
 <p><strong>Operational Guidance:</strong> Restrict access to high-impact modules (such as Realm Console, Member Gate, and Skin Filtering) to trusted administrators. These features can directly affect gameplay, player access, and server stability.</p>
 </blockquote>

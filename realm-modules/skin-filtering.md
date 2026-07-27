@@ -25,8 +25,11 @@ Skin Filtering requires:
 
 - The Realm Bot **Relay Account** to be **in-game**
 - Skin Filtering enabled within the Realm's modules section
+- An active Realm Bot Premium subscription
 
 If the Relay Account is not in-game, the system cannot reliably enforce filtering actions.
+
+The GameTest Pack is not required for Skin Filtering. Players on the Realm Bot allowlist are intended to bypass filtering.
 
 ---
 
@@ -66,7 +69,7 @@ Recommended for:
 
 ## What Enforcement Looks Like
 
-When a player is detected using a disallowed skin type, Realm Bot can take an automated action and record the outcome. In Discord, this typically appears as an automated moderation entry showing the player connection context and the reason for removal.
+When a player is detected using a disallowed skin type, Realm Bot removes the player with the reason **Unfair Skin** and records the outcome in the configured Automod channel.
 
 ![Skin Filtering Example (Discord Output)](/images/skin-filtering-example.png)
 
@@ -127,11 +130,13 @@ If you observe false positives:
 - Confirm the Relay Account is **in-game**
 - Confirm Skin Filtering is enabled for the correct Realm
 - Ensure at least one filter category is toggled on
+- Confirm the player is not on the Realm Bot allowlist
 
 ### Legitimate players are being removed
 
 - Disable the most aggressive category first (commonly 4D/Horion)
 - Re-test with a smaller scope (enable one filter at a time)
 - Treat early Beta enforcement as reviewable until detection stabilises
+- If an allowlisted player is affected, record the gamertag and timestamp and contact support
 
 ---

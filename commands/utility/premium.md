@@ -1,6 +1,14 @@
 # `/premium`
 
-Get information about Premium features.
+Provides a link to Realm Bot subscription information in the dashboard.
 
-- **Usage**: `/premium`
-- **Response**: Link to the Realm Bot website.
+## Syntax
+
+`/premium`
+
+No Realm Bot custom command permission, connected account, or existing Premium subscription is required. The command must still be used in a Discord server.
+
+## Related Commands
+
+- [`/dashboard`](dashboard.md)
+- [Command Troubleshooting](../troubleshooting.md)

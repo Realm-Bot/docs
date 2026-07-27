@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.838421677849">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.838438362497">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -12,7 +12,7 @@
     <!-- Primary Meta Tags -->
     <title>Member Gate | Realm Bot Docs</title>
     <meta name="title" content="Member Gate | Realm Bot Docs">
-    <meta name="description" content="Automatically kick or ban joining players based on Xbox profile signals - such as device platform, gamerscore, and social metrics - to enforce strict entry standards.">
+    <meta name="description" content="Evaluate joining players against device, gamerscore, and social-profile rules, with private-title-history and automated entry checks.">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://help.realmbot.dev/realm-modules/member-gate/">
@@ -22,7 +22,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://help.realmbot.dev/realm-modules/member-gate/">
     <meta property="og:title" content="Member Gate | Realm Bot Docs">
-    <meta property="og:description" content="Automatically kick or ban joining players based on Xbox profile signals - such as device platform, gamerscore, and social metrics - to enforce strict entry standards.">
+    <meta property="og:description" content="Evaluate joining players against device, gamerscore, and social-profile rules, with private-title-history and automated entry checks.">
     <meta property="og:image" content="https://help.realmbot.dev/images/custom/membergate.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -34,7 +34,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://help.realmbot.dev/realm-modules/member-gate/">
     <meta name="twitter:title" content="Member Gate | Realm Bot Docs">
-    <meta name="twitter:description" content="Automatically kick or ban joining players based on Xbox profile signals - such as device platform, gamerscore, and social metrics - to enforce strict entry standards.">
+    <meta name="twitter:description" content="Evaluate joining players against device, gamerscore, and social-profile rules, with private-title-history and automated entry checks.">
     <meta name="twitter:image" content="https://help.realmbot.dev/images/custom/membergate.png">
     <meta name="twitter:image:alt" content="Member Gate | Realm Bot Docs">
 
@@ -44,11 +44,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../favicon.ico" />
-    <link href="../../resources/css/retype.css?v=4.6.0.838421677849" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.6.0.838438362497" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.838421677849" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.838438362497" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.838421677849" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.838438362497" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -156,157 +156,82 @@
     </div>
 </div>
 
-<div id="retype-page-description" class="description-display text-description font-description leading-description mb-description-margin-bottom mt-description-margin-top tracking-description text-transform-description">Automatically kick or ban joining players based on Xbox profile signals - such as device platform, gamerscore, and social metrics - to enforce strict entry standards.</div>
-<h3 id="what-is-member-gate">What is Member Gate?</h3>
-<p>Member Gate is an <strong>automated entry moderation system</strong> that evaluates players as they join your Realm and applies an action -typically <strong>Kick</strong> or <strong>Ban</strong> - based on rules you define. It is designed for Realm Owners who need stricter access control than invite codes alone can provide, especially for public or semi-public Realms.</p>
-<p>Member Gate is particularly effective for Realms that want to restrict gameplay to specific player types (for example, a <strong>Console-Only PvP Realm</strong>), or for communities that need basic automated filtering for suspicious join patterns.</p>
-<h3 id="how-member-gate-works">How Member Gate Works</h3>
-<p>Member Gate operates using rule-based logic:</p>
-<ul>
-<li>You create one or more <strong>Moderation Rules</strong> in the dashboard.</li>
-<li>Each rule contains:
-<ul>
-<li>A <strong>Moderation Action</strong> (Kick or Ban)</li>
-<li>One or more <strong>Conditions</strong></li>
-</ul>
-</li>
-<li>When a player joins, Member Gate checks each rule.</li>
-<li>If a player matches the rule’s conditions, the configured action is executed.</li>
-</ul>
+<div id="retype-page-description" class="description-display text-description font-description leading-description mb-description-margin-bottom mt-description-margin-top tracking-description text-transform-description">Evaluate joining players against device, gamerscore, and social-profile rules, with private-title-history and automated entry checks.</div>
+<p>Member Gate evaluates players as they join a Realm and removes those who match configured entry rules. It is intended for communities that apply platform restrictions or cautious profile-based onboarding.</p>
 <blockquote>
-<p><strong>Important:</strong> Member Gate requires the <strong>Relay Account</strong> to be <strong>in-game</strong> to execute kicks/bans. If the Relay Account is not online in the Realm, Member Gate cannot enforce rules.</p>
+<p><strong>Important:</strong> Profile signals can be incomplete or private and may produce false positives. Member Gate should support, not replace, staff review and a clear appeal process.</p>
 </blockquote>
-<h3 id="conditions-you-can-use">Conditions You Can Use</h3>
-<p>Member Gate supports multiple condition types, allowing flexible rule construction. Rules may include <strong>any combination</strong> of supported conditions, and are intended to be configured based on your Realm’s requirements.</p>
-<p>Common condition categories include:</p>
+<h2 id="how-rules-work">How Rules Work</h2>
 <ul>
-<li>
-<p><strong>Device Platform</strong></p>
+<li>A Realm can have up to <strong>20 rules</strong>.</li>
+<li>Each rule can contain up to <strong>10 conditions</strong>.</li>
+<li>All conditions within a rule must match before the rule triggers.</li>
+<li>Users on the Realm Bot allowlist are exempt.</li>
+<li>Actions are recorded in the configured Automod logging channel.</li>
+</ul>
+<p>Although the dashboard may display Kick and Ban choices, current rule enforcement removes matching players with a <strong>kick</strong>. Do not rely on a Ban selection for persistent enforcement.</p>
+<p>Realm Bot may also apply additional account-consistency checks while Member Gate is enabled. These checks are intentionally not exposed in detail.</p>
+<h2 id="available-conditions">Available Conditions</h2>
+<p>Rules can evaluate:</p>
 <ul>
-<li>Device includes</li>
-<li>Device excludes</li>
+<li><strong>Device includes</strong> or <strong>device excludes</strong></li>
+<li><strong>Gamerscore above</strong> or <strong>below</strong> a selected value</li>
+<li><strong>Followers above</strong> or <strong>below</strong> a selected value</li>
+<li><strong>Following above</strong> or <strong>below</strong> a selected value</li>
 </ul>
-</li>
-<li>
-<p><strong>Gamerscore Thresholds</strong></p>
+<p>Supported platform information may include Android, iOS, Windows, Xbox, PlayStation, and Nintendo where it is available from the connection.</p>
+<h2 id="private-title-history">Private Title History</h2>
+<p>Member Gate can require public Xbox game and app history. If this profile signal is private, Realm Bot may be unable to confirm device context and may remove the player.</p>
+<p>Players affected by this reason should follow <a href="../../troubleshooting/private-title-history/">Private Title History troubleshooting</a>.</p>
+<h2 id="requirements">Requirements</h2>
 <ul>
-<li>Gamerscore greater than</li>
-<li>Gamerscore less than</li>
+<li>An active Realm Bot Premium subscription</li>
+<li>Member Gate enabled for the correct Realm</li>
+<li>A Relay Account connected to and present in the Realm</li>
+<li>Access to the player&#x27;s Xbox profile information</li>
+<li>A Discord Automod destination for enforcement records</li>
 </ul>
-</li>
-<li>
-<p><strong>Social Metrics</strong></p>
-<ul>
-<li>Followers greater than / less than</li>
-<li>Following greater than / less than</li>
-</ul>
-</li>
-</ul>
-<blockquote>
-<p><strong>Rule Logic:</strong> Within a single rule, <strong>all conditions must be met</strong> for the action to be executed. If any condition is not met, the rule will not trigger.</p>
-</blockquote>
-<h3 id="supported-device-platforms">Supported Device Platforms</h3>
-<p>Device-based rules can be used to enforce platform-specific Realms. Supported platforms include:</p>
-<ul>
-<li>Android</li>
-<li>iOS</li>
-<li>Windows</li>
-<li>Xbox</li>
-<li>PlayStation</li>
-<li>Nintendo</li>
-</ul>
-<p>This makes Member Gate suitable for use-cases such as:</p>
-<ul>
-<li>Console-only PvP</li>
-<li>Mobile-only casual Realms</li>
-<li>Restricting Windows joins during targeted abuse periods</li>
-</ul>
-<h3 id="requirements">Requirements</h3>
-<p>To use Member Gate effectively, ensure the following are in place:</p>
-<ul>
-<li>The Realm is connected to Realm Bot via the authorised linking flow</li>
-<li>The <strong>Relay Account is actively in-game</strong></li>
-<li>A Discord channel is selected to receive enforcement logs (recommended)</li>
-</ul>
-<h3 id="how-to-set-up">How to Set Up</h3>
+<p>The GameTest Pack is not required for Member Gate.</p>
+<h2 id="how-to-set-up">How to Set Up</h2>
 <ol>
-<li>Open the <strong>Member Gate</strong> module inside the Realm Bot Dashboard.<br/>
-<img src="../../images/member-gate.png" alt="Member Gate Configuration" class="max-w-full h-auto" width="1105" height="1008" /></li>
-<li>Enable <strong>Member Gate</strong> using the main toggle.</li>
-<li>Set the <strong>Discord Destination</strong> channel.
-<ul>
-<li>Kick and ban actions will be logged to this channel for auditing and troubleshooting.</li>
-</ul>
+<li>
+<p>Open <strong>Member Gate</strong> in the Realm Bot Dashboard.
+<img src="../../images/member-gate.png" alt="Member Gate Configuration" class="max-w-full h-auto" width="1105" height="1008" /></p>
 </li>
-<li>Under <strong>Moderation Rules</strong>, create a rule:
-<ul>
-<li>Provide a short, clear rule name (for example: <code translate="no" v-pre>Console Only</code> or <code translate="no" v-pre>Block Low Gamerscore</code>).</li>
-<li>Select the <strong>Moderation Action</strong>: <strong>Kick</strong> or <strong>Ban</strong>.</li>
-<li>Add one or more <strong>Conditions</strong> and configure their values.</li>
-</ul>
+<li>
+<p>Enable the module and select an Automod destination.</p>
 </li>
-<li>Confirm your Relay Account is <strong>online in the Realm</strong>, then test by joining with a permitted account and (if possible) a non-permitted account.</li>
+<li>
+<p>Configure whether private title history should be checked.</p>
+</li>
+<li>
+<p>Create a clearly named rule and add only the conditions required for that policy.</p>
+</li>
+<li>
+<p>Save the rule, then test with both a permitted and a deliberately non-matching account.</p>
+</li>
 </ol>
-<h3 id="recommended-configuration-approach">Recommended Configuration Approach</h3>
-<p>To reduce disruption and avoid accidental over-enforcement:</p>
+<h2 id="recommended-configuration">Recommended Configuration</h2>
 <ul>
-<li>Start with <strong>Kick</strong> rather than Ban while tuning conditions.</li>
-<li>Add rules gradually and monitor results through your Discord Destination logs.</li>
-<li>Prefer device rules for “hard” restrictions (e.g., console-only), and threshold rules for “soft” filtering (e.g., suspicious profiles).</li>
+<li>Start with one conservative rule and review its logs before adding more.</li>
+<li>Prefer device rules for explicit platform policies.</li>
+<li>Avoid aggressive gamerscore or social thresholds for communities with new or younger accounts.</li>
+<li>Publish entry requirements and provide an appeal route.</li>
 </ul>
-<h3 id="example-rule-patterns">Example Rule Patterns</h3>
-<p><strong>Console-only Realm</strong></p>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<h3 id="rules-do-not-trigger">Rules do not trigger</h3>
 <ul>
-<li>Action: <strong>Kick</strong></li>
-<li>Conditions:
-<ul>
-<li>Device excludes: Android, iOS, Windows</li>
+<li>Confirm Member Gate is enabled for the selected Realm.</li>
+<li>Confirm the Relay Account is online and receiving join events.</li>
+<li>Check that every condition in the rule is intended to match.</li>
+<li>Confirm the player is not allowlisted.</li>
 </ul>
-</li>
-</ul>
-<p><strong>Filter low-signal accounts</strong></p>
+<h3 id="legitimate-players-are-removed">Legitimate players are removed</h3>
 <ul>
-<li>Action: <strong>Kick</strong></li>
-<li>Conditions:
-<ul>
-<li>Gamerscore less than: <em>your chosen threshold</em></li>
-<li>Followers less than: <em>your chosen threshold</em></li>
-</ul>
-</li>
-</ul>
-<p><strong>High-trust access</strong></p>
-<ul>
-<li>Action: <strong>Kick</strong> or <strong>Ban</strong> (use caution)</li>
-<li>Conditions:
-<ul>
-<li>Gamerscore greater than: <em>threshold</em></li>
-<li>Followers greater than: <em>threshold</em></li>
-</ul>
-</li>
-</ul>
-<blockquote>
-<p><strong>Note:</strong> Social and gamerscore thresholds can produce false positives depending on your community demographics (new players, alt accounts, privacy settings, etc.). Use conservative thresholds and iterate.</p>
-</blockquote>
-<h3 id="best-practices">Best Practices</h3>
-<ul>
-<li>Restrict who can modify Member Gate settings in your staff structure.</li>
-<li>Use a dedicated Discord log channel such as <code translate="no" v-pre>#automod-logs</code>.</li>
-<li>Publish clear entry expectations to players if you enforce strict platform or profile requirements.</li>
-<li>Maintain a simple appeal path if a legitimate player is removed by automation.</li>
-</ul>
-<h3 id="common-issues">Common Issues</h3>
-<p><strong>Member Gate is enabled, but no actions occur</strong></p>
-<ul>
-<li>Confirm the <strong>Relay Account is in-game</strong>.</li>
-<li>Verify the correct Realm is selected in the dashboard.</li>
-<li>Ensure rules are created and saved (and not empty).</li>
-<li>Check the Discord Destination channel for enforcement messages.</li>
-</ul>
-<p><strong>Legitimate players are being removed</strong></p>
-<ul>
-<li>Lower the strictness of gamerscore/follower thresholds.</li>
-<li>Switch from <strong>Ban</strong> to <strong>Kick</strong> while tuning.</li>
-<li>Prefer device-only restrictions if your goal is platform separation rather than profile filtering.</li>
+<li>Review the exact rule recorded in the Automod log.</li>
+<li>Relax profile thresholds or test one condition at a time.</li>
+<li>Check whether Xbox privacy settings are hiding required profile data.</li>
+<li>Add a verified trusted player to the allowlist where appropriate.</li>
 </ul>
 
                 

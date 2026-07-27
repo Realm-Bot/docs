@@ -1,4 +1,4 @@
-### What is the Realm Console?
+# Realm Console
 
 The Realm Console is a dedicated Discord channel that allows authorised users to execute **Minecraft Bedrock commands** directly into a connected Realm. Messages sent in the configured console channel are interpreted as commands and executed in-game through the **Chat Relay Account**.
 
@@ -47,6 +47,8 @@ To use the Realm Console, you must have:
 
 - A configured and functioning **Chat Relay Account** connected to the Realm.
 - The Relay Account actively present in the Realm (in-game).
+- An active Realm Bot Premium subscription.
+- Sufficient in-game operator and command privileges for the intended commands.
 - A designated Discord channel selected as the Realm Console.
 
 If the Relay Account is not in-game, commands cannot be executed.
@@ -55,11 +57,14 @@ If the Relay Account is not in-game, commands cannot be executed.
 
 The Realm Console is highly privileged by design. Any user who can send messages in the console channel can attempt to run commands in the Realm.
 
+Discord channel write access is the primary access control. Realm Bot's slash-command role permissions do not automatically restrict messages posted in the Realm Console channel.
+
 For this reason, you should:
 
 - Restrict the channel so only **trusted in-game Administrators** can access it.
 - Prevent general members from viewing or posting in the console channel.
 - Treat console output as operational infrastructure, not community chat.
+- Never configure the Realm Console in a publicly writable channel.
 
 Failure to secure this channel may result in:
 - Abuse of commands

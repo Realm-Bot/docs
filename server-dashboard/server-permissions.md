@@ -16,7 +16,17 @@ Realm Bot permissions are:
 - **Granular**: you can allow or deny access to specific command groups and actions
 - **Immediate**: changes apply as soon as you save them, affecting all members with that role
 
-> **Important:** Your Discord permissions (Administrator, Manage Server, etc.) do not automatically map to Realm Bot permissions. You must explicitly grant access here.
+Discord members with the **Administrator** permission bypass Realm Bot's custom role map. Other Discord permissions, such as Manage Server, do not automatically grant every Realm Bot command.
+
+> **Important:** Only commands that participate in Realm Bot's permission framework are governed by these role settings. Some public utility commands remain available without a custom role assignment.
+
+Channel-based systems are separate:
+
+- **Realm Console** access is controlled primarily by who can send messages in its Discord channel.
+- **Discord-to-Realm Chat Relay** access is controlled primarily by who can send messages in the relay channel.
+- **Embed Panel** buttons are available to users who can view and interact with the panel.
+
+Realm Bot role settings do not replace careful Discord channel permission configuration.
 
 ---
 

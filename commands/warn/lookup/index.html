@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.838421677849">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.838438362497">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -12,7 +12,7 @@
     <!-- Primary Meta Tags -->
     <title>/warn lookup | Realm Bot Docs</title>
     <meta name="title" content="/warn lookup | Realm Bot Docs">
-    <meta name="description" content="View a player's warning history, including active and removed warnings.">
+    <meta name="description" content="Review a player's Realm Bot warning and warning-removal history.">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://help.realmbot.dev/commands/warn/lookup/">
@@ -22,7 +22,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://help.realmbot.dev/commands/warn/lookup/">
     <meta property="og:title" content="/warn lookup | Realm Bot Docs">
-    <meta property="og:description" content="View a player's warning history, including active and removed warnings.">
+    <meta property="og:description" content="Review a player's Realm Bot warning and warning-removal history.">
     <meta property="og:site_name" content="Realm Bot">
     <meta property="og:locale" content="en_US">
 
@@ -30,7 +30,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://help.realmbot.dev/commands/warn/lookup/">
     <meta name="twitter:title" content="/warn lookup | Realm Bot Docs">
-    <meta name="twitter:description" content="View a player's warning history, including active and removed warnings.">
+    <meta name="twitter:description" content="Review a player's Realm Bot warning and warning-removal history.">
 
     <!-- Alternate Markdown -->
     <link rel="alternate" type="text/markdown" href="https://help.realmbot.dev/commands/warn/lookup.md">
@@ -38,11 +38,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../../favicon.ico" />
-    <link href="../../../resources/css/retype.css?v=4.6.0.838421677849" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=4.6.0.838438362497" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.6.0.838421677849" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.6.0.838438362497" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.6.0.838421677849" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.6.0.838438362497" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -147,13 +147,66 @@
           </div>
           <div class="ml-1 whitespace-nowrap text-gray-500 dark:text-dark-350">Kaii</div>
         </div>
+        <div>,</div>
+        <div class="ml-2 flex items-center">
+          <div class="shrink-0 w-8 h-8 overflow-hidden rounded-full">
+            <img class="object-cover" src="https://avatars.githubusercontent.com/u/136254012?s=96&amp;v=4">
+          </div>
+          <div class="ml-1 whitespace-nowrap text-gray-500 dark:text-dark-350">Frazer</div>
+        </div>
     </div>
 </div>
 
-<p>View a player&#x27;s warning history, including active and removed warnings.</p>
+<div id="retype-page-description" class="description-display text-description font-description leading-description mb-description-margin-bottom mt-description-margin-top tracking-description text-transform-description">Review a player's Realm Bot warning and warning-removal history.</div>
+<p>Displays Realm Bot warning history for a resolved Minecraft player, grouped by reason and accompanied by a summary.</p>
+<h2 id="syntax">Syntax</h2>
+<p><code translate="no" v-pre>/warn lookup &lt;user&gt; [realm]</code></p>
+<h2 id="arguments">Arguments</h2>
+<retype-table copy-text="| Argument | Required | Description |
+|---|---:|---|
+| `user` | Yes | The player's Xbox gamertag. |
+| `realm` | No | The intended Realm filter. |">
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Argument</th>
+<th style="text-align: right;">Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code translate="no" v-pre>user</code></td>
+<td style="text-align: right;">Yes</td>
+<td>The player&#x27;s Xbox gamertag.</td>
+</tr>
+<tr>
+<td><code translate="no" v-pre>realm</code></td>
+<td style="text-align: right;">No</td>
+<td>The intended Realm filter.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</retype-table>
+<h2 id="requirements">Requirements</h2>
 <ul>
-<li><strong>Permissions</strong>: Authorized Users Only</li>
-<li><strong>Usage</strong>: <code translate="no" v-pre>/warn lookup &lt;user&gt; [realm]</code></li>
+<li>The Discord server must be connected to a Microsoft/Xbox account.</li>
+<li>The member must have <code translate="no" v-pre>command.warn.lookup</code>, or be a Discord Administrator.</li>
+<li>Premium and an active Relay Account are not required.</li>
+</ul>
+<h2 id="output">Output</h2>
+<p>The response includes warning and warning-removal records, grouped by reason. Interactive controls display up to <strong>five records per reason page</strong> and can switch to a summary.</p>
+<p>The response and pagination controls are public. Use a staff channel if moderation history should remain restricted.</p>
+<blockquote>
+<p><strong>Current limitation:</strong> The optional Realm filter may not fully restrict the records displayed. Confirm the Realm attached to each record before acting on the result.</p>
+</blockquote>
+<h2 id="related-commands">Related Commands</h2>
+<ul>
+<li><a href="../add/"><code translate="no" v-pre>/warn add</code></a></li>
+<li><a href="../remove/"><code translate="no" v-pre>/warn remove</code></a></li>
+<li><a href="../../troubleshooting/">Command Troubleshooting</a></li>
 </ul>
 
                 

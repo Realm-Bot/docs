@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.838421677849">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.838438362497">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -12,7 +12,7 @@
     <!-- Primary Meta Tags -->
     <title>Leveling System | Realm Bot Docs</title>
     <meta name="title" content="Leveling System | Realm Bot Docs">
-    <meta name="description" content="Award progressive XP based on playtime, automatically increasing difficulty at higher levels, with configurable in-game and Discord level-up announcements.">
+    <meta name="description" content="Award XP for eligible chat activity and online play, with persistent levels, rankings, leaderboards, and configurable level-up announcements.">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://help.realmbot.dev/realm-modules/leveling-system/">
@@ -22,7 +22,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://help.realmbot.dev/realm-modules/leveling-system/">
     <meta property="og:title" content="Leveling System | Realm Bot Docs">
-    <meta property="og:description" content="Award progressive XP based on playtime, automatically increasing difficulty at higher levels, with configurable in-game and Discord level-up announcements.">
+    <meta property="og:description" content="Award XP for eligible chat activity and online play, with persistent levels, rankings, leaderboards, and configurable level-up announcements.">
     <meta property="og:image" content="https://help.realmbot.dev/images/leveling-system.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -34,7 +34,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://help.realmbot.dev/realm-modules/leveling-system/">
     <meta name="twitter:title" content="Leveling System | Realm Bot Docs">
-    <meta name="twitter:description" content="Award progressive XP based on playtime, automatically increasing difficulty at higher levels, with configurable in-game and Discord level-up announcements.">
+    <meta name="twitter:description" content="Award XP for eligible chat activity and online play, with persistent levels, rankings, leaderboards, and configurable level-up announcements.">
     <meta name="twitter:image" content="https://help.realmbot.dev/images/leveling-system.png">
     <meta name="twitter:image:alt" content="Leveling System | Realm Bot Docs">
 
@@ -44,11 +44,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../favicon.ico" />
-    <link href="../../resources/css/retype.css?v=4.6.0.838421677849" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.6.0.838438362497" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.838421677849" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.838438362497" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.838421677849" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.838438362497" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -156,91 +156,97 @@
     </div>
 </div>
 
-<div id="retype-page-description" class="description-display text-description font-description leading-description mb-description-margin-bottom mt-description-margin-top tracking-description text-transform-description">Award progressive XP based on playtime, automatically increasing difficulty at higher levels, with configurable in-game and Discord level-up announcements.</div>
-<h3 id="what-is-the-leveling-system">What is the Leveling System?</h3>
-<p>The Leveling System is a progression module that awards players <strong>XP over time</strong> based on their <strong>in-game playtime</strong>. As players accumulate XP, they level up through a curve that naturally becomes more demanding at higher levels. This ensures early progression feels rewarding while long-term progression remains meaningful for committed players.</p>
-<h3 id="how-xp-and-levels-work">How XP and Levels Work</h3>
-<p>XP is awarded progressively as players remain active in-game. The system uses a <strong>progression curve</strong>, meaning:</p>
+<div id="retype-page-description" class="description-display text-description font-description leading-description mb-description-margin-bottom mt-description-margin-top tracking-description text-transform-description">Award XP for eligible chat activity and online play, with persistent levels, rankings, leaderboards, and configurable level-up announcements.</div>
+<p>The Leveling System records persistent player progression for a Realm. Eligible in-game chat activity and time spent online can award XP, which contributes to levels, rankings, and the Realm leaderboard.</p>
+<h2 id="how-xp-is-awarded">How XP Is Awarded</h2>
+<p>When the module is enabled and the Relay Account connection is operational:</p>
 <ul>
-<li>Lower levels are reached more quickly to support onboarding and early engagement.</li>
-<li>Higher levels require more XP, preventing rapid endgame progression and keeping long-term progression competitive.</li>
+<li><strong>Chat activity:</strong> an eligible in-game message awards a random <strong>15-25 XP</strong>, at most once per player per minute.</li>
+<li><strong>Online activity:</strong> online players receive a random <strong>15-25 XP</strong> during a progression check approximately every <strong>5 minutes</strong>.</li>
+<li><strong>Relay Account:</strong> messages and activity from the Realm Bot Relay Account do not receive XP.</li>
 </ul>
-<p>This makes the Leveling System suitable for:</p>
+<p>These awards recognise normal participation. Repeated messages are not a reliable progression method, and Chat Relay Anti-Spam controls and Realm moderation rules still apply.</p>
+<h2 id="levels-ranks-and-leaderboards">Levels, Ranks, and Leaderboards</h2>
+<p>Each level requires more XP than the previous level. XP and levels are stored for the Realm and used by:</p>
 <ul>
-<li>Long-running survival Realms</li>
-<li>Competitive communities seeking a consistent grind</li>
-<li>Staff-managed events where activity-based rewards matter</li>
+<li>Player rank displays</li>
+<li>The Leveling leaderboard</li>
+<li>Level-up announcements</li>
 </ul>
-<h3 id="level-up-announcements">Level-Up Announcements</h3>
+<p>Players with a higher level are ranked first; XP determines ordering between players at the same level.</p>
+<h2 id="level-up-announcements">Level-Up Announcements</h2>
 <p>When a player levels up, Realm Bot can optionally announce this:</p>
 <ul>
-<li><strong>In-Game</strong> (Minecraft chat)</li>
-<li><strong>In Discord</strong> (a dedicated announcement channel)</li>
+<li><strong>In-game</strong> through Minecraft chat</li>
+<li><strong>In Discord</strong> through a selected announcement channel</li>
 </ul>
-<p>Both announcement destinations are configurable, allowing you to keep level-up messages visible without disrupting gameplay or staff operations.</p>
-<h3 id="custom-level-up-message">Custom Level-Up Message</h3>
-<p>You may customise the message used for level-up announcements. The message supports variable placeholders that are replaced dynamically at runtime:</p>
+<p>Both destinations are configurable.</p>
+<h2 id="custom-level-up-message">Custom Level-Up Message</h2>
+<p>The level-up message supports these placeholders:</p>
 <ul>
-<li><code translate="no" v-pre>{user}</code> - the player’s current username</li>
-<li><code translate="no" v-pre>{level}</code> - the player’s new level</li>
-<li><code translate="no" v-pre>{rank}</code> - the player’s ranking relative to others</li>
+<li><code translate="no" v-pre>{user}</code> - the player&#x27;s current username</li>
+<li><code translate="no" v-pre>{level}</code> - the player&#x27;s new level</li>
+<li><code translate="no" v-pre>{rank}</code> - the player&#x27;s ranking relative to others</li>
 </ul>
 <p>Example:</p>
 <p><code translate="no" v-pre>Congratulations {user} for reaching level {level}! You are now ranked #{rank}.</code></p>
 <blockquote>
-<p><strong>Note:</strong> Use placeholders exactly as shown. Incorrect formatting may result in variables not being replaced as expected.</p>
+<p><strong>Note:</strong> Use placeholders exactly as shown. Incorrect formatting may prevent a value from being replaced.</p>
 </blockquote>
-<h3 id="requirements">Requirements</h3>
+<h2 id="requirements">Requirements</h2>
 <p>To use the Leveling System:</p>
 <ul>
-<li>The module must be enabled in the Realm Bot Dashboard.</li>
-<li>Players must be actively playing in the Realm to accrue playtime-based XP.</li>
+<li>An active Realm Bot Premium subscription is required.</li>
+<li>The module must be enabled for the correct Realm.</li>
+<li>The Relay Account must be connected and receiving live Realm events.</li>
+<li>Players must be online for online-activity awards or send an eligible in-game message for chat awards.</li>
 </ul>
-<h3 id="how-to-set-up">How to Set Up</h3>
+<p>The GameTest Pack is not required for Leveling progression.</p>
+<h2 id="how-to-set-up">How to Set Up</h2>
 <ol>
 <li>
-<p>Open the <strong>Leveling System</strong> module inside the Realm Bot Dashboard.<br/>
+<p>Open the <strong>Leveling System</strong> module inside the Realm Bot Dashboard.
 <img src="../../images/leveling-system.png" alt="Leveling System Configuration" class="max-w-full h-auto" width="1271" height="936" /></p>
 </li>
 <li>
 <p>Enable the <strong>Leveling System</strong> toggle.</p>
 </li>
 <li>
-<p>(Optional) Select a <strong>Discord Destination</strong> channel for level-up announcements.</p>
+<p>Optionally select a <strong>Discord Destination</strong> for level-up announcements.</p>
 </li>
 <li>
-<p>Under <strong>Announcement Settings</strong>, choose whether to <strong>Send In-Game Messages</strong> for level-ups.</p>
+<p>Choose whether to <strong>Send In-Game Messages</strong> for level-ups.</p>
 </li>
 <li>
-<p>Edit the <strong>Custom Level Up Message</strong> to match your community’s style, using <code translate="no" v-pre>{user}</code>, <code translate="no" v-pre>{level}</code>, and <code translate="no" v-pre>{rank}</code> where appropriate.</p>
+<p>Customise the message using <code translate="no" v-pre>{user}</code>, <code translate="no" v-pre>{level}</code>, and <code translate="no" v-pre>{rank}</code> where appropriate.</p>
 </li>
 </ol>
-<h3 id="recommended-configuration">Recommended Configuration</h3>
-<p>For community Realms:</p>
+<h2 id="recommended-configuration">Recommended Configuration</h2>
 <ul>
-<li>Enable <strong>in-game announcements</strong> if level-ups are a core part of the player experience.</li>
-<li>Use a dedicated Discord channel such as <code translate="no" v-pre>#level-ups</code> to preserve visibility without cluttering general chat.</li>
+<li>Use a dedicated Discord channel such as <code translate="no" v-pre>#level-ups</code> if announcements would clutter general chat.</li>
+<li>Keep the level-up message concise during busy periods.</li>
+<li>Apply normal moderation rules to chat; XP should reward participation rather than message volume.</li>
 </ul>
-<p>For competitive or staff-heavy Realms:</p>
-<ul>
-<li>Consider disabling in-game announcements and using Discord only.</li>
-<li>Keep your message concise and consistent to avoid spam during peak activity.</li>
-</ul>
-<h3 id="operational-notes">Operational Notes</h3>
-<ul>
-<li>The Leveling System is designed to reward sustained engagement rather than short bursts of play.</li>
-<li>The progression curve is intended to maintain long-term value; higher levels should remain an achievement.</li>
-<li>If you are migrating from older leveling data, use the dashboard migration option where available, and avoid resetting levels unless you intend to fully restart progression for the Realm.</li>
-</ul>
-<h3 id="data-actions-and-safety">Data Actions and Safety</h3>
-<p>The module may provide administrative actions such as:</p>
-<ul>
-<li><strong>Migrating data</strong> from a prior leveling system</li>
-<li><strong>Resetting all user levels</strong> for the Realm</li>
-</ul>
+<h2 id="data-actions-and-safety">Data Actions and Safety</h2>
+<p>The dashboard provides an action to <strong>reset all user levels</strong> for the selected Realm.</p>
 <blockquote>
-<p><strong>Warning:</strong> Reset actions are typically permanent. Use resets only when you have confirmed your intent and communicated the change to your community in advance.</p>
+<p><strong>Warning:</strong> Resetting levels is irreversible. Confirm the selected Realm and communicate the change before proceeding.</p>
 </blockquote>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<h3 id="xp-is-not-updating">XP is not updating</h3>
+<ul>
+<li>Confirm Leveling is enabled for the correct Realm.</li>
+<li>Confirm the Relay Account is online and the Realm connection is healthy.</li>
+<li>For chat XP, wait at least one minute between eligible awards.</li>
+<li>For online XP, allow at least five minutes for the next progression check.</li>
+<li>Confirm the player is not the Relay Account.</li>
+</ul>
+<h3 id="announcements-do-not-appear">Announcements do not appear</h3>
+<ul>
+<li>Confirm a Discord destination is selected for Discord announcements.</li>
+<li>Verify Realm Bot can <strong>View Channel</strong>, <strong>Send Messages</strong>, and <strong>Embed Links</strong>.</li>
+<li>Confirm <strong>Send In-Game Messages</strong> is enabled if an in-game announcement is expected.</li>
+</ul>
 
                 
                 <!-- Required only on API pages -->

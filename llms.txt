@@ -4,6 +4,7 @@
 
 - [Welcome to Realm Bot Documentation](https://help.realmbot.dev/readme.md): Welcome to Realm Bot Documentation
 - [Getting Started](https://help.realmbot.dev/setup.md): Connect your Minecraft Bedrock Realm to Discord in three steps. Link your Microsoft account, run the connect command, then configure modules and settings.
+- [Commands](https://help.realmbot.dev/commands/index.md): Use Realm Bot's Discord slash commands to manage connected Minecraft Bedrock Realms, players, activity, and live Relay features.
 
 ## Server Dashboard
 
@@ -24,13 +25,14 @@
 - [Overview](https://help.realmbot.dev/realm-modules/overview.md): A central hub for managing your Realm connection, bot join behaviour, Gametest pack dependencies, and all available Realm Modules.
 - [Chat Relay](https://help.realmbot.dev/realm-modules/chat-relay.md): Connect your Realm and Discord with a two-way chat bridge, including configurable message types, emote relaying, and built-in anti-spam controls.
 - [Realm Console](https://help.realmbot.dev/realm-modules/realm-console.md): Execute Minecraft commands directly from a secured Discord channel, using your in-game Relay Account as the command runner.
-- [Bot Detection](https://help.realmbot.dev/realm-modules/bot-detection.md): Mitigate malicious bot accounts joining public Realms by automatically detecting and removing suspicious connections. Includes an Experimental mode for advanced detection.
-- [Member Gate](https://help.realmbot.dev/realm-modules/member-gate.md): Automatically kick or ban joining players based on Xbox profile signals - such as device platform, gamerscore, and social metrics - to enforce strict entry standards.
+- [Bot Detection](https://help.realmbot.dev/realm-modules/bot-detection.md): Detect and remove suspected automated accounts from connected public Realms, with optional experimental checks and automatic bans.
+- [Member Gate](https://help.realmbot.dev/realm-modules/member-gate.md): Evaluate joining players against device, gamerscore, and social-profile rules, with private-title-history and automated entry checks.
 - [Scoreboard Leaderboards](https://help.realmbot.dev/realm-modules/scoreboard-leaderboards.md): Publish live in-game scoreboard rankings to Discord, allowing players to track progress and compete through automated leaderboard embeds.
-- [Vanity URL](https://help.realmbot.dev/realm-modules/vanity-url.md): Create a custom, memorable realmbot.link vanity URL for your Realm, with the same protection options as Invite Links, including bot mitigation and VPN, hosting, Tor blocking.
+- [Vanity URL](https://help.realmbot.dev/realm-modules/vanity-url.md): Create a stable, memorable realmbot.link address that uses Realm Bot's managed Microsoft-authenticated invite flow.
 - [Skin Filtering](https://help.realmbot.dev/realm-modules/skin-filtering.md): Automatically detect and remove players using irregular skins (small, invisible/transparent, or 4D/Horion-style skins) to improve fairness and reduce exploit abuse.
-- [Leveling System](https://help.realmbot.dev/realm-modules/leveling-system.md): Award progressive XP based on playtime, automatically increasing difficulty at higher levels, with configurable in-game and Discord level-up announcements.
+- [Leveling System](https://help.realmbot.dev/realm-modules/leveling-system.md): Award XP for eligible chat activity and online play, with persistent levels, rankings, leaderboards, and configurable level-up announcements.
 - [Live Playerlist](https://help.realmbot.dev/realm-modules/live-playerlist.md): Publish an automatically updating list of online Realm players to a Discord channel, with optional playtime and device identification.
+- [Relay Account and GameTest Dependencies](https://help.realmbot.dev/realm-modules/relay-account-and-gametest.md): Understand the shared Relay Account, GameTest Pack, Beta API, permission, and connection requirements used by Realm Bot modules.
 
 ## Realm Page
 
@@ -42,72 +44,100 @@
 
 ### Allowlist
 
-- [/allowlist add](https://help.realmbot.dev/commands/allowlist/add.md): Add a player to the bot's allowlist.
-- [/allowlist check](https://help.realmbot.dev/commands/allowlist/check.md): Check if a player is on the allowlist.
-- [/allowlist list](https://help.realmbot.dev/commands/allowlist/list.md): View the full allowlist.
-- [/allowlist remove](https://help.realmbot.dev/commands/allowlist/remove.md): Remove a player from the bot's allowlist.
+- [Allowlist Commands](https://help.realmbot.dev/commands/allowlist/index.md): Manage Realm Bot's server-level exemption list for supported automated systems.
+- [/allowlist add](https://help.realmbot.dev/commands/allowlist/add.md): Add a Minecraft player to Realm Bot's server-level allowlist for supported automated systems.
+- [/allowlist check](https://help.realmbot.dev/commands/allowlist/check.md): Check whether a Minecraft player is on Realm Bot's server-level allowlist.
+- [/allowlist list](https://help.realmbot.dev/commands/allowlist/list.md): Display Realm Bot's server-level allowlist using interactive pages of ten players.
+- [/allowlist remove](https://help.realmbot.dev/commands/allowlist/remove.md): Remove a Minecraft player from Realm Bot's server-level automation allowlist.
 
 ### Banlist
 
-- [/banlist all](https://help.realmbot.dev/commands/banlist/all.md): View the full ban list for a Realm.
-- [/banlist lookup](https://help.realmbot.dev/commands/banlist/lookup.md): Check if a specific player is banned on a Realm.
+- [Banlist Commands](https://help.realmbot.dev/commands/banlist/index.md): Inspect official Minecraft Realm blocklists and submit players for Realm Bot Global Ban review.
+- [/banlist all](https://help.realmbot.dev/commands/banlist/all.md): List players on a selected Minecraft Realm's official blocklist.
+- [/banlist lookup](https://help.realmbot.dev/commands/banlist/lookup.md): Check a player's official blocklist status in one or all connected Minecraft Realms.
+- [/db report](https://help.realmbot.dev/commands/banlist/report.md): Submit a Minecraft player and supporting evidence for Realm Bot Global Ban review.
 
 ### Player
 
-- [/player lookup](https://help.realmbot.dev/commands/player/lookup.md): Look up live data about a player on the Realm. This includes their inventory, location, and health.
+- [Player Commands](https://help.realmbot.dev/commands/player/index.md): Retrieve enriched live player information or the most recent stored fallback record.
+- [/player lookup](https://help.realmbot.dev/commands/player/lookup.md): Retrieve enriched live player details when available, with a potentially older stored fallback.
 
 ### Realm
 
-- [/realm backup-create](https://help.realmbot.dev/commands/realm/backup-create.md): Creates a new backup of the Realm.
-- [/realm ban](https://help.realmbot.dev/commands/realm/ban.md): Bans a user from the Realm.
-- [/realm close](https://help.realmbot.dev/commands/realm/close.md): Closes the Realm, preventing players from joining.
-- [/realm code-manage](https://help.realmbot.dev/commands/realm/code-manage.md): Manage active invite codes for the Realm interactively.
-- [/realm invite](https://help.realmbot.dev/commands/realm/invite.md): Invites a user to the Realm.
-- [/realm kick](https://help.realmbot.dev/commands/realm/kick.md): Kicks a user from the Realm (removes them from the player list).
-- [/realm lastseen](https://help.realmbot.dev/commands/realm/lastseen.md): Check when a specific player was last seen.
-- [/realm members](https://help.realmbot.dev/commands/realm/members.md): Lists all members of the Realm.
-- [/realm nickname](https://help.realmbot.dev/commands/realm/nickname.md): Changes the Realm's nickname within the bot (Discord command list).
-- [/realm open](https://help.realmbot.dev/commands/realm/open.md): Opens the Realm for players to join.
-- [/realm permission](https://help.realmbot.dev/commands/realm/permission.md): Changes a player's permission level on the Realm.
-- [/realm players](https://help.realmbot.dev/commands/realm/players.md): View currently online players.
-- [/realm playtime](https://help.realmbot.dev/commands/realm/playtime.md): View a player's total playtime in the past month.
-- [/realm recents](https://help.realmbot.dev/commands/realm/recents.md): View players who have recently been online.
-- [/realm rename](https://help.realmbot.dev/commands/realm/rename.md): Renames the Realm.
-- [/realm sessions](https://help.realmbot.dev/commands/realm/sessions.md): View a player's sessions in the past month.
-- [/realm slot](https://help.realmbot.dev/commands/realm/slot.md): Changes the active world slot of the Realm.
-- [/realm unban](https://help.realmbot.dev/commands/realm/unban.md): Unbans a user from the Realm.
+- [Realm Commands](https://help.realmbot.dev/commands/realm/index.md): Manage Realm membership, moderation, configuration, player activity, world slots, codes, and backups.
+- [/realm ban](https://help.realmbot.dev/commands/realm/ban.md): Add a player to the official blocklist of one or all connected Realms.
+- [/realm unban](https://help.realmbot.dev/commands/realm/unban.md): Remove a player from the official blocklist of one or all connected Realms.
+- [/realm kick](https://help.realmbot.dev/commands/realm/kick.md): Remove a player from Realm membership without adding them to the official blocklist.
+- [/realm invite](https://help.realmbot.dev/commands/realm/invite.md): Add a resolved Minecraft player as an official member of one or all connected Realms.
+- [/realm permission](https://help.realmbot.dev/commands/realm/permission.md): Set a player's official Realm permission to Visitor, Member, or Operator.
+- [/realm open](https://help.realmbot.dev/commands/realm/open.md): Open one or all connected Realms to player joins.
+- [/realm close](https://help.realmbot.dev/commands/realm/close.md): Close one or all connected Realms to new player joins.
+- [/realm rename](https://help.realmbot.dev/commands/realm/rename.md): Change the actual Minecraft Bedrock Realm name shown to members.
+- [/realm nickname](https://help.realmbot.dev/commands/realm/nickname.md): Change the local Realm label Realm Bot uses in Discord without renaming the Minecraft Realm.
+- [/realm slot](https://help.realmbot.dev/commands/realm/slot.md): Switch a selected Realm to world slot 1, 2, or 3.
+- [/realm code-manage](https://help.realmbot.dev/commands/realm/code-manage.md): Interactively create and manage official invite codes for a selected Minecraft Realm.
+- [/realm players](https://help.realmbot.dev/commands/realm/players.md): Display official live Realm players with device and optional Realm permission information.
+- [/realm members](https://help.realmbot.dev/commands/realm/members.md): Display official Realm members and blocked players, with currently limited filtering and search.
+- [/realm recents](https://help.realmbot.dev/commands/realm/recents.md): Display up to 100 recently seen Xbox club members for a selected Realm.
+- [/realm lastseen](https://help.realmbot.dev/commands/realm/lastseen.md): Search connected Realms for a player's most recent Xbox club activity record.
+- [/realm playtime](https://help.realmbot.dev/commands/realm/playtime.md): Sum the recorded activity intervals available for a player in a selected Realm.
+- [/realm sessions](https://help.realmbot.dev/commands/realm/sessions.md): Display a player's recorded Realm activity intervals grouped by day.
+- [/realm backup-create](https://help.realmbot.dev/commands/realm/backup-create.md): Start a named backup request for a selected Minecraft Bedrock Realm.
+- [/realm backup-list](https://help.realmbot.dev/commands/realm/backup-list.md): List, save, and restore automatic or manual backups for a selected Realm.
+
+### Invites
+
+- [Invite Commands](https://help.realmbot.dev/commands/invites/index.md): Create, review, and remove Realm Bot managed web invite links.
+- [/invites create](https://help.realmbot.dev/commands/invites/create.md): Create a reusable Realm Bot managed web invite with optional usage and expiry limits.
+- [/invites temp](https://help.realmbot.dev/commands/invites/temp.md): Create a one-use Realm Bot managed invite link that expires after 24 hours.
+- [/invites list](https://help.realmbot.dev/commands/invites/list.md): Display the Discord server's Realm Bot managed invite-link records and usage status.
+- [/invites delete](https://help.realmbot.dev/commands/invites/delete.md): Permanently delete a Realm Bot managed invite-link record by its slug.
 
 ### Stats
 
-- [/leaderboard](https://help.realmbot.dev/commands/stats/leaderboard.md): Provides a link to the server's web leaderboard.
-- [/rank](https://help.realmbot.dev/commands/stats/rank.md): Displays a rank card for a user, showing their level and XP earned through playing on the Realm.
+- [Stats Commands](https://help.realmbot.dev/commands/stats/index.md): Open the server leaderboard and generate player rank cards from Leveling System data.
+- [/rank](https://help.realmbot.dev/commands/stats/rank.md): Generate a rank-card image from a player's stored Leveling System XP and level.
+- [/leaderboard](https://help.realmbot.dev/commands/stats/leaderboard.md): Open the Discord server's public Realm Bot web leaderboard.
 
 ### Utility
 
-- [/connect](https://help.realmbot.dev/commands/utility/connect.md): Connect your Xbox account to the discord server. This is a required step for using most Realm Bot features.
-- [/dashboard](https://help.realmbot.dev/commands/utility/dashboard.md): Get links to the web dashboard.
-- [/disconnect](https://help.realmbot.dev/commands/utility/disconnect.md): Disconnect your Xbox account from the discord server.
-- [/help](https://help.realmbot.dev/commands/utility/help.md): Get help with Realm Bot.
-- [/invite](https://help.realmbot.dev/commands/utility/invite.md): Get an invite link for the bot.
-- [/premium](https://help.realmbot.dev/commands/utility/premium.md): Get information about Premium features.
-- [/shard](https://help.realmbot.dev/commands/utility/shard.md): View technical status information about the bot's current shard.
+- [Utility Commands](https://help.realmbot.dev/commands/utility/index.md): Connect Realm Bot, open service resources, review subscription information, and view bot status.
+- [/connect](https://help.realmbot.dev/commands/utility/connect.md): Associate the current Discord server with the invoking member's linked Microsoft/Xbox Realm account.
+- [/disconnect](https://help.realmbot.dev/commands/utility/disconnect.md): Clear the server's connected account association or remove its primary stored Guild record.
+- [/dashboard](https://help.realmbot.dev/commands/utility/dashboard.md): Open Realm Bot Dashboard, account, and current-server management links.
+- [/help](https://help.realmbot.dev/commands/utility/help.md): Open Realm Bot's support server, website, and documentation.
+- [/invite](https://help.realmbot.dev/commands/utility/invite.md): Open the Realm Bot invitation and support-server links.
+- [/premium](https://help.realmbot.dev/commands/utility/premium.md): Open Realm Bot's subscription information and Premium management page.
+- [/botinfo](https://help.realmbot.dev/commands/utility/botinfo.md): Display Realm Bot's global, cluster, connection, uptime, and aggregate service statistics.
+
+### Verify
+
+- [Verify Commands](https://help.realmbot.dev/commands/verify/index.md): Publish Realm Bot's Microsoft/Xbox account-linking panel for Discord members.
+- [/verify embed](https://help.realmbot.dev/commands/verify/embed.md): Post Realm Bot's Microsoft/Xbox account-linking panel in the current Discord channel.
 
 ### Warn
 
-- [/warn add](https://help.realmbot.dev/commands/warn/add.md): Issue a warning to a player. If the warning points exceed the threshold, the player may be automatically banned.
-- [/warn lookup](https://help.realmbot.dev/commands/warn/lookup.md): View a player's warning history, including active and removed warnings.
-- [/warn remove](https://help.realmbot.dev/commands/warn/remove.md): Remove a warning from a player.
+- [Warn Commands](https://help.realmbot.dev/commands/warn/index.md): Create and review Realm Bot player warning records and configured threshold actions.
+- [/warn add](https://help.realmbot.dev/commands/warn/add.md): Record a player warning and evaluate the configured count threshold for Realm enforcement.
+- [/warn lookup](https://help.realmbot.dev/commands/warn/lookup.md): Review a player's Realm Bot warning and warning-removal history.
+- [/warn remove](https://help.realmbot.dev/commands/warn/remove.md): Record a warning-removal event for a player and selected Realm scope.
 
 ### World
 
-- [/world broadcast](https://help.realmbot.dev/commands/world/broadcast.md): Broadcasts a message to the in-game chat.
-- [/world execute](https://help.realmbot.dev/commands/world/execute.md): Executes a console command on the Realm.
-- [/world join](https://help.realmbot.dev/commands/world/join.md): Connects the bot to the Realm's game server. This allows the bot to track chats, events, and interactions in real-time.
-- [/world leave](https://help.realmbot.dev/commands/world/leave.md): Disconnects the bot from the Realm's game server.
+- [World Commands](https://help.realmbot.dev/commands/world/index.md): Connect or disconnect the live Relay Account and perform privileged in-game actions.
+- [/world join](https://help.realmbot.dev/commands/world/join.md): Enable persistent Relay joining and request a live connection to one or all connected Realms.
+- [/world leave](https://help.realmbot.dev/commands/world/leave.md): Disable persistent joining and disconnect the Relay Account from one or all selected Realms.
+- [/world broadcast](https://help.realmbot.dev/commands/world/broadcast.md): Send a prefixed announcement to in-game chat through the active Relay Account.
+- [/world execute](https://help.realmbot.dev/commands/world/execute.md): Execute a Minecraft command through the active Relay Account with its in-game authority.
+- [Command Troubleshooting](https://help.realmbot.dev/commands/troubleshooting.md): Resolve common Realm Bot slash-command permission, connection, Premium, Relay Account, GameTest, and input errors.
+
+## Tools
+
+- [Embed Panel](https://help.realmbot.dev/tools/embed-panel.md): Create a persistent Discord embed with up to five link or Realm-action buttons.
 
 ## Integrations
 
-- [Tebex](https://help.realmbot.dev/integrations/tebex.md): Integrate Tebex with Realm Bot to automate in-game reward delivery (e.g., ranks and perks) after a successful store purchase.
+- [Tebex](https://help.realmbot.dev/integrations/tebex.md): Connect Tebex to deliver purchased ranks, perks, and other in-game rewards through a Realm Bot Relay Account.
 
 ## Troubleshooting
 

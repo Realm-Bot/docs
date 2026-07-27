@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.838421677849">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.838438362497">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -44,11 +44,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../favicon.ico" />
-    <link href="../../resources/css/retype.css?v=4.6.0.838421677849" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.6.0.838438362497" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.838421677849" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.838438362497" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.838421677849" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.838438362497" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -157,7 +157,6 @@
 </div>
 
 <div id="retype-page-description" class="description-display text-description font-description leading-description mb-description-margin-bottom mt-description-margin-top tracking-description text-transform-description">Publish live in-game scoreboard rankings to Discord, allowing players to track progress and compete through automated leaderboard embeds.</div>
-<h3 id="what-are-scoreboard-leaderboards">What are Scoreboard Leaderboards?</h3>
 <p>Scoreboard Leaderboards allow you to display a live leaderboard for an in-game <strong>Minecraft scoreboard objective</strong> directly inside a Discord channel. This enables communities to track progress, promote competition, and keep key statistics visible without requiring players to join the Realm to view rankings.</p>
 <p>Leaderboards are rendered as Discord embeds and can be configured per scoreboard, per channel.</p>
 <h3 id="how-it-works">How it Works</h3>
@@ -166,7 +165,9 @@
 <ul>
 <li>You select a <strong>Discord channel</strong> where the leaderboard will be posted.</li>
 <li>You choose the <strong>Minecraft scoreboard</strong> (objective) you want to display.</li>
-<li>Realm Bot periodically retrieves scoreboard values through the connected Realm environment and updates the embed.</li>
+<li>Realm Bot retrieves scoreboard values approximately <strong>once per minute</strong> and updates the embed.</li>
+<li>You can configure up to <strong>10 leaderboards</strong>, each showing up to <strong>10 entries</strong>.</li>
+<li>Realm Bot edits the existing Discord message where possible and recreates it if that message is no longer available.</li>
 </ul>
 <blockquote>
 <p><strong>Important:</strong> This feature is dependent on the Realm runtime environment. If the required in-game components are not active, leaderboards cannot update.</p>
@@ -175,7 +176,9 @@
 <p>Scoreboard Leaderboards require:</p>
 <ul>
 <li>The <strong>Relay Account</strong> to be actively <strong>in-game</strong>.</li>
-<li>The <strong>Realm Bot Gametest Pack</strong> installed and enabled in the Realm.</li>
+<li>The <strong>Realm Bot GameTest Pack</strong> installed and current.</li>
+<li><strong>Beta APIs</strong> enabled for the Realm.</li>
+<li>An active Realm Bot Premium subscription.</li>
 <li>At least one valid in-game <strong>scoreboard objective</strong> to display.</li>
 </ul>
 <p>If any requirement is missing (Relay Account offline, pack disabled, or scoreboard not present), leaderboard updates may fail or show no data.</p>
@@ -201,6 +204,7 @@
 <li>Save the leaderboard configuration.</li>
 </ol>
 <p>Once created, the leaderboard will begin updating in the selected channel when the Relay Account is online and the Gametest Pack is active.</p>
+<p>Realm Bot requires <strong>View Channel</strong>, <strong>Send Messages</strong>, <strong>Embed Links</strong>, and <strong>Read Message History</strong> in each destination channel.</p>
 <h3 id="recommended-usage">Recommended Usage</h3>
 <p>Scoreboard Leaderboards are ideal for:</p>
 <ul>
@@ -220,17 +224,19 @@
 <ul>
 <li>Confirm the selected scoreboard objective exists in-game and contains values.</li>
 <li>Ensure the Relay Account is online in the Realm.</li>
-<li>Verify the Realm Bot Gametest Pack is installed and enabled.</li>
+<li>Verify the Realm Bot GameTest Pack is installed and current.</li>
+<li>Confirm Beta APIs are enabled.</li>
 </ul>
 <p><strong>The leaderboard is not posting to Discord</strong></p>
 <ul>
-<li>Confirm the bot has permission to <strong>View Channel</strong>, <strong>Send Messages</strong>, and <strong>Embed Links</strong> in the selected channel.</li>
+<li>Confirm the bot has permission to <strong>View Channel</strong>, <strong>Send Messages</strong>, <strong>Embed Links</strong>, and <strong>Read Message History</strong> in the selected channel.</li>
 <li>Verify the correct channel was selected during setup.</li>
 </ul>
 <p><strong>The scoreboard name is not appearing in the dropdown</strong></p>
 <ul>
 <li>The scoreboard objective may not be created in-game yet, or the environment may not be detectable if the required pack/account is offline.</li>
 <li>Create or validate the scoreboard in-game, then refresh the dashboard and try again.</li>
+<li>Confirm the Relay Account joined after the GameTest Pack and Beta APIs were enabled.</li>
 </ul>
 <h3 id="best-practices">Best Practices</h3>
 <ul>

@@ -12,7 +12,7 @@ When enabled, Realm Bot will:
 
 - Post a live list of players currently online in the Realm
 - Update the output automatically every **5 minutes**
-- Maintain a single message that refreshes over time (where supported by your configuration), keeping the channel clean
+- Maintain a single message that refreshes over time, recreating it if the previous message is unavailable
 
 This makes it suitable for:
 - moderation coverage (knowing when activity is high)
@@ -28,7 +28,7 @@ This makes it suitable for:
 Depending on your configuration, the player list can include:
 - the player name (gamertag)
 - optional device/platform indicators (e.g., Android, Windows)
-- optional current session playtime
+- optional recorded total playtime
 
 ---
 
@@ -52,7 +52,8 @@ Recommended channel choices:
 Ensure the bot has:
 - **View Channel**
 - **Send Messages**
-- **Embed Links** (recommended for clean formatting)
+- **Embed Links**
+- **Read Message History**
 
 ### Display Settings
 
@@ -60,11 +61,11 @@ You can control which information appears alongside each player entry:
 
 #### Display Playtime
 
-When enabled, the playerlist includes a playtime indicator showing how long the player has been active (as supported by your deployment).
+When enabled, the playerlist includes the player's recorded total playtime. It is not a timer for only the current session.
 
 Use this if you want:
 - clearer staff context during incidents
-- session visibility for activity monitoring
+- broader activity context for staff
 
 #### Device Identification
 
@@ -88,6 +89,8 @@ Live Playerlist updates every **5 minutes**. This interval is designed to balanc
 
 > **Note:** The playerlist is "live" in the operational sense (regular refresh), not second-by-second.
 
+Live Playerlist requires an active Realm Bot Premium subscription and a connected Relay Account. It does not require the GameTest Pack or Beta APIs.
+
 ---
 
 ## Best Practices
@@ -105,13 +108,14 @@ Live Playerlist updates every **5 minutes**. This interval is designed to balanc
 
 - Confirm Live Playerlist is enabled in the module.
 - Confirm a Discord Destination channel is selected.
-- Verify permissions: View Channel, Send Messages (and Embed Links if required).
-- Confirm the Realm is connected and functioning.
+- Verify permissions: View Channel, Send Messages, Embed Links, and Read Message History.
+- Confirm the Relay Account is connected to the selected Realm.
 
 ### The playerlist is not updating
 
 - Updates occur every 5 minutes; wait for the next cycle.
 - Confirm the bot remains online and has access to the destination channel.
+- Reconnect the Microsoft/Xbox account if authentication has expired.
 
 ### Device/playtime fields are missing
 

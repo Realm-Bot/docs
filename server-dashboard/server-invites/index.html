@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.838421677849">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.838438362497">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -44,11 +44,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../favicon.ico" />
-    <link href="../../resources/css/retype.css?v=4.6.0.838421677849" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.6.0.838438362497" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.838421677849" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.838438362497" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.838421677849" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.838438362497" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -188,6 +188,7 @@
 <li>the Realm appears in their <strong>Minecraft Realms list</strong> in-game</li>
 <li>they can join the Realm normally through Minecraft</li>
 </ul>
+<p>Server <strong>Account Linking</strong> can also support automatic invitations, but it is a separate Microsoft verification workflow rather than the same public Invite Link acceptance page.</p>
 <blockquote>
 <p><strong>Security Clarification:</strong> Users authenticate through Microsoft’s standard login flow. Players should only sign in on pages they trust and should verify the domain before proceeding.</p>
 </blockquote>
@@ -219,7 +220,7 @@ Select which connected Realm the invite should apply to.</p>
 <li>
 <p><strong>Max Uses</strong> (optional)<br />
 Limit how many successful joins the link can be used for.<br />
-Leave empty for unlimited.</p>
+A value of <code translate="no" v-pre>0</code> means unlimited.</p>
 </li>
 <li>
 <p><strong>Expiration Date</strong> (optional)<br />
@@ -249,6 +250,7 @@ Leave empty for no expiry.</p>
 <li><strong>Status</strong> - toggle to enable/disable the link quickly</li>
 <li><strong>Actions</strong> - common actions include copying the link and deleting it</li>
 </ul>
+<p>Disabled links, expired links, and links that have reached their maximum use count cannot accept further joins.</p>
 <h3 id="recommended-workflow">Recommended Workflow</h3>
 <ul>
 <li>If a link is being abused, <strong>disable it immediately</strong> using the Status toggle.</li>

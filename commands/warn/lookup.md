@@ -1,6 +1,34 @@
 # `/warn lookup`
 
-View a player's warning history, including active and removed warnings.
+Displays Realm Bot warning history for a resolved Minecraft player, grouped by reason and accompanied by a summary.
 
-- **Permissions**: Authorized Users Only
-- **Usage**: `/warn lookup <user> [realm]`
+## Syntax
+
+`/warn lookup <user> [realm]`
+
+## Arguments
+
+| Argument | Required | Description |
+|---|---:|---|
+| `user` | Yes | The player's Xbox gamertag. |
+| `realm` | No | The intended Realm filter. |
+
+## Requirements
+
+- The Discord server must be connected to a Microsoft/Xbox account.
+- The member must have `command.warn.lookup`, or be a Discord Administrator.
+- Premium and an active Relay Account are not required.
+
+## Output
+
+The response includes warning and warning-removal records, grouped by reason. Interactive controls display up to **five records per reason page** and can switch to a summary.
+
+The response and pagination controls are public. Use a staff channel if moderation history should remain restricted.
+
+> **Current limitation:** The optional Realm filter may not fully restrict the records displayed. Confirm the Realm attached to each record before acting on the result.
+
+## Related Commands
+
+- [`/warn add`](add.md)
+- [`/warn remove`](remove.md)
+- [Command Troubleshooting](../troubleshooting.md)

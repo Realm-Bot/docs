@@ -1,80 +1,61 @@
-### What is Bot Detection?
+# Bot Detection
 
-Bot Detection is a protective feature designed to mitigate malicious **bot accounts** that join Realms to cause **latency**, **performance degradation**, or **gameplay disruption**. It is primarily intended for Realms that use **public invite codes**, where automated join attempts are more likely to occur.
+Bot Detection is a **Beta** moderation module for Realms affected by automated joins or disruptive bot activity. It evaluates live connection activity and may remove an account when its behaviour is consistent with automation.
 
-> **Important:** Bot Detection reduces risk and disruption, but it cannot guarantee absolute prevention. Minecraft Realms are subject to platform constraints, and detection is based on observable behaviour at join-time.
+> **Important:** Automated detection reduces common disruption but cannot guarantee complete prevention. False positives remain possible, particularly when experimental checks are enabled.
 
-### When Bot Detection is Recommended
+## Current Behaviour
 
-Bot Detection is best suited to:
-- **Public-code Realms** (open access, frequently shared codes)
-- Realms experiencing repeated **join floods**, **lag spikes**, or **suspicious new accounts**
-- Communities that require better stability during peak activity or events
+- Suspected bot accounts are removed from the Realm with a kick by default.
+- **Auto Ban** can additionally ban accounts identified by the detector.
+- **Experimental Detection** adds more aggressive checks and may increase false positives.
+- Users on the Realm Bot allowlist are exempt.
+- Enforcement events are recorded in the configured Automod logging channel.
 
-For private invite-only Realms, Bot Detection may be unnecessary unless you are actively experiencing suspicious join patterns.
+The dashboard's master enable control is currently limited. Treat the available detection settings and connected Relay Account state as the practical controls, and contact support before relying on a master switch to suspend all detection.
 
-### How Bot Detection Works
+## Requirements
 
-When enabled, Bot Detection observes join activity and applies automated mitigation to accounts that appear to be malicious or automated. This is intended to keep your Realm stable by reducing disruptive join behaviour commonly associated with bot activity.
+Bot Detection requires:
 
-Bot Detection requires a **Relay Account to be in-game** to function. If the Relay Account is not online in the Realm, Bot Detection cannot execute its mitigation actions.
+- An active Realm Bot Premium subscription
+- A Relay Account connected to and present in the correct Realm
+- A healthy Realm event connection
+- A configured Automod logging channel for staff visibility
 
-### Detection Modes
+The GameTest Pack is not required for Bot Detection.
 
-Bot Detection currently includes two detection modes:
+## Configuration
 
-- **Regular Bot Detection**  
-  The standard detection mode. This is the recommended default and is generally sufficient for most public Realms.
+![Bot Detection Configuration](/images/bot-detection.png)
 
-- **Experimental Bot Detection (Beta)**  
-  A more aggressive detection mode intended to identify more sophisticated bot behaviour.  
-  **This mode may occasionally flag legitimate player accounts.** Enable with caution and only when necessary.
+### Experimental Detection
 
-> **Caution:** If you enable Experimental Bot Detection, ensure staff are prepared to respond quickly to reports of legitimate players being affected.
+Enable this only when standard detection is not sufficient and staff can review appeals. It broadens the checks used against suspected automation but carries a higher false-positive risk.
 
-### Requirements
+### Auto Ban
 
-To use Bot Detection, you must have:
+When enabled, detected accounts may be banned in addition to being removed. Begin with kick-only enforcement while evaluating behaviour in your community.
 
-- A configured **Relay Account** that is actively **in-game**.
-- Bot Detection enabled within the Realm Bot Dashboard.
+## Recommended Use
 
-### How to Set Up
+- Use Bot Detection primarily for public or widely advertised Realms.
+- Keep the Relay Account online during high-risk periods.
+- Maintain a clear appeal process and record the player's gamertag and join time.
+- Use controlled Invite Links and other access measures alongside detection.
 
-1.  Open the **Bot Detection** module in the Realm Bot Dashboard.<br/>
-    ![Bot Detection Configuration](/images/bot-detection.png)
-2.  Enable **Bot Detection** using the main toggle.
-3.  Under **Detection Settings**, choose one of the following:
-    - By default, **Regular Bot Detection** is enabled
-    - Optionally enable **Experimental Bot Detection (Beta)** if your Realm continues to experience bot activity
-4.  Confirm your Relay Account is **online in the Realm**, as Bot Detection requires an in-game executor to operate.
+## Troubleshooting
 
-### Recommended Configuration
+### Suspected bots are not removed
 
-For most public Realms:
-- Enable **Regular Bot Detection**
-- Leave **Experimental Bot Detection** disabled unless bot activity persists
+- Confirm the Relay Account is online in the selected Realm.
+- Confirm the Realm connection is receiving live events.
+- Check the configured Automod log channel for errors or enforcement records.
+- Reconnect the Microsoft/Xbox account if authentication has expired.
 
-Enable **Experimental Bot Detection** only when:
-- Regular mode is insufficient against repeated bot activity
-- You can tolerate the risk of occasional false positives
-- Staff are available to handle disputes quickly and professionally
+### A legitimate player is removed
 
-### Best Practices
-
-- Restrict access to public codes where possible (rotate codes if abuse is ongoing).
-- Keep the Relay Account reliably online during high-risk periods (peak times, events, after a code is shared publicly).
-- Treat Experimental detection as an escalation tool, not a default setting.
-- Maintain a clear staff procedure for handling reports of false positives (collect the player name, time of join, and what they observed).
-
-### Common Issues
-
-**Bot Detection is enabled, but nothing happens**
-- Confirm the Relay Account is **in-game**.
-- Verify the correct Realm is selected in the dashboard.
-- Ensure the module toggles are saved and remain enabled.
-
-**Legitimate players are being flagged**
-- Disable **Experimental Bot Detection** immediately.
-- Continue using **Regular Bot Detection** while monitoring join behaviour.
-- If false positives persist, keep the feature in Regular mode and consider additional access controls (e.g., limiting code distribution).
+- Disable **Experimental Detection** first.
+- Disable **Auto Ban** while reviewing false positives.
+- Add a confirmed trusted player to the allowlist where appropriate.
+- Provide support with the gamertag and approximate join time.
