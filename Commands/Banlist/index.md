@@ -10,4 +10,6 @@ These commands require a connected server and their named Realm Bot command perm
 - [`/banlist lookup`](lookup.md) - check whether a player is blocked.
 - [`/db report`](report.md) - submit evidence for internal Global Ban review.
 
+See [Global Ban](<../../Global Ban/index.md>) for the system boundaries and custom-list format.
+
 Use [`/realm ban`](../Realm/ban.md) and [`/realm unban`](../Realm/unban.md) to change official Realm blocklists. For shared failures, see [Command Troubleshooting](../troubleshooting.md).

@@ -62,10 +62,18 @@ Permissions are grouped by feature area. When editing a role, you will see categ
 - **Player** (lookup and player-level info commands)
 - **Verify** (verification/embed or onboarding utilities)
 - **Banlist** (lookup or list ban records, where supported)
+- **Watchlist** (add, list, and remove watched players)
 
 Each category includes a **Select All** option to quickly grant everything within that section—use this cautiously.
 
 ![Role Permission Editor](/images/server-permissions-settings.png)
+
+### Security Commands
+
+- **Manage Lockdown System** permits `/realm lockdown` and `/realm unlock`.
+- **Watchlist Add**, **Watchlist List**, and **Watchlist Remove** control the corresponding `/watchlist` actions separately.
+
+These permissions do not exempt a staff member's Minecraft account from Lockdown. Configure the Lockdown Exempt List and Watchlist notification settings separately under [Realm Security](<../Realm Modules/realm-security.md>).
 
 ---
 

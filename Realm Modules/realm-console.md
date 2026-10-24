@@ -9,23 +9,23 @@ authors:
 
 # Realm Console
 
-The Realm Console is a dedicated Discord channel that allows authorised users to execute **Minecraft Bedrock commands** directly into a connected Realm. Messages sent in the configured console channel are interpreted as commands and executed in-game through the **Chat Relay Account**.
+The Realm Console is a dedicated Discord channel that allows authorised users to execute **Minecraft Bedrock commands** directly into a connected Realm. Messages sent in the configured console channel are interpreted as commands and executed in-game through the **Relay Account**.
 
-This module is designed for operational administration, rapid moderation actions, and streamlined management - without requiring staff to be actively in-game on a client.
+This module is designed for operational administration, rapid moderation actions, and streamlined management without requiring staff to be actively in-game on a client.
 
-### How it Works
+## How it Works
 
 The Realm Console functions by using your Relay Account as the in-game command runner:
 
 - A user sends a message in the designated **Realm Console** Discord channel.
-- Realm Bot forwards the message to the Realm via the **Chat Relay Account**.
+- Realm Bot forwards the message to the Realm via the **Relay Account**.
 - The Relay Account executes the message as a command in Realm chat.
 
 Because the command is executed by the Relay Account, all command behaviour (permissions, targets, and side effects) follow the same rules as if the Relay Account typed the command manually in-game.
 
 ![Realm Console](/images/realm-console.png)
 
-### Command Example
+## Command Example
 
 If a user types the following into the Realm Console channel:
 
@@ -36,7 +36,7 @@ The Realm will attempt to run:
 - `gamemode c @a`  
   (Set all players to Creative Mode)
 
-### Relay Account Behaviour and Targeting
+## Relay Account Behaviour and Targeting
 
 Commands are executed **as the Relay Account**. This is important when using selectors or player-specific commands.
 
@@ -50,11 +50,11 @@ This is most relevant when:
 
 > **Important:** When running player-specific commands, always specify explicit targets (for example `@a`, `@p`, a username, or a tagged group) to avoid unintended effects on the Relay Account.
 
-### Requirements
+## Requirements
 
 To use the Realm Console, you must have:
 
-- A configured and functioning **Chat Relay Account** connected to the Realm.
+- A configured and functioning **Relay Account** connected to the Realm.
 - The Relay Account actively present in the Realm (in-game).
 - An active Realm Bot Premium subscription.
 - Sufficient in-game operator and command privileges for the intended commands.
@@ -62,7 +62,7 @@ To use the Realm Console, you must have:
 
 If the Relay Account is not in-game, commands cannot be executed.
 
-### Access Control and Security
+## Access Control and Security
 
 The Realm Console is highly privileged by design. Any user who can send messages in the console channel can attempt to run commands in the Realm.
 
@@ -81,7 +81,7 @@ Failure to secure this channel may result in:
 - Unauthorised administrative changes
 - Accidental disruption through misuse
 
-### Syntax Errors and Safe Usage
+## Syntax Errors and Safe Usage
 
 If a message is not a valid command, or contains incorrect syntax, Minecraft will return a **syntax error**.
 
@@ -92,7 +92,7 @@ To avoid unnecessary disruption:
 - Avoid conversational messages in the console channel.
 - Use a strict format and consider pinning usage guidance at the top of the channel.
 
-### Recommended Operational Practices
+## Recommended Operational Practices
 
 To keep the Realm Console reliable and safe:
 

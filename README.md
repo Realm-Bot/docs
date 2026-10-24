@@ -15,9 +15,9 @@ authors:
 
 # Welcome to Realm Bot Documentation
 
-![](/images/brand/banner.png)
+![Realm Bot documentation banner](/images/brand/banner.png)
 
-Realm Bot is a Discord-first management platform for **Minecraft Bedrock Realms**, built to help owners and staff operate their Realm with greater consistency, speed, and visibility - without needing to be in-game at all times.
+Realm Bot is a Discord-first management platform for **Minecraft Bedrock Realms**, built to help owners and staff operate their Realm with greater consistency, speed, and visibility without needing to be in-game at all times.
 
 This documentation explains how Realm Bot works, how to configure each feature, and how to run a Realm safely using recommended operational practices.
 
@@ -40,7 +40,7 @@ Realm Bot is suitable for:
 ### Realm Management
 Manage the fundamental operations of your Realm from Discord and the dashboard.
 
-- **Start, Stop, and Restart** your Realm when required.
+- **Open and close** your Realm when required.
 - **Invite and remove players** without manual in-game administration.
 - Maintain a more consistent management workflow for staff teams.
 
@@ -48,7 +48,7 @@ Manage the fundamental operations of your Realm from Discord and the dashboard.
 Operate your Realm with clearer enforcement tools and reduced manual workload.
 
 - **Kick and ban** actions for rapid incident response.
-- **Whitelist-oriented control** for communities that require curated entry.
+- **Allowlist-oriented control** for communities that require curated entry.
 - Optional automation modules (where available) to reduce repeat issues.
 
 ### Chat Relay and Communication
@@ -75,17 +75,33 @@ Preserve context and reduce reliance on screenshots.
 
 - Review chat activity where logging is enabled.
 - Maintain an audit trail for staff operations and incident review.
+- Share new Story Feed posts and supported milestones with [Realm Stories](Tools/realm-stories.md) (Premium, Beta).
 
 ### Security and Stability Tooling
 Support Realms that are vulnerable to abuse, especially those using public codes.
 
-- Mitigation features for disruptive activity (where configured).
+- [Realm Security](<Realm Modules/realm-security.md>) (Premium) for temporary Lockdown restrictions and Watchlist join alerts.
 - Tools designed to improve response time and operational clarity during incidents.
 
 ### Integrations
 Extend Realm Bot with connected services to automate routine tasks.
 
-- **Tebex integration** (Premium) for in-game fulfilment workflows where supported by your setup.
+- [Tebex](Integrations/tebex.md) integration (Premium) for in-game fulfilment workflows where supported by your setup.
+
+### Global Ban and Shared Moderation
+Use Realm Bot's shared moderation system to review public records, submit evidence-backed reports, protect connected Realms, and appeal eligible records.
+
+- Browse and filter supported records in the [Ban List Explorer](<Global Ban/ban-list-explorer.md>).
+- Configure category-based [Realm Protection](<Global Ban/realm-protection.md>).
+- Submit and track reports through [Reporting Players](<Global Ban/reporting-players.md>).
+- Review eligibility and process in [Appeals](<Global Ban/appeals.md>).
+
+### Tools and Troubleshooting
+Use the supporting documentation to create operational messages and resolve common issues.
+
+- Build Discord messages with the [Embed Panel](Tools/embed-panel.md).
+- Resolve common access issues in [Troubleshooting](Troubleshooting/private-title-history.md).
+- Diagnose command-specific problems with [Command Troubleshooting](Commands/troubleshooting.md).
 
 ---
 
@@ -97,6 +113,8 @@ Realm Bot includes a free tier, with a premium tier that unlocks advanced module
 - Realms that require automation and operational tooling
 
 If you are uncertain whether you need Premium, start with the free tier and only upgrade once you know which modules your Realm actually benefits from.
+
+Premium also includes [Bot Server Profile](<Server Dashboard/bot-server-profile.md>) for a custom avatar and nickname in your Discord server, on dashboard versions that include the feature.
 
 ---
 

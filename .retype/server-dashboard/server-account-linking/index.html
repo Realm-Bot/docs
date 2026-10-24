@@ -4,24 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.4.0.828719621221">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.846158336675">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.4.0">
+    <meta name="generator" content="Retype 4.6.0">
 
     <!-- Primary Meta Tags -->
     <title>Account Linking | Realm Bot Docs</title>
     <meta name="title" content="Account Linking | Realm Bot Docs">
-    <meta name="description" content="Configure how members link their Minecraft account to Discord, including automatic role assignment, optional nickname syncing, auto-invites to selected Real">
+    <meta name="description" content="Configure how members link their Minecraft account to Discord, including automatic role assignment, optional nickname syncing, auto-invites to selected Realms, and join log reporting.">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://help.realmbot.dev/server-dashboard/server-account-linking/">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://help.realmbot.dev/sitemap.xml">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://help.realmbot.dev/server-dashboard/server-account-linking/">
     <meta property="og:title" content="Account Linking | Realm Bot Docs">
-    <meta property="og:description" content="Configure how members link their Minecraft account to Discord, including automatic role assignment, optional nickname syncing, auto-invites to selected Real">
+    <meta property="og:description" content="Configure how members link their Minecraft account to Discord, including automatic role assignment, optional nickname syncing, auto-invites to selected Realms, and join log reporting.">
     <meta property="og:image" content="https://help.realmbot.dev/images/server-account-linking.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -33,18 +34,21 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://help.realmbot.dev/server-dashboard/server-account-linking/">
     <meta name="twitter:title" content="Account Linking | Realm Bot Docs">
-    <meta name="twitter:description" content="Configure how members link their Minecraft account to Discord, including automatic role assignment, optional nickname syncing, auto-invites to selected Real">
+    <meta name="twitter:description" content="Configure how members link their Minecraft account to Discord, including automatic role assignment, optional nickname syncing, auto-invites to selected Realms, and join log reporting.">
     <meta name="twitter:image" content="https://help.realmbot.dev/images/server-account-linking.png">
     <meta name="twitter:image:alt" content="Account Linking | Realm Bot Docs">
+
+    <!-- Alternate Markdown -->
+    <link rel="alternate" type="text/markdown" href="https://help.realmbot.dev/server-dashboard/server-account-linking.md">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../favicon.ico" />
-    <link href="../../resources/css/retype.css?v=4.4.0.828719621221" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.6.0.846158336675" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.4.0.828719621221" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../../resources/js/retype.js?v=4.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.4.0.828719621221" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.846158336675" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.846158336675" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -133,9 +137,37 @@
 <div class="flex">
     <div id="retype-main" class="min-w-0 p-4 grow md:px-16">
         <main class="relative pb-12 lg:pt-2">
-            <div class="retype-markdown" id="retype-content">
+            <div class="relative retype-markdown" id="retype-content">
                 <!-- Rendered if sidebar right is enabled -->
                 <div id="retype-sidebar-right-toggle"></div>
+                <nav id="retype-breadcrumb" class="breadcrumb" aria-label="Breadcrumb">
+                    <ol role="list">
+                        <li class="pr-4">
+                            <a href="../../" class="pr-4">
+                                Landing
+                            </a>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/>
+                            </svg>
+                        </li>
+                        <li class="pr-4">
+                            <span class="pr-4">
+                                Server Dashboard
+                            </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/>
+                            </svg>
+                        </li>
+                        <li class="pr-4">
+                            <a href="../../server-dashboard/server-account-linking/" class="pr-4">
+                                Account Linking
+                            </a>
+                        </li>
+                    </ol>
+                </nav>
+
+                <doc-page-actions></doc-page-actions>
+
                 <!-- Page content  -->
 <h1 id="account-linking">Account Linking</h1>
 <div class="-mt-3 mb-12 flex flex-wrap text-sm text-gray-400 dark:text-dark-350 items-center">
@@ -252,6 +284,31 @@
 <li>If your Realm has strict membership limits, ensure you have capacity for new invites.</li>
 </ul>
 <hr>
+<div id="retype-backlinks">
+    <h2>See also</h2>
+<div class="card-compact-group">
+<div class="card-compact-container">
+    <a href="/commands/verify/embed/" class="group card-compact no-link">
+        <div class="card-compact-body">
+            <div class="card-compact-header">
+                <span class="card-compact-title">/verify embed</span>
+            </div>
+            <p class="card-compact-description">Post Realm Bot's Microsoft/Xbox account-linking panel in the current Discord channel.</p>
+        </div>
+    </a>
+</div>
+<div class="card-compact-container">
+    <a href="/commands/verify/" class="group card-compact no-link">
+        <div class="card-compact-body">
+            <div class="card-compact-header">
+                <span class="card-compact-title">Verify Commands</span>
+            </div>
+            <p class="card-compact-description">Publish Realm Bot's Microsoft/Xbox account-linking panel for Discord members.</p>
+        </div>
+    </a>
+</div>
+</div>
+</div>
 
                 
                 <!-- Required only on API pages -->
@@ -318,6 +375,6 @@
 
     <div id="retype-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Account Linking", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+        <script data-cfasync="false">window.__DOCS__ = { "title": "Account Linking", level: 2, icon: "file", hasPrism: false, hasInstagram: false, hasMermaid: false, hasMath: false, tocDepth: 23, "md": "/server-dashboard/server-account-linking.md" }</script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 {
-  "version": "4.4.0",
-  "created": "2026-04-05T15:53:43Z",
+  "version": "4.6.0",
+  "created": "2026-10-24T11:59:01Z",
   "files": [
     {
       "path": ".nojekyll"
@@ -12,130 +12,415 @@
       "path": "CNAME"
     },
     {
+      "path": "commands\\allowlist\\add.md"
+    },
+    {
       "path": "commands\\allowlist\\add\\index.html"
+    },
+    {
+      "path": "commands\\allowlist\\check.md"
     },
     {
       "path": "commands\\allowlist\\check\\index.html"
     },
     {
+      "path": "commands\\allowlist\\index.html"
+    },
+    {
+      "path": "commands\\allowlist\\index.md"
+    },
+    {
+      "path": "commands\\allowlist\\list.md"
+    },
+    {
       "path": "commands\\allowlist\\list\\index.html"
+    },
+    {
+      "path": "commands\\allowlist\\remove.md"
     },
     {
       "path": "commands\\allowlist\\remove\\index.html"
     },
     {
+      "path": "commands\\banlist\\all.md"
+    },
+    {
       "path": "commands\\banlist\\all\\index.html"
+    },
+    {
+      "path": "commands\\banlist\\index.html"
+    },
+    {
+      "path": "commands\\banlist\\index.md"
+    },
+    {
+      "path": "commands\\banlist\\lookup.md"
     },
     {
       "path": "commands\\banlist\\lookup\\index.html"
     },
     {
+      "path": "commands\\banlist\\report.md"
+    },
+    {
+      "path": "commands\\banlist\\report\\index.html"
+    },
+    {
+      "path": "commands\\index.html"
+    },
+    {
+      "path": "commands\\index.md"
+    },
+    {
+      "path": "commands\\invites\\create.md"
+    },
+    {
+      "path": "commands\\invites\\create\\index.html"
+    },
+    {
+      "path": "commands\\invites\\delete.md"
+    },
+    {
+      "path": "commands\\invites\\delete\\index.html"
+    },
+    {
+      "path": "commands\\invites\\index.html"
+    },
+    {
+      "path": "commands\\invites\\index.md"
+    },
+    {
+      "path": "commands\\invites\\list.md"
+    },
+    {
+      "path": "commands\\invites\\list\\index.html"
+    },
+    {
+      "path": "commands\\invites\\temp.md"
+    },
+    {
+      "path": "commands\\invites\\temp\\index.html"
+    },
+    {
+      "path": "commands\\player\\index.html"
+    },
+    {
+      "path": "commands\\player\\index.md"
+    },
+    {
+      "path": "commands\\player\\lookup.md"
+    },
+    {
       "path": "commands\\player\\lookup\\index.html"
+    },
+    {
+      "path": "commands\\realm\\backup-create.md"
     },
     {
       "path": "commands\\realm\\backup-create\\index.html"
     },
     {
+      "path": "commands\\realm\\backup-list.md"
+    },
+    {
+      "path": "commands\\realm\\backup-list\\index.html"
+    },
+    {
+      "path": "commands\\realm\\ban.md"
+    },
+    {
       "path": "commands\\realm\\ban\\index.html"
+    },
+    {
+      "path": "commands\\realm\\close.md"
     },
     {
       "path": "commands\\realm\\close\\index.html"
     },
     {
+      "path": "commands\\realm\\code-manage.md"
+    },
+    {
       "path": "commands\\realm\\code-manage\\index.html"
+    },
+    {
+      "path": "commands\\realm\\index.html"
+    },
+    {
+      "path": "commands\\realm\\index.md"
+    },
+    {
+      "path": "commands\\realm\\invite.md"
     },
     {
       "path": "commands\\realm\\invite\\index.html"
     },
     {
+      "path": "commands\\realm\\kick.md"
+    },
+    {
       "path": "commands\\realm\\kick\\index.html"
+    },
+    {
+      "path": "commands\\realm\\lastseen.md"
     },
     {
       "path": "commands\\realm\\lastseen\\index.html"
     },
     {
+      "path": "commands\\realm\\members.md"
+    },
+    {
       "path": "commands\\realm\\members\\index.html"
+    },
+    {
+      "path": "commands\\realm\\nickname.md"
     },
     {
       "path": "commands\\realm\\nickname\\index.html"
     },
     {
+      "path": "commands\\realm\\open.md"
+    },
+    {
       "path": "commands\\realm\\open\\index.html"
+    },
+    {
+      "path": "commands\\realm\\permission.md"
     },
     {
       "path": "commands\\realm\\permission\\index.html"
     },
     {
+      "path": "commands\\realm\\players.md"
+    },
+    {
       "path": "commands\\realm\\players\\index.html"
+    },
+    {
+      "path": "commands\\realm\\playtime.md"
     },
     {
       "path": "commands\\realm\\playtime\\index.html"
     },
     {
+      "path": "commands\\realm\\recents.md"
+    },
+    {
       "path": "commands\\realm\\recents\\index.html"
+    },
+    {
+      "path": "commands\\realm\\rename.md"
     },
     {
       "path": "commands\\realm\\rename\\index.html"
     },
     {
+      "path": "commands\\realm\\sessions.md"
+    },
+    {
       "path": "commands\\realm\\sessions\\index.html"
+    },
+    {
+      "path": "commands\\realm\\slot.md"
     },
     {
       "path": "commands\\realm\\slot\\index.html"
     },
     {
+      "path": "commands\\realm\\unban.md"
+    },
+    {
       "path": "commands\\realm\\unban\\index.html"
+    },
+    {
+      "path": "commands\\stats\\index.html"
+    },
+    {
+      "path": "commands\\stats\\index.md"
+    },
+    {
+      "path": "commands\\stats\\leaderboard.md"
     },
     {
       "path": "commands\\stats\\leaderboard\\index.html"
     },
     {
+      "path": "commands\\stats\\rank.md"
+    },
+    {
       "path": "commands\\stats\\rank\\index.html"
+    },
+    {
+      "path": "commands\\troubleshooting.md"
+    },
+    {
+      "path": "commands\\troubleshooting\\index.html"
+    },
+    {
+      "path": "commands\\utility\\botinfo.md"
+    },
+    {
+      "path": "commands\\utility\\botinfo\\index.html"
+    },
+    {
+      "path": "commands\\utility\\connect.md"
     },
     {
       "path": "commands\\utility\\connect\\index.html"
     },
     {
+      "path": "commands\\utility\\dashboard.md"
+    },
+    {
       "path": "commands\\utility\\dashboard\\index.html"
+    },
+    {
+      "path": "commands\\utility\\disconnect.md"
     },
     {
       "path": "commands\\utility\\disconnect\\index.html"
     },
     {
+      "path": "commands\\utility\\help.md"
+    },
+    {
       "path": "commands\\utility\\help\\index.html"
+    },
+    {
+      "path": "commands\\utility\\index.html"
+    },
+    {
+      "path": "commands\\utility\\index.md"
+    },
+    {
+      "path": "commands\\utility\\invite.md"
     },
     {
       "path": "commands\\utility\\invite\\index.html"
     },
     {
+      "path": "commands\\utility\\premium.md"
+    },
+    {
       "path": "commands\\utility\\premium\\index.html"
+    },
+    {
+      "path": "commands\\utility\\shard.md"
     },
     {
       "path": "commands\\utility\\shard\\index.html"
     },
     {
+      "path": "commands\\verify\\embed.md"
+    },
+    {
+      "path": "commands\\verify\\embed\\index.html"
+    },
+    {
+      "path": "commands\\verify\\index.html"
+    },
+    {
+      "path": "commands\\verify\\index.md"
+    },
+    {
+      "path": "commands\\warn\\add.md"
+    },
+    {
       "path": "commands\\warn\\add\\index.html"
+    },
+    {
+      "path": "commands\\warn\\index.html"
+    },
+    {
+      "path": "commands\\warn\\index.md"
+    },
+    {
+      "path": "commands\\warn\\lookup.md"
     },
     {
       "path": "commands\\warn\\lookup\\index.html"
     },
     {
+      "path": "commands\\warn\\remove.md"
+    },
+    {
       "path": "commands\\warn\\remove\\index.html"
+    },
+    {
+      "path": "commands\\world\\broadcast.md"
     },
     {
       "path": "commands\\world\\broadcast\\index.html"
     },
     {
+      "path": "commands\\world\\execute.md"
+    },
+    {
       "path": "commands\\world\\execute\\index.html"
     },
     {
+      "path": "commands\\world\\index.html"
+    },
+    {
+      "path": "commands\\world\\index.md"
+    },
+    {
+      "path": "commands\\world\\join.md"
+    },
+    {
       "path": "commands\\world\\join\\index.html"
+    },
+    {
+      "path": "commands\\world\\leave.md"
     },
     {
       "path": "commands\\world\\leave\\index.html"
     },
     {
       "path": "favicon.ico"
+    },
+    {
+      "path": "global-ban\\appeals.md"
+    },
+    {
+      "path": "global-ban\\appeals\\index.html"
+    },
+    {
+      "path": "global-ban\\ban-list-explorer.md"
+    },
+    {
+      "path": "global-ban\\ban-list-explorer\\index.html"
+    },
+    {
+      "path": "global-ban\\custom-ban-list-format.md"
+    },
+    {
+      "path": "global-ban\\custom-ban-list-format\\index.html"
+    },
+    {
+      "path": "global-ban\\index.html"
+    },
+    {
+      "path": "global-ban\\index.md"
+    },
+    {
+      "path": "global-ban\\overview.md"
+    },
+    {
+      "path": "global-ban\\overview\\index.html"
+    },
+    {
+      "path": "global-ban\\realm-protection.md"
+    },
+    {
+      "path": "global-ban\\realm-protection\\index.html"
+    },
+    {
+      "path": "global-ban\\reporting-players.md"
+    },
+    {
+      "path": "global-ban\\reporting-players\\index.html"
     },
     {
       "path": "images\\acc_link1.png"
@@ -184,6 +469,21 @@
     },
     {
       "path": "images\\create-rule-button.png"
+    },
+    {
+      "path": "images\\custom\\botdetection.png"
+    },
+    {
+      "path": "images\\custom\\chat-relay.png"
+    },
+    {
+      "path": "images\\custom\\liveplayerlist.png"
+    },
+    {
+      "path": "images\\custom\\membergate.png"
+    },
+    {
+      "path": "images\\custom\\skinfiltering.png"
     },
     {
       "path": "images\\daily-activity.png"
@@ -405,6 +705,9 @@
       "path": "index.html"
     },
     {
+      "path": "integrations\\tebex.md"
+    },
+    {
       "path": "integrations\\tebex\\index.html"
     },
     {
@@ -416,43 +719,103 @@
       "old": true
     },
     {
+      "path": "llms.txt"
+    },
+    {
+      "path": "privacy.md"
+    },
+    {
       "path": "privacy\\index.html"
+    },
+    {
+      "path": "readme.md"
+    },
+    {
+      "path": "realm-modules\\bot-detection.md"
     },
     {
       "path": "realm-modules\\bot-detection\\index.html"
     },
     {
+      "path": "realm-modules\\chat-relay.md"
+    },
+    {
       "path": "realm-modules\\chat-relay\\index.html"
+    },
+    {
+      "path": "realm-modules\\leveling-system.md"
     },
     {
       "path": "realm-modules\\leveling-system\\index.html"
     },
     {
+      "path": "realm-modules\\live-playerlist.md"
+    },
+    {
       "path": "realm-modules\\live-playerlist\\index.html"
+    },
+    {
+      "path": "realm-modules\\member-gate.md"
     },
     {
       "path": "realm-modules\\member-gate\\index.html"
     },
     {
+      "path": "realm-modules\\overview.md"
+    },
+    {
       "path": "realm-modules\\overview\\index.html"
+    },
+    {
+      "path": "realm-modules\\realm-console.md"
     },
     {
       "path": "realm-modules\\realm-console\\index.html"
     },
     {
+      "path": "realm-modules\\realm-security.md"
+    },
+    {
+      "path": "realm-modules\\realm-security\\index.html"
+    },
+    {
+      "path": "realm-modules\\relay-account-and-gametest.md"
+    },
+    {
+      "path": "realm-modules\\relay-account-and-gametest\\index.html"
+    },
+    {
+      "path": "realm-modules\\scoreboard-leaderboards.md"
+    },
+    {
       "path": "realm-modules\\scoreboard-leaderboards\\index.html"
+    },
+    {
+      "path": "realm-modules\\skin-filtering.md"
     },
     {
       "path": "realm-modules\\skin-filtering\\index.html"
     },
     {
+      "path": "realm-modules\\vanity-url.md"
+    },
+    {
       "path": "realm-modules\\vanity-url\\index.html"
+    },
+    {
+      "path": "realm-page\\realm-activity.md"
     },
     {
       "path": "realm-page\\realm-activity\\index.html"
     },
     {
+      "path": "realm-page\\realm-overview.md"
+    },
+    {
       "path": "realm-page\\realm-overview\\index.html"
+    },
+    {
+      "path": "realm-page\\realm-world.md"
     },
     {
       "path": "realm-page\\realm-world\\index.html"
@@ -470,7 +833,13 @@
       "path": "resources\\js\\config.js"
     },
     {
+      "path": "resources\\js\\instagram.js"
+    },
+    {
       "path": "resources\\js\\lunr.js"
+    },
+    {
+      "path": "resources\\js\\prism.js"
     },
     {
       "path": "resources\\js\\retype.js"
@@ -497,46 +866,106 @@
       "path": "robots.txt"
     },
     {
+      "path": "server-dashboard\\bot-server-profile.md"
+    },
+    {
+      "path": "server-dashboard\\bot-server-profile\\index.html"
+    },
+    {
+      "path": "server-dashboard\\overview.md"
+    },
+    {
       "path": "server-dashboard\\overview\\index.html"
+    },
+    {
+      "path": "server-dashboard\\server-account-linking.md"
     },
     {
       "path": "server-dashboard\\server-account-linking\\index.html"
     },
     {
+      "path": "server-dashboard\\server-allowlist.md"
+    },
+    {
       "path": "server-dashboard\\server-allowlist\\index.html"
+    },
+    {
+      "path": "server-dashboard\\server-command-settings.md"
     },
     {
       "path": "server-dashboard\\server-command-settings\\index.html"
     },
     {
+      "path": "server-dashboard\\server-invites.md"
+    },
+    {
       "path": "server-dashboard\\server-invites\\index.html"
+    },
+    {
+      "path": "server-dashboard\\server-logs.md"
     },
     {
       "path": "server-dashboard\\server-logs\\index.html"
     },
     {
+      "path": "server-dashboard\\server-message-actions.md"
+    },
+    {
       "path": "server-dashboard\\server-message-actions\\index.html"
+    },
+    {
+      "path": "server-dashboard\\server-mod-logs.md"
     },
     {
       "path": "server-dashboard\\server-mod-logs\\index.html"
     },
     {
+      "path": "server-dashboard\\server-permissions.md"
+    },
+    {
       "path": "server-dashboard\\server-permissions\\index.html"
+    },
+    {
+      "path": "server-dashboard\\server-setup.md"
     },
     {
       "path": "server-dashboard\\server-setup\\index.html"
     },
     {
+      "path": "server-dashboard\\server-warnings.md"
+    },
+    {
       "path": "server-dashboard\\server-warnings\\index.html"
+    },
+    {
+      "path": "setup.md"
     },
     {
       "path": "setup\\index.html"
     },
     {
-      "path": "sitemap.xml.gz"
+      "path": "sitemap.xml"
+    },
+    {
+      "path": "tools\\embed-panel.md"
+    },
+    {
+      "path": "tools\\embed-panel\\index.html"
+    },
+    {
+      "path": "tools\\realm-stories.md"
+    },
+    {
+      "path": "tools\\realm-stories\\index.html"
+    },
+    {
+      "path": "tos.md"
     },
     {
       "path": "tos\\index.html"
+    },
+    {
+      "path": "troubleshooting\\private-title-history.md"
     },
     {
       "path": "troubleshooting\\private-title-history\\index.html"

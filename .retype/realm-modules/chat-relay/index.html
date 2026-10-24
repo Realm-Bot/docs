@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.4.0.828719621221">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.846158336675">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.4.0">
+    <meta name="generator" content="Retype 4.6.0">
 
     <!-- Primary Meta Tags -->
     <title>Chat Relay | Realm Bot Docs</title>
@@ -16,13 +16,14 @@
 
     <!-- Canonical -->
     <link rel="canonical" href="https://help.realmbot.dev/realm-modules/chat-relay/">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://help.realmbot.dev/sitemap.xml">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://help.realmbot.dev/realm-modules/chat-relay/">
     <meta property="og:title" content="Chat Relay | Realm Bot Docs">
     <meta property="og:description" content="Connect your Realm and Discord with a two-way chat bridge, including configurable message types, emote relaying, and built-in anti-spam controls.">
-    <meta property="og:image" content="https://help.realmbot.dev/images/chat-relay.png">
+    <meta property="og:image" content="https://help.realmbot.dev/images/custom/chat-relay.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="Chat Relay | Realm Bot Docs">
@@ -34,17 +35,20 @@
     <meta name="twitter:url" content="https://help.realmbot.dev/realm-modules/chat-relay/">
     <meta name="twitter:title" content="Chat Relay | Realm Bot Docs">
     <meta name="twitter:description" content="Connect your Realm and Discord with a two-way chat bridge, including configurable message types, emote relaying, and built-in anti-spam controls.">
-    <meta name="twitter:image" content="https://help.realmbot.dev/images/chat-relay.png">
+    <meta name="twitter:image" content="https://help.realmbot.dev/images/custom/chat-relay.png">
     <meta name="twitter:image:alt" content="Chat Relay | Realm Bot Docs">
+
+    <!-- Alternate Markdown -->
+    <link rel="alternate" type="text/markdown" href="https://help.realmbot.dev/realm-modules/chat-relay.md">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../favicon.ico" />
-    <link href="../../resources/css/retype.css?v=4.4.0.828719621221" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.6.0.846158336675" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.4.0.828719621221" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../../resources/js/retype.js?v=4.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.4.0.828719621221" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.846158336675" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.846158336675" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -133,9 +137,37 @@
 <div class="flex">
     <div id="retype-main" class="min-w-0 p-4 grow md:px-16">
         <main class="relative pb-12 lg:pt-2">
-            <div class="retype-markdown" id="retype-content">
+            <div class="relative retype-markdown" id="retype-content">
                 <!-- Rendered if sidebar right is enabled -->
                 <div id="retype-sidebar-right-toggle"></div>
+                <nav id="retype-breadcrumb" class="breadcrumb" aria-label="Breadcrumb">
+                    <ol role="list">
+                        <li class="pr-4">
+                            <a href="../../" class="pr-4">
+                                Landing
+                            </a>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/>
+                            </svg>
+                        </li>
+                        <li class="pr-4">
+                            <span class="pr-4">
+                                Realm Modules
+                            </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/>
+                            </svg>
+                        </li>
+                        <li class="pr-4">
+                            <a href="../../realm-modules/chat-relay/" class="pr-4">
+                                Chat Relay
+                            </a>
+                        </li>
+                    </ol>
+                </nav>
+
+                <doc-page-actions></doc-page-actions>
+
                 <!-- Page content  -->
 <h1 id="chat-relay">Chat Relay</h1>
 <div class="-mt-3 mb-12 flex flex-wrap text-sm text-gray-400 dark:text-dark-350 items-center">
@@ -160,41 +192,80 @@
 <li><strong>Tellraw Messages</strong> - command-generated formatted outputs (announcements, scripted events, systems output)</li>
 <li><strong>Death Messages</strong> - player death notifications for gameplay visibility and moderation review</li>
 <li><strong>Player Emotes</strong> - player emotes performed in-game (useful for social visibility and activity context)</li>
+<li><strong>Player Join and Leave Messages</strong> - connection notices, with optional platform and Realm identification</li>
+<li><strong>Connection Notices</strong> - configurable connection messages and disconnection warnings</li>
 </ul>
 <blockquote>
 <p><strong>Note:</strong> Chat Relay is a communications utility. It does not independently &quot;secure&quot; or &quot;protect&quot; a Realm. All relayed content remains subject to your Realm rules and Discord policies.</p>
+</blockquote>
+<hr>
+<h2 id="discord-to-realm-messages">Discord-to-Realm Messages</h2>
+<p>Messages sent in the configured player-chat channel can also be forwarded into the Realm. The sender&#x27;s Discord display name and message are included in the in-game output.</p>
+<ul>
+<li>Users who can send messages in the relay channel may be able to communicate with players in the Realm.</li>
+<li>Message attachments are not forwarded; send important text as part of the message body.</li>
+<li>Realm Bot&#x27;s slash-command role permissions do not secure ordinary messages posted in this channel.</li>
+</ul>
+<p>Restrict the relay channel to the intended community or staff audience and apply normal Discord moderation controls.</p>
+<hr>
+<h2 id="leveling-system-integration">Leveling System Integration</h2>
+<p>In-game chat activity can contribute to the <strong>Leveling System</strong> alongside time spent online.</p>
+<p>When Leveling is enabled and the Realm connection is operational:</p>
+<ul>
+<li>An eligible player message awards between <strong>15 and 25 XP</strong>.</li>
+<li>A player can receive chat XP at most <strong>once per minute</strong>.</li>
+<li>The Relay Account does not receive XP.</li>
+<li>Accumulated XP contributes to the player&#x27;s level, rank, and leaderboard position.</li>
+</ul>
+<p>The Chat Relay output toggle does not independently govern Leveling XP. The <strong>Leveling System</strong> must be enabled and Realm Bot must be receiving the Realm&#x27;s live chat events through a connected Relay Account.</p>
+<blockquote>
+<p><strong>Important:</strong> Chat XP is designed to recognise normal participation, not encourage spam. Chat Relay Anti-Spam controls, Realm moderation rules, and Discord policies still apply.</p>
 </blockquote>
 <hr>
 <h2 id="requirements">Requirements</h2>
 <p>To use Chat Relay reliably, ensure the following are in place:</p>
 <ul>
 <li>A Realm connected to Realm Bot via the authorised account-linking flow</li>
-<li>A Discord channel designated for relay output (strongly recommended)</li>
-<li>Any required in-game execution components for your deployment (for example, if your configuration requires an in-game relay presence)</li>
+<li>An active Realm Bot Premium subscription</li>
+<li>A Relay Account connected to and present in the Realm</li>
+<li>A Discord destination channel for each enabled message category</li>
+<li>The Realm Bot GameTest Pack and Beta APIs when relaying player emotes</li>
 </ul>
+<p>Chat Relay may temporarily stop during Realm disconnections or Microsoft/Xbox authentication failures. See <a href="../relay-account-and-gametest/">Relay Account and GameTest Dependencies</a> for dependency guidance.</p>
 <hr>
 <h2 id="how-to-set-up">How to Set Up</h2>
 <ol>
-<li><p>Open the <strong>Chat Relay</strong> module inside the Realm Bot Dashboard.<br />
+<li>
+<p>Open the <strong>Chat Relay</strong> module inside the Realm Bot Dashboard.<br />
 <img src="../../images/chat-relay.png" alt="Chat Relay Configuration" class="max-w-full h-auto" width="1121" height="836" /></p>
 </li>
-<li><p>Enable <strong>Chat Relay</strong> using the main toggle.</p>
+<li>
+<p>Enable <strong>Chat Relay</strong> using the main toggle.</p>
 </li>
-<li><p>Set the <strong>Discord Destination</strong> channel (this is where Realm messages will be posted).</p>
+<li>
+<p>Set a <strong>Discord Destination</strong> for each message category you enable. Categories can share a channel or use separate channels.</p>
 </li>
-<li><p>Under <strong>Message Types</strong>, enable the categories you want relayed:</p>
+<li>
+<p>Under <strong>Message Types</strong>, enable the categories you want relayed:</p>
 <ul>
 <li>Player Chat Messages</li>
 <li>Tellraw Messages</li>
 <li>Death Messages</li>
 <li>Player Emotes</li>
+<li>Player Join and Leave Messages</li>
 </ul>
 </li>
+<li>
+<p>Review <strong>Customisation</strong> settings for system messages, join messages, device identification, and Realm identification.</p>
+</li>
+<li>
+<p>Select a <strong>Fun Mode</strong> only if you want player-chat presentation altered.</p>
+</li>
 </ol>
-<p>Once enabled, relay output begins when relevant events occur in the Realm.</p>
+<p>Once enabled, relay output begins when relevant events occur and the Relay Account connection is healthy.</p>
 <hr>
 <h2 id="anti-spam-configuration">Anti-Spam Configuration</h2>
-<p>Chat Relay includes an <strong>Anti-Spam</strong> system designed to reduce Discord-side spam and prevent the relay channel from being flooded during high activity or abuse attempts.</p>
+<p>Chat Relay includes an <strong>Anti-Spam</strong> system for player chat. It is designed to reduce relay flooding during high activity or abuse attempts.</p>
 <p>The anti-spam controls apply a simple threshold rule:</p>
 <ul>
 <li><strong>Message Threshold</strong> - the maximum number of messages allowed before the system triggers</li>
@@ -204,6 +275,7 @@
 <ul>
 <li>If <strong>Threshold = 10</strong> and <strong>Window = 10 seconds</strong>, then more than 10 relay events within 10 seconds will trigger the anti-spam behaviour for that window.</li>
 </ul>
+<p>When the threshold is exceeded, the affected player is removed from the Realm and the action is logged. Players on the Realm Bot allowlist are exempt from this anti-spam action.</p>
 <p>Operational guidance:</p>
 <ul>
 <li>Start conservative for public communities (e.g., 10-15 messages in 10-15 seconds)</li>
@@ -214,8 +286,18 @@
 <p><strong>Important:</strong> Setting threshold/window to extremely low values can suppress legitimate activity. Tune this gradually based on real traffic.</p>
 </blockquote>
 <hr>
+<h2 id="fun-mode">Fun Mode</h2>
+<p>Fun Mode changes how relayed player-chat messages are presented in Discord. Available modes are:</p>
+<ul>
+<li><strong>Normal</strong> - relays the message without a themed transformation</li>
+<li><strong>UwU</strong> - applies an UwU-style transformation</li>
+<li><strong>Pirate</strong> - applies a pirate-style transformation</li>
+</ul>
+<p>Use <strong>Normal</strong> for moderation or archival channels where preserving the original wording is important.</p>
+<hr>
 <h2 id="player-emotes">Player Emotes</h2>
 <p>When <strong>Player Emotes</strong> are enabled, Chat Relay will relay emotes performed by players in-game to the Discord destination channel.</p>
+<p>Emote relaying requires the <strong>Realm Bot GameTest Pack</strong>, <strong>Beta APIs</strong>, and a connected Relay Account. Other Chat Relay message categories do not all share this dependency.</p>
 <p>This is useful for:</p>
 <ul>
 <li>giving staff a clearer picture of in-game interaction (especially social spaces)</li>
@@ -248,21 +330,20 @@
 <li><strong>View Channel</strong></li>
 <li><strong>Send Messages</strong></li>
 <li><strong>Read Message History</strong></li>
-</ul>
-<p>Recommended (depending on formatting/output):</p>
-<ul>
-<li><strong>Embed Links</strong> (if relay uses embed-style output in your deployment)</li>
+<li><strong>Embed Links</strong></li>
 </ul>
 <p>If relay output does not appear, channel permissions should be the first thing verified.</p>
+<p>Discord users also need <strong>Send Messages</strong> in the player-chat destination to send messages into the Realm. Grant that permission only to the intended audience.</p>
 <hr>
 <h2 id="troubleshooting">Troubleshooting</h2>
 <h3 id="nothing-is-relaying">Nothing is relaying</h3>
 <p>Check the following in order:</p>
 <ul>
 <li>Chat Relay is enabled for the correct Realm</li>
-<li>The correct Discord Destination channel is selected</li>
+<li>A destination channel is selected for the affected message category</li>
 <li>Realm Bot has View Channel + Send Messages permission</li>
-<li>Any required in-game dependencies for your configuration are online/connected</li>
+<li>The Relay Account is online and connected to the correct Realm</li>
+<li>For emotes, the GameTest Pack is current and Beta APIs are enabled</li>
 </ul>
 <h3 id="relay-is-too-noisy">Relay is too noisy</h3>
 <ul>
@@ -275,6 +356,14 @@
 <ul>
 <li>Confirm the Realm is stable and the relay account/session is not disconnecting</li>
 <li>Ensure the anti-spam threshold is not suppressing legitimate output during normal use</li>
+<li>Reconnect the Microsoft/Xbox account if its authentication has expired</li>
+</ul>
+<h3 id="discord-messages-do-not-reach-the-realm">Discord messages do not reach the Realm</h3>
+<ul>
+<li>Confirm the message is being sent in the configured player-chat destination.</li>
+<li>Confirm the Relay Account is online.</li>
+<li>Check that the message contains text; attachments alone are not forwarded.</li>
+<li>Confirm the Discord user has permission to send messages in the channel.</li>
 </ul>
 <hr>
 
@@ -343,6 +432,6 @@
 
     <div id="retype-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Chat Relay", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+        <script data-cfasync="false">window.__DOCS__ = { "title": "Chat Relay", level: 2, icon: "file", hasPrism: false, hasInstagram: false, hasMermaid: false, hasMath: false, tocDepth: 23, "md": "/realm-modules/chat-relay.md" }</script>
 </body>
 </html>

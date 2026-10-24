@@ -13,7 +13,7 @@ Scoreboard Leaderboards allow you to display a live leaderboard for an in-game *
 
 Leaderboards are rendered as Discord embeds and can be configured per scoreboard, per channel.
 
-### How it Works
+## How it Works
 
 Scoreboard Leaderboards operate by reading a selected scoreboard objective from your Realm and publishing the results to Discord.
 
@@ -26,7 +26,7 @@ In practice:
 
 > **Important:** This feature is dependent on the Realm runtime environment. If the required in-game components are not active, leaderboards cannot update.
 
-### Requirements
+## Requirements
 
 Scoreboard Leaderboards require:
 
@@ -38,26 +38,26 @@ Scoreboard Leaderboards require:
 
 If any requirement is missing (Relay Account offline, pack disabled, or scoreboard not present), leaderboard updates may fail or show no data.
 
-### How to Set Up
+## How to Set Up
 
-1.  Open the **Scoreboard Leaderboards** module in the Realm Bot Dashboard and enable it.<br/>
-    ![Scoreboard Leaderboards Main Page](/images/scoreboard.png)
-2.  Select **Create Leaderboard**.
-3.  Configure the leaderboard using the creation menu.<br/>
-    ![Create Scoreboard Leaderboard Menu](/images/scoreboard-definitions.png)
-4.  Set the following:
+1. Open the **Scoreboard Leaderboards** module in the Realm Bot Dashboard and enable it.
+   ![Scoreboard Leaderboards Main Page](/images/scoreboard.png)
+2. Select **Create Leaderboard**.
+3. Configure the leaderboard using the creation menu.
+   ![Create Scoreboard Leaderboard Menu](/images/scoreboard-definitions.png)
+4. Set the following:
     - **Select channel** - the Discord channel where the leaderboard should be displayed.
     - **Minecraft Scoreboard** - the scoreboard objective to publish.
-5.  (Optional) Customise the embed appearance:
+5. (Optional) Customise the embed appearance:
     - **Embed Title** - the label shown at the top of the embed.
-    - **Embed Color** - the accent color used for the embed.
-6.  Save the leaderboard configuration.
+    - **Embed Colour** - the accent colour used for the embed.
+6. Save the leaderboard configuration.
 
-Once created, the leaderboard will begin updating in the selected channel when the Relay Account is online and the Gametest Pack is active.
+Once created, the leaderboard will begin updating in the selected channel when the Relay Account is online and the GameTest Pack is active.
 
 Realm Bot requires **View Channel**, **Send Messages**, **Embed Links**, and **Read Message History** in each destination channel.
 
-### Recommended Usage
+## Recommended Usage
 
 Scoreboard Leaderboards are ideal for:
 - Factions / prisons progression metrics
@@ -70,24 +70,24 @@ Operational recommendations:
 - Keep one leaderboard per channel unless you have a structured layout (multiple leaderboards in one channel can become difficult to read).
 - Use clear embed titles aligned with your scoreboard objective name (for example: “Top Kills”, “Top Balance”, “Top Wins”).
 
-### Common Issues
+## Troubleshooting
 
-**The leaderboard shows no entries**
+### The leaderboard shows no entries
 - Confirm the selected scoreboard objective exists in-game and contains values.
 - Ensure the Relay Account is online in the Realm.
 - Verify the Realm Bot GameTest Pack is installed and current.
 - Confirm Beta APIs are enabled.
 
-**The leaderboard is not posting to Discord**
+### The leaderboard is not posting to Discord
 - Confirm the bot has permission to **View Channel**, **Send Messages**, **Embed Links**, and **Read Message History** in the selected channel.
 - Verify the correct channel was selected during setup.
 
-**The scoreboard name is not appearing in the dropdown**
+### The scoreboard name is not appearing in the dropdown
 - The scoreboard objective may not be created in-game yet, or the environment may not be detectable if the required pack/account is offline.
 - Create or validate the scoreboard in-game, then refresh the dashboard and try again.
 - Confirm the Relay Account joined after the GameTest Pack and Beta APIs were enabled.
 
-### Best Practices
+## Best Practices
 
 - Treat leaderboard channels as read-only where possible to keep output clean.
 - Standardise scoreboard objective naming in-game to reduce confusion in the dashboard.

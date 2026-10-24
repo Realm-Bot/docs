@@ -1,8 +1,16 @@
 ---
-label: Terms Of Service
+label: Terms of Service
+description: Review the rules governing acceptable use of Realm Bot and its services.
 order: 2
 icon: alert
 visibility: hidden
+authors:
+  - name: SeaLeopard35302
+    avatar: https://avatars.githubusercontent.com/u/78130400?s=96&v=4
+  - name: Kaii
+    avatar: https://avatars.githubusercontent.com/u/72093371?s=96&v=4
+  - name: Frazer
+    avatar: https://avatars.githubusercontent.com/u/136254012?s=96&v=4
 ---
 
 # Terms of service

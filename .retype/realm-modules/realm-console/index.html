@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.4.0.828719621221">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.846158336675">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.4.0">
+    <meta name="generator" content="Retype 4.6.0">
 
     <!-- Primary Meta Tags -->
     <title>Realm Console | Realm Bot Docs</title>
@@ -16,6 +16,7 @@
 
     <!-- Canonical -->
     <link rel="canonical" href="https://help.realmbot.dev/realm-modules/realm-console/">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://help.realmbot.dev/sitemap.xml">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
@@ -37,14 +38,17 @@
     <meta name="twitter:image" content="https://help.realmbot.dev/images/realm-console.png">
     <meta name="twitter:image:alt" content="Realm Console | Realm Bot Docs">
 
+    <!-- Alternate Markdown -->
+    <link rel="alternate" type="text/markdown" href="https://help.realmbot.dev/realm-modules/realm-console.md">
+
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../favicon.ico" />
-    <link href="../../resources/css/retype.css?v=4.4.0.828719621221" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.6.0.846158336675" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.4.0.828719621221" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../../resources/js/retype.js?v=4.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.4.0.828719621221" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.846158336675" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.846158336675" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -133,9 +137,37 @@
 <div class="flex">
     <div id="retype-main" class="min-w-0 p-4 grow md:px-16">
         <main class="relative pb-12 lg:pt-2">
-            <div class="retype-markdown" id="retype-content">
+            <div class="relative retype-markdown" id="retype-content">
                 <!-- Rendered if sidebar right is enabled -->
                 <div id="retype-sidebar-right-toggle"></div>
+                <nav id="retype-breadcrumb" class="breadcrumb" aria-label="Breadcrumb">
+                    <ol role="list">
+                        <li class="pr-4">
+                            <a href="../../" class="pr-4">
+                                Landing
+                            </a>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/>
+                            </svg>
+                        </li>
+                        <li class="pr-4">
+                            <span class="pr-4">
+                                Realm Modules
+                            </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/>
+                            </svg>
+                        </li>
+                        <li class="pr-4">
+                            <a href="../../realm-modules/realm-console/" class="pr-4">
+                                Realm Console
+                            </a>
+                        </li>
+                    </ol>
+                </nav>
+
+                <doc-page-actions></doc-page-actions>
+
                 <!-- Page content  -->
 <h1 id="realm-console">Realm Console</h1>
 <div class="-mt-3 mb-12 flex flex-wrap text-sm text-gray-400 dark:text-dark-350 items-center">
@@ -151,14 +183,13 @@
 </div>
 
 <div id="retype-page-description" class="description-display text-description font-description leading-description mb-description-margin-bottom mt-description-margin-top tracking-description text-transform-description">Execute Minecraft commands directly from a secured Discord channel, using your in-game Relay Account as the command runner.</div>
-<h3 id="what-is-the-realm-console">What is the Realm Console?</h3>
-<p>The Realm Console is a dedicated Discord channel that allows authorised users to execute <strong>Minecraft Bedrock commands</strong> directly into a connected Realm. Messages sent in the configured console channel are interpreted as commands and executed in-game through the <strong>Chat Relay Account</strong>.</p>
-<p>This module is designed for operational administration, rapid moderation actions, and streamlined management - without requiring staff to be actively in-game on a client.</p>
-<h3 id="how-it-works">How it Works</h3>
+<p>The Realm Console is a dedicated Discord channel that allows authorised users to execute <strong>Minecraft Bedrock commands</strong> directly into a connected Realm. Messages sent in the configured console channel are interpreted as commands and executed in-game through the <strong>Relay Account</strong>.</p>
+<p>This module is designed for operational administration, rapid moderation actions, and streamlined management without requiring staff to be actively in-game on a client.</p>
+<h2 id="how-it-works">How it Works</h2>
 <p>The Realm Console functions by using your Relay Account as the in-game command runner:</p>
 <ul>
 <li>A user sends a message in the designated <strong>Realm Console</strong> Discord channel.</li>
-<li>Realm Bot forwards the message to the Realm via the <strong>Chat Relay Account</strong>.</li>
+<li>Realm Bot forwards the message to the Realm via the <strong>Relay Account</strong>.</li>
 <li>The Relay Account executes the message as a command in Realm chat.</li>
 </ul>
 <p>Because the command is executed by the Relay Account, all command behaviour (permissions, targets, and side effects) follow the same rules as if the Relay Account typed the command manually in-game.</p>
@@ -166,7 +197,7 @@
     <img src="../../images/realm-console.png" alt="Realm Console" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="1582" height="403" />
     <figcaption class="caption">Realm Console</figcaption>
 </figure>
-<h3 id="command-example">Command Example</h3>
+<h2 id="command-example">Command Example</h2>
 <p>If a user types the following into the Realm Console channel:</p>
 <p><code translate="no" v-pre>gamemode c @a</code></p>
 <p>The Realm will attempt to run:</p>
@@ -174,7 +205,7 @@
 <li><code translate="no" v-pre>gamemode c @a</code><br />
 (Set all players to Creative Mode)</li>
 </ul>
-<h3 id="relay-account-behaviour-and-targeting">Relay Account Behaviour and Targeting</h3>
+<h2 id="relay-account-behaviour-and-targeting">Relay Account Behaviour and Targeting</h2>
 <p>Commands are executed <strong>as the Relay Account</strong>. This is important when using selectors or player-specific commands.</p>
 <p>For example:</p>
 <ul>
@@ -189,21 +220,25 @@
 <blockquote>
 <p><strong>Important:</strong> When running player-specific commands, always specify explicit targets (for example <code translate="no" v-pre>@a</code>, <code translate="no" v-pre>@p</code>, a username, or a tagged group) to avoid unintended effects on the Relay Account.</p>
 </blockquote>
-<h3 id="requirements">Requirements</h3>
+<h2 id="requirements">Requirements</h2>
 <p>To use the Realm Console, you must have:</p>
 <ul>
-<li>A configured and functioning <strong>Chat Relay Account</strong> connected to the Realm.</li>
+<li>A configured and functioning <strong>Relay Account</strong> connected to the Realm.</li>
 <li>The Relay Account actively present in the Realm (in-game).</li>
+<li>An active Realm Bot Premium subscription.</li>
+<li>Sufficient in-game operator and command privileges for the intended commands.</li>
 <li>A designated Discord channel selected as the Realm Console.</li>
 </ul>
 <p>If the Relay Account is not in-game, commands cannot be executed.</p>
-<h3 id="access-control-and-security">Access Control and Security</h3>
+<h2 id="access-control-and-security">Access Control and Security</h2>
 <p>The Realm Console is highly privileged by design. Any user who can send messages in the console channel can attempt to run commands in the Realm.</p>
+<p>Discord channel write access is the primary access control. Realm Bot&#x27;s slash-command role permissions do not automatically restrict messages posted in the Realm Console channel.</p>
 <p>For this reason, you should:</p>
 <ul>
 <li>Restrict the channel so only <strong>trusted in-game Administrators</strong> can access it.</li>
 <li>Prevent general members from viewing or posting in the console channel.</li>
 <li>Treat console output as operational infrastructure, not community chat.</li>
+<li>Never configure the Realm Console in a publicly writable channel.</li>
 </ul>
 <p>Failure to secure this channel may result in:</p>
 <ul>
@@ -212,7 +247,7 @@
 <li>Unauthorised administrative changes</li>
 <li>Accidental disruption through misuse</li>
 </ul>
-<h3 id="syntax-errors-and-safe-usage">Syntax Errors and Safe Usage</h3>
+<h2 id="syntax-errors-and-safe-usage">Syntax Errors and Safe Usage</h2>
 <p>If a message is not a valid command, or contains incorrect syntax, Minecraft will return a <strong>syntax error</strong>.</p>
 <p>This is expected behaviour.</p>
 <p>To avoid unnecessary disruption:</p>
@@ -221,7 +256,7 @@
 <li>Avoid conversational messages in the console channel.</li>
 <li>Use a strict format and consider pinning usage guidance at the top of the channel.</li>
 </ul>
-<h3 id="recommended-operational-practices">Recommended Operational Practices</h3>
+<h2 id="recommended-operational-practices">Recommended Operational Practices</h2>
 <p>To keep the Realm Console reliable and safe:</p>
 <ul>
 <li>Use a dedicated channel such as <code translate="no" v-pre>#realm-console</code> or <code translate="no" v-pre>#console</code>.</li>
@@ -236,6 +271,21 @@
 <li>Confirmation that the Relay Account is in-game</li>
 <li>A sample command that is failing and the resulting error output (if any)</li>
 </ul>
+<div id="retype-backlinks">
+    <h2>See also</h2>
+<div class="card-compact-group">
+<div class="card-compact-container">
+    <a href="/commands/world/execute/" class="group card-compact no-link">
+        <div class="card-compact-body">
+            <div class="card-compact-header">
+                <span class="card-compact-title">/world execute</span>
+            </div>
+            <p class="card-compact-description">Execute a Minecraft command through the active Relay Account with its in-game authority.</p>
+        </div>
+    </a>
+</div>
+</div>
+</div>
 
                 
                 <!-- Required only on API pages -->
@@ -302,6 +352,6 @@
 
     <div id="retype-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Realm Console", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+        <script data-cfasync="false">window.__DOCS__ = { "title": "Realm Console", level: 2, icon: "file", hasPrism: false, hasInstagram: false, hasMermaid: false, hasMath: false, tocDepth: 23, "md": "/realm-modules/realm-console.md" }</script>
 </body>
 </html>

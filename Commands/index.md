@@ -46,4 +46,8 @@ Discord displays command arguments as named fields. Examples such as `realm:<sel
 - [Warn](Warn/index.md) - create and review player warning records.
 - [World](World/index.md) - connect the Relay Account and perform live in-game actions.
 
+For the central review system and custom-list format, see [Global Ban](<../Global Ban/index.md>).
+
+For `/realm lockdown`, `/realm unlock`, and the `/watchlist add`, `/watchlist list`, and `/watchlist remove` commands, see [Realm Security](<../Realm Modules/realm-security.md>). These commands require Premium and the relevant staff permissions.
+
 For shared error guidance, see [Command Troubleshooting](troubleshooting.md).

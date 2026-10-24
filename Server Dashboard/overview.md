@@ -45,6 +45,14 @@ Typical uses:
 
 ---
 
+## Bot Server Profile
+
+The **Bot Server Profile** card appears below the server information and above Linked User Information in dashboard versions that include this feature. With active Premium, it lets you customise Realm Bot's avatar and nickname for this Discord server.
+
+Profile edits require **Save Changes**. See [Bot Server Profile](bot-server-profile.md) for supported images, nickname limits, and reset controls.
+
+---
+
 ## Linked User Information
 
 The **Linked User Information** section confirms the identities attached to this server configuration.
@@ -100,7 +108,8 @@ Server-wide configuration pages used for daily operations:
 - **Command Settings** - control how commands display information
 - **Permissions** - define who can access server features and dashboards
 - **Allowlist** - restrict access to approved users/roles (where applicable)
-- **Logs** - view recorded events and administrative activity (where available)
+- **Moderation Logs** - review moderation actions and administrative activity
+- **Invite Links** - create and manage controlled Realm invitation links
 
 ### Realms
 A list of all connected Realms is shown at the bottom. Selecting a Realm expands its available Realm pages and configuration areas.

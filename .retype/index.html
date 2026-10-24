@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.4.0.828719621221">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.846158336675">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.4.0">
+    <meta name="generator" content="Retype 4.6.0">
 
     <!-- Primary Meta Tags -->
     <title>Welcome to Realm Bot Documentation | Realm Bot Docs</title>
@@ -16,6 +16,7 @@
 
     <!-- Canonical -->
     <link rel="canonical" href="https://help.realmbot.dev/">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://help.realmbot.dev/sitemap.xml">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
@@ -37,14 +38,17 @@
     <meta name="twitter:image" content="https://help.realmbot.dev/images/brand/banner.png">
     <meta name="twitter:image:alt" content="Welcome to Realm Bot Documentation | Realm Bot Docs">
 
+    <!-- Alternate Markdown -->
+    <link rel="alternate" type="text/markdown" href="https://help.realmbot.dev/readme.md">
+
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="favicon.ico" />
-    <link href="resources/css/retype.css?v=4.4.0.828719621221" rel="stylesheet">
+    <link href="resources/css/retype.css?v=4.6.0.846158336675" rel="stylesheet">
 
-    <script data-cfasync="false" src="resources/js/config.js?v=4.4.0.828719621221" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="resources/js/retype.js?v=4.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="resources/js/lunr.js?v=4.4.0.828719621221" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="resources/js/config.js?v=4.6.0.846158336675" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="resources/js/lunr.js?v=4.6.0.846158336675" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -133,9 +137,11 @@
 <div class="flex">
     <div id="retype-main" class="min-w-0 p-4 grow md:px-16">
         <main class="relative pb-12 lg:pt-2">
-            <div class="retype-markdown" id="retype-content">
+            <div class="relative retype-markdown" id="retype-content">
                 <!-- Rendered if sidebar right is enabled -->
                 <div id="retype-sidebar-right-toggle"></div>
+                <doc-page-actions></doc-page-actions>
+
                 <!-- Page content  -->
 <h1 id="welcome-to-realm-bot-documentation">Welcome to Realm Bot Documentation</h1>
 <div class="-mt-3 mb-12 flex flex-wrap text-sm text-gray-400 dark:text-dark-350 items-center">
@@ -166,10 +172,10 @@
 
 <div id="retype-page-description" class="description-display text-description font-description leading-description mb-description-margin-bottom mt-description-margin-top tracking-description text-transform-description">Official Realm Bot documentation for managing Minecraft Bedrock Realms through Discord-setup guides, modules, security tools, and integrations.</div>
 <figure class="content-center">
-    <img src="images/brand/banner.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="1920" height="1080" />
-    <figcaption class="caption"></figcaption>
+    <img src="images/brand/banner.png" alt="Realm Bot documentation banner" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="1920" height="1080" />
+    <figcaption class="caption">Realm Bot documentation banner</figcaption>
 </figure>
-<p>Realm Bot is a Discord-first management platform for <strong>Minecraft Bedrock Realms</strong>, built to help owners and staff operate their Realm with greater consistency, speed, and visibility - without needing to be in-game at all times.</p>
+<p>Realm Bot is a Discord-first management platform for <strong>Minecraft Bedrock Realms</strong>, built to help owners and staff operate their Realm with greater consistency, speed, and visibility without needing to be in-game at all times.</p>
 <p>This documentation explains how Realm Bot works, how to configure each feature, and how to run a Realm safely using recommended operational practices.</p>
 <hr>
 <h2 id="what-is-realm-bot">What is Realm Bot?</h2>
@@ -186,7 +192,7 @@
 <h3 id="realm-management">Realm Management</h3>
 <p>Manage the fundamental operations of your Realm from Discord and the dashboard.</p>
 <ul>
-<li><strong>Start, Stop, and Restart</strong> your Realm when required.</li>
+<li><strong>Open and close</strong> your Realm when required.</li>
 <li><strong>Invite and remove players</strong> without manual in-game administration.</li>
 <li>Maintain a more consistent management workflow for staff teams.</li>
 </ul>
@@ -194,7 +200,7 @@
 <p>Operate your Realm with clearer enforcement tools and reduced manual workload.</p>
 <ul>
 <li><strong>Kick and ban</strong> actions for rapid incident response.</li>
-<li><strong>Whitelist-oriented control</strong> for communities that require curated entry.</li>
+<li><strong>Allowlist-oriented control</strong> for communities that require curated entry.</li>
 <li>Optional automation modules (where available) to reduce repeat issues.</li>
 </ul>
 <h3 id="chat-relay-and-communication">Chat Relay and Communication</h3>
@@ -221,17 +227,33 @@
 <ul>
 <li>Review chat activity where logging is enabled.</li>
 <li>Maintain an audit trail for staff operations and incident review.</li>
+<li>Share new Story Feed posts and supported milestones with <a href="tools/realm-stories/">Realm Stories</a> (Premium, Beta).</li>
 </ul>
 <h3 id="security-and-stability-tooling">Security and Stability Tooling</h3>
 <p>Support Realms that are vulnerable to abuse, especially those using public codes.</p>
 <ul>
-<li>Mitigation features for disruptive activity (where configured).</li>
+<li><a href="realm-modules/realm-security/">Realm Security</a> (Premium) for temporary Lockdown restrictions and Watchlist join alerts.</li>
 <li>Tools designed to improve response time and operational clarity during incidents.</li>
 </ul>
 <h3 id="integrations">Integrations</h3>
 <p>Extend Realm Bot with connected services to automate routine tasks.</p>
 <ul>
-<li><strong>Tebex integration</strong> (Premium) for in-game fulfilment workflows where supported by your setup.</li>
+<li><a href="integrations/tebex/">Tebex</a> integration (Premium) for in-game fulfilment workflows where supported by your setup.</li>
+</ul>
+<h3 id="global-ban-and-shared-moderation">Global Ban and Shared Moderation</h3>
+<p>Use Realm Bot&#x27;s shared moderation system to review public records, submit evidence-backed reports, protect connected Realms, and appeal eligible records.</p>
+<ul>
+<li>Browse and filter supported records in the <a href="global-ban/ban-list-explorer/">Ban List Explorer</a>.</li>
+<li>Configure category-based <a href="global-ban/realm-protection/">Realm Protection</a>.</li>
+<li>Submit and track reports through <a href="global-ban/reporting-players/">Reporting Players</a>.</li>
+<li>Review eligibility and process in <a href="global-ban/appeals/">Appeals</a>.</li>
+</ul>
+<h3 id="tools-and-troubleshooting">Tools and Troubleshooting</h3>
+<p>Use the supporting documentation to create operational messages and resolve common issues.</p>
+<ul>
+<li>Build Discord messages with the <a href="tools/embed-panel/">Embed Panel</a>.</li>
+<li>Resolve common access issues in <a href="troubleshooting/private-title-history/">Troubleshooting</a>.</li>
+<li>Diagnose command-specific problems with <a href="commands/troubleshooting/">Command Troubleshooting</a>.</li>
 </ul>
 <hr>
 <h2 id="premium-modules">Premium Modules</h2>
@@ -242,6 +264,7 @@
 <li>Realms that require automation and operational tooling</li>
 </ul>
 <p>If you are uncertain whether you need Premium, start with the free tier and only upgrade once you know which modules your Realm actually benefits from.</p>
+<p>Premium also includes <a href="server-dashboard/bot-server-profile/">Bot Server Profile</a> for a custom avatar and nickname in your Discord server, on dashboard versions that include the feature.</p>
 <hr>
 <h2 id="community-and-support">Community and Support</h2>
 <p>If you need assistance, updates, or community resources, join the official Discord server below.</p>
@@ -306,6 +329,6 @@
 
     <div id="retype-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Landing", isRoot: true, level: 0, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+        <script data-cfasync="false">window.__DOCS__ = { "title": "Landing", isRoot: true, level: 0, icon: "file", hasPrism: false, hasInstagram: false, hasMermaid: false, hasMath: false, tocDepth: 23, "md": "/readme.md" }</script>
 </body>
 </html>

@@ -44,8 +44,11 @@ The pack version must remain compatible with the version expected by Realm Bot. 
 | Member Gate | No | No | Yes |
 | Skin Filtering | No | No | Yes |
 | Realm Console | No | No | Yes |
+| Realm Stories | No | No | No; linked account access is still required |
 
 **Conditional** means the feature can use GameTest for a specific data source or condition but may retain more limited behaviour without it.
+
+[Realm Security](realm-security.md) requires a connected Relay Account for Lockdown kicks and Watchlist join detection. [Realm Stories](../Tools/realm-stories.md) collects posts through the Story Feed without an in-game connection.
 
 ## Install the GameTest Pack
 
@@ -94,5 +97,5 @@ Removing the pack stops GameTest-dependent features until it is installed again.
 
 - Confirm the module is enabled for the correct Realm.
 - Confirm its Discord destination and channel permissions.
-- Confirm the Relay Account is online.
+- If the feature requires an in-game connection, confirm the Relay Account is online. Realm Stories instead requires valid linked-account access to the Story Feed.
 - If the feature uses GameTest, confirm the pack, Beta APIs, and version first.
