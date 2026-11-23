@@ -1,23 +1,8 @@
 # Live Playerlist
 
-Live Playerlist publishes a near-real-time view of who is currently online in your Realm to a selected Discord channel. It is designed for staff awareness and community visibility, providing a consistent "who's online" reference without requiring players to be in-game to check.
+Live Playerlist shows who's online in a Realm in one Discord message. Realm Bot updates it every **five minutes** and creates a replacement if the original message is unavailable.
 
-This feature is located under **Realm Modules** and can be enabled per Realm.
-
----
-
-## What Live Playerlist Does
-
-When enabled, Realm Bot will:
-
-- Post a live list of players currently online in the Realm
-- Update the output automatically every **5 minutes**
-- Maintain a single message that refreshes over time, recreating it if the previous message is unavailable
-
-This makes it suitable for:
-- moderation coverage (knowing when activity is high)
-- event coordination (confirming attendance)
-- community engagement (players can see who is active)
+It requires an active Realm Bot Premium subscription and a connected Relay Account. The GameTest Pack and Beta APIs are not required.
 
 ---
 
@@ -25,10 +10,7 @@ This makes it suitable for:
 
 ![Live Playerlist Example](/images/live-playerlist-example.png)
 
-Depending on your configuration, the player list can include:
-- the player name (gamertag)
-- optional device/platform indicators (e.g., Android, Windows)
-- optional recorded total playtime
+Each entry shows a gamertag, optionally with total playtime and device type.
 
 ---
 
@@ -36,18 +18,7 @@ Depending on your configuration, the player list can include:
 
 ![Live Playerlist Configuration](/images/live-playerlist.png)
 
-### Enable Live Playerlist
-
-Use the primary toggle at the top of the module to enable or disable Live Playerlist for the selected Realm.
-
-### Discord Destination
-
-Select the Discord channel where the live playerlist will be posted and updated.
-
-Recommended channel choices:
-- `#players-online`
-- `#realm-status`
-- `#realm-activity`
+In **Realm Modules**, enable **Live Playerlist** for the selected Realm. Under **Discord Destination**, select a channel such as `#players-online`.
 
 Ensure the bot has:
 - **View Channel**
@@ -57,48 +28,10 @@ Ensure the bot has:
 
 ### Display Settings
 
-You can control which information appears alongside each player entry:
+- **Display Playtime** shows the player's recorded total across sessions, not the length of the current session.
+- **Device Identification** shows the platform, such as Android, Windows or a console, when it can be detected.
 
-#### Display Playtime
-
-When enabled, the playerlist includes the player's recorded total playtime. It is not a timer for only the current session.
-
-Use this if you want:
-- clearer staff context during incidents
-- broader activity context for staff
-
-#### Device Identification
-
-When enabled, the playerlist displays each player's device/platform indicator (where detectable), such as:
-- Android
-- Windows
-- Console platforms (where supported)
-
-Use this if you want:
-- platform visibility for staff (especially when running device-restricted communities)
-- quick indicators when investigating suspicious join patterns
-
----
-
-## Update Interval
-
-Live Playerlist updates every **5 minutes**. This interval is designed to balance:
-- reasonably current visibility
-- minimal spam and operational overhead
-- predictable refresh timing for staff
-
-> **Note:** The playerlist is "live" in the operational sense (regular refresh), not second-by-second.
-
-Live Playerlist requires an active Realm Bot Premium subscription and a connected Relay Account. It does not require the GameTest Pack or Beta APIs.
-
----
-
-## Best Practices
-
-- Use a dedicated channel and keep it low-noise.
-- Restrict who can post in the destination channel (optional) so the output remains easy to read.
-- Enable **Device Identification** if you enforce platform-specific rules or run competitive modes where device context matters.
-- Enable **Display Playtime** if your staff workflow benefits from session context.
+For a read-only player list, restrict who can post in the destination channel.
 
 ---
 

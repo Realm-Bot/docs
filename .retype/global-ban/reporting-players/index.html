@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.846158336675">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.848714876486">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -38,11 +38,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../favicon.ico" />
-    <link href="../../resources/css/retype.css?v=4.6.0.846158336675" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.6.0.848714876486" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.846158336675" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.848714876486" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.846158336675" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.848714876486" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -184,22 +184,18 @@
 <ol>
 <li>Enter the player&#x27;s exact Microsoft/Xbox gamertag.</li>
 <li>Select <strong>Find Player</strong>.</li>
-<li>Confirm the resolved avatar, exact gamertag, and 16-digit XUID.</li>
-<li>Confirm that Realm Bot found the intended account.</li>
-<li>Choose the most accurate report category.</li>
-<li>Write a clear explanation of what happened.</li>
-<li>Attach between one and three evidence images.</li>
-<li>Review the player, category, explanation, and evidence.</li>
-<li>Complete the security check.</li>
-<li>Select <strong>Submit Report</strong>.</li>
+<li>Check the avatar, exact gamertag and 16-digit XUID before reporting the account.</li>
+<li>Choose the closest category and explain what happened.</li>
+<li>Attach one to three evidence images.</li>
+<li>Review the player, category, explanation and evidence.</li>
+<li>Complete the security check, then select <strong>Submit Report</strong>.</li>
 </ol>
-<p>Nothing is submitted until the final <strong>Submit Report</strong> action. A successful submission displays a case number.</p>
+<p>Keep the case number to track the report.</p>
 <p>Website explanations must contain meaningful context and be between <strong>40 and 4,000 characters</strong>.</p>
 <p>For additional website guidance, open <code translate="no" v-pre>/help/database-reports</code>.</p>
 <h2 id="report-through-discord">Report Through Discord</h2>
 <p>In a fully connected Discord server, use:</p>
 <p><code translate="no" v-pre>/db report</code></p>
-<p>The command accepts:</p>
 <retype-table copy-text="| Field | Requirement |
 |---|---|
 | `user` | Exact Microsoft/Xbox gamertag |
@@ -260,7 +256,6 @@
 </ul>
 <p>Choose the closest category. Do not select <strong>Other</strong> for an incident already covered by a named option.</p>
 <h2 id="evidence-requirements">Evidence Requirements</h2>
-<p>Every report requires at least one image and accepts no more than three.</p>
 <retype-table copy-text="| Requirement | Limit |
 |---|---|
 | Supported formats | PNG, JPG, JPEG, WebP, and GIF |
@@ -302,13 +297,7 @@
 </div>
 </retype-table>
 <p>Videos, PDFs, archives, text files, and unsupported image formats are rejected.</p>
-<p>Useful evidence should clearly show:</p>
-<ul>
-<li>The relevant player.</li>
-<li>The incident.</li>
-<li>Surrounding context.</li>
-<li>Information needed to understand what occurred.</li>
-</ul>
+<p>Choose images that show the player, the incident and its surrounding context.</p>
 <p>Avoid unrelated screenshots, duplicates, or edited evidence that changes the original meaning.</p>
 <h2 id="evidence-privacy">Evidence Privacy</h2>
 <p>Submitted evidence begins as private review material. It appears on a public Realm Hub record only when specifically approved for public display.</p>
@@ -325,22 +314,12 @@
 <li>At least 60 seconds must pass between successful submissions.</li>
 <li>One Discord account can submit up to five reports in a rolling hour.</li>
 <li>The same reporter cannot create another pending report for the same player.</li>
-<li>Pending reports have a seven-day review window.</li>
 <li>A pending report with no decision after seven days becomes <strong>Expired</strong> and creates no ban.</li>
 <li>Repeated spam, knowingly false reports, abuse, or targeted harassment can result in reporting restrictions.</li>
 </ul>
 <h2 id="track-your-reports">Track Your Reports</h2>
 <p>Open <code translate="no" v-pre>/ban-list/reports</code> while signed in with the same Discord account used to submit the report.</p>
-<p>The <strong>Your Reports</strong> page can show:</p>
-<ul>
-<li>Reported player&#x27;s gamertag.</li>
-<li>XUID.</li>
-<li>Report category.</li>
-<li>Case number.</li>
-<li>Submission date.</li>
-<li>Current review status.</li>
-</ul>
-<p>Reports are associated with the reporter&#x27;s Discord identity. Signing in with another Discord account will not display reports submitted by the original account.</p>
+<p>Use the gamertag, XUID or case number to identify the report. Each entry shows its category, submission date and review status.</p>
 <h3 id="report-statuses">Report Statuses</h3>
 <retype-table copy-text="| Status | Meaning |
 |---|---|
@@ -383,7 +362,7 @@
 </div>
 </retype-table>
 <p>An approved report can produce an active Realm Hub record. Connected Realms enforcing the resulting category are then updated asynchronously.</p>
-<p>A denied or expired report does not create a ban. The presence of a case number proves that the report was created; it does not prove that the report was approved or that a Realm operation completed.</p>
+<p>A case number confirms submission, not a ban. Denied and expired reports do not create bans.</p>
 <h2 id="troubleshooting">Troubleshooting</h2>
 <h3 id="the-player-cannot-be-found">The player cannot be found</h3>
 <ul>

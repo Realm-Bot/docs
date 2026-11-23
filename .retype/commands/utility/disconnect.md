@@ -22,7 +22,7 @@ The optional Boolean `guild` argument defaults to `false`.
 
 > **Warning:** There is no confirmation prompt. Record or export important settings before disconnecting.
 
-The current implementation does not establish that `guild:true` removes every Realm Bot record associated with the server. Do not treat it as a complete data-erasure workflow without confirmation from Realm Bot support.
+Do not use `guild:true` as a data-erasure request. Contact Realm Bot support if you need all data associated with a server removed.
 
 ## Example
 

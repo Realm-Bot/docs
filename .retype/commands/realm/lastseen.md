@@ -6,7 +6,7 @@ Searches Xbox club/member information across the connected Realms for a player's
 
 `/realm lastseen <user>`
 
-The required `user` argument is the player's Xbox gamertag. The command searches across all Realms associated with the connected server account.
+Enter the player's Xbox gamertag.
 
 ## Requirements
 

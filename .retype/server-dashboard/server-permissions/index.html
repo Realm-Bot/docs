@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.846158336675">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.848714876486">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -44,11 +44,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../favicon.ico" />
-    <link href="../../resources/css/retype.css?v=4.6.0.846158336675" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.6.0.848714876486" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.846158336675" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.848714876486" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.846158336675" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.848714876486" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -183,20 +183,14 @@
 </div>
 
 <div id="retype-page-description" class="description-display text-description font-description leading-description mb-description-margin-bottom mt-description-margin-top tracking-description text-transform-description">Control which Discord roles can use specific Realm Bot commands by assigning granular permissions per role.</div>
-<p>The <strong>Permissions</strong> page allows you to control exactly which <strong>Discord roles</strong> can use Realm Bot’s commands. Permissions are applied at the <strong>role level</strong>, meaning every member with that role inherits the configured access immediately.</p>
-<p>This is the recommended way to prevent accidental misuse of high-impact commands (e.g., bans, realm code changes, world actions) while still allowing staff to perform routine moderation.</p>
+<p>Assign Realm Bot commands to Discord roles under <strong>Permissions</strong>.</p>
 <figure class="content-center">
     <img src="../../images/server-permissions-roles.png" alt="Role Permissions Overview" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="1438" height="919" />
     <figcaption class="caption">Role Permissions Overview</figcaption>
 </figure>
 <hr>
 <h2 id="how-the-permission-system-works">How the Permission System Works</h2>
-<p>Realm Bot permissions are:</p>
-<ul>
-<li><strong>Role-based</strong>: permissions are assigned to Discord roles, not individual users</li>
-<li><strong>Granular</strong>: you can allow or deny access to specific command groups and actions</li>
-<li><strong>Immediate</strong>: changes apply as soon as you save them, affecting all members with that role</li>
-</ul>
+<p>Grant individual actions or command groups. Changes apply immediately to every member with the selected role.</p>
 <p>Discord members with the <strong>Administrator</strong> permission bypass Realm Bot&#x27;s custom role map. Other Discord permissions, such as Manage Server, do not automatically grant every Realm Bot command.</p>
 <blockquote>
 <p><strong>Important:</strong> Only commands that participate in Realm Bot&#x27;s permission framework are governed by these role settings. Some public utility commands remain available without a custom role assignment.</p>
@@ -211,8 +205,7 @@
 <hr>
 <h2 id="managing-role-permissions">Managing Role Permissions</h2>
 <h3 id="1-select-a-role">1) Select a Role</h3>
-<p>In <strong>Manage Role Permissions</strong>, locate the role you want to configure. You can use the search bar if you have many roles.</p>
-<p>Each role card shows whether it currently has Realm Bot permissions assigned.</p>
+<p>Find the role in <strong>Manage Role Permissions</strong>. Search by role name if needed.</p>
 <h3 id="2-edit-the-role">2) Edit the Role</h3>
 <p>Select the edit icon on the role card to open that role’s permission configuration.</p>
 <hr>
@@ -241,7 +234,6 @@
 <p>These permissions do not exempt a staff member&#x27;s Minecraft account from Lockdown. Configure the Lockdown Exempt List and Watchlist notification settings separately under <a href="../../realm-modules/realm-security/">Realm Security</a>.</p>
 <hr>
 <h2 id="recommended-role-model-best-practice">Recommended Role Model (Best Practice)</h2>
-<p>A clean permission structure reduces mistakes and keeps accountability clear. A typical setup looks like this:</p>
 <h3 id="owner--head-admin">Owner / Head Admin</h3>
 <p>Grant full permissions, including:</p>
 <ul>
@@ -297,7 +289,6 @@
 <h2 id="operational-tips">Operational Tips</h2>
 <ul>
 <li>Keep permission sets <strong>as small as possible</strong> per role.</li>
-<li>Use roles, not individuals, to prevent “one-off exceptions” that are forgotten later.</li>
 <li>Review your permissions after staff changes or major server restructuring.</li>
 <li>If you use automated onboarding roles, ensure new members do <strong>not</strong> inherit staff permissions accidentally.</li>
 </ul>
@@ -343,7 +334,7 @@
                 <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M20.322.75h1.176a1.75 1.75 0 0 1 1.75 1.749v1.177a10.75 10.75 0 0 1-2.925 7.374l-1.228 1.304a23.699 23.699 0 0 1-1.596 1.542v5.038c0 .615-.323 1.184-.85 1.5l-4.514 2.709a.75.75 0 0 1-1.12-.488l-.963-4.572a1.305 1.305 0 0 1-.14-.129L8.04 15.96l-1.994-1.873a1.305 1.305 0 0 1-.129-.14l-4.571-.963a.75.75 0 0 1-.49-1.12l2.71-4.514c.316-.527.885-.85 1.5-.85h5.037a23.668 23.668 0 0 1 1.542-1.594l1.304-1.23A10.753 10.753 0 0 1 20.321.75Zm-6.344 4.018v-.001l-1.304 1.23a22.275 22.275 0 0 0-3.255 3.851l-2.193 3.29 1.859 1.744a.545.545 0 0 1 .034.034l1.743 1.858 3.288-2.192a22.263 22.263 0 0 0 3.854-3.257l1.228-1.303a9.251 9.251 0 0 0 2.517-6.346V2.5a.25.25 0 0 0-.25-.25h-1.177a9.252 9.252 0 0 0-6.344 2.518ZM6.5 21c-1.209 1.209-3.901 1.445-4.743 1.49a.236.236 0 0 1-.18-.067.236.236 0 0 1-.067-.18c.045-.842.281-3.534 1.49-4.743.9-.9 2.6-.9 3.5 0 .9.9.9 2.6 0 3.5Zm-.592-8.588L8.17 9.017c.23-.346.47-.685.717-1.017H5.066a.25.25 0 0 0-.214.121l-2.167 3.612ZM16 15.112c-.333.248-.672.487-1.018.718l-3.393 2.262.678 3.223 3.612-2.167a.25.25 0 0 0 .121-.214ZM17.5 8a1.5 1.5 0 1 1-3.001-.001A1.5 1.5 0 0 1 17.5 8Z"/></svg></span>
                 <span class="card-compact-title">Getting Started</span>
             </div>
-            <p class="card-compact-description">Connect your Minecraft Bedrock Realm to Discord in three steps. Link your Microsoft account, run the connect command, then configure modules and settings.</p>
+            <p class="card-compact-description">Link your Microsoft account, connect your Bedrock Realms to a Discord server from the dashboard or Discord, and configure Realm Bot.</p>
         </div>
     </a>
 </div>
@@ -354,6 +345,26 @@
                 <span class="card-compact-title">Realm Security</span>
             </div>
             <p class="card-compact-description">Configure temporary Realm lockdowns and staff alerts for watched players using the Lockdown and Watchlist controls.</p>
+        </div>
+    </a>
+</div>
+<div class="card-compact-container">
+    <a href="/server-dashboard/overview/" class="group card-compact no-link">
+        <div class="card-compact-body">
+            <div class="card-compact-header">
+                <span class="card-compact-title">Server Dashboard</span>
+            </div>
+            <p class="card-compact-description">Understand the Server Dashboard overview, including Premium status, linked account details, connected Realms, and where to configure server-wide settings.</p>
+        </div>
+    </a>
+</div>
+<div class="card-compact-container">
+    <a href="/server-dashboard/server-setup/" class="group card-compact no-link">
+        <div class="card-compact-body">
+            <div class="card-compact-header">
+                <span class="card-compact-title">Server Setup</span>
+            </div>
+            <p class="card-compact-description">Complete the recommended setup checklist for your Discord server, including logging, permissions, warn presets, and account linking.</p>
         </div>
     </a>
 </div>

@@ -1,6 +1,6 @@
 ---
 label: Ban List Explorer
-description: Search, filter, inspect, and export supported public Realm Hub and external-provider ban records.
+description: Browse public moderation records, preview a GitHub ban list, and save a source to your account.
 order: 98
 authors:
   - name: Frazer
@@ -9,9 +9,9 @@ authors:
 
 # Ban List Explorer
 
-The **Ban List Explorer** provides a public view of supported moderation sources. It can display native Realm Hub records, supported external-provider records, and compatible custom GitHub lists.
+Use the **Ban List Explorer** to review public Realm Hub records or inspect a custom GitHub list before deciding whether to use it on your Realm.
 
-Open `/global-bans` to access the Explorer.
+Open `/ban-list` on the Realm Bot website to access the Explorer. Public sources appear only when enabled and configured for public display.
 
 ## Explorer Capabilities
 
@@ -22,7 +22,7 @@ Depending on the selected source, the Explorer can:
 - Filter supported records by status, duration, appeal state, or ban type.
 - Sort records when the selected source provides sortable dates.
 - Open detailed Realm Hub case pages.
-- Open supported external-provider record pages.
+- View source details for entries in saved lists.
 - Export the currently displayed page where supported.
 
 Not every provider supplies every field. The Explorer shows only the filters, columns, links, and export fields supported by the selected source.
@@ -32,10 +32,7 @@ Not every provider supplies every field. The Explorer shows only the filters, co
 | Source | Ownership and behaviour |
 |---|---|
 | Realm Hub Database | Native reviewed records managed through Realm Hub reporting, review, publication, and appeals |
-| ARAS / Realms+ | Independent public records owned by the external provider |
-| Custom GitHub lists | Publisher-managed JSON records loaded for preview without import or automatic enforcement |
-
-Realm Hub cannot correct, revoke, or appeal an external provider's record. Contact the provider that owns the source when an external entry appears incorrect.
+| Custom GitHub lists | Publisher-managed JSON records available to preview. Signed-in users can save a source to their account. |
 
 ## Realm Hub Records
 
@@ -61,8 +58,6 @@ Possible public statuses include:
 | Expired | The temporary record has reached its end |
 | Revoked | The record was withdrawn or overturned |
 
-An appeal does not suspend a record. **Under Appeal** records remain active until an appeal decision revokes them.
-
 ## External Records
 
 External sources remain independent from the Realm Hub Database:
@@ -74,16 +69,21 @@ External sources remain independent from the Realm Hub Database:
 
 ## Custom GitHub Lists
 
-Custom GitHub lists are public JSON files supplied by third-party publishers. Loading one:
+Choose **Load** to preview a publisher's public JSON file. A preview does not import records, endorse the source, enable appeals or take action on a Realm.
 
-- Creates a temporary Explorer preview.
-- Does not import records into the Realm Hub Database.
-- Does not approve the publisher as a trusted source.
-- Does not automatically enforce bans.
-- Does not create Realm operations.
-- Does not enable Realm Hub case pages or appeals.
+See [Custom Ban List Format](custom-ban-list-format.md) for the schema and validation rules.
 
-See [Custom Ban List Format](custom-ban-list-format.md) for the complete schema and validation rules.
+## Save to My Ban Lists
+
+1. Sign in and load a public GitHub JSON file. Review the records and their publisher.
+2. Select **Save to My Ban Lists** after previewing, or use **Load & save** when loading the file. Confirm a name (1 to 100 characters) and an optional description (up to 500 characters).
+3. Open **My Ban Lists** at `/ban-list/lists` to check the record count, sync health and last successful refresh. You can save up to **20 lists**.
+
+Saving keeps a reference to the source URL. Accounts saving the same URL may see the same accepted records, but each manages its own saved entry. The collection is not a public endorsement directory, and saving a source does not make its file or evidence private.
+
+If the first refresh fails, check the list's sync health before adding it again. Sources normally refresh about every **30 minutes**. You can refresh manually once every **five minutes**, up to **ten times per hour**.
+
+**Saving does not ban anyone.** To use a saved source for enforcement, follow [Assign a Saved List](realm-protection.md#assign-a-saved-list) for the intended Realm. Removing a saved entry queues cleanup for its assignments; it does not delete another account's copy.
 
 ## Search and Filter Guidance
 
@@ -95,7 +95,7 @@ See [Custom Ban List Format](custom-ban-list-format.md) for the complete schema 
 
 ## Exporting Records
 
-Where supported, exports contain the fields available on the currently displayed page. An export is not a complete database synchronisation and does not make an external or custom source trusted.
+Where supported, an export includes only the displayed page and fields, not the entire database.
 
 Review exported data before redistributing it. Public availability does not remove the publisher's responsibility to handle evidence and personal information appropriately.
 
@@ -114,11 +114,11 @@ The selected source may not provide the required fields. Custom-list capabilitie
 
 ### An external record is incorrect
 
-Contact the provider that owns the source. Realm Hub cannot modify ARAS / Realms+ or custom-list records.
+Contact the publisher that owns the source. Realm Hub cannot correct the publisher's records.
 
 ### A record is under appeal but still active
 
-This is expected. An appeal does not pause enforcement while a decision is pending.
+Enforcement continues while an appeal is pending.
 
 ## Related Pages
 

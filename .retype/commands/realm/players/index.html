@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.846158336675">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.848714876486">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -38,11 +38,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../../favicon.ico" />
-    <link href="../../../resources/css/retype.css?v=4.6.0.846158336675" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=4.6.0.848714876486" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.6.0.846158336675" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.6.0.848714876486" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.6.0.846158336675" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.6.0.848714876486" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -208,7 +208,7 @@
 <li><strong>Compact</strong> displays the gamertag and detected device.</li>
 <li><strong>Detailed</strong> can also display the player&#x27;s official Realm permission.</li>
 </ul>
-<p>The runtime does not currently provide gamerscore or an Xbox Gold/Silver indicator through this command.</p>
+<p>The command does not show gamerscore or Xbox Gold/Silver status.</p>
 <p>When several Realms are displayed, the public controls move between Realm results.</p>
 <h2 id="common-issues">Common Issues</h2>
 <p>If a player is missing, confirm they are currently online and wait for official Realm presence data to refresh. This view is separate from Relay/GameTest player lookup.</p>
@@ -238,6 +238,16 @@
                 <span class="card-compact-title">/realm members</span>
             </div>
             <p class="card-compact-description">Display official Realm members and blocked players, with currently limited filtering and search.</p>
+        </div>
+    </a>
+</div>
+<div class="card-compact-container">
+    <a href="/server-dashboard/server-command-settings/" class="group card-compact no-link">
+        <div class="card-compact-body">
+            <div class="card-compact-header">
+                <span class="card-compact-title">Command Settings</span>
+            </div>
+            <p class="card-compact-description">Control how Realm Bot displays player information in commands, including a compact view or a more detailed output for moderation and auditing.</p>
         </div>
     </a>
 </div>

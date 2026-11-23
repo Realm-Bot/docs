@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.846158336675">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.848714876486">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -12,7 +12,7 @@
     <!-- Primary Meta Tags -->
     <title>Relay Account and GameTest Dependencies | Realm Bot Docs</title>
     <meta name="title" content="Relay Account and GameTest Dependencies | Realm Bot Docs">
-    <meta name="description" content="Understand the shared Relay Account, GameTest Pack, Beta API, permission, and connection requirements used by Realm Bot modules.">
+    <meta name="description" content="Check Relay Account access, install the GameTest bridge, and diagnose connection-dependent Realm Bot features.">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://help.realmbot.dev/realm-modules/relay-account-and-gametest/">
@@ -22,7 +22,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://help.realmbot.dev/realm-modules/relay-account-and-gametest/">
     <meta property="og:title" content="Relay Account and GameTest Dependencies | Realm Bot Docs">
-    <meta property="og:description" content="Understand the shared Relay Account, GameTest Pack, Beta API, permission, and connection requirements used by Realm Bot modules.">
+    <meta property="og:description" content="Check Relay Account access, install the GameTest bridge, and diagnose connection-dependent Realm Bot features.">
     <meta property="og:site_name" content="Realm Bot">
     <meta property="og:locale" content="en_US">
 
@@ -30,7 +30,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://help.realmbot.dev/realm-modules/relay-account-and-gametest/">
     <meta name="twitter:title" content="Relay Account and GameTest Dependencies | Realm Bot Docs">
-    <meta name="twitter:description" content="Understand the shared Relay Account, GameTest Pack, Beta API, permission, and connection requirements used by Realm Bot modules.">
+    <meta name="twitter:description" content="Check Relay Account access, install the GameTest bridge, and diagnose connection-dependent Realm Bot features.">
 
     <!-- Alternate Markdown -->
     <link rel="alternate" type="text/markdown" href="https://help.realmbot.dev/realm-modules/relay-account-and-gametest.md">
@@ -38,11 +38,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../favicon.ico" />
-    <link href="../../resources/css/retype.css?v=4.6.0.846158336675" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.6.0.848714876486" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.846158336675" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.848714876486" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.846158336675" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.848714876486" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -176,7 +176,7 @@
     </div>
 </div>
 
-<div id="retype-page-description" class="description-display text-description font-description leading-description mb-description-margin-bottom mt-description-margin-top tracking-description text-transform-description">Understand the shared Relay Account, GameTest Pack, Beta API, permission, and connection requirements used by Realm Bot modules.</div>
+<div id="retype-page-description" class="description-display text-description font-description leading-description mb-description-margin-bottom mt-description-margin-top tracking-description text-transform-description">Check Relay Account access, install the GameTest bridge, and diagnose connection-dependent Realm Bot features.</div>
 <p>Many Realm Bot features depend on a live account inside the Realm. A smaller set also depends on the Realm Bot GameTest Pack for scripted requests that are not available through the standard Realm connection.</p>
 <h2 id="relay-account">Relay Account</h2>
 <p>The <strong>Relay Account</strong> is the Microsoft/Xbox account Realm Bot uses to join the selected Realm and exchange live events or commands.</p>
@@ -187,107 +187,76 @@
 <li>Commands that require elevated in-game access need sufficient operator permissions and, where applicable, cheats enabled.</li>
 <li>An active Realm Bot Premium subscription is required for the connected Relay Account workflow.</li>
 </ul>
-<p>Do not promise uninterrupted operation. Realm maintenance, session disconnects, or expired Microsoft/Xbox authentication can temporarily stop connection-dependent features.</p>
+<p>Realm maintenance, session disconnects or expired Microsoft/Xbox authentication can temporarily stop connection-dependent features.</p>
+<p><strong>Compatibility note:</strong> Realm Bot&#x27;s world-joining support was updated for Minecraft 26.60 in version 5.3.0.</p>
 <h2 id="gametest-pack">GameTest Pack</h2>
-<p>The <strong>Realm Bot GameTest Pack</strong> provides an in-game request channel for features such as scoreboard retrieval and emote events. It requires <strong>Beta APIs</strong> to be enabled in the Realm&#x27;s experimental settings.</p>
-<p>The pack version must remain compatible with the version expected by Realm Bot. A pack that is installed but outdated can behave like a missing pack.</p>
+<p>The <strong>Realm Bot GameTest Pack</strong> provides an in-game bridge for features such as scoreboard retrieval and emote events. The v3 bridge version check starts at <strong>3.0.0</strong>. An installed pack is not proof that the bridge is responding; check the installed version and the Realm connection separately.</p>
 <h2 id="feature-dependency-matrix">Feature Dependency Matrix</h2>
-<retype-table copy-text="| Feature | GameTest Required | Beta APIs Required | Relay Account Required |
-|---|---:|---:|---:|
-| Chat Relay player chat | No | No | Yes |
-| Chat Relay emotes | Yes | Yes | Yes |
-| Scoreboard Leaderboards | Yes | Yes | Yes |
-| Player Lookup enriched live data | Conditional | Conditional | Yes for live data |
-| Tebex empty-slot conditions | Conditional | Conditional | Yes |
-| Live Playerlist | No | No | Yes |
-| Leveling System | No | No | Yes |
-| Bot Detection | No | No | Yes |
-| Member Gate | No | No | Yes |
-| Skin Filtering | No | No | Yes |
-| Realm Console | No | No | Yes |
-| Realm Stories | No | No | No; linked account access is still required |">
+<retype-table copy-text="| Feature | GameTest required | Connected Relay Account required |
+|---|---|---|
+| Chat Relay player chat | No | Yes |
+| Chat Relay emotes | Yes | Yes |
+| Scoreboard Leaderboards | Yes | Yes |
+| Player Lookup enriched live data | Conditional | Yes for live data |
+| Tebex empty-slot conditions | Conditional | Yes |
+| Live Playerlist, Leveling System | No | Yes |
+| Bot Detection, Member Gate, Skin Filtering | No | Yes |
+| Realm Console | No | Yes |
+| Realm Stories | No | No; linked account access is still required |">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
 <tr>
 <th>Feature</th>
-<th style="text-align: right;">GameTest Required</th>
-<th style="text-align: right;">Beta APIs Required</th>
-<th style="text-align: right;">Relay Account Required</th>
+<th>GameTest required</th>
+<th>Connected Relay Account required</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Chat Relay player chat</td>
-<td style="text-align: right;">No</td>
-<td style="text-align: right;">No</td>
-<td style="text-align: right;">Yes</td>
+<td>No</td>
+<td>Yes</td>
 </tr>
 <tr>
 <td>Chat Relay emotes</td>
-<td style="text-align: right;">Yes</td>
-<td style="text-align: right;">Yes</td>
-<td style="text-align: right;">Yes</td>
+<td>Yes</td>
+<td>Yes</td>
 </tr>
 <tr>
 <td>Scoreboard Leaderboards</td>
-<td style="text-align: right;">Yes</td>
-<td style="text-align: right;">Yes</td>
-<td style="text-align: right;">Yes</td>
+<td>Yes</td>
+<td>Yes</td>
 </tr>
 <tr>
 <td>Player Lookup enriched live data</td>
-<td style="text-align: right;">Conditional</td>
-<td style="text-align: right;">Conditional</td>
-<td style="text-align: right;">Yes for live data</td>
+<td>Conditional</td>
+<td>Yes for live data</td>
 </tr>
 <tr>
 <td>Tebex empty-slot conditions</td>
-<td style="text-align: right;">Conditional</td>
-<td style="text-align: right;">Conditional</td>
-<td style="text-align: right;">Yes</td>
+<td>Conditional</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td>Live Playerlist</td>
-<td style="text-align: right;">No</td>
-<td style="text-align: right;">No</td>
-<td style="text-align: right;">Yes</td>
+<td>Live Playerlist, Leveling System</td>
+<td>No</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td>Leveling System</td>
-<td style="text-align: right;">No</td>
-<td style="text-align: right;">No</td>
-<td style="text-align: right;">Yes</td>
-</tr>
-<tr>
-<td>Bot Detection</td>
-<td style="text-align: right;">No</td>
-<td style="text-align: right;">No</td>
-<td style="text-align: right;">Yes</td>
-</tr>
-<tr>
-<td>Member Gate</td>
-<td style="text-align: right;">No</td>
-<td style="text-align: right;">No</td>
-<td style="text-align: right;">Yes</td>
-</tr>
-<tr>
-<td>Skin Filtering</td>
-<td style="text-align: right;">No</td>
-<td style="text-align: right;">No</td>
-<td style="text-align: right;">Yes</td>
+<td>Bot Detection, Member Gate, Skin Filtering</td>
+<td>No</td>
+<td>Yes</td>
 </tr>
 <tr>
 <td>Realm Console</td>
-<td style="text-align: right;">No</td>
-<td style="text-align: right;">No</td>
-<td style="text-align: right;">Yes</td>
+<td>No</td>
+<td>Yes</td>
 </tr>
 <tr>
 <td>Realm Stories</td>
-<td style="text-align: right;">No</td>
-<td style="text-align: right;">No</td>
-<td style="text-align: right;">No; linked account access is still required</td>
+<td>No</td>
+<td>No; linked account access is still required</td>
 </tr>
 </tbody>
 </table>
@@ -297,20 +266,19 @@
 <p><a href="../realm-security/">Realm Security</a> requires a connected Relay Account for Lockdown kicks and Watchlist join detection. <a href="../../tools/realm-stories/">Realm Stories</a> collects posts through the Story Feed without an in-game connection.</p>
 <h2 id="install-the-gametest-pack">Install the GameTest Pack</h2>
 <ol>
-<li>Open the selected Realm&#x27;s <strong>Overview</strong> page.</li>
-<li>Confirm the correct world slot is active.</li>
-<li>Enable <strong>Beta APIs</strong> in the Realm settings.</li>
-<li>Under <strong>GameTest Pack Management</strong>, select <strong>Install Pack</strong>.</li>
-<li>Allow Realm Bot to join the Realm and confirm the installed version is current.</li>
+<li>Select the Discord server and Realm, then open <strong>Overview &gt; Gametest Pack Management</strong>.</li>
+<li>Review <strong>Status</strong>, <strong>Pack version</strong>, <strong>Latest build</strong> and <strong>Last installed</strong>. Check for updates.</li>
+<li>Select <strong>Install Pack</strong> or <strong>Update Pack</strong> as appropriate. The installer places the bridge first among behaviour packs and preserves the other packs. An equal or newer bridge already in first position need not be reinstalled.</li>
+<li>Check the displayed version after installation. To test a live feature, connect the Relay Account and check that the feature receives a response.</li>
 </ol>
-<p>An active Realm slot and a healthy Relay Account connection are required for managed installation.</p>
+<p>The dashboard uploads the pack using server access and the associated Realm; the Relay Account does not need to be in-game for the upload.</p>
 <h2 id="updates-and-removal">Updates and Removal</h2>
 <ul>
 <li><strong>Check For Updates</strong> compares the installed and current pack versions.</li>
 <li><strong>Update Pack</strong> installs the latest available managed version.</li>
-<li><strong>Auto Update GameTest Pack</strong> applies an available update when Realm Bot next joins; it is not a continuous background scheduler.</li>
+<li><strong>Auto Update Gametest Pack</strong> is off by default. When enabled, it checks for an update when Realm Bot joins, not continuously.</li>
 <li><strong>Manual Download</strong> provides the current pack for a manual installation workflow.</li>
-<li><strong>Remove Pack</strong> removes the managed dependency from the selected Realm slot.</li>
+<li><strong>Remove Pack</strong> removes the managed dependency.</li>
 </ul>
 <p>Removing the pack stops GameTest-dependent features until it is installed again.</p>
 <h2 id="troubleshooting">Troubleshooting</h2>
@@ -324,8 +292,8 @@
 </ul>
 <h3 id="gametest-requests-fail-or-data-is-unavailable">GameTest requests fail or data is unavailable</h3>
 <ul>
-<li>Confirm the pack is installed on the active slot.</li>
-<li>Confirm <strong>Beta APIs</strong> are enabled.</li>
+<li>Check <strong>Pack version</strong> and <strong>Latest build</strong>. If no latest build appears, check that a bridge release is available.</li>
+<li>Verify the pack is active in the world you are using and that the Relay Account is connected.</li>
 <li>Check for a pack update and allow the Relay Account to rejoin.</li>
 <li>Verify the feature is listed as GameTest-dependent in the matrix above.</li>
 </ul>
@@ -340,7 +308,7 @@
 <li>Confirm the module is enabled for the correct Realm.</li>
 <li>Confirm its Discord destination and channel permissions.</li>
 <li>If the feature requires an in-game connection, confirm the Relay Account is online. Realm Stories instead requires valid linked-account access to the Story Feed.</li>
-<li>If the feature uses GameTest, confirm the pack, Beta APIs, and version first.</li>
+<li>If the feature uses GameTest, confirm that its bridge is current and responding.</li>
 </ul>
 <div id="retype-backlinks">
     <h2>See also</h2>
@@ -402,7 +370,7 @@
                 <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M20.322.75h1.176a1.75 1.75 0 0 1 1.75 1.749v1.177a10.75 10.75 0 0 1-2.925 7.374l-1.228 1.304a23.699 23.699 0 0 1-1.596 1.542v5.038c0 .615-.323 1.184-.85 1.5l-4.514 2.709a.75.75 0 0 1-1.12-.488l-.963-4.572a1.305 1.305 0 0 1-.14-.129L8.04 15.96l-1.994-1.873a1.305 1.305 0 0 1-.129-.14l-4.571-.963a.75.75 0 0 1-.49-1.12l2.71-4.514c.316-.527.885-.85 1.5-.85h5.037a23.668 23.668 0 0 1 1.542-1.594l1.304-1.23A10.753 10.753 0 0 1 20.321.75Zm-6.344 4.018v-.001l-1.304 1.23a22.275 22.275 0 0 0-3.255 3.851l-2.193 3.29 1.859 1.744a.545.545 0 0 1 .034.034l1.743 1.858 3.288-2.192a22.263 22.263 0 0 0 3.854-3.257l1.228-1.303a9.251 9.251 0 0 0 2.517-6.346V2.5a.25.25 0 0 0-.25-.25h-1.177a9.252 9.252 0 0 0-6.344 2.518ZM6.5 21c-1.209 1.209-3.901 1.445-4.743 1.49a.236.236 0 0 1-.18-.067.236.236 0 0 1-.067-.18c.045-.842.281-3.534 1.49-4.743.9-.9 2.6-.9 3.5 0 .9.9.9 2.6 0 3.5Zm-.592-8.588L8.17 9.017c.23-.346.47-.685.717-1.017H5.066a.25.25 0 0 0-.214.121l-2.167 3.612ZM16 15.112c-.333.248-.672.487-1.018.718l-3.393 2.262.678 3.223 3.612-2.167a.25.25 0 0 0 .121-.214ZM17.5 8a1.5 1.5 0 1 1-3.001-.001A1.5 1.5 0 0 1 17.5 8Z"/></svg></span>
                 <span class="card-compact-title">Getting Started</span>
             </div>
-            <p class="card-compact-description">Connect your Minecraft Bedrock Realm to Discord in three steps. Link your Microsoft account, run the connect command, then configure modules and settings.</p>
+            <p class="card-compact-description">Link your Microsoft account, connect your Bedrock Realms to a Discord server from the dashboard or Discord, and configure Realm Bot.</p>
         </div>
     </a>
 </div>

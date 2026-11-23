@@ -19,8 +19,8 @@ A Realm's official banlist and the Realm Hub Database are related but separate:
 - The **Realm Hub Database** stores shared records created through Realm Hub reporting and review.
 - A **Realm banlist** controls access to one specific Minecraft Realm.
 - **External providers** own and maintain their independent records.
-- **Custom GitHub lists** are preview sources and are not automatically enforced.
+- **Custom GitHub lists** can be previewed, saved to an account, and separately assigned to a Realm for enforcement. Saving alone does not ban anyone.
 
-Reports and appeals submitted through Realm Bot affect only Realm Hub records. They do not modify ARAS / Realms+, custom GitHub lists, or another provider's database.
+Reports and appeals submitted through Realm Bot affect only Realm Hub records, not a publisher's GitHub list or another external database.
 
 Use [Banlist Commands](<../Commands/Banlist/index.md>) to inspect official Realm blocklists. Use [`/realm ban`](<../Commands/Realm/ban.md>) and [`/realm unban`](<../Commands/Realm/unban.md>) to change a Realm's official blocklist.

@@ -9,9 +9,7 @@ authors:
 
 # Permissions
 
-The **Permissions** page allows you to control exactly which **Discord roles** can use Realm Bot’s commands. Permissions are applied at the **role level**, meaning every member with that role inherits the configured access immediately.
-
-This is the recommended way to prevent accidental misuse of high-impact commands (e.g., bans, realm code changes, world actions) while still allowing staff to perform routine moderation.
+Assign Realm Bot commands to Discord roles under **Permissions**.
 
 ![Role Permissions Overview](/images/server-permissions-roles.png)
 
@@ -19,11 +17,7 @@ This is the recommended way to prevent accidental misuse of high-impact commands
 
 ## How the Permission System Works
 
-Realm Bot permissions are:
-
-- **Role-based**: permissions are assigned to Discord roles, not individual users
-- **Granular**: you can allow or deny access to specific command groups and actions
-- **Immediate**: changes apply as soon as you save them, affecting all members with that role
+Grant individual actions or command groups. Changes apply immediately to every member with the selected role.
 
 Discord members with the **Administrator** permission bypass Realm Bot's custom role map. Other Discord permissions, such as Manage Server, do not automatically grant every Realm Bot command.
 
@@ -42,9 +36,7 @@ Realm Bot role settings do not replace careful Discord channel permission config
 ## Managing Role Permissions
 
 ### 1) Select a Role
-In **Manage Role Permissions**, locate the role you want to configure. You can use the search bar if you have many roles.
-
-Each role card shows whether it currently has Realm Bot permissions assigned.
+Find the role in **Manage Role Permissions**. Search by role name if needed.
 
 ### 2) Edit the Role
 Select the edit icon on the role card to open that role’s permission configuration.
@@ -78,8 +70,6 @@ These permissions do not exempt a staff member's Minecraft account from Lockdown
 ---
 
 ## Recommended Role Model (Best Practice)
-
-A clean permission structure reduces mistakes and keeps accountability clear. A typical setup looks like this:
 
 ### Owner / Head Admin
 Grant full permissions, including:
@@ -132,7 +122,6 @@ Minimal access:
 ## Operational Tips
 
 - Keep permission sets **as small as possible** per role.
-- Use roles, not individuals, to prevent “one-off exceptions” that are forgotten later.
 - Review your permissions after staff changes or major server restructuring.
 - If you use automated onboarding roles, ensure new members do **not** inherit staff permissions accidentally.
 

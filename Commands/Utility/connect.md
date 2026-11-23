@@ -13,9 +13,15 @@ authors:
 
 Connects the current Discord server to the invoking member's linked Microsoft/Xbox account and refreshes the Realms available through that account.
 
+> **Warning:** Check the Discord server and linked Xbox account first. If a returned Realm is associated with another server, connecting moves its association, disables its Realm Bot modules and clears their configurations. It does not copy the settings or transfer Minecraft ownership.
+
 ## Syntax
 
-`/connect`
+`/connect [referral_code]`
+
+If you were referred, enter the code from your referrer. The code is optional; see [Referrals](../../Tools/referrals.md) for eligibility.
+
+**Dashboard alternative:** In onboarding, select **Connect Realms** after linking Microsoft, or use **Server Overview > Connect Realms** on a server with no connected Realms. The same migration warning applies.
 
 ## Requirements
 
@@ -37,17 +43,7 @@ Realm Bot:
 
 Ensure each Realm has usable access or invite information, commonly a permanent official code where the configured workflow requires one.
 
-## Migration Warning
-
-> **Warning:** Connecting a Realm that is already associated with another Discord server can move that Realm's stored association to the new server and reset its Realm Module configuration. There is no separate migration confirmation.
-
-Before running `/connect`:
-
-- Confirm the intended Discord server and Microsoft/Xbox account.
-- Record important module destinations and settings.
-- Check whether the same Realms are already managed from another server.
-
-Command registration can take a short time after the connection response.
+Command registration can take a short time after the response. If the Realm list cannot be refreshed, check the linked Xbox account, the Bedrock Realm and its permanent invite code. Relink the account if the refresh continues to fail.
 
 ## Related Commands
 

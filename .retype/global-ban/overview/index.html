@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.846158336675">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.848714876486">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -38,11 +38,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../favicon.ico" />
-    <link href="../../resources/css/retype.css?v=4.6.0.846158336675" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.6.0.848714876486" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.846158336675" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.848714876486" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.846158336675" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.848714876486" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -181,7 +181,8 @@
 <h2 id="quick-links">Quick Links</h2>
 <retype-table copy-text="| Feature | Site path |
 |---|---|
-| Browse public records | `/global-bans` |
+| Browse public records | `/ban-list` |
+| Manage your saved lists | `/ban-list/lists` |
 | Report a player | `/ban-list/report` |
 | View your reports | `/ban-list/reports` |
 | Reporting help | `/help/database-reports` |
@@ -198,7 +199,11 @@
 <tbody>
 <tr>
 <td>Browse public records</td>
-<td><code translate="no" v-pre>/global-bans</code></td>
+<td><code translate="no" v-pre>/ban-list</code></td>
+</tr>
+<tr>
+<td>Manage your saved lists</td>
+<td><code translate="no" v-pre>/ban-list/lists</code></td>
 </tr>
 <tr>
 <td>Report a player</td>
@@ -230,8 +235,7 @@
 |---|---|
 | Realm Hub Database | Shared moderation records maintained through Realm Hub reporting and review |
 | Realm banlist | Players currently banned from one specific Realm, including local and applied Global Ban entries |
-| ARAS / Realms+ | An independent public provider whose records Realm Hub cannot change |
-| Custom GitHub lists | Third-party lists that can be previewed in the Ban List Explorer but are not automatically enforced |">
+| Custom GitHub lists | Publisher-maintained lists you can preview and save. Enforcement requires a separate assignment and protection settings on the target Realm. |">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -250,18 +254,14 @@
 <td>Players currently banned from one specific Realm, including local and applied Global Ban entries</td>
 </tr>
 <tr>
-<td>ARAS / Realms+</td>
-<td>An independent public provider whose records Realm Hub cannot change</td>
-</tr>
-<tr>
 <td>Custom GitHub lists</td>
-<td>Third-party lists that can be previewed in the Ban List Explorer but are not automatically enforced</td>
+<td>Publisher-maintained lists you can preview and save. Enforcement requires a separate assignment and protection settings on the target Realm.</td>
 </tr>
 </tbody>
 </table>
 </div>
 </retype-table>
-<p>Reports submitted through Realm Bot affect only the Realm Hub Database. They do not modify ARAS / Realms+, custom GitHub lists, or another external database.</p>
+<p>Reports submitted through Realm Bot affect only the Realm Hub Database. They do not modify a third-party source.</p>
 <h2 id="moderation-lifecycle">Moderation Lifecycle</h2>
 <ol>
 <li>A player submits a report through the website or <code translate="no" v-pre>/db report</code>.</li>
@@ -334,7 +334,7 @@
             <div class="card-compact-header">
                 <span class="card-compact-title">Ban List Explorer</span>
             </div>
-            <p class="card-compact-description">Search, filter, inspect, and export supported public Realm Hub and external-provider ban records.</p>
+            <p class="card-compact-description">Browse public moderation records, preview a GitHub ban list, and save a source to your account.</p>
         </div>
     </a>
 </div>
@@ -344,7 +344,7 @@
             <div class="card-compact-header">
                 <span class="card-compact-title">Custom Ban List Format</span>
             </div>
-            <p class="card-compact-description">Prepare a public GitHub JSON ban list for preview in Realm Bot's Ban List Explorer.</p>
+            <p class="card-compact-description">Prepare and validate a public GitHub JSON source for previewing, saving, and optional Realm protection.</p>
         </div>
     </a>
 </div>

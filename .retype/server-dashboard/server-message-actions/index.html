@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.846158336675">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.848714876486">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -44,11 +44,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../favicon.ico" />
-    <link href="../../resources/css/retype.css?v=4.6.0.846158336675" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.6.0.848714876486" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.846158336675" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.848714876486" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.846158336675" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.848714876486" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -183,7 +183,7 @@
 </div>
 
 <div id="retype-page-description" class="description-display text-description font-description leading-description mb-description-margin-bottom mt-description-margin-top tracking-description text-transform-description">Configure the automated moderation messages sent to players when actions are taken, using variables to keep messages consistent, informative, and compliant.</div>
-<p>The <strong>Message Actions</strong> page allows you to configure the messages Realm Bot sends when moderation actions are performed. These messages help players understand what happened, why it happened, and what to do next-while keeping your enforcement consistent across staff.</p>
+<p>Choose which Xbox messages Realm Bot sends to players after a kick, ban, unban or warning.</p>
 <figure class="content-center">
     <img src="../../images/server-message-actions-explanation.png" alt="Message Actions Notice and Variables" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="1465" height="589" />
     <figcaption class="caption">Message Actions Notice and Variables</figcaption>
@@ -205,14 +205,13 @@
 <li>Customise the message text</li>
 <li>Insert variables so the message automatically adapts to each case</li>
 </ol>
-<p>When enabled, Realm Bot will send the configured message to the affected player when the corresponding action occurs.</p>
 <figure class="content-center">
     <img src="../../images/server-message-actions-messages.png" alt="Message Templates (Kick / Ban / Unban / Warn)" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="1431" height="944" />
     <figcaption class="caption">Message Templates (Kick / Ban / Unban / Warn)</figcaption>
 </figure>
 <hr>
 <h2 id="available-variables">Available Variables</h2>
-<p>You can insert variables at the cursor position to dynamically populate details:</p>
+<p>Insert a variable where you want its value to appear:</p>
 <ul>
 <li><code translate="no" v-pre>{user}</code> - the staff member or account that performed the action</li>
 <li><code translate="no" v-pre>{target}</code> - the player who received the action</li>
@@ -226,41 +225,43 @@
 </blockquote>
 <hr>
 <h2 id="message-types">Message Types</h2>
-<h3 id="kick-message">Kick Message</h3>
-<p>Sent when a player is <strong>kicked</strong>.</p>
-<p>Recommended content:</p>
-<ul>
-<li>What occurred (kick)</li>
-<li>Reason</li>
-<li>Next step (rejoin allowed unless otherwise stated)</li>
-</ul>
-<h3 id="ban-message">Ban Message</h3>
-<p>Sent when a player is <strong>banned</strong>.</p>
-<p>Recommended content:</p>
-<ul>
-<li>What occurred (ban)</li>
-<li>Reason</li>
-<li>Duration (if temporary)</li>
-<li>Appeal path (if you support appeals)</li>
-</ul>
-<h3 id="unban-message">Unban Message</h3>
-<p>Sent when a player is <strong>unbanned</strong>.</p>
-<p>Recommended content:</p>
-<ul>
-<li>Confirmation of unban</li>
-<li>Reminder of rules/expectations</li>
-</ul>
-<h3 id="warn-message">Warn Message</h3>
-<p>Sent when a player receives a <strong>warning</strong>.</p>
-<p>Recommended content:</p>
-<ul>
-<li>Warning reason</li>
-<li>Behaviour expected going forward</li>
-<li>Escalation note (optional, avoid threats)</li>
-</ul>
+<retype-table copy-text="| Message | What to include |
+|---|---|
+| **Kick** | The reason and whether the player can rejoin. |
+| **Ban** | The reason, duration if temporary, and where to appeal. |
+| **Unban** | Confirmation that the ban has been removed and any conditions for rejoining. |
+| **Warn** | The behaviour to change and the consequence of another warning. |">
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Message</th>
+<th>What to include</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Kick</strong></td>
+<td>The reason and whether the player can rejoin.</td>
+</tr>
+<tr>
+<td><strong>Ban</strong></td>
+<td>The reason, duration if temporary, and where to appeal.</td>
+</tr>
+<tr>
+<td><strong>Unban</strong></td>
+<td>Confirmation that the ban has been removed and any conditions for rejoining.</td>
+</tr>
+<tr>
+<td><strong>Warn</strong></td>
+<td>The behaviour to change and the consequence of another warning.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</retype-table>
 <hr>
 <h2 id="suggested-templates-copypaste">Suggested Templates (Copy/Paste)</h2>
-<p>These templates are intentionally short, neutral, and procedural.</p>
 <h3 id="kick">Kick</h3>
 <p><code translate="no" v-pre>{target}, you were removed from {realm}. Reason: {reason}. You may rejoin if you follow the rules.</code></p>
 <h3 id="kick-1">Kick</h3>
@@ -301,6 +302,21 @@
 <li>Avoid extra spaces inside braces (e.g., <code translate="no" v-pre>{ reason }</code>).</li>
 </ul>
 <hr>
+<div id="retype-backlinks">
+    <h2>See also</h2>
+<div class="card-compact-group">
+<div class="card-compact-container">
+    <a href="/server-dashboard/overview/" class="group card-compact no-link">
+        <div class="card-compact-body">
+            <div class="card-compact-header">
+                <span class="card-compact-title">Server Dashboard</span>
+            </div>
+            <p class="card-compact-description">Understand the Server Dashboard overview, including Premium status, linked account details, connected Realms, and where to configure server-wide settings.</p>
+        </div>
+    </a>
+</div>
+</div>
+</div>
 
                 
                 <!-- Required only on API pages -->

@@ -21,7 +21,9 @@ To appeal, all of the following must be true:
 - The affected Microsoft/Xbox account is linked to your Realm Bot account.
 - No other active appeal exists for the same case.
 
-ARAS / Realms+ and custom GitHub list records cannot be appealed through Realm Hub.
+External records, including saved GitHub list entries, cannot be appealed through Realm Hub.
+
+Open your dashboard account menu and select **My Appeals** to go to `/appeal` and check your appeals.
 
 ## Submit an Appeal
 
@@ -103,7 +105,7 @@ Refresh the page, complete a new security check, and submit again.
 
 ### An external record is incorrect
 
-Contact the provider that owns the record. Realm Hub cannot process appeals for ARAS / Realms+ or a custom GitHub list.
+Contact the publisher that owns the record. Saving a custom list or enabling it on a Realm does not make its records eligible for a Realm Hub appeal.
 
 ## Related Pages
 

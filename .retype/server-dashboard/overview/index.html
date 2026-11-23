@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.846158336675">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.848714876486">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -44,11 +44,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../favicon.ico" />
-    <link href="../../resources/css/retype.css?v=4.6.0.846158336675" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.6.0.848714876486" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.846158336675" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.848714876486" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.846158336675" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.848714876486" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -183,107 +183,57 @@
 </div>
 
 <div id="retype-page-description" class="description-display text-description font-description leading-description mb-description-margin-bottom mt-description-margin-top tracking-description text-transform-description">Understand the Server Dashboard overview, including Premium status, linked account details, connected Realms, and where to configure server-wide settings.</div>
-<p>The <strong>Server Dashboard</strong> is the central control panel for your Discord server within Realm Bot. It provides:</p>
-<ul>
-<li>A high-level overview of your server’s current status (including Premium state)</li>
-<li>Confirmation of which Discord and Xbox accounts are linked</li>
-<li>A list of connected Realms with quick “View” access</li>
-<li>A structured navigation sidebar for all server-wide configuration pages</li>
-</ul>
+<p>Open your Discord server&#x27;s <strong>Overview</strong> to check Premium status, verify the linked accounts, or select a connected Realm.</p>
 <figure class="content-center">
     <img src="../../images/server-dashboard-overview.png" alt="Server Dashboard Overview" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="1496" height="1033" />
     <figcaption class="caption">Server Dashboard Overview</figcaption>
 </figure>
 <hr>
-<h2 id="what-the-server-dashboard-is-for">What the Server Dashboard is for</h2>
-<p>Use the Server Dashboard to:</p>
-<ul>
-<li>Confirm the server is connected and configured correctly</li>
-<li>Verify the <strong>correct linked accounts</strong> are being used for management and Realm access</li>
-<li>Navigate to <strong>server-wide settings</strong> (logging, permissions, command configuration)</li>
-<li>Jump into <strong>Realm-specific dashboards</strong> from the Connected Realms list</li>
-</ul>
-<p>This page is intended as an <strong>at-a-glance operational overview</strong>, while the sidebar contains the detailed configuration pages.</p>
-<hr>
 <h2 id="premium-status">Premium Status</h2>
-<p>The top section shows your server identity and Premium indicator (when applicable), alongside a <strong>Premium Status</strong> progress bar and remaining time.</p>
-<p>Typical uses:</p>
-<ul>
-<li>Confirm Premium is active before configuring Premium-only modules</li>
-<li>Validate remaining subscription time for operational planning</li>
-</ul>
-<blockquote>
-<p><strong>Note:</strong> Some features and modules may only function when Premium is active for the server.</p>
-</blockquote>
+<p><strong>Premium Status</strong> shows whether Premium is active and how much time remains.</p>
 <hr>
 <h2 id="bot-server-profile">Bot Server Profile</h2>
-<p>The <strong>Bot Server Profile</strong> card appears below the server information and above Linked User Information in dashboard versions that include this feature. With active Premium, it lets you customise Realm Bot&#x27;s avatar and nickname for this Discord server.</p>
-<p>Profile edits require <strong>Save Changes</strong>. See <a href="../bot-server-profile/">Bot Server Profile</a> for supported images, nickname limits, and reset controls.</p>
+<p>With Premium, use <strong>Bot Server Profile</strong> to change Realm Bot&#x27;s avatar and nickname for this Discord server.</p>
+<p>See <a href="../bot-server-profile/">Bot Server Profile</a> for supported images, nickname limits, and reset controls.</p>
+<hr>
+<h2 id="bot-updates--announcements">Bot Updates &amp; Announcements</h2>
+<p>Choose a Discord channel to receive official Realm Bot announcements. See <a href="../server-setup/#updates-channel">Updates Channel</a> for subscribing, changing the destination or stopping delivery.</p>
 <hr>
 <h2 id="linked-user-information">Linked User Information</h2>
-<p>The <strong>Linked User Information</strong> section confirms the identities attached to this server configuration.</p>
-<p>It typically includes:</p>
-<h3 id="discord-account">Discord Account</h3>
+<p>Check the Discord username and Xbox gamertag. The Xbox account identifier (XUID) may also be shown.</p>
 <ul>
-<li>The Discord profile currently linked to the server dashboard context</li>
-<li>Username and handle (as displayed on Discord)</li>
-</ul>
-<h3 id="xbox-account">Xbox Account</h3>
-<ul>
-<li>The Xbox gamertag currently linked for Realm access</li>
-<li>An identifier such as <strong>XUID</strong> (Xbox User ID), where shown</li>
-</ul>
-<p>This section is important for troubleshooting:</p>
-<ul>
-<li>Missing Realms often indicates the <strong>wrong Microsoft/Xbox account</strong> is linked.</li>
+<li>If a Realm is missing, check that the correct Microsoft/Xbox account is linked.</li>
 <li>Unexpected permissions or access issues can be caused by linking a non-owner account.</li>
 </ul>
 <hr>
 <h2 id="connected-realms">Connected Realms</h2>
-<p>The <strong>Connected Realms</strong> panel displays all Realms detected/connected under your linked Xbox account(s). Each Realm card typically includes:</p>
-<ul>
-<li>Realm name and sub-label (if applicable)</li>
-<li>A <strong>View</strong> button to open that Realm’s dashboard pages</li>
-</ul>
-<p>This is the fastest way to switch between Realms without searching through menus.</p>
-<p>Operational guidance:</p>
-<ul>
-<li>Keep Realm naming consistent so staff can identify the correct Realm quickly.</li>
-<li>If a Realm is missing, verify account linking and permissions first.</li>
-</ul>
+<p>Select <strong>View</strong> beside the Realm you want to manage.</p>
 <hr>
 <h2 id="navigation-sidebar">Navigation Sidebar</h2>
-<p>The left sidebar is the entry point to all Server Dashboard pages and is divided into clear sections.</p>
 <figure class="content-center">
     <img src="../../images/server-dashboard-list.png" alt="Server Dashboard Navigation List" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="222" height="641" />
     <figcaption class="caption">Server Dashboard Navigation List</figcaption>
 </figure>
 <h3 id="overview">Overview</h3>
 <ul>
-<li><strong>Overview</strong> - the page you are currently viewing</li>
-<li><strong>Server Setup</strong> - guided or consolidated setup tooling (where available)</li>
+<li><a href="../server-setup/">Server Setup</a> - configure logging, role permissions, warning presets and account linking.</li>
 </ul>
 <h3 id="manage">Manage</h3>
-<p>Server-wide configuration pages used for daily operations:</p>
 <ul>
-<li><strong>Log Channels</strong> - choose where operational logs are posted</li>
-<li><strong>Account Linking</strong> - manage Discord/Microsoft linking state and related flows</li>
-<li><strong>Message Actions</strong> - configure automated message behaviours (where supported)</li>
-<li><strong>Warn Settings</strong> - configure warning/discipline behaviour and thresholds (where supported)</li>
-<li><strong>Command Settings</strong> - control how commands display information</li>
-<li><strong>Permissions</strong> - define who can access server features and dashboards</li>
-<li><strong>Allowlist</strong> - restrict access to approved users/roles (where applicable)</li>
-<li><strong>Moderation Logs</strong> - review moderation actions and administrative activity</li>
-<li><strong>Invite Links</strong> - create and manage controlled Realm invitation links</li>
+<li><a href="../server-logs/">Log Channels</a> - choose Discord destinations for moderation logs.</li>
+<li><a href="../server-account-linking/">Account Linking</a> - assign roles or invite verified members to a Realm.</li>
+<li><a href="../server-message-actions/">Message Actions</a> - customise the messages players receive after moderation actions.</li>
+<li><a href="../server-warnings/">Warn Settings</a> - set warning reasons and ban thresholds.</li>
+<li><a href="../server-command-settings/">Command Settings</a> - choose how much player information appears in Discord.</li>
+<li><a href="../server-permissions/">Permissions</a> - assign commands to staff roles.</li>
+<li><a href="../server-allowlist/">Allowlist</a> - exempt trusted players from automated checks.</li>
+<li><a href="../server-mod-logs/">Moderation Logs</a> - review past actions by player or action type.</li>
+<li><a href="../server-invites/">Invite Links</a> - create and manage Realm invitations.</li>
 </ul>
 <h3 id="realms">Realms</h3>
 <p>A list of all connected Realms is shown at the bottom. Selecting a Realm expands its available Realm pages and configuration areas.</p>
-<blockquote>
-<p><strong>Best Practice:</strong> Treat server-wide settings (permissions, allowlist, command controls) as your security foundation before enabling high-impact modules on individual Realms.</p>
-</blockquote>
 <hr>
 <h2 id="recommended-setup-order">Recommended Setup Order</h2>
-<p>For a clean, secure deployment:</p>
 <ol>
 <li>Confirm Premium status (if applicable)</li>
 <li>Verify <strong>Linked User Information</strong> (correct Discord + Xbox account)</li>

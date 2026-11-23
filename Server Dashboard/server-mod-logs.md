@@ -9,26 +9,9 @@ authors:
 
 # Moderation Logs
 
-The **Moderation Logs** page provides an auditable record of moderation actions taken across your connected realms. It is designed for transparency, staff accountability, and quick investigation of repeat offenders.
+Use **Moderation Logs** to review bans, kicks, warnings and reversals across your connected Realms.
 
 ![Moderation Logs](/images/server-mod-logs.png)
-
----
-
-## What You Can Do Here
-
-### Track actions across realms
-Moderation Logs consolidate actions taken through Realm Bot, including:
-- bans
-- kicks
-- warnings (if enabled in your configuration)
-- unbans and other reversal actions (where applicable)
-
-Each event is stored with enough context to understand:
-- **what happened**
-- **who performed the action**
-- **when it happened**
-- **which realm the action applied to**
 
 ---
 
@@ -49,34 +32,21 @@ By default, Moderation Logs use a **timeline view** that groups actions by user.
   - reason text (if provided)
   - realm the action was applied to
 
-> **Tip:** Timeline view is ideal when you are investigating a player’s pattern of behaviour.
-
 ---
 
 ## Search & Filtering
 
 ### Search
-Use the **Search** bar to locate a player quickly. This is the fastest way to:
-- find a specific user
-- confirm whether prior action has been taken
-- review previous reasons and outcomes
+Search for a player to review their previous actions and reasons.
 
 ### Action Filter
-Use the **All Actions** dropdown to filter by action type. This is useful for:
-- reviewing bans issued over a time period
-- auditing kick usage by staff
-- isolating warning activity if your server uses it heavily
+Select a type in **All Actions** to show only bans, kicks, warnings or reversals.
 
 ---
 
 ## Table View
 
-You can switch to **Table View** to see a more structured, list-based layout.
-
-Table View is useful when you need:
-- a quick scan of recent actions
-- a clean view for moderation review sessions
-- faster comparisons across multiple users/actions
+Use **Table View** to compare recent actions across players rather than opening each player's timeline.
 
 ---
 

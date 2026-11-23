@@ -22,7 +22,7 @@ Records a warning-removal event for a Minecraft player. It preserves moderation 
 
 ## Current Limitation
 
-> **Current limitation:** The command does not necessarily deactivate or delete the original warning in the current implementation. It may therefore leave threshold totals unchanged.
+> **Important:** A removal event may leave the original warning active and the player's threshold total unchanged.
 
 After recording a removal, use [`/warn lookup`](lookup.md) and verify the player's warning totals before relying on the change. Select one Realm explicitly to avoid unintended all-Realm scope.
 

@@ -9,17 +9,10 @@ authors:
 
 # Scoreboard Leaderboards
 
-Scoreboard Leaderboards allow you to display a live leaderboard for an in-game **Minecraft scoreboard objective** directly inside a Discord channel. This enables communities to track progress, promote competition, and keep key statistics visible without requiring players to join the Realm to view rankings.
-
-Leaderboards are rendered as Discord embeds and can be configured per scoreboard, per channel.
+Publish the rankings for a Minecraft scoreboard objective in a Discord channel. Each leaderboard has its own objective and destination.
 
 ## How it Works
 
-Scoreboard Leaderboards operate by reading a selected scoreboard objective from your Realm and publishing the results to Discord.
-
-In practice:
-- You select a **Discord channel** where the leaderboard will be posted.
-- You choose the **Minecraft scoreboard** (objective) you want to display.
 - Realm Bot retrieves scoreboard values approximately **once per minute** and updates the embed.
 - You can configure up to **10 leaderboards**, each showing up to **10 entries**.
 - Realm Bot edits the existing Discord message where possible and recreates it if that message is no longer available.
@@ -28,15 +21,10 @@ In practice:
 
 ## Requirements
 
-Scoreboard Leaderboards require:
-
 - The **Relay Account** to be actively **in-game**.
 - The **Realm Bot GameTest Pack** installed and current.
-- **Beta APIs** enabled for the Realm.
 - An active Realm Bot Premium subscription.
 - At least one valid in-game **scoreboard objective** to display.
-
-If any requirement is missing (Relay Account offline, pack disabled, or scoreboard not present), leaderboard updates may fail or show no data.
 
 ## How to Set Up
 
@@ -52,8 +40,6 @@ If any requirement is missing (Relay Account offline, pack disabled, or scoreboa
     - **Embed Title** - the label shown at the top of the embed.
     - **Embed Colour** - the accent colour used for the embed.
 6. Save the leaderboard configuration.
-
-Once created, the leaderboard will begin updating in the selected channel when the Relay Account is online and the GameTest Pack is active.
 
 Realm Bot requires **View Channel**, **Send Messages**, **Embed Links**, and **Read Message History** in each destination channel.
 
@@ -76,7 +62,6 @@ Operational recommendations:
 - Confirm the selected scoreboard objective exists in-game and contains values.
 - Ensure the Relay Account is online in the Realm.
 - Verify the Realm Bot GameTest Pack is installed and current.
-- Confirm Beta APIs are enabled.
 
 ### The leaderboard is not posting to Discord
 - Confirm the bot has permission to **View Channel**, **Send Messages**, **Embed Links**, and **Read Message History** in the selected channel.
@@ -85,7 +70,7 @@ Operational recommendations:
 ### The scoreboard name is not appearing in the dropdown
 - The scoreboard objective may not be created in-game yet, or the environment may not be detectable if the required pack/account is offline.
 - Create or validate the scoreboard in-game, then refresh the dashboard and try again.
-- Confirm the Relay Account joined after the GameTest Pack and Beta APIs were enabled.
+- Confirm the Relay Account is connected and the GameTest bridge is responding.
 
 ## Best Practices
 

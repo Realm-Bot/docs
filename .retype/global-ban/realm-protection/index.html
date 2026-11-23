@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.846158336675">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.848714876486">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -38,11 +38,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../favicon.ico" />
-    <link href="../../resources/css/retype.css?v=4.6.0.846158336675" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.6.0.848714876486" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.846158336675" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.848714876486" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.846158336675" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.848714876486" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -178,21 +178,13 @@
 
 <div id="retype-page-description" class="description-display text-description font-description leading-description mb-description-margin-bottom mt-description-margin-top tracking-description text-transform-description">Configure which active Realm Hub Global Ban categories Realm Bot applies to a connected Realm.</div>
 <p>Global Ban protection lets a Realm owner apply active Realm Hub records to a connected Minecraft Realm. Each Realm keeps its own protection setting and category selection.</p>
-<h2 id="default-state">Default State</h2>
-<p>Protection is enabled by default when a connected Realm has no previously saved Global Ban setting.</p>
-<p>The dashboard distinguishes:</p>
-<ul>
-<li><strong>Enabled by default</strong> - no custom setting has been saved and default protection is active.</li>
-<li><strong>Enabled</strong> - the owner has explicitly enabled protection.</li>
-<li><strong>Disabled</strong> - the owner has explicitly disabled protection.</li>
-<li><strong>Temporarily unavailable</strong> - the current protection state could not be loaded.</li>
-</ul>
-<p>If the state is temporarily unavailable, refresh and try again later. Do not assume the setting changed.</p>
+<h2 id="default-state-of-the-realm-hub-database">Default State of the Realm Hub Database</h2>
+<p>Realm Hub protection is on by default. <strong>Enabled</strong> or <strong>Disabled</strong> means the owner has explicitly set a preference. If the dashboard shows <strong>Temporarily unavailable</strong>, refresh later rather than assuming protection has changed.</p>
 <h2 id="configure-protection">Configure Protection</h2>
 <ol>
 <li>Sign in to the Realm Bot dashboard with Discord.</li>
 <li>Select the Discord server containing the connected Realm.</li>
-<li>If no Realm is connected, link the required Microsoft account and run <code translate="no" v-pre>/connect</code> in the Discord server.</li>
+<li>If no Realm is connected, follow <a href="../../setup/">Getting Started</a> and review the migration warning before connecting.</li>
 <li>Select the Realm.</li>
 <li>Open <strong>Tools</strong>, followed by <strong>Banlist</strong>.</li>
 <li>Find the <strong>Global Ban Database</strong> card.</li>
@@ -260,9 +252,17 @@
 </retype-table>
 <p>Use <strong>Enable All</strong> to select every category or <strong>Disable All</strong> to clear every category.</p>
 <blockquote>
-<p><strong>Important:</strong> Leaving the main switch enabled while disabling every category results in no Global Ban records being enforced.</p>
+<p><strong>Important:</strong> Leaving the Realm Hub Database switch enabled while disabling every category means no records from that database are enforced. Check custom source assignments separately.</p>
 </blockquote>
-<h2 id="how-enforcement-works">How Enforcement Works</h2>
+<h2 id="assign-a-saved-list">Assign a Saved List</h2>
+<ol>
+<li><a href="../ban-list-explorer/#save-to-my-ban-lists">Preview and save the GitHub source</a>. Check the publisher, records and last successful refresh before using it to decide who may join.</li>
+<li>As a manager, open the Discord server&#x27;s <strong>Realm &gt; Tools &gt; Ban List</strong> for the intended Realm and select <strong>Add Ban List</strong>.</li>
+<li>Choose your saved source. Select the categories to enforce and whether to include uncategorised records.</li>
+<li>Enable protection for that source on the intended Realm.</li>
+</ol>
+<p>A Realm supports up to <strong>10 enabled custom lists</strong>, and a user can have up to <strong>100 active assignments</strong>. Removing a list from <strong>My Ban Lists</strong> queues cleanup for its assignments. Do not assume immediate unbans; check the native banlist. This does not remove a different account&#x27;s saved copy or change the publisher&#x27;s file.</p>
+<h2 id="how-realm-hub-enforcement-works">How Realm Hub Enforcement Works</h2>
 <p>When protection is active, Realm Bot compares active Realm Hub records with the categories enabled for that Realm. Matching records are applied through the Realm&#x27;s native ban system.</p>
 <p>Processing is asynchronous. The dashboard can show entries under <strong>In progress</strong> while Realm operations are being applied.</p>
 <p>The Banlist page provides:</p>
@@ -283,7 +283,6 @@
 <ul>
 <li>Refresh the page and try again later.</li>
 <li>Confirm the correct Discord server and Realm are selected.</li>
-<li>Leave the existing configuration unchanged until its saved state can be loaded.</li>
 </ul>
 <h3 id="a-global-ban-is-not-appearing">A Global Ban is not appearing</h3>
 <ul>
@@ -296,7 +295,7 @@
 <li>Verify the Realm&#x27;s native banlist after processing completes.</li>
 </ul>
 <h3 id="a-ban-remains-after-protection-is-disabled">A ban remains after protection is disabled</h3>
-<p>This is expected. Disabling protection does not remove existing native Realm bans. Review the record and remove the Realm ban separately only when appropriate.</p>
+<p>Disabling protection stops new bans; it does not remove existing ones. Review the record before removing a native ban.</p>
 <h3 id="an-entry-remains-in-progress">An entry remains in progress</h3>
 <ul>
 <li>Allow time for asynchronous processing.</li>
@@ -330,7 +329,7 @@
             <div class="card-compact-header">
                 <span class="card-compact-title">Ban List Explorer</span>
             </div>
-            <p class="card-compact-description">Search, filter, inspect, and export supported public Realm Hub and external-provider ban records.</p>
+            <p class="card-compact-description">Browse public moderation records, preview a GitHub ban list, and save a source to your account.</p>
         </div>
     </a>
 </div>
@@ -340,7 +339,7 @@
             <div class="card-compact-header">
                 <span class="card-compact-title">Custom Ban List Format</span>
             </div>
-            <p class="card-compact-description">Prepare a public GitHub JSON ban list for preview in Realm Bot's Ban List Explorer.</p>
+            <p class="card-compact-description">Prepare and validate a public GitHub JSON source for previewing, saving, and optional Realm protection.</p>
         </div>
     </a>
 </div>

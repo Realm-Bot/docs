@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.846158336675">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.848714876486">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -12,7 +12,7 @@
     <!-- Primary Meta Tags -->
     <title>Bot Server Profile | Realm Bot Docs</title>
     <meta name="title" content="Bot Server Profile | Realm Bot Docs">
-    <meta name="description" content="Customise Realm Bot's avatar and nickname for one Discord server, with preview, save, and reset controls.">
+    <meta name="description" content="Change or reset Realm Bot's avatar and nickname for one Discord server.">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://help.realmbot.dev/server-dashboard/bot-server-profile/">
@@ -22,7 +22,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://help.realmbot.dev/server-dashboard/bot-server-profile/">
     <meta property="og:title" content="Bot Server Profile | Realm Bot Docs">
-    <meta property="og:description" content="Customise Realm Bot's avatar and nickname for one Discord server, with preview, save, and reset controls.">
+    <meta property="og:description" content="Change or reset Realm Bot's avatar and nickname for one Discord server.">
     <meta property="og:site_name" content="Realm Bot">
     <meta property="og:locale" content="en_US">
 
@@ -30,7 +30,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://help.realmbot.dev/server-dashboard/bot-server-profile/">
     <meta name="twitter:title" content="Bot Server Profile | Realm Bot Docs">
-    <meta name="twitter:description" content="Customise Realm Bot's avatar and nickname for one Discord server, with preview, save, and reset controls.">
+    <meta name="twitter:description" content="Change or reset Realm Bot's avatar and nickname for one Discord server.">
 
     <!-- Alternate Markdown -->
     <link rel="alternate" type="text/markdown" href="https://help.realmbot.dev/server-dashboard/bot-server-profile.md">
@@ -38,11 +38,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../favicon.ico" />
-    <link href="../../resources/css/retype.css?v=4.6.0.846158336675" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.6.0.848714876486" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.846158336675" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.848714876486" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.846158336675" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.848714876486" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -176,7 +176,7 @@
     </div>
 </div>
 
-<div id="retype-page-description" class="description-display text-description font-description leading-description mb-description-margin-bottom mt-description-margin-top tracking-description text-transform-description">Customise Realm Bot's avatar and nickname for one Discord server, with preview, save, and reset controls.</div>
+<div id="retype-page-description" class="description-display text-description font-description leading-description mb-description-margin-bottom mt-description-margin-top tracking-description text-transform-description">Change or reset Realm Bot's avatar and nickname for one Discord server.</div>
 <p>Bot Server Profile lets you give Realm Bot a <strong>custom avatar and nickname</strong> in one Discord server. Use it to match your community&#x27;s branding while keeping the bot&#x27;s appearance in other servers independent.</p>
 <p>This is a <strong>Realm Bot Premium</strong> feature. It is configured from the server&#x27;s <strong>Overview</strong> page and applies to the Discord server as a whole, rather than an individual Minecraft Realm.</p>
 <hr>
@@ -187,7 +187,6 @@
 <li>Active Premium recognised through the server&#x27;s linked account.</li>
 <li>The bot&#x27;s <strong>Change Nickname</strong> permission when changing its nickname.</li>
 </ul>
-<p>Without active Premium, the card shows an upgrade notice and disables customisation. Saving changes and resetting the profile both require Premium.</p>
 <hr>
 <h2 id="open-the-profile-settings">Open the Profile Settings</h2>
 <ol>
@@ -204,12 +203,10 @@
 <li>Select <strong>Save Changes</strong> to apply it.</li>
 </ol>
 <p>Supported formats are <strong>PNG</strong>, <strong>JPEG/JPG</strong>, and <strong>WebP</strong>, with a maximum file size of <strong>10 MB</strong>. GIF uploads are rejected; animated GIF avatars are not supported by this control.</p>
-<p>Selecting a file prepares the change but does not apply it to Discord. Check the success message after saving.</p>
 <hr>
 <h2 id="change-the-nickname">Change the Nickname</h2>
 <p>Enter the desired name in <strong>Server Nickname</strong>, then select <strong>Save Changes</strong>. The field supports up to <strong>32 characters</strong> and includes a character counter.</p>
 <p>Clearing the field and saving restores the default bot name. The avatar and nickname can be changed together or independently.</p>
-<p><strong>Cancel</strong> discards pending edits. Unlike Realm Stories and Security settings, this card requires an explicit <strong>Save Changes</strong> action; it does not save edits automatically.</p>
 <hr>
 <h2 id="reset-the-profile">Reset the Profile</h2>
 <retype-table copy-text="| Control | Effect | How to apply it |
@@ -246,7 +243,6 @@
 </table>
 </div>
 </retype-table>
-<p><strong>Confirm Reset</strong> submits the full reset directly. It does not require a second save action. Successful changes display a confirmation message.</p>
 <hr>
 <h2 id="scope-and-limits">Scope and Limits</h2>
 <p>The feature changes Realm Bot&#x27;s member avatar and nickname in the selected Discord server. It does not change:</p>
@@ -286,7 +282,7 @@
 </ul>
 <h3 id="changes-are-visible-in-the-preview-but-not-in-discord">Changes are visible in the preview but not in Discord</h3>
 <ul>
-<li>Select <strong>Save Changes</strong> and check for a success message or error.</li>
+<li>Select <strong>Save Changes</strong>.</li>
 <li>Confirm you are viewing the bot&#x27;s member profile in the same Discord server.</li>
 <li>For nickname changes, verify the bot has <strong>Change Nickname</strong> permission.</li>
 <li>If Discord reports a rate limit, wait before retrying.</li>

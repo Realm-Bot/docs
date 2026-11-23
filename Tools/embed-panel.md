@@ -9,20 +9,7 @@ authors:
 
 # Embed Panel
 
-Embed Panel creates a persistent Discord embed for Realm information, links, and carefully selected Realm actions. The dashboard provides a live preview before the panel is sent.
-
-This feature is presented as part of Realm Bot Premium.
-
-## Capabilities
-
-- Configure the embed title, description, colour, and presentation.
-- Send the panel to a selected Discord channel.
-- Save the panel configuration for later editing.
-- Update or replace the previously sent panel.
-- Delete the active panel.
-- Add up to **five buttons**.
-- Use link buttons for trusted external destinations.
-- Use action buttons to execute a configured command through the connected Realm.
+Use **Embed Panel** to publish a Discord message with Realm information, links or in-game action buttons. Preview the message in the dashboard before posting it.
 
 ## Security Model
 
@@ -45,7 +32,7 @@ Link-only panels do not require an active in-game command path after the message
 ## Create a Panel
 
 1. Open **Tools** and select **Embed Panel** for the intended Realm.
-2. Configure the embed content and review the live preview.
+2. Set the embed title, description and colour, then check the preview.
 3. Add no more than five buttons.
 4. For each button, choose either a trusted URL or a safe Realm command.
 5. Select the Discord destination.

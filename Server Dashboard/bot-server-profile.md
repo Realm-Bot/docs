@@ -1,6 +1,6 @@
 ---
 label: Bot Server Profile
-description: Customise Realm Bot's avatar and nickname for one Discord server, with preview, save, and reset controls.
+description: Change or reset Realm Bot's avatar and nickname for one Discord server.
 order: 89
 authors:
   - name: Frazer
@@ -22,8 +22,6 @@ This is a **Realm Bot Premium** feature. It is configured from the server's **Ov
 - Active Premium recognised through the server's linked account.
 - The bot's **Change Nickname** permission when changing its nickname.
 
-Without active Premium, the card shows an upgrade notice and disables customisation. Saving changes and resetting the profile both require Premium.
-
 ---
 
 ## Open the Profile Settings
@@ -44,8 +42,6 @@ The card shows the current profile and a preview of pending edits. If the initia
 
 Supported formats are **PNG**, **JPEG/JPG**, and **WebP**, with a maximum file size of **10 MB**. GIF uploads are rejected; animated GIF avatars are not supported by this control.
 
-Selecting a file prepares the change but does not apply it to Discord. Check the success message after saving.
-
 ---
 
 ## Change the Nickname
@@ -53,8 +49,6 @@ Selecting a file prepares the change but does not apply it to Discord. Check the
 Enter the desired name in **Server Nickname**, then select **Save Changes**. The field supports up to **32 characters** and includes a character counter.
 
 Clearing the field and saving restores the default bot name. The avatar and nickname can be changed together or independently.
-
-**Cancel** discards pending edits. Unlike Realm Stories and Security settings, this card requires an explicit **Save Changes** action; it does not save edits automatically.
 
 ---
 
@@ -65,8 +59,6 @@ Clearing the field and saving restores the default bot name. The avatar and nick
 | **Reset** beside the avatar | Prepare a return to the default avatar | Select **Save Changes** |
 | Clear **Server Nickname** | Prepare a return to the default bot name | Select **Save Changes** |
 | **Reset to Default** in the card header | Reset both the avatar and nickname | Select **Confirm Reset** in the confirmation dialog |
-
-**Confirm Reset** submits the full reset directly. It does not require a second save action. Successful changes display a confirmation message.
 
 ---
 
@@ -114,7 +106,7 @@ Do not rely on Premium expiry to restore the default profile. Active Premium is 
 
 ### Changes are visible in the preview but not in Discord
 
-- Select **Save Changes** and check for a success message or error.
+- Select **Save Changes**.
 - Confirm you are viewing the bot's member profile in the same Discord server.
 - For nickname changes, verify the bot has **Change Nickname** permission.
 - If Discord reports a rate limit, wait before retrying.

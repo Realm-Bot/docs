@@ -12,7 +12,7 @@ Tebex is a webstore and monetisation platform used by Minecraft communities to s
 - The Tebex module enabled for the correct Realm
 - A Relay Account connected to and present in the Realm
 - Sufficient in-game permission for each delivery command
-- The GameTest Pack and Beta APIs only when a product uses an empty-inventory-slot condition
+- A working GameTest Pack when a product uses an empty-inventory-slot condition
 
 > **Security Notice:** Keep the Secret Key private. Rotate it immediately if it is exposed.
 
@@ -59,7 +59,7 @@ Tebex commands can use the following player placeholders:
 
 Use the placeholder expected by the command and test it with a controlled purchase. Products may also include a delivery delay.
 
-An **empty inventory slots** condition uses the GameTest Pack to inspect the player's inventory before delivery. Enable Beta APIs and keep the pack current before relying on this condition.
+An **empty inventory slots** condition uses the GameTest Pack to inspect the player's inventory before delivery. Check the bridge is current and responding before relying on this condition.
 
 ## Operational Guidance
 
@@ -84,7 +84,7 @@ An **empty inventory slots** condition uses the GameTest Pack to inspect the pla
 - Confirm the Relay Account is online and has sufficient command privileges.
 - Confirm the configured command uses a supported placeholder and valid syntax.
 - Check the delivery-log channel and Tebex queue.
-- If empty-slot validation is used, confirm the GameTest Pack is current and Beta APIs are enabled.
+- If empty-slot validation is used, confirm the GameTest Pack is current and responding.
 
 ### The wrong player is targeted
 

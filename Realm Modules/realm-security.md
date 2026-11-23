@@ -25,8 +25,6 @@ Open **Automod > Security** for the selected Realm in the dashboard. Lockdown an
 
 Realm Bot needs **View Channel**, **Send Messages**, and **Embed Links** in the Watchlist destination. If you select a **Ping Role**, Discord must also permit Realm Bot to mention that role.
 
-Changes on both dashboard tabs save automatically after approximately **1.5 seconds** without further edits. Check the header for pending changes, saving progress, or an error with a **Retry** option.
-
 For shared connection guidance, see [Relay Account and GameTest Dependencies](relay-account-and-gametest.md).
 
 ---
@@ -43,7 +41,6 @@ Lockdown kicks do **not** create permanent bans or close the Realm.
 2. Enable **Lockdown Configuration**.
 3. Choose whether to **Allow Operators**.
 4. Add any approved players to the **Lockdown Exempt List** using their gamertag or XUID.
-5. Confirm the dashboard has saved the settings before activating lockdown.
 
 An **XUID** is a player's Xbox account identifier. The exempt list shows each player, who added them, and the date added. It supports searching and removal, with ten entries displayed per page.
 
@@ -99,7 +96,6 @@ Watchlist is an alerting feature. Adding a player does not ban or remove them, a
 3. Select the **Discord Destination** for alerts.
 4. Optionally select a **Ping Role**.
 5. Add players under **Watched Players** using their gamertag or XUID.
-6. Confirm the dashboard has saved the settings.
 
 Entries are matched using Xbox account identity. The list shows names and XUIDs, supports searching and removal, and displays ten players per page.
 
@@ -163,7 +159,7 @@ Disabling the dashboard configuration preserves the active-lockdown state. Run `
 
 ### Watchlist alerts do not appear
 
-- Confirm Watchlist is enabled, the destination is selected, and the settings saved successfully.
+- Confirm Watchlist is enabled for the intended Realm and the correct Discord channel is selected.
 - Check that the watched entry matches the player's Xbox account and the correct Realm.
 - Confirm the Relay Account was connected when the player joined.
 - Verify Premium and the destination channel permissions.

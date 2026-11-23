@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.846158336675">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.848714876486">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -44,11 +44,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../favicon.ico" />
-    <link href="../../resources/css/retype.css?v=4.6.0.846158336675" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.6.0.848714876486" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.846158336675" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.848714876486" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.846158336675" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.848714876486" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -183,67 +183,27 @@
 </div>
 
 <div id="retype-page-description" class="description-display text-description font-description leading-description mb-description-margin-bottom mt-description-margin-top tracking-description text-transform-description">View essential Realm status, slots, settings, and recent activity from a single dashboard page, with quick access to official Realm management.</div>
-<p>The <strong>Realm Overview</strong> page provides a consolidated summary of your selected Minecraft Bedrock Realm. It is designed to give Realm Owners and staff a fast, reliable view of:</p>
-<ul>
-<li>Current Realm status and membership</li>
-<li>World slot availability and the active world</li>
-<li>Core world and server settings (where available)</li>
-<li>Recent activity indicators for operational awareness</li>
-<li>A direct link to manage the Realm through the official Minecraft services</li>
-</ul>
+<p>Open <strong>Realm Overview</strong> to check whether your Realm is open, which world slot is active and who has played recently.</p>
 <figure class="content-center">
     <img src="../../images/realm-overview.png" alt="Realm Overview Page" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="1294" height="959" />
     <figcaption class="caption">Realm Overview Page</figcaption>
 </figure>
 <hr>
-<h2 id="what-this-page-is-for">What This Page Is For</h2>
-<p>Use this page to quickly confirm that:</p>
-<ul>
-<li>You are managing the <strong>correct Realm</strong></li>
-<li>The Realm is currently <strong>open/online</strong> (status shown in the summary)</li>
-<li>Your <strong>member count</strong>, <strong>world slots</strong>, and <strong>active slot</strong> look as expected</li>
-<li>Key settings such as <strong>game mode</strong>, <strong>difficulty</strong>, and <strong>PvP</strong> align with your intended configuration</li>
-</ul>
-<p>This page is intended as an <strong>at-a-glance operational panel</strong>, not a replacement for deeper module configuration.</p>
-<hr>
 <h2 id="realm-summary-card">Realm Summary Card</h2>
-<p>At the top of the page, the Realm summary card shows high-level identifiers and metadata, typically including:</p>
+<p>Use the Realm name and identifier to confirm which Realm you are managing. The card also shows:</p>
 <ul>
-<li><strong>Realm Name</strong> (and internal identifier, where applicable)</li>
 <li><strong>Realm description</strong> (if set)</li>
 <li><strong>Member count</strong> (total members associated with the Realm)</li>
 <li><strong>Time remaining</strong> on the subscription period (if available)</li>
 <li><strong>Creation date</strong> (Realm creation timestamp)</li>
 </ul>
 <h3 id="manage-on-minecraft">Manage on Minecraft</h3>
-<p>The <strong>Manage on Minecraft.Net</strong> button redirects you to the official Realm management portal. This is useful for changes that must be performed through the official interface (for example, subscription or platform-side management tasks).</p>
-<blockquote>
-<p><strong>Note:</strong> Some Realm settings are only editable through official Minecraft management tools. Realm Bot surfaces information, but not all changes can be applied through the dashboard.</p>
-</blockquote>
+<p>Select <strong>Manage on Minecraft.Net</strong> for subscription management and settings available only through Minecraft.</p>
 <hr>
 <h2 id="quick-status-cards">Quick Status Cards</h2>
-<p>Directly beneath the summary card, you will see quick status tiles. These are designed for rapid verification during operations:</p>
-<ul>
-<li>
-<p><strong>Realm Status</strong><br />
-Indicates whether the Realm is currently open/available.</p>
-</li>
-<li>
-<p><strong>Total Members</strong><br />
-Displays the current number of members associated with the Realm.</p>
-</li>
-<li>
-<p><strong>World Slots</strong><br />
-Shows how many world slots are available for the Realm (Realms commonly support multiple slots).</p>
-</li>
-<li>
-<p><strong>Active Slot</strong><br />
-Identifies which world slot is currently active (the world presently being used by the Realm).</p>
-</li>
-</ul>
+<p>Check whether the Realm is open, its total membership, the number of world slots and which slot is active. <strong>Total Members</strong> counts members, not players currently online.</p>
 <hr>
 <h2 id="active-world-information">Active World Information</h2>
-<p>The <strong>Active World Information</strong> section provides a structured readout of settings for the currently active world. Typical fields include:</p>
 <h3 id="world-settings">World Settings</h3>
 <ul>
 <li><strong>World Name</strong></li>
@@ -261,13 +221,7 @@ Identifies which world slot is currently active (the world presently being used 
 </blockquote>
 <hr>
 <h2 id="recent-activity">Recent Activity</h2>
-<p>The <strong>Recent Activity</strong> panel highlights recent participation signals to help staff quickly assess whether the Realm has been active. This can include:</p>
-<ul>
-<li>Account name (for example, a relay or service account)</li>
-<li>Time played or session duration (where available)</li>
-<li>Recency indicator (e.g., “2h ago”)</li>
-</ul>
-<p>This is primarily intended for operational context—especially when coordinating staff coverage, investigating incidents, or confirming that your relay account has been online recently.</p>
+<p>Recent Activity shows account names, session duration when available, and how recently the player was active. For session history, open <a href="../realm-activity/">Realm Activity</a>.</p>
 <hr>
 <h2 id="troubleshooting-and-notes">Troubleshooting and Notes</h2>
 <h3 id="the-page-is-missing-data-or-looks-incomplete">The page is missing data or looks incomplete</h3>
@@ -288,9 +242,10 @@ Identifies which world slot is currently active (the world presently being used 
 </ul>
 <hr>
 <h2 id="related-pages">Related Pages</h2>
-<p>If you are setting up or extending your Realm configuration, the following pages are typically the next steps:</p>
 <ul>
-<li><strong>Getting Started</strong> (initial account linking and connection)</li>
+<li><a href="../../setup/">Getting Started</a> (initial account linking and connection)</li>
+<li><a href="../realms-hub/">Realms Hub</a> (Minecraft Realm settings, members and Admin Logs)</li>
+<li><a href="../server-performance/">Server Performance</a> (live metrics and recent history for Minecraft Realms Pro)</li>
 <li><strong>Bot Join Settings</strong> (how the Relay Account joins)</li>
 <li><strong>Gametest Pack Management</strong> (required for certain advanced features)</li>
 <li><a href="../../realm-modules/overview/">Realm Modules</a> (Chat Relay, Realm Console, Bot Detection, Member Gate, Realm Security, Skin Filtering, Leveling, Scoreboards, Live Playerlist, Vanity URL)</li>
@@ -315,10 +270,10 @@ Identifies which world slot is currently active (the world presently being used 
                     </div>
             
                     <div class="w-1/2">
-                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../realm-page/realm-activity/">
+                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../realm-page/server-performance/">
                             <span>
                                 <span class="block text-xs font-normal text-right text-base-text-muted">Next</span>
-                                <span class="block mt-1">Realm Activity</span>
+                                <span class="block mt-1">Server Performance</span>
                             </span>
                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                         </a>

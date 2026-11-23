@@ -29,9 +29,7 @@ The command links to:
 
 `https://dashboard.realmbot.dev/leaderboard/<server_id>/`
 
-It does not render leaderboard entries directly in Discord.
-
-This is the Leveling/playtime web leaderboard. It is separate from the [Scoreboard Leaderboards](<../../Realm Modules/scoreboard-leaderboards.md>) Realm Module, which publishes Minecraft scoreboard values to Discord.
+For Minecraft scoreboard values posted directly in Discord, use [Scoreboard Leaderboards](<../../Realm Modules/scoreboard-leaderboards.md>) instead.
 
 ## Related Commands
 

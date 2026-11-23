@@ -1,12 +1,12 @@
 # Chat Relay
 
-Chat Relay is a **two-way communication bridge** between your **Minecraft Bedrock Realm chat** and a selected **Discord channel**. It is designed to keep staff and community members aligned in real time, reducing platform switching, improving response time, and providing better visibility during incidents and events.
+Chat Relay connects Minecraft Bedrock Realm chat with Discord. Players can send messages in either direction.
 
 ---
 
 ## What Chat Relay Relays
 
-Chat Relay can relay multiple categories of activity from Minecraft to Discord, depending on your configuration:
+Choose which Realm events to send to Discord:
 
 - **Player Chat Messages** - standard messages sent by players in Realm chat
 - **Tellraw Messages** - command-generated formatted outputs (announcements, scripted events, systems output)
@@ -50,13 +50,11 @@ The Chat Relay output toggle does not independently govern Leveling XP. The **Le
 
 ## Requirements
 
-To use Chat Relay reliably, ensure the following are in place:
-
 - A Realm connected to Realm Bot via the authorised account-linking flow
 - An active Realm Bot Premium subscription
 - A Relay Account connected to and present in the Realm
 - A Discord destination channel for each enabled message category
-- The Realm Bot GameTest Pack and Beta APIs when relaying player emotes
+- A working Realm Bot GameTest Pack when relaying player emotes
 
 Chat Relay may temporarily stop during Realm disconnections or Microsoft/Xbox authentication failures. See [Relay Account and GameTest Dependencies](relay-account-and-gametest.md) for dependency guidance.
 
@@ -69,7 +67,7 @@ Chat Relay may temporarily stop during Realm disconnections or Microsoft/Xbox au
 
 2. Enable **Chat Relay** using the main toggle.
 
-3. Set a **Discord Destination** for each message category you enable. Categories can share a channel or use separate channels.
+3. Set a **Discord Destination** for each message category you enable. **Set all channels** fills the individual destinations with the same channel; you can still choose separate channels.
 
 4. Under **Message Types**, enable the categories you want relayed:
    - Player Chat Messages
@@ -82,21 +80,37 @@ Chat Relay may temporarily stop during Realm disconnections or Microsoft/Xbox au
 
 6. Select a **Fun Mode** only if you want player-chat presentation altered.
 
-Once enabled, relay output begins when relevant events occur and the Relay Account connection is healthy.
+---
+
+## Tellraw Translations
+
+Use **Chat Relay > Customizations > Tellraw Message Customizations** for the selected Realm to change how Tellraw translation keys appear **in Discord**. This does not translate ordinary chat or change a player's game language. Chat Relay must be operational, with **Tellraw Messages** enabled and a Discord destination selected.
+
+- **Add translation:** Enter the key used by the Minecraft message and the text to display in Discord. For example, the language-file entry `myrealm.welcome=Welcome back, %s!` only affects messages that use `myrealm.welcome`.
+- **Import file:** Select a `.lang`, `.mcpack` or `.zip` file. For a pack, select one of its `texts/*.lang` files, then choose **Import language**. The languages available depend on the pack.
+
+Manual entries override imports, and custom entries override bundled English. Removing an override restores the next available translation. If the top-level key is unknown, Discord displays its identifier.
+
+| Limit | Maximum |
+|---|---:|
+| Upload | 10 MiB |
+| Language files per pack | 100 |
+| Selected extracted file | 5,242,880 characters |
+| Dictionary entries | 50,000 |
+| Key / value | 512 / 16,000 characters |
+
+If an entry is rejected, check for a duplicate manual key. If another session saved changes first, reload the dictionary before editing again.
 
 ---
 
 ## Anti-Spam Configuration
 
-Chat Relay includes an **Anti-Spam** system for player chat. It is designed to reduce relay flooding during high activity or abuse attempts.
-
-The anti-spam controls apply a simple threshold rule:
+Set two values to limit repeated player chat:
 
 - **Message Threshold** - the maximum number of messages allowed before the system triggers
 - **Window (seconds)** - the time window used to count messages
 
-Example logic:
-- If **Threshold = 10** and **Window = 10 seconds**, then more than 10 relay events within 10 seconds will trigger the anti-spam behaviour for that window.
+For example, a threshold of **10** and a window of **10 seconds** allow ten messages within that window. An eleventh exceeds the threshold.
 
 When the threshold is exceeded, the affected player is removed from the Realm and the action is logged. Players on the Realm Bot allowlist are exempt from this anti-spam action.
 
@@ -123,24 +137,11 @@ Use **Normal** for moderation or archival channels where preserving the original
 
 ## Player Emotes
 
-When **Player Emotes** are enabled, Chat Relay will relay emotes performed by players in-game to the Discord destination channel.
-
-Emote relaying requires the **Realm Bot GameTest Pack**, **Beta APIs**, and a connected Relay Account. Other Chat Relay message categories do not all share this dependency.
-
-This is useful for:
-- giving staff a clearer picture of in-game interaction (especially social spaces)
-- improving community "presence" in Discord without joining in-game
-- reinforcing activity awareness during events
-
-Recommendations:
-- Enable Emotes only if your relay channel is community-facing or if staff explicitly want behavioural context
-- Disable Emotes in staff-only operational channels where signal-to-noise is critical
+Enable **Player Emotes** to send in-game emotes to Discord. Unlike ordinary player chat, emotes require the **Realm Bot GameTest Pack** as well as a connected Relay Account.
 
 ---
 
 ## Recommended Configuration
-
-For a clean, professional relay channel that remains usable during peak activity:
 
 - Use a dedicated channel such as `#realm-chat`, `#chat-relay`, or `#realm-live`.
 - Enable only the message types you actually need:
@@ -175,7 +176,7 @@ Check the following in order:
 - A destination channel is selected for the affected message category
 - Realm Bot has View Channel + Send Messages permission
 - The Relay Account is online and connected to the correct Realm
-- For emotes, the GameTest Pack is current and Beta APIs are enabled
+- For emotes, the GameTest bridge is current and responding
 
 ### Relay is too noisy
 

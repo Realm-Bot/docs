@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.846158336675">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.848714876486">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -12,7 +12,7 @@
     <!-- Primary Meta Tags -->
     <title>Ban List Explorer | Realm Bot Docs</title>
     <meta name="title" content="Ban List Explorer | Realm Bot Docs">
-    <meta name="description" content="Search, filter, inspect, and export supported public Realm Hub and external-provider ban records.">
+    <meta name="description" content="Browse public moderation records, preview a GitHub ban list, and save a source to your account.">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://help.realmbot.dev/global-ban/ban-list-explorer/">
@@ -22,7 +22,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://help.realmbot.dev/global-ban/ban-list-explorer/">
     <meta property="og:title" content="Ban List Explorer | Realm Bot Docs">
-    <meta property="og:description" content="Search, filter, inspect, and export supported public Realm Hub and external-provider ban records.">
+    <meta property="og:description" content="Browse public moderation records, preview a GitHub ban list, and save a source to your account.">
     <meta property="og:site_name" content="Realm Bot">
     <meta property="og:locale" content="en_US">
 
@@ -30,7 +30,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://help.realmbot.dev/global-ban/ban-list-explorer/">
     <meta name="twitter:title" content="Ban List Explorer | Realm Bot Docs">
-    <meta name="twitter:description" content="Search, filter, inspect, and export supported public Realm Hub and external-provider ban records.">
+    <meta name="twitter:description" content="Browse public moderation records, preview a GitHub ban list, and save a source to your account.">
 
     <!-- Alternate Markdown -->
     <link rel="alternate" type="text/markdown" href="https://help.realmbot.dev/global-ban/ban-list-explorer.md">
@@ -38,11 +38,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../favicon.ico" />
-    <link href="../../resources/css/retype.css?v=4.6.0.846158336675" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.6.0.848714876486" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.846158336675" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.848714876486" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.846158336675" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.848714876486" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -176,9 +176,9 @@
     </div>
 </div>
 
-<div id="retype-page-description" class="description-display text-description font-description leading-description mb-description-margin-bottom mt-description-margin-top tracking-description text-transform-description">Search, filter, inspect, and export supported public Realm Hub and external-provider ban records.</div>
-<p>The <strong>Ban List Explorer</strong> provides a public view of supported moderation sources. It can display native Realm Hub records, supported external-provider records, and compatible custom GitHub lists.</p>
-<p>Open <code translate="no" v-pre>/global-bans</code> to access the Explorer.</p>
+<div id="retype-page-description" class="description-display text-description font-description leading-description mb-description-margin-bottom mt-description-margin-top tracking-description text-transform-description">Browse public moderation records, preview a GitHub ban list, and save a source to your account.</div>
+<p>Use the <strong>Ban List Explorer</strong> to review public Realm Hub records or inspect a custom GitHub list before deciding whether to use it on your Realm.</p>
+<p>Open <code translate="no" v-pre>/ban-list</code> on the Realm Bot website to access the Explorer. Public sources appear only when enabled and configured for public display.</p>
 <h2 id="explorer-capabilities">Explorer Capabilities</h2>
 <p>Depending on the selected source, the Explorer can:</p>
 <ul>
@@ -187,7 +187,7 @@
 <li>Filter supported records by status, duration, appeal state, or ban type.</li>
 <li>Sort records when the selected source provides sortable dates.</li>
 <li>Open detailed Realm Hub case pages.</li>
-<li>Open supported external-provider record pages.</li>
+<li>View source details for entries in saved lists.</li>
 <li>Export the currently displayed page where supported.</li>
 </ul>
 <p>Not every provider supplies every field. The Explorer shows only the filters, columns, links, and export fields supported by the selected source.</p>
@@ -195,8 +195,7 @@
 <retype-table copy-text="| Source | Ownership and behaviour |
 |---|---|
 | Realm Hub Database | Native reviewed records managed through Realm Hub reporting, review, publication, and appeals |
-| ARAS / Realms+ | Independent public records owned by the external provider |
-| Custom GitHub lists | Publisher-managed JSON records loaded for preview without import or automatic enforcement |">
+| Custom GitHub lists | Publisher-managed JSON records available to preview. Signed-in users can save a source to their account. |">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -211,18 +210,13 @@
 <td>Native reviewed records managed through Realm Hub reporting, review, publication, and appeals</td>
 </tr>
 <tr>
-<td>ARAS / Realms+</td>
-<td>Independent public records owned by the external provider</td>
-</tr>
-<tr>
 <td>Custom GitHub lists</td>
-<td>Publisher-managed JSON records loaded for preview without import or automatic enforcement</td>
+<td>Publisher-managed JSON records available to preview. Signed-in users can save a source to their account.</td>
 </tr>
 </tbody>
 </table>
 </div>
 </retype-table>
-<p>Realm Hub cannot correct, revoke, or appeal an external provider&#x27;s record. Contact the provider that owns the source when an external entry appears incorrect.</p>
 <h2 id="realm-hub-records">Realm Hub Records</h2>
 <p>A public Realm Hub record may display:</p>
 <ul>
@@ -277,7 +271,6 @@
 </table>
 </div>
 </retype-table>
-<p>An appeal does not suspend a record. <strong>Under Appeal</strong> records remain active until an appeal decision revokes them.</p>
 <h2 id="external-records">External Records</h2>
 <p>External sources remain independent from the Realm Hub Database:</p>
 <ul>
@@ -287,16 +280,17 @@
 <li>Their available fields and detail links can differ from native Realm Hub records.</li>
 </ul>
 <h2 id="custom-github-lists">Custom GitHub Lists</h2>
-<p>Custom GitHub lists are public JSON files supplied by third-party publishers. Loading one:</p>
-<ul>
-<li>Creates a temporary Explorer preview.</li>
-<li>Does not import records into the Realm Hub Database.</li>
-<li>Does not approve the publisher as a trusted source.</li>
-<li>Does not automatically enforce bans.</li>
-<li>Does not create Realm operations.</li>
-<li>Does not enable Realm Hub case pages or appeals.</li>
-</ul>
-<p>See <a href="../custom-ban-list-format/">Custom Ban List Format</a> for the complete schema and validation rules.</p>
+<p>Choose <strong>Load</strong> to preview a publisher&#x27;s public JSON file. A preview does not import records, endorse the source, enable appeals or take action on a Realm.</p>
+<p>See <a href="../custom-ban-list-format/">Custom Ban List Format</a> for the schema and validation rules.</p>
+<h2 id="save-to-my-ban-lists">Save to My Ban Lists</h2>
+<ol>
+<li>Sign in and load a public GitHub JSON file. Review the records and their publisher.</li>
+<li>Select <strong>Save to My Ban Lists</strong> after previewing, or use <strong>Load &amp; save</strong> when loading the file. Confirm a name (1 to 100 characters) and an optional description (up to 500 characters).</li>
+<li>Open <strong>My Ban Lists</strong> at <code translate="no" v-pre>/ban-list/lists</code> to check the record count, sync health and last successful refresh. You can save up to <strong>20 lists</strong>.</li>
+</ol>
+<p>Saving keeps a reference to the source URL. Accounts saving the same URL may see the same accepted records, but each manages its own saved entry. The collection is not a public endorsement directory, and saving a source does not make its file or evidence private.</p>
+<p>If the first refresh fails, check the list&#x27;s sync health before adding it again. Sources normally refresh about every <strong>30 minutes</strong>. You can refresh manually once every <strong>five minutes</strong>, up to <strong>ten times per hour</strong>.</p>
+<p><strong>Saving does not ban anyone.</strong> To use a saved source for enforcement, follow <a href="../realm-protection/#assign-a-saved-list">Assign a Saved List</a> for the intended Realm. Removing a saved entry queues cleanup for its assignments; it does not delete another account&#x27;s copy.</p>
 <h2 id="search-and-filter-guidance">Search and Filter Guidance</h2>
 <ul>
 <li>Use the exact 16-digit XUID when gamertag search is ambiguous.</li>
@@ -306,7 +300,7 @@
 <li>Open the record detail page or public evidence before making a moderation decision.</li>
 </ul>
 <h2 id="exporting-records">Exporting Records</h2>
-<p>Where supported, exports contain the fields available on the currently displayed page. An export is not a complete database synchronisation and does not make an external or custom source trusted.</p>
+<p>Where supported, an export includes only the displayed page and fields, not the entire database.</p>
 <p>Review exported data before redistributing it. Public availability does not remove the publisher&#x27;s responsibility to handle evidence and personal information appropriately.</p>
 <h2 id="troubleshooting">Troubleshooting</h2>
 <h3 id="a-known-record-does-not-appear">A known record does not appear</h3>
@@ -319,9 +313,9 @@
 <h3 id="filters-or-columns-are-missing">Filters or columns are missing</h3>
 <p>The selected source may not provide the required fields. Custom-list capabilities depend on the fields present in the loaded JSON file.</p>
 <h3 id="an-external-record-is-incorrect">An external record is incorrect</h3>
-<p>Contact the provider that owns the source. Realm Hub cannot modify ARAS / Realms+ or custom-list records.</p>
+<p>Contact the publisher that owns the source. Realm Hub cannot correct the publisher&#x27;s records.</p>
 <h3 id="a-record-is-under-appeal-but-still-active">A record is under appeal but still active</h3>
-<p>This is expected. An appeal does not pause enforcement while a decision is pending.</p>
+<p>Enforcement continues while an appeal is pending.</p>
 <h2 id="related-pages">Related Pages</h2>
 <ul>
 <li><a href="../overview/">Global Ban Overview</a></li>
@@ -348,7 +342,7 @@
             <div class="card-compact-header">
                 <span class="card-compact-title">Custom Ban List Format</span>
             </div>
-            <p class="card-compact-description">Prepare a public GitHub JSON ban list for preview in Realm Bot's Ban List Explorer.</p>
+            <p class="card-compact-description">Prepare and validate a public GitHub JSON source for previewing, saving, and optional Realm protection.</p>
         </div>
     </a>
 </div>

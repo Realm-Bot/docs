@@ -6,7 +6,8 @@ The **Realm Hub Global Ban Database** is Realm Bot's shared moderation system fo
 
 | Feature | Site path |
 |---|---|
-| Browse public records | `/global-bans` |
+| Browse public records | `/ban-list` |
+| Manage your saved lists | `/ban-list/lists` |
 | Report a player | `/ban-list/report` |
 | View your reports | `/ban-list/reports` |
 | Reporting help | `/help/database-reports` |
@@ -21,10 +22,9 @@ These paths refer to Realm Bot's main website or dashboard, not this documentati
 |---|---|
 | Realm Hub Database | Shared moderation records maintained through Realm Hub reporting and review |
 | Realm banlist | Players currently banned from one specific Realm, including local and applied Global Ban entries |
-| ARAS / Realms+ | An independent public provider whose records Realm Hub cannot change |
-| Custom GitHub lists | Third-party lists that can be previewed in the Ban List Explorer but are not automatically enforced |
+| Custom GitHub lists | Publisher-maintained lists you can preview and save. Enforcement requires a separate assignment and protection settings on the target Realm. |
 
-Reports submitted through Realm Bot affect only the Realm Hub Database. They do not modify ARAS / Realms+, custom GitHub lists, or another external database.
+Reports submitted through Realm Bot affect only the Realm Hub Database. They do not modify a third-party source.
 
 ## Moderation Lifecycle
 

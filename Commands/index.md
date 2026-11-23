@@ -7,7 +7,7 @@ Realm Bot commands are Discord slash commands. Run them in a Discord server chan
 Realm Bot commands use several access models:
 
 - **Public commands** do not require a Realm Bot role permission, although they must still be used in a Discord server.
-- **Connected-server commands** require the Discord server to be connected to a Microsoft/Xbox account through `/connect`.
+- **Connected-server commands** require the Discord server to be associated with a Microsoft/Xbox account. Use either route in [Getting Started](../setup.md).
 - **Premium commands** require an active Realm Bot Premium subscription.
 - **Permission-controlled commands** require the named Realm Bot command permission assigned to one of the member's Discord roles.
 

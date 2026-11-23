@@ -9,7 +9,7 @@ authors:
 
 # Command Troubleshooting
 
-Use this page for failures shared by several Realm Bot commands. Command-specific limitations remain documented on the relevant command page.
+Start with the symptom below. For errors specific to one command, use its command reference.
 
 ## The Command Cannot Be Used Here
 
@@ -22,7 +22,7 @@ Confirm Realm Bot has the required Discord channel permissions, usually **View C
 Most Realm, player, moderation, and activity commands require a connected server.
 
 1. Confirm the intended Microsoft/Xbox account is linked in the Realm Bot Dashboard.
-2. Ask a Discord Administrator to run `/connect`.
+2. Check whether the Realms are already associated with a different Discord server before connecting. Follow [Getting Started](../setup.md) for the migration warning and both connection routes.
 3. Confirm the expected Realms appear in the dashboard.
 
 If the wrong account is connected, use the documented disconnect process carefully before reconnecting the correct account.

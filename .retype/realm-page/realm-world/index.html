@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.846158336675">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.848714876486">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -12,7 +12,7 @@
     <!-- Primary Meta Tags -->
     <title>World Management | Realm Bot Docs</title>
     <meta name="title" content="World Management | Realm Bot Docs">
-    <meta name="description" content="Manage your Realm’s active world slot, download backups, replace worlds, and control Behaviour/Resource packs (including upload, enable/disable, and pack priority).">
+    <meta name="description" content="Manage world slots, backups, world replacement, packs, and gamerules for your Bedrock Realm.">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://help.realmbot.dev/realm-page/realm-world/">
@@ -22,7 +22,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://help.realmbot.dev/realm-page/realm-world/">
     <meta property="og:title" content="World Management | Realm Bot Docs">
-    <meta property="og:description" content="Manage your Realm’s active world slot, download backups, replace worlds, and control Behaviour/Resource packs (including upload, enable/disable, and pack priority).">
+    <meta property="og:description" content="Manage world slots, backups, world replacement, packs, and gamerules for your Bedrock Realm.">
     <meta property="og:image" content="https://help.realmbot.dev/images/world-management.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -34,7 +34,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://help.realmbot.dev/realm-page/realm-world/">
     <meta name="twitter:title" content="World Management | Realm Bot Docs">
-    <meta name="twitter:description" content="Manage your Realm’s active world slot, download backups, replace worlds, and control Behaviour/Resource packs (including upload, enable/disable, and pack priority).">
+    <meta name="twitter:description" content="Manage world slots, backups, world replacement, packs, and gamerules for your Bedrock Realm.">
     <meta name="twitter:image" content="https://help.realmbot.dev/images/world-management.png">
     <meta name="twitter:image:alt" content="World Management | Realm Bot Docs">
 
@@ -44,11 +44,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../favicon.ico" />
-    <link href="../../resources/css/retype.css?v=4.6.0.846158336675" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.6.0.848714876486" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.846158336675" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.848714876486" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.846158336675" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.848714876486" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -182,13 +182,14 @@
     </div>
 </div>
 
-<div id="retype-page-description" class="description-display text-description font-description leading-description mb-description-margin-bottom mt-description-margin-top tracking-description text-transform-description">Manage your Realm’s active world slot, download backups, replace worlds, and control Behaviour/Resource packs (including upload, enable/disable, and pack priority).</div>
-<p>The <strong>World Management</strong> area lets you manage the files and configuration tied to your Realm’s worlds. It is divided into four sections:</p>
+<div id="retype-page-description" class="description-display text-description font-description leading-description mb-description-margin-bottom mt-description-margin-top tracking-description text-transform-description">Manage world slots, backups, world replacement, packs, and gamerules for your Bedrock Realm.</div>
+<p>Use <strong>World Management</strong> in the Realm manager to work with world files, packs and settings:</p>
 <ol>
 <li><strong>World Slot</strong> - choose which of your Realm’s world slots you are managing</li>
 <li><strong>World</strong> - download a backup and replace the active world file</li>
 <li><strong>Behaviour Packs</strong> - upload and manage behaviour packs for the active world</li>
 <li><strong>Resource Packs</strong> - upload and manage resource packs for the active world</li>
+<li><strong>Gamerules</strong> - view and edit the rules returned for the active world</li>
 </ol>
 <figure class="content-center">
     <img src="../../images/world-management.png" alt="World Management Sections" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="295" height="263" />
@@ -199,21 +200,15 @@
 </blockquote>
 <hr>
 <h2 id="world-slot">World Slot</h2>
-<p>Realms typically provide multiple world slots. The <strong>World Slot</strong> selector allows you to switch between slots and manage each slot independently.</p>
+<p>Use <strong>World Slot</strong> to select slot <strong>1</strong>, <strong>2</strong> or <strong>3</strong>.</p>
 <figure class="content-center">
     <img src="../../images/world-slot.png" alt="World Slot Selector" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="354" height="242" />
     <figcaption class="caption">World Slot Selector</figcaption>
 </figure>
-<p>Typical usage:</p>
-<ul>
-<li>Select the slot you want to manage (e.g., Slot 1, Slot 2, Slot 3).</li>
-<li>Confirm the slot name and game mode (e.g., Survival, Adventure) before making changes.</li>
-</ul>
-<p>Realm slots are numbered <strong>1 through 3</strong>. Every upload, replacement, and pack action is scoped to the currently active slot.</p>
+<p>Check the slot name and game mode before replacing a world or changing its packs.</p>
 <p><strong>Best practice:</strong> Treat world slots as separate environments. Keep at least one slot reserved for backups/testing if your workflow allows it.</p>
 <hr>
 <h2 id="world">World</h2>
-<p>The <strong>World</strong> section is used for backups and world replacement on the active slot.</p>
 <figure class="content-center">
     <img src="../../images/world-page.png" alt="World Page" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="1449" height="785" />
     <figcaption class="caption">World Page</figcaption>
@@ -243,7 +238,7 @@
 </ul>
 <hr>
 <h2 id="behaviour-packs">Behaviour Packs</h2>
-<p>Behaviour Packs change gameplay logic and behaviour (systems, mechanics, rulesets, entities, etc.). This page lets you upload packs and control which are active on the current world slot.</p>
+<p>Behaviour packs change gameplay, such as entity behaviour and game mechanics.</p>
 <figure class="content-center">
     <img src="../../images/behaviour-pack-tracker.png" alt="Behaviour Pack Tracker" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="1491" height="926" />
     <figcaption class="caption">Behaviour Pack Tracker</figcaption>
@@ -254,25 +249,10 @@
 <li>Maximum upload size: <strong>25 MB</strong> on Free plans or <strong>50 MB</strong> with Premium</li>
 <li>Drag-and-drop is supported, or click to upload.</li>
 </ul>
-<h3 id="enabled-vs-disabled-packs">Enabled vs Disabled Packs</h3>
-<p>Behaviour Packs are organised into:</p>
-<ul>
-<li><strong>Enabled Behaviour Packs</strong> - active on the world</li>
-<li><strong>Disabled Behaviour Packs</strong> - available but not currently active</li>
-</ul>
-<h3 id="pack-priority-order">Pack Priority (Order)</h3>
-<p>The Enabled list supports reordering:</p>
-<ul>
-<li><strong>Drag packs to reorder</strong></li>
-<li>Packs <strong>higher</strong> in the list have <strong>higher priority</strong></li>
-</ul>
-<p>This matters when multiple packs modify overlapping content.</p>
+<h3 id="pack-priority">Pack Priority</h3>
+<p>Drag packs in the <strong>Enabled Behaviour Packs</strong> list to reorder them. When packs change the same content, the higher pack takes priority.</p>
 <h3 id="management-actions">Management Actions</h3>
-<p>Depending on the pack entry controls, you can typically:</p>
-<ul>
-<li>remove/disable a pack from the enabled list</li>
-<li>delete a pack entry (where provided)</li>
-</ul>
+<p>Disable a pack to stop using it on the world, or use the delete action to remove its entry where available.</p>
 <p><strong>Best practice:</strong></p>
 <ul>
 <li>Introduce packs one at a time and test after each change.</li>
@@ -281,7 +261,7 @@
 </ul>
 <hr>
 <h2 id="resource-packs">Resource Packs</h2>
-<p>Resource Packs affect presentation (textures, sounds, UI resources, and client-side assets). The Resource Packs page mirrors the Behaviour Packs workflow.</p>
+<p>Resource packs change textures, sounds and other client-side assets.</p>
 <figure class="content-center">
     <img src="../../images/resource-pack-tracker.png" alt="Resource Pack Tracker" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="1464" height="873" />
     <figcaption class="caption">Resource Pack Tracker</figcaption>
@@ -292,18 +272,52 @@
 <li>Maximum upload size: <strong>25 MB</strong> on Free plans or <strong>50 MB</strong> with Premium</li>
 <li>Drag-and-drop is supported, or click to upload.</li>
 </ul>
-<h3 id="enabled-vs-disabled-packs-1">Enabled vs Disabled Packs</h3>
-<p>Resource Packs are organised into:</p>
-<ul>
-<li><strong>Enabled Resource Packs</strong></li>
-<li><strong>Disabled Resource Packs</strong></li>
-</ul>
-<p>If no packs exist, you may see empty state messaging prompting you to enable packs from the disabled section.</p>
-<p><strong>Best practice:</strong></p>
-<ul>
-<li>Use resource packs cautiously if you require consistent visual parity across players.</li>
-<li>If you enforce custom visuals, ensure your world/server settings align with your intended “texture pack required” behaviour.</li>
-</ul>
+<p>Enable the pack for the world after uploading it. If all players must use it, check the world&#x27;s <strong>Texture pack required</strong> setting.</p>
+<hr>
+<h2 id="gamerules">Gamerules</h2>
+<p>Open <strong>World Management &gt; Gamerules</strong> and check the world name and <strong>active slot</strong>. You can view the rules with a linked, authorised Xbox account; editing requires game-settings permission.</p>
+<p>The editor displays rules supplied by Minecraft; it does not add missing rules or assume default values. Switches cover settings such as PvP, damage, daylight and weather cycles, mob behaviour, inventory, drops and command feedback. Unknown rules, unsupported values and player waypoints are read-only.</p>
+<retype-table copy-text="| Numeric rule | Accepted range |
+|---|---:|
+| Random tick speed | 0 to 4,096 |
+| Spawn radius | 0 to 128 |
+| Sleeping percentage | 0 to 100 |
+| Function command limit | 0 to 10,000 |
+| Command chain length | 0 to 2,147,483,647 |">
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Numeric rule</th>
+<th style="text-align: right;">Accepted range</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Random tick speed</td>
+<td style="text-align: right;">0 to 4,096</td>
+</tr>
+<tr>
+<td>Spawn radius</td>
+<td style="text-align: right;">0 to 128</td>
+</tr>
+<tr>
+<td>Sleeping percentage</td>
+<td style="text-align: right;">0 to 100</td>
+</tr>
+<tr>
+<td>Function command limit</td>
+<td style="text-align: right;">0 to 10,000</td>
+</tr>
+<tr>
+<td>Command chain length</td>
+<td style="text-align: right;">0 to 2,147,483,647</td>
+</tr>
+</tbody>
+</table>
+</div>
+</retype-table>
+<p>Select <strong>Save changes</strong>. If the active slot changed, discard the draft rather than applying it to another world. If another manager edited a rule, a restart is pending or confirmation timed out, refresh and check the current values before retrying. Some changes may already have applied.</p>
 <hr>
 <h2 id="safety-and-operational-notes">Safety and Operational Notes</h2>
 <ul>
@@ -317,6 +331,22 @@
 </ul>
 </li>
 </ul>
+<div id="retype-backlinks">
+    <h2>See also</h2>
+<div class="card-compact-group">
+<div class="card-compact-container">
+    <a href="/" class="group card-compact no-link">
+        <div class="card-compact-body">
+            <div class="card-compact-header">
+                <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M11.03 2.59a1.501 1.501 0 0 1 1.94 0l7.5 6.363a1.5 1.5 0 0 1 .53 1.144V19.5a1.5 1.5 0 0 1-1.5 1.5h-5.75a.75.75 0 0 1-.75-.75V14h-2v6.25a.75.75 0 0 1-.75.75H4.5A1.5 1.5 0 0 1 3 19.5v-9.403c0-.44.194-.859.53-1.144ZM12 3.734l-7.5 6.363V19.5h5v-6.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v6.25h5v-9.403Z"/></svg></span>
+                <span class="card-compact-title">Welcome to Realm Bot Documentation</span>
+            </div>
+            <p class="card-compact-description">Official Realm Bot documentation for managing Minecraft Bedrock Realms through Discord-setup guides, modules, security tools, and integrations.</p>
+        </div>
+    </a>
+</div>
+</div>
+</div>
 
                 
                 <!-- Required only on API pages -->
@@ -326,11 +356,11 @@
             
                 <nav id="retype-nextprev" class="print:hidden flex mt-14">
                     <div class="w-1/2">
-                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../realm-page/realm-activity/">
+                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../realm-page/scheduled-restart/">
                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                             <span>
                                 <span class="block text-xs font-normal text-base-text-muted">Previous</span>
-                                <span class="block mt-1">Realm Activity</span>
+                                <span class="block mt-1">Scheduled Restart</span>
                             </span>
                         </a>
                     </div>

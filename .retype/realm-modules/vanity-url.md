@@ -1,10 +1,8 @@
 # Vanity URL
 
-A **Vanity URL** is a custom, professional invite link that directs players to your Realm through Realm Bot’s invite flow. Instead of sharing a long or frequently-rotated invite link, you can advertise a stable, recognisable URL such as:
+A **Vanity URL** gives players a stable address for your Realm's invite page, for example:
 
 `realmbot.link/misty-spruce`
-
-Vanity URLs are intended for long-term advertising and are especially useful for public communities that need a consistent, trustworthy entry point.
 
 ![Vanity URL Configuration](/images/realms-vanity-link.png)
 
@@ -31,8 +29,6 @@ Vanity URLs use the same protection approach as Realm Bot’s Invite Links syste
 
 - **Bot Mitigation:** Reduces repeated abuse from automated bot accounts attempting to join via public links.
 - **VPN / Hosting / Tor Blocking:** Prevents users from bypassing bans or masking identity through VPNs, proxies, hosting providers, or Tor (where enabled).
-
-These protections are intended to reduce common invite abuse patterns that occur when official Realm links are shared publicly.
 
 > **Important:** No invite system can guarantee complete prevention. Security features reduce risk and disruption, but outcomes depend on platform constraints and how your Realm is configured.
 

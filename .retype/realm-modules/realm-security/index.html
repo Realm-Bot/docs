@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.846158336675">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.848714876486">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -38,11 +38,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../favicon.ico" />
-    <link href="../../resources/css/retype.css?v=4.6.0.846158336675" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.6.0.848714876486" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.846158336675" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.848714876486" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.846158336675" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.848714876486" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -189,7 +189,6 @@
 <li>A configured Discord destination for Watchlist alerts.</li>
 </ul>
 <p>Realm Bot needs <strong>View Channel</strong>, <strong>Send Messages</strong>, and <strong>Embed Links</strong> in the Watchlist destination. If you select a <strong>Ping Role</strong>, Discord must also permit Realm Bot to mention that role.</p>
-<p>Changes on both dashboard tabs save automatically after approximately <strong>1.5 seconds</strong> without further edits. Check the header for pending changes, saving progress, or an error with a <strong>Retry</strong> option.</p>
 <p>For shared connection guidance, see <a href="../relay-account-and-gametest/">Relay Account and GameTest Dependencies</a>.</p>
 <hr>
 <h2 id="lockdown">Lockdown</h2>
@@ -201,7 +200,6 @@
 <li>Enable <strong>Lockdown Configuration</strong>.</li>
 <li>Choose whether to <strong>Allow Operators</strong>.</li>
 <li>Add any approved players to the <strong>Lockdown Exempt List</strong> using their gamertag or XUID.</li>
-<li>Confirm the dashboard has saved the settings before activating lockdown.</li>
 </ol>
 <p>An <strong>XUID</strong> is a player&#x27;s Xbox account identifier. The exempt list shows each player, who added them, and the date added. It supports searching and removal, with ten entries displayed per page.</p>
 <blockquote>
@@ -294,7 +292,6 @@
 <li>Select the <strong>Discord Destination</strong> for alerts.</li>
 <li>Optionally select a <strong>Ping Role</strong>.</li>
 <li>Add players under <strong>Watched Players</strong> using their gamertag or XUID.</li>
-<li>Confirm the dashboard has saved the settings.</li>
 </ol>
 <p>Entries are matched using Xbox account identity. The list shows names and XUIDs, supports searching and removal, and displays ten players per page.</p>
 <h3 id="manage-players-from-discord">Manage Players from Discord</h3>
@@ -397,7 +394,7 @@
 <p>Disabling the dashboard configuration preserves the active-lockdown state. Run <code translate="no" v-pre>/realm unlock realm:&lt;selected Realm&gt;</code> to end that state, rather than relying on the configuration switch alone.</p>
 <h3 id="watchlist-alerts-do-not-appear">Watchlist alerts do not appear</h3>
 <ul>
-<li>Confirm Watchlist is enabled, the destination is selected, and the settings saved successfully.</li>
+<li>Confirm Watchlist is enabled for the intended Realm and the correct Discord channel is selected.</li>
 <li>Check that the watched entry matches the player&#x27;s Xbox account and the correct Realm.</li>
 <li>Confirm the Relay Account was connected when the player joined.</li>
 <li>Verify Premium and the destination channel permissions.</li>
@@ -459,7 +456,7 @@
             <div class="card-compact-header">
                 <span class="card-compact-title">Relay Account and GameTest Dependencies</span>
             </div>
-            <p class="card-compact-description">Understand the shared Relay Account, GameTest Pack, Beta API, permission, and connection requirements used by Realm Bot modules.</p>
+            <p class="card-compact-description">Check Relay Account access, install the GameTest bridge, and diagnose connection-dependent Realm Bot features.</p>
         </div>
     </a>
 </div>

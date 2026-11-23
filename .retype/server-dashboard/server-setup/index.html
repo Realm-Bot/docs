@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.846158336675">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.848714876486">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -44,11 +44,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../favicon.ico" />
-    <link href="../../resources/css/retype.css?v=4.6.0.846158336675" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.6.0.848714876486" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.846158336675" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.848714876486" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.846158336675" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.848714876486" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -183,90 +183,36 @@
 </div>
 
 <div id="retype-page-description" class="description-display text-description font-description leading-description mb-description-margin-bottom mt-description-margin-top tracking-description text-transform-description">Complete the recommended setup checklist for your Discord server, including logging, permissions, warn presets, and account linking.</div>
-<p>The <strong>Server Setup</strong> page is a guided checklist designed to help you configure the essential server-wide settings required for Realm Bot to operate cleanly and securely. It provides a clear progress indicator and direct links into each configuration area.</p>
+<p>Use <strong>Server Setup</strong> to configure moderation and member verification for your Discord server.</p>
 <figure class="content-center">
     <img src="../../images/server-setup.png" alt="Server Setup Page" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="1337" height="661" />
     <figcaption class="caption">Server Setup Page</figcaption>
 </figure>
 <hr>
-<h2 id="what-server-setup-does">What Server Setup Does</h2>
-<p>Server Setup consolidates core configuration into one place so you can:</p>
-<ul>
-<li>Confirm the minimum required settings are in place</li>
-<li>Set up auditing and moderation foundations before enabling advanced modules</li>
-<li>Reduce misconfiguration (missing logs, incorrect permissions, incomplete linking)</li>
-<li>Revisit and review settings at any time as your staff structure evolves</li>
-</ul>
-<hr>
-<h2 id="setup-progress">Setup Progress</h2>
-<p>At the top of the page you will see a <strong>Setup Progress</strong> bar indicating how many steps are completed (for example, <strong>3 of 4 steps completed</strong>). Each step is shown as a card with a brief description and an action button.</p>
-<p>Status indicators typically appear as:</p>
-<ul>
-<li><strong>Completed</strong> (checkmark) - the step has been configured</li>
-<li><strong>Incomplete</strong> (pending icon) - the step still requires setup</li>
-<li><strong>Review</strong> - the step is complete and can be reviewed</li>
-<li><strong>Configure</strong> - the step requires action</li>
-</ul>
-<hr>
 <h2 id="setup-steps">Setup Steps</h2>
-<h3 id="1-logging">1) Logging</h3>
-<p>Logging is the audit foundation of your server configuration. It ensures staff actions and automated events can be reviewed when investigating incidents.</p>
-<p>Use this step to:</p>
-<ul>
-<li>Select appropriate log channels</li>
-<li>Ensure the bot can post to those channels</li>
-<li>Create separation between moderation logs and general activity logs (recommended)</li>
-</ul>
-<p><strong>Best practice:</strong> Keep log channels staff-only and non-chatty to preserve signal-to-noise.</p>
-<hr>
-<h3 id="2-permissions">2) Permissions</h3>
-<p>Permissions determine who can access server features and who can make high-impact changes.</p>
-<p>Use this step to:</p>
-<ul>
-<li>Assign management access to trusted roles only</li>
-<li>Restrict configuration access (dashboard and sensitive modules)</li>
-<li>Prevent accidental misuse by general staff or members</li>
-</ul>
-<p><strong>Best practice:</strong> Apply least privilege. Start strict, then expand access intentionally.</p>
-<hr>
-<h3 id="3-warn-settings">3) Warn Settings</h3>
-<p>Warn Settings allow you to configure preset warning behaviour for administrators and moderators. This ensures consistent discipline actions and reduces ambiguity across staff.</p>
-<p>Use this step to:</p>
-<ul>
-<li>Configure your default warning preset(s)</li>
-<li>Align warning actions with your server rules</li>
-<li>Ensure moderators operate under the same standards</li>
-</ul>
-<blockquote>
-<p><strong>Operational Note:</strong> If you are running a public community, consistent warning policies reduce disputes and improve staff coordination.</p>
-</blockquote>
-<hr>
-<h3 id="4-account-linking">4) Account Linking</h3>
-<p>Account Linking ties your operational identity to Realm Bot so the bot can reliably verify members and connect your server to the correct Realm access context.</p>
-<p>Use this step to:</p>
-<ul>
-<li>Confirm linking flows are complete</li>
-<li>Ensure the correct Discord and Microsoft/Xbox accounts are connected</li>
-<li>Enable workflows that depend on verified identity and Realm access</li>
-</ul>
-<p><strong>Best practice:</strong> Only link trusted administrative accounts. Treat linking as privileged access.</p>
-<hr>
-<h2 id="recommended-order">Recommended Order</h2>
-<p>Although Server Setup is flexible, the recommended order is:</p>
+<p>Select <strong>Configure</strong> for an incomplete step or <strong>Review</strong> to change an existing setting.</p>
 <ol>
-<li><strong>Logging</strong> (audit first)</li>
-<li><strong>Permissions</strong> (control access)</li>
-<li><strong>Warn Settings</strong> (standardise moderation workflow)</li>
-<li><strong>Account Linking</strong> (finalise identity + Realm access flows)</li>
+<li><strong><a href="../server-logs/">Logging</a>:</strong> Choose staff-only channels for moderation logs and give Realm Bot permission to post there.</li>
+<li><strong><a href="../server-permissions/">Permissions</a>:</strong> Grant each Discord role only the commands it needs. Reserve management actions for trusted staff.</li>
+<li><strong><a href="../server-warnings/">Warn Settings</a>:</strong> Set warning reasons and ban thresholds to match your server rules.</li>
+<li><strong><a href="../server-account-linking/">Account Linking</a>:</strong> Check the Discord and Microsoft/Xbox accounts before enabling verification or automatic invitations. Use only trusted accounts for administrative access.</li>
 </ol>
-<p>This sequence ensures the server is secure and auditable before more advanced features are enabled.</p>
+<hr>
+<h2 id="updates-channel">Updates Channel</h2>
+<p>This optional setting is on the server&#x27;s <strong>Overview</strong>, not one of the setup checklist steps. Use it to receive Realm Bot&#x27;s published patch notes, feature alerts and announcements in Discord. Premium is not required.</p>
+<ol>
+<li>Grant Realm Bot <strong>Manage Webhooks</strong> in the intended Discord text or announcement channel.</li>
+<li>Open <strong>Overview &gt; Bot Updates &amp; Announcements</strong> and choose <strong>Select updates channel</strong>.</li>
+<li>Choose the channel and select <strong>Subscribe Channel</strong>. To move the subscription, use <strong>Update Channel</strong>. To stop it, use <strong>Remove &gt; Confirm Remove</strong>.</li>
+</ol>
+<p>When Realm Bot joins a server with a designated Discord <strong>Community Updates</strong> channel, it attempts to subscribe that channel if the announcement source is configured and the bot has permission. If it was not subscribed, set it up manually. Dismissing the setup prompt does not unsubscribe a channel.</p>
+<p>If two channels receive posts after a move, the new subscription may have succeeded while removal of the old one failed. Remove the stale follower in the old channel&#x27;s <strong>Settings &gt; Integrations</strong>, or restore <strong>Manage Webhooks</strong> and retry.</p>
 <hr>
 <h2 id="troubleshooting">Troubleshooting</h2>
 <h3 id="a-step-shows-as-incomplete-after-configuration">A step shows as incomplete after configuration</h3>
 <ul>
-<li>Re-open the step and confirm you saved changes.</li>
+<li>Open the incomplete step and check its required settings.</li>
 <li>Ensure Realm Bot has the required Discord permissions for the feature (especially for logging).</li>
-<li>Refresh the dashboard to confirm the state updates.</li>
 </ul>
 <h3 id="review-buttons-work-but-modules-still-fail">Review buttons work, but modules still fail</h3>
 <p>Server Setup covers foundational configuration. Some Realm modules additionally require:</p>
@@ -276,6 +222,21 @@
 <li>Gametest Pack dependencies (for advanced Realm features)</li>
 </ul>
 <hr>
+<div id="retype-backlinks">
+    <h2>See also</h2>
+<div class="card-compact-group">
+<div class="card-compact-container">
+    <a href="/server-dashboard/overview/" class="group card-compact no-link">
+        <div class="card-compact-body">
+            <div class="card-compact-header">
+                <span class="card-compact-title">Server Dashboard</span>
+            </div>
+            <p class="card-compact-description">Understand the Server Dashboard overview, including Premium status, linked account details, connected Realms, and where to configure server-wide settings.</p>
+        </div>
+    </a>
+</div>
+</div>
+</div>
 
                 
                 <!-- Required only on API pages -->

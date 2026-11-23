@@ -1,103 +1,41 @@
 # Server Setup
 
-The **Server Setup** page is a guided checklist designed to help you configure the essential server-wide settings required for Realm Bot to operate cleanly and securely. It provides a clear progress indicator and direct links into each configuration area.
+Use **Server Setup** to configure moderation and member verification for your Discord server.
 
 ![Server Setup Page](/images/server-setup.png)
 
 ---
 
-## What Server Setup Does
-
-Server Setup consolidates core configuration into one place so you can:
-
-- Confirm the minimum required settings are in place
-- Set up auditing and moderation foundations before enabling advanced modules
-- Reduce misconfiguration (missing logs, incorrect permissions, incomplete linking)
-- Revisit and review settings at any time as your staff structure evolves
-
----
-
-## Setup Progress
-
-At the top of the page you will see a **Setup Progress** bar indicating how many steps are completed (for example, **3 of 4 steps completed**). Each step is shown as a card with a brief description and an action button.
-
-Status indicators typically appear as:
-- **Completed** (checkmark) - the step has been configured
-- **Incomplete** (pending icon) - the step still requires setup
-- **Review** - the step is complete and can be reviewed
-- **Configure** - the step requires action
-
----
-
 ## Setup Steps
 
-### 1) Logging
-Logging is the audit foundation of your server configuration. It ensures staff actions and automated events can be reviewed when investigating incidents.
+Select **Configure** for an incomplete step or **Review** to change an existing setting.
 
-Use this step to:
-- Select appropriate log channels
-- Ensure the bot can post to those channels
-- Create separation between moderation logs and general activity logs (recommended)
-
-**Best practice:** Keep log channels staff-only and non-chatty to preserve signal-to-noise.
+1. **[Logging](server-logs.md):** Choose staff-only channels for moderation logs and give Realm Bot permission to post there.
+2. **[Permissions](server-permissions.md):** Grant each Discord role only the commands it needs. Reserve management actions for trusted staff.
+3. **[Warn Settings](server-warnings.md):** Set warning reasons and ban thresholds to match your server rules.
+4. **[Account Linking](server-account-linking.md):** Check the Discord and Microsoft/Xbox accounts before enabling verification or automatic invitations. Use only trusted accounts for administrative access.
 
 ---
 
-### 2) Permissions
-Permissions determine who can access server features and who can make high-impact changes.
+## Updates Channel
 
-Use this step to:
-- Assign management access to trusted roles only
-- Restrict configuration access (dashboard and sensitive modules)
-- Prevent accidental misuse by general staff or members
+This optional setting is on the server's **Overview**, not one of the setup checklist steps. Use it to receive Realm Bot's published patch notes, feature alerts and announcements in Discord. Premium is not required.
 
-**Best practice:** Apply least privilege. Start strict, then expand access intentionally.
+1. Grant Realm Bot **Manage Webhooks** in the intended Discord text or announcement channel.
+2. Open **Overview > Bot Updates & Announcements** and choose **Select updates channel**.
+3. Choose the channel and select **Subscribe Channel**. To move the subscription, use **Update Channel**. To stop it, use **Remove > Confirm Remove**.
 
----
+When Realm Bot joins a server with a designated Discord **Community Updates** channel, it attempts to subscribe that channel if the announcement source is configured and the bot has permission. If it was not subscribed, set it up manually. Dismissing the setup prompt does not unsubscribe a channel.
 
-### 3) Warn Settings
-Warn Settings allow you to configure preset warning behaviour for administrators and moderators. This ensures consistent discipline actions and reduces ambiguity across staff.
-
-Use this step to:
-- Configure your default warning preset(s)
-- Align warning actions with your server rules
-- Ensure moderators operate under the same standards
-
-> **Operational Note:** If you are running a public community, consistent warning policies reduce disputes and improve staff coordination.
-
----
-
-### 4) Account Linking
-Account Linking ties your operational identity to Realm Bot so the bot can reliably verify members and connect your server to the correct Realm access context.
-
-Use this step to:
-- Confirm linking flows are complete
-- Ensure the correct Discord and Microsoft/Xbox accounts are connected
-- Enable workflows that depend on verified identity and Realm access
-
-**Best practice:** Only link trusted administrative accounts. Treat linking as privileged access.
-
----
-
-## Recommended Order
-
-Although Server Setup is flexible, the recommended order is:
-
-1. **Logging** (audit first)
-2. **Permissions** (control access)
-3. **Warn Settings** (standardise moderation workflow)
-4. **Account Linking** (finalise identity + Realm access flows)
-
-This sequence ensures the server is secure and auditable before more advanced features are enabled.
+If two channels receive posts after a move, the new subscription may have succeeded while removal of the old one failed. Remove the stale follower in the old channel's **Settings > Integrations**, or restore **Manage Webhooks** and retry.
 
 ---
 
 ## Troubleshooting
 
 ### A step shows as incomplete after configuration
-- Re-open the step and confirm you saved changes.
+- Open the incomplete step and check its required settings.
 - Ensure Realm Bot has the required Discord permissions for the feature (especially for logging).
-- Refresh the dashboard to confirm the state updates.
 
 ### Review buttons work, but modules still fail
 Server Setup covers foundational configuration. Some Realm modules additionally require:

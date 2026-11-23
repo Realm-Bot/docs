@@ -1,6 +1,6 @@
 {
   "version": "4.6.0",
-  "created": "2026-10-24T11:59:01Z",
+  "created": "2026-11-23T02:08:02Z",
   "files": [
     {
       "path": ".nojekyll"
@@ -184,6 +184,12 @@
     },
     {
       "path": "commands\\realm\\open\\index.html"
+    },
+    {
+      "path": "commands\\realm\\perf.md"
+    },
+    {
+      "path": "commands\\realm\\perf\\index.html"
     },
     {
       "path": "commands\\realm\\permission.md"
@@ -821,6 +827,24 @@
       "path": "realm-page\\realm-world\\index.html"
     },
     {
+      "path": "realm-page\\realms-hub.md"
+    },
+    {
+      "path": "realm-page\\realms-hub\\index.html"
+    },
+    {
+      "path": "realm-page\\scheduled-restart.md"
+    },
+    {
+      "path": "realm-page\\scheduled-restart\\index.html"
+    },
+    {
+      "path": "realm-page\\server-performance.md"
+    },
+    {
+      "path": "realm-page\\server-performance\\index.html"
+    },
+    {
       "path": "resources\\css\\retype.css"
     },
     {
@@ -957,6 +981,12 @@
     },
     {
       "path": "tools\\realm-stories\\index.html"
+    },
+    {
+      "path": "tools\\referrals.md"
+    },
+    {
+      "path": "tools\\referrals\\index.html"
     },
     {
       "path": "tos.md"

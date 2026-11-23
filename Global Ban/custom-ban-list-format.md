@@ -1,6 +1,6 @@
 ---
 label: Custom Ban List Format
-description: Prepare a public GitHub JSON ban list for preview in Realm Bot's Ban List Explorer.
+description: Prepare and validate a public GitHub JSON source for previewing, saving, and optional Realm protection.
 order: 95
 authors:
   - name: Frazer
@@ -9,20 +9,11 @@ authors:
 
 # Custom Ban List Format
 
-This guide explains how to create, publish, maintain, and preview a custom ban list in Realm Bot's **Ban List Explorer**.
+To use **Custom GitHub List** in the Ban List Explorer, publish a JSON array of ban records in a public GitHub repository. Include only information suitable for public viewing.
 
-A compatible custom list is:
+> **Important:** Previewing a file does not save or enforce it. A signed-in user can save the source; a Realm manager must separately assign it and enable protection before it can affect a Realm. None of these actions creates official Realm Hub cases or appeals.
 
-- A publicly accessible JSON file.
-- Stored in a public GitHub repository.
-- Structured as an array of ban records.
-- Limited to supported fields and values.
-- Suitable for public viewing.
-- Loaded through the **Custom GitHub List** option in the Ban List Explorer.
-
-> **Important:** A custom list is preview-only. Loading one will not import it into the Realm Hub Database, approve it as a trusted source, enforce its bans, create Realm operations, or enable appeals.
-
-Realm Bot identifies a successful custom-list preview internally as `github-compatible-v1`. Do not add a format wrapper to the source file. The root of the file must be the ban-record array itself.
+Use the array itself as the root of the file; do not wrap it in a format object.
 
 ## Compatibility Levels
 
@@ -49,11 +40,9 @@ A custom list can provide extensive Explorer functionality, but it is not equiva
 | Trusted source registration | No |
 | Database import or synchronisation | No |
 
-There is no JSON property that can turn a custom preview into an enforced Realm Hub source. Trusted source integration requires a separate Realm Bot staff review and implementation process.
+There is no JSON property that enables enforcement. Use the [Ban List Explorer](ban-list-explorer.md#save-to-my-ban-lists) to save the source, then configure [Realm Protection](realm-protection.md#assign-a-saved-list) separately.
 
 ## Quick Start
-
-To create a compatible list:
 
 1. Create a public GitHub repository or use an existing public repository.
 2. Create a file ending in `.json`, such as `ban-lists/community-bans.json`.
@@ -65,7 +54,7 @@ To create a compatible list:
 8. Open Realm Bot's **Ban List Explorer**.
 9. Select **Custom GitHub List**.
 10. Paste the public GitHub file URL.
-11. Select **Load List**.
+11. Select **Load** to preview without saving.
 12. Check the records, filters, dates, durations, and evidence links.
 
 A successful preview validates the current file. It does not permanently register or enable the list.
@@ -421,7 +410,7 @@ An empty evidence array is valid:
 
 Because the `evidence` key is present, it still enables the list's Evidence capability.
 
-Custom lists never enable profile-avatar resolution, public case numbers, native detail pages, appeals, or enforcement.
+Saved-list Explorer entries can show profile avatars and source details. Those details are not official Realm Hub case pages: custom lists do not acquire public case numbers or Realm Hub appeals.
 
 ## Duplicate Records
 
@@ -521,7 +510,7 @@ To load a custom list:
 1. Open the public **Ban List Explorer**.
 2. Select **Custom GitHub List**.
 3. Paste the URL into **GitHub List URL**.
-4. Select **Load List**.
+4. Select **Load**.
 5. Wait for validation and retrieval to finish.
 6. Review the displayed record count.
 7. Test gamertag and XUID search.
@@ -529,7 +518,7 @@ To load a custom list:
 9. Open each public evidence link.
 10. Confirm dates, statuses, and durations are coherent.
 
-The preview is fetched without being stored as a trusted source. Reload the list after publishing GitHub changes.
+Reload an unsaved preview after publishing changes. For a saved source, check its last successful refresh under **My Ban Lists**; saving and refresh limits are explained in the [Ban List Explorer](ban-list-explorer.md#save-to-my-ban-lists).
 
 ## Validation Limits
 

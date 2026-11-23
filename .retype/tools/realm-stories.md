@@ -1,6 +1,6 @@
 # Realm Stories
 
-Realm Stories shares new posts from your Minecraft Realm's **Story Feed** in a selected Discord channel. It gives community members a way to follow player posts, screenshots, and supported Realm events without joining the game.
+Realm Stories posts new Minecraft **Story Feed** entries, screenshots and supported Realm events in a Discord channel.
 
 This is a **Realm Bot Premium** feature and is currently in **Beta**. Each Realm has its own configuration under **Tools > Realm Stories** in the dashboard.
 
@@ -45,9 +45,6 @@ Realm Stories does **not** require the Relay Account to be connected in-game, th
 2. Expand the intended Realm and open **Tools > Realm Stories**.
 3. Enable **Live Feed**.
 4. Select the **Discord Destination** channel.
-5. Wait for the dashboard header to confirm the changes have saved.
-
-Changes save automatically after approximately **1.5 seconds** without further edits. The header shows pending changes, saving progress, or an error with a **Retry** option.
 
 Use a dedicated channel such as `#realm-stories` or `#realm-milestones` to keep the feed easy to follow.
 
@@ -79,7 +76,6 @@ Xbox service delays, authentication errors, or Discord delivery failures can ext
 - Decide whether the feed should be public or restricted before enabling it, particularly when coordinates may be included.
 - Keep routine conversation in a separate channel if it makes Story posts difficult to find.
 - Allow the initial scan to complete before using new posts to test delivery.
-- Check the dashboard's saved state before leaving the configuration page.
 
 ---
 
@@ -88,7 +84,6 @@ Xbox service delays, authentication errors, or Discord delivery failures can ext
 ### No stories appear
 
 - Confirm **Live Feed** is enabled for the correct Realm and a destination is selected.
-- Check that the configuration saved successfully; use **Retry** if the header reports an error.
 - Allow time for the initial scan, then test with a new Story Feed post.
 - Confirm Premium is active and the linked account still has access to the open Realm.
 - Verify Realm Bot can view the destination and send messages with embeds.

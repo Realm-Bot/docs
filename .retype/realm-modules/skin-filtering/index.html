@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.846158336675">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.848714876486">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -44,11 +44,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../favicon.ico" />
-    <link href="../../resources/css/retype.css?v=4.6.0.846158336675" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.6.0.848714876486" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.846158336675" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.848714876486" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.846158336675" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.848714876486" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -183,60 +183,29 @@
 </div>
 
 <div id="retype-page-description" class="description-display text-description font-description leading-description mb-description-margin-bottom mt-description-margin-top tracking-description text-transform-description">Automatically detect and remove players using irregular skins (small, invisible/transparent, or 4D/Horion-style skins) to improve fairness and reduce exploit abuse.</div>
-<p>Skin Filtering is a moderation feature that helps Realm Owners discourage exploit-oriented cosmetics by detecting and acting on <strong>irregular player skins</strong>. This includes patterns commonly associated with unfair visibility, deceptive hitboxes, or client exploit behaviour.</p>
+<p>Skin Filtering removes players whose skins match a category you have blocked, such as invisible or half-sized skins.</p>
 <p>Skin Filtering is currently a <strong>Beta</strong> feature. Some false positives may occur depending on the skin type and platform behaviour.</p>
 <figure class="content-center">
     <img src="../../images/skin-filtering.png" alt="Skin Filtering Configuration" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="904" height="637" />
     <figcaption class="caption">Skin Filtering Configuration</figcaption>
 </figure>
 <hr>
-<h2 id="what-skin-filtering-does">What Skin Filtering Does</h2>
-<p>When enabled, Skin Filtering monitors joining players (and/or active players, depending on your deployment) and identifies skins that match one of the configured &quot;irregular&quot; categories. If a skin violates your selected rules, the player can be removed from the Realm based on the system&#x27;s enforcement behaviour.</p>
-<p>This is intended to:</p>
-<ul>
-<li>improve fairness in PvP and competitive gameplay</li>
-<li>reduce visibility abuse and deception tactics</li>
-<li>standardise cosmetic rules for your community</li>
-</ul>
-<hr>
 <h2 id="requirements">Requirements</h2>
-<p>Skin Filtering requires:</p>
 <ul>
 <li>The Realm Bot <strong>Relay Account</strong> to be <strong>in-game</strong></li>
 <li>Skin Filtering enabled within the Realm&#x27;s modules section</li>
 <li>An active Realm Bot Premium subscription</li>
 </ul>
-<p>If the Relay Account is not in-game, the system cannot reliably enforce filtering actions.</p>
 <p>The GameTest Pack is not required for Skin Filtering. Players on the Realm Bot allowlist are intended to bypass filtering.</p>
 <hr>
 <h2 id="filter-settings">Filter Settings</h2>
-<p>You can enable filtering per category. These categories are designed to target common exploit-oriented skin patterns.</p>
+<p>Enable only the categories your Realm rules prohibit.</p>
 <h3 id="small-skins">Small Skins</h3>
-<p>Filters smaller or &quot;half-sized&quot; skin presentations that can be used to reduce visual profile or misrepresent player appearance.</p>
-<p>Recommended for:</p>
-<ul>
-<li>PvP Realms</li>
-<li>competitive minigames</li>
-<li>servers with strict cosmetic standards</li>
-</ul>
+<p>Detects skins that make a player appear smaller than normal, including half-sized skins.</p>
 <h3 id="invisible-skins">Invisible Skins</h3>
-<p>Filters skins that use invisible or transparent textures to reduce visibility or create unfair advantages.</p>
-<p>Recommended for:</p>
-<ul>
-<li>any Realm where PvP, stealth, or competitive advantage matters</li>
-<li>public Realms where exploit cosmetics are common</li>
-</ul>
+<p>Detects invisible or transparent textures that make a player difficult to see.</p>
 <h3 id="horion-skins-4d-skins">Horion Skins (4D Skins)</h3>
 <p>Filters &quot;4D&quot; or Horion-style skins commonly associated with exploit clients and cosmetic manipulation.</p>
-<p>Recommended for:</p>
-<ul>
-<li>Realms that have experienced Horion-related abuse</li>
-<li>public-code Realms</li>
-<li>competitive environments</li>
-</ul>
-<blockquote>
-<p><strong>Note:</strong> These labels reflect common community terminology. The filter is designed around observed irregular skin behaviour patterns.</p>
-</blockquote>
 <hr>
 <h2 id="what-enforcement-looks-like">What Enforcement Looks Like</h2>
 <p>When a player is detected using a disallowed skin type, Realm Bot removes the player with the reason <strong>Unfair Skin</strong> and records the outcome in the configured Automod channel.</p>
@@ -244,29 +213,16 @@
     <img src="../../images/skin-filtering-example.png" alt="Skin Filtering Example (Discord Output)" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="473" height="327" />
     <figcaption class="caption">Skin Filtering Example (Discord Output)</figcaption>
 </figure>
-<p>This provides staff with:</p>
-<ul>
-<li>a clear indication of which user was affected</li>
-<li>the reason category (e.g., <strong>Unfair Skin</strong>)</li>
-<li>basic context for review if a player appeals</li>
-</ul>
 <hr>
 <h2 id="example-context-small-skin-in-use">Example Context: Small Skin in Use</h2>
-<p>Small skins reduce the player&#x27;s apparent size and visibility, which can create an advantage in PvP or during fast movement. The example below demonstrates what a small skin can look like in-game.</p>
+<p>A small skin can make a player harder to spot in PvP.</p>
 <figure class="content-center">
     <img src="../../images/skin-filtering-example-context.png" alt="Small Skin Example (In-Game Context)" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="167" height="178" />
     <figcaption class="caption">Small Skin Example (In-Game Context)</figcaption>
 </figure>
 <hr>
 <h2 id="when-to-enable-skin-filtering">When to Enable Skin Filtering</h2>
-<p>Skin Filtering is most useful in:</p>
-<ul>
-<li>public invite / high-traffic Realms</li>
-<li>PvP Realms where visibility and fairness are critical</li>
-<li>Realms frequently targeted by exploit users</li>
-<li>communities with established cosmetic rules</li>
-</ul>
-<p>For private invite-only Realms, Skin Filtering may be unnecessary unless you regularly encounter exploit cosmetics.</p>
+<p>Consider filtering on public or competitive Realms where visibility affects play. A private Realm may not need it unless players use prohibited skins.</p>
 <hr>
 <h2 id="best-practices">Best Practices</h2>
 <ul>
@@ -277,11 +233,6 @@
 </ul>
 <hr>
 <h2 id="beta-notes-and-false-positives">Beta Notes and False Positives</h2>
-<p>Because Skin Filtering is in Beta:</p>
-<ul>
-<li>some legitimate skins may be flagged incorrectly in edge cases</li>
-<li>platform differences and skin format quirks can cause inconsistent detection</li>
-</ul>
 <p>If you observe false positives:</p>
 <ul>
 <li>disable the category most likely to be causing false positives first</li>

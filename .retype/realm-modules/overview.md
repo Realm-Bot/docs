@@ -1,26 +1,22 @@
 # Overview
 
-This page serves as the central management hub for your connected Realm. From here, you can access your Realm’s core configuration, control how Realm Bot joins your world, manage GameTest Pack dependencies (where required), and configure any Premium modules you have enabled.
+Use the selected Realm's dashboard to configure bot joining, install the GameTest Pack and enable modules.
 
 ---
 
 ## Manage Your Realm
 
-At the top of the page you will see your selected Realm card. This is the primary entry point for managing Realm-specific configuration and quickly confirming you are working on the correct Realm.
+Check the name on the Realm card, then select **Manage**.
 
 ![Realm Card (Manage Realm)](/images/overview-realm.png)
-
-Use the **Manage** button to open the Realm’s management view and access the settings shown below.
 
 ---
 
 ## Bot Join Settings
 
-Bot Join Settings determine how Realm Bot connects to your Realm. These options are operational controls and should be configured with reliability and safety in mind.
+Choose how the Relay Account joins this Realm.
 
 ![Bot Join Settings](/images/overview-bot.png)
-
-Key options include:
 
 - **Enable Bot to Join Game**  
   Allows Realm Bot (via the Relay Account) to join your Realm when required by features that depend on an in-game executor.
@@ -39,11 +35,9 @@ An active Realm Bot Premium subscription is required for the connected Relay Acc
 
 ## GameTest Pack Management
 
-GameTest Pack Management controls the dependency pack used for advanced Realm features that require in-game scripting capabilities. Where a module relies on the GameTest Pack, it must be installed and active.
+Install the GameTest Pack for features that need in-game scripting, such as scoreboard retrieval.
 
 ![GameTest Pack Management](/images/overview-gametest.png)
-
-This section includes:
 
 - **Beta API Requirement**  
   Some GameTest functionality requires **Beta APIs** to be enabled in your Realm settings. If prompted, enable **Use Beta APIs** under your Realm’s experimental features.
@@ -66,11 +60,9 @@ See [Relay Account and GameTest Dependencies](relay-account-and-gametest.md) for
 
 ## Realm Modules
 
-The Realm Modules section contains all configurable feature modules available for your Realm. Premium modules are clearly marked and can be opened directly via **Configure**.
+Select **Configure** beside the module you want to change.
 
 ![Realm Modules](/images/overview-realm-modules.png)
-
-From here you can configure all Realm Modules currently available for your Realm:
 
 - **Bot Detection** - mitigation for malicious bot accounts, including an Experimental mode for stricter detection
 - **Chat Relay** - a two-way chat bridge with category-specific channels, custom messages, Fun Mode, and Anti-Spam
@@ -96,11 +88,7 @@ Also see:
 
 ## Recommended Setup Order
 
-For best results, configure your Realm in the following sequence:
-
 1. Confirm you are managing the correct Realm (top card).
 2. Configure **Bot Join Settings** to ensure reliable in-game connectivity.
 3. If required, install and validate the **GameTest Pack** (and enable Beta APIs where prompted).
 4. Enable and configure the modules you intend to use.
-
-This structure ensures that all dependencies are in place before you rely on any module operationally.

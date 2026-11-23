@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.846158336675">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.848714876486">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -38,11 +38,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../favicon.ico" />
-    <link href="../../resources/css/retype.css?v=4.6.0.846158336675" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.6.0.848714876486" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.846158336675" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.848714876486" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.846158336675" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.848714876486" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -177,7 +177,7 @@
 </div>
 
 <div id="retype-page-description" class="description-display text-description font-description leading-description mb-description-margin-bottom mt-description-margin-top tracking-description text-transform-description">Resolve common Realm Bot slash-command permission, connection, Premium, Relay Account, GameTest, and input errors.</div>
-<p>Use this page for failures shared by several Realm Bot commands. Command-specific limitations remain documented on the relevant command page.</p>
+<p>Start with the symptom below. For errors specific to one command, use its command reference.</p>
 <h2 id="the-command-cannot-be-used-here">The Command Cannot Be Used Here</h2>
 <p>All Realm Bot commands must be used in a Discord server. If Discord reports that a command can only be used in a guild, leave the direct message and run it in a server channel where Realm Bot can respond.</p>
 <p>Confirm Realm Bot has the required Discord channel permissions, usually <strong>View Channel</strong>, <strong>Send Messages</strong>, and <strong>Embed Links</strong>. Commands that post files or panels can require additional attachment or interaction permissions.</p>
@@ -185,7 +185,7 @@
 <p>Most Realm, player, moderation, and activity commands require a connected server.</p>
 <ol>
 <li>Confirm the intended Microsoft/Xbox account is linked in the Realm Bot Dashboard.</li>
-<li>Ask a Discord Administrator to run <code translate="no" v-pre>/connect</code>.</li>
+<li>Check whether the Realms are already associated with a different Discord server before connecting. Follow <a href="../../setup/">Getting Started</a> for the migration warning and both connection routes.</li>
 <li>Confirm the expected Realms appear in the dashboard.</li>
 </ol>
 <p>If the wrong account is connected, use the documented disconnect process carefully before reconnecting the correct account.</p>
@@ -268,32 +268,22 @@
     </a>
 </div>
 <div class="card-compact-container">
-    <a href="/commands/allowlist/check/" class="group card-compact no-link">
-        <div class="card-compact-body">
-            <div class="card-compact-header">
-                <span class="card-compact-title">/allowlist check</span>
-            </div>
-            <p class="card-compact-description">Check whether a Minecraft player is on Realm Bot's server-level allowlist.</p>
-        </div>
-    </a>
-</div>
-<div class="card-compact-container">
-    <a href="/commands/allowlist/list/" class="group card-compact no-link">
-        <div class="card-compact-body">
-            <div class="card-compact-header">
-                <span class="card-compact-title">/allowlist list</span>
-            </div>
-            <p class="card-compact-description">Display Realm Bot's server-level allowlist using interactive pages of ten players.</p>
-        </div>
-    </a>
-</div>
-<div class="card-compact-container">
     <a href="/commands/banlist/lookup/" class="group card-compact no-link">
         <div class="card-compact-body">
             <div class="card-compact-header">
                 <span class="card-compact-title">/banlist lookup</span>
             </div>
             <p class="card-compact-description">Check a player's official blocklist status in one or all connected Minecraft Realms.</p>
+        </div>
+    </a>
+</div>
+<div class="card-compact-container">
+    <a href="/commands/utility/connect/" class="group card-compact no-link">
+        <div class="card-compact-body">
+            <div class="card-compact-header">
+                <span class="card-compact-title">/connect</span>
+            </div>
+            <p class="card-compact-description">Associate the current Discord server with the invoking member's linked Microsoft/Xbox Realm account.</p>
         </div>
     </a>
 </div>
@@ -344,6 +334,16 @@
                 <span class="card-compact-title">/realm ban</span>
             </div>
             <p class="card-compact-description">Add a player to the official blocklist of one or all connected Realms.</p>
+        </div>
+    </a>
+</div>
+<div class="card-compact-container">
+    <a href="/commands/realm/players/" class="group card-compact no-link">
+        <div class="card-compact-body">
+            <div class="card-compact-header">
+                <span class="card-compact-title">/realm players</span>
+            </div>
+            <p class="card-compact-description">Display official live Realm players with device and optional Realm permission information.</p>
         </div>
     </a>
 </div>

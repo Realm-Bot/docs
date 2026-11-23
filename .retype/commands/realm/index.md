@@ -31,6 +31,7 @@ Realm commands use the connected Microsoft/Xbox account to manage official Minec
 - [`/realm lastseen`](lastseen.md)
 - [`/realm playtime`](playtime.md)
 - [`/realm sessions`](sessions.md)
+- [`/realm perf`](perf.md) (Minecraft Realms Pro)
 
 ## Backups and Recovery
 

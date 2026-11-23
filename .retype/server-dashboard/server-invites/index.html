@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.846158336675">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.848714876486">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -44,11 +44,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../favicon.ico" />
-    <link href="../../resources/css/retype.css?v=4.6.0.846158336675" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.6.0.848714876486" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.846158336675" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.848714876486" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.846158336675" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.848714876486" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -200,7 +200,6 @@
 <li>Limit exposure using <strong>max uses</strong> and <strong>expiry dates</strong></li>
 <li>Disable or rotate links quickly if a link is leaked or targeted</li>
 </ul>
-<p>This feature is particularly valuable for public communities that regularly advertise their Realm and are more likely to be targeted by disruptive join attempts.</p>
 <hr>
 <h2 id="how-joining-works-player-experience">How Joining Works (Player Experience)</h2>
 <p>When a user opens an Invite Link in their browser, they are brought to a dedicated invite page for the Realm.</p>
@@ -212,7 +211,6 @@
 <ul>
 <li>the Realm invite is applied to their Microsoft account</li>
 <li>the Realm appears in their <strong>Minecraft Realms list</strong> in-game</li>
-<li>they can join the Realm normally through Minecraft</li>
 </ul>
 <p>Server <strong>Account Linking</strong> can also support automatic invitations, but it is a separate Microsoft verification workflow rather than the same public Invite Link acceptance page.</p>
 <blockquote>
@@ -220,7 +218,6 @@
 </blockquote>
 <hr>
 <h2 id="security-settings">Security Settings</h2>
-<p>Invite Links include security options intended to mitigate common abuse patterns.</p>
 <h3 id="block-vpnhostingtor">Block VPN/Hosting/Tor</h3>
 <p>When enabled, players attempting to use invite links through VPNs, hosting providers, or Tor can be blocked from completing the invite flow.</p>
 <p>This is recommended for:</p>
@@ -237,7 +234,6 @@
     <figcaption class="caption">Create Link Modal</figcaption>
 </figure>
 <h3 id="link-details">Link Details</h3>
-<p>When creating a link, you can configure:</p>
 <ul>
 <li>
 <p><strong>Realm</strong><br />
@@ -363,6 +359,16 @@ Leave empty for no expiry.</p>
                 <span class="card-compact-title">Invite Commands</span>
             </div>
             <p class="card-compact-description">Create, review, and remove Realm Bot managed web invite links.</p>
+        </div>
+    </a>
+</div>
+<div class="card-compact-container">
+    <a href="/server-dashboard/overview/" class="group card-compact no-link">
+        <div class="card-compact-body">
+            <div class="card-compact-header">
+                <span class="card-compact-title">Server Dashboard</span>
+            </div>
+            <p class="card-compact-description">Understand the Server Dashboard overview, including Premium status, linked account details, connected Realms, and where to configure server-wide settings.</p>
         </div>
     </a>
 </div>

@@ -11,24 +11,15 @@ authors:
 
 Global Ban protection lets a Realm owner apply active Realm Hub records to a connected Minecraft Realm. Each Realm keeps its own protection setting and category selection.
 
-## Default State
+## Default State of the Realm Hub Database
 
-Protection is enabled by default when a connected Realm has no previously saved Global Ban setting.
-
-The dashboard distinguishes:
-
-- **Enabled by default** - no custom setting has been saved and default protection is active.
-- **Enabled** - the owner has explicitly enabled protection.
-- **Disabled** - the owner has explicitly disabled protection.
-- **Temporarily unavailable** - the current protection state could not be loaded.
-
-If the state is temporarily unavailable, refresh and try again later. Do not assume the setting changed.
+Realm Hub protection is on by default. **Enabled** or **Disabled** means the owner has explicitly set a preference. If the dashboard shows **Temporarily unavailable**, refresh later rather than assuming protection has changed.
 
 ## Configure Protection
 
 1. Sign in to the Realm Bot dashboard with Discord.
 2. Select the Discord server containing the connected Realm.
-3. If no Realm is connected, link the required Microsoft account and run `/connect` in the Discord server.
+3. If no Realm is connected, follow [Getting Started](../setup.md) and review the migration warning before connecting.
 4. Select the Realm.
 5. Open **Tools**, followed by **Banlist**.
 6. Find the **Global Ban Database** card.
@@ -55,9 +46,18 @@ Each category can be enabled or disabled independently.
 
 Use **Enable All** to select every category or **Disable All** to clear every category.
 
-> **Important:** Leaving the main switch enabled while disabling every category results in no Global Ban records being enforced.
+> **Important:** Leaving the Realm Hub Database switch enabled while disabling every category means no records from that database are enforced. Check custom source assignments separately.
 
-## How Enforcement Works
+## Assign a Saved List
+
+1. [Preview and save the GitHub source](ban-list-explorer.md#save-to-my-ban-lists). Check the publisher, records and last successful refresh before using it to decide who may join.
+2. As a manager, open the Discord server's **Realm > Tools > Ban List** for the intended Realm and select **Add Ban List**.
+3. Choose your saved source. Select the categories to enforce and whether to include uncategorised records.
+4. Enable protection for that source on the intended Realm.
+
+A Realm supports up to **10 enabled custom lists**, and a user can have up to **100 active assignments**. Removing a list from **My Ban Lists** queues cleanup for its assignments. Do not assume immediate unbans; check the native banlist. This does not remove a different account's saved copy or change the publisher's file.
+
+## How Realm Hub Enforcement Works
 
 When protection is active, Realm Bot compares active Realm Hub records with the categories enabled for that Realm. Matching records are applied through the Realm's native ban system.
 
@@ -86,7 +86,6 @@ Review existing entries separately before unbanning anyone. Use `/realm unban` o
 
 - Refresh the page and try again later.
 - Confirm the correct Discord server and Realm are selected.
-- Leave the existing configuration unchanged until its saved state can be loaded.
 
 ### A Global Ban is not appearing
 
@@ -100,7 +99,7 @@ Review existing entries separately before unbanning anyone. Use `/realm unban` o
 
 ### A ban remains after protection is disabled
 
-This is expected. Disabling protection does not remove existing native Realm bans. Review the record and remove the Realm ban separately only when appropriate.
+Disabling protection stops new bans; it does not remove existing ones. Review the record before removing a native ban.
 
 ### An entry remains in progress
 
