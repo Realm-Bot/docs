@@ -7,7 +7,7 @@ Realm Bot commands are Discord slash commands. Run them in a Discord server chan
 Realm Bot commands use several access models:
 
 - **Public commands** do not require a Realm Bot role permission, although they must still be used in a Discord server.
-- **Connected-server commands** require the Discord server to be connected to a Microsoft/Xbox account through `/connect`.
+- **Connected-server commands** require the Discord server to be associated with a Microsoft/Xbox account. Use either route in [Getting Started](../setup.md).
 - **Premium commands** require an active Realm Bot Premium subscription.
 - **Permission-controlled commands** require the named Realm Bot command permission assigned to one of the member's Discord roles.
 
@@ -45,5 +45,9 @@ Discord displays command arguments as named fields. Examples such as `realm:<sel
 - [Verify](Verify/index.md) - publish the Microsoft/Xbox account-linking panel.
 - [Warn](Warn/index.md) - create and review player warning records.
 - [World](World/index.md) - connect the Relay Account and perform live in-game actions.
+
+For the central review system and custom-list format, see [Global Ban](<../Global Ban/index.md>).
+
+For `/realm lockdown`, `/realm unlock`, and the `/watchlist add`, `/watchlist list`, and `/watchlist remove` commands, see [Realm Security](<../Realm Modules/realm-security.md>). These commands require Premium and the relevant staff permissions.
 
 For shared error guidance, see [Command Troubleshooting](troubleshooting.md).

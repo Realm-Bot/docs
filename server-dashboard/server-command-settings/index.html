@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.845749462594">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.848762291073">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -44,11 +44,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../favicon.ico" />
-    <link href="../../resources/css/retype.css?v=4.6.0.845749462594" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.6.0.848762291073" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.845749462594" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.848762291073" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.845749462594" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.848762291073" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -140,6 +140,32 @@
             <div class="relative retype-markdown" id="retype-content">
                 <!-- Rendered if sidebar right is enabled -->
                 <div id="retype-sidebar-right-toggle"></div>
+                <nav id="retype-breadcrumb" class="breadcrumb" aria-label="Breadcrumb">
+                    <ol role="list">
+                        <li class="pr-4">
+                            <a href="../../" class="pr-4">
+                                Landing
+                            </a>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/>
+                            </svg>
+                        </li>
+                        <li class="pr-4">
+                            <span class="pr-4">
+                                Server Dashboard
+                            </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/>
+                            </svg>
+                        </li>
+                        <li class="pr-4">
+                            <a href="../../server-dashboard/server-command-settings/" class="pr-4">
+                                Command Settings
+                            </a>
+                        </li>
+                    </ol>
+                </nav>
+
                 <doc-page-actions></doc-page-actions>
 
                 <!-- Page content  -->
@@ -157,46 +183,65 @@
 </div>
 
 <div id="retype-page-description" class="description-display text-description font-description leading-description mb-description-margin-bottom mt-description-margin-top tracking-description text-transform-description">Control how Realm Bot displays player information in commands, including a compact view or a more detailed output for moderation and auditing.</div>
-<p>The <strong>Command Settings</strong> page controls how information is displayed in selected Realm Bot commands. This is primarily used to adjust the level of detail shown when viewing player information in Discord.</p>
+<p>Choose how much player information Realm Bot shows in Discord commands such as <a href="../../commands/realm/players/"><code translate="no" v-pre>/realm players</code></a>.</p>
 <figure class="content-center">
     <img src="../../images/server-command-settings.png" alt="Command Settings" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="1456" height="599" />
     <figcaption class="caption">Command Settings</figcaption>
 </figure>
 <hr>
 <h2 id="player-information-display">Player Information Display</h2>
-<p>This setting changes the output format used in commands such as:</p>
-<ul>
-<li><code translate="no" v-pre>/realm players</code></li>
-</ul>
-<p>You can choose between two display modes depending on how your staff team moderates and how much information you want exposed in-command.</p>
-<h3 id="compact-display">Compact Display</h3>
-<p>A minimal output designed for quick checks.</p>
-<p>Typically includes:</p>
-<ul>
-<li>Player username</li>
-<li>Device type</li>
-</ul>
-<p><strong>Recommended for:</strong> fast moderation workflows, smaller servers, or servers where you want to minimise visible player metadata.</p>
-<h3 id="detailed-display">Detailed Display</h3>
-<p>A richer output designed for investigation and verification.</p>
-<p>Typically includes:</p>
-<ul>
-<li>Player username</li>
-<li>Device type</li>
-<li>Gamerscore</li>
-<li>Xbox Live status</li>
-</ul>
-<p><strong>Recommended for:</strong> larger teams, higher-risk public servers, or environments where staff routinely verify player legitimacy and activity patterns.</p>
+<retype-table copy-text="| Mode | Information shown when available |
+|---|---|
+| **Compact Display** | Player name and device type |
+| **Detailed Display** | Player name, device type and the player's Minecraft Realm permission |">
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Mode</th>
+<th>Information shown when available</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Compact Display</strong></td>
+<td>Player name and device type</td>
+</tr>
+<tr>
+<td><strong>Detailed Display</strong></td>
+<td>Player name, device type and the player&#x27;s Minecraft Realm permission</td>
+</tr>
+</tbody>
+</table>
+</div>
+</retype-table>
+<p>Use <strong>Compact Display</strong> if staff do not need the extra profile details. Changing the display does not grant command permissions.</p>
 <hr>
-<h2 id="recommended-configuration">Recommended Configuration</h2>
-<ul>
-<li>Use <strong>Compact Display</strong> for day-to-day staff work where speed and readability matter most.</li>
-<li>Switch to <strong>Detailed Display</strong> if your moderation depends on additional identity/context signals (for example, platform patterns or account indicators).</li>
-</ul>
-<blockquote>
-<p><strong>Note:</strong> This setting changes how information is presented in Discord outputs; it does not change what actions the bot can perform.</p>
-</blockquote>
-<hr>
+<div id="retype-backlinks">
+    <h2>See also</h2>
+<div class="card-compact-group">
+<div class="card-compact-container">
+    <a href="/commands/realm/players/" class="group card-compact no-link">
+        <div class="card-compact-body">
+            <div class="card-compact-header">
+                <span class="card-compact-title">/realm players</span>
+            </div>
+            <p class="card-compact-description">Display official live Realm players with device and optional Realm permission information.</p>
+        </div>
+    </a>
+</div>
+<div class="card-compact-container">
+    <a href="/server-dashboard/overview/" class="group card-compact no-link">
+        <div class="card-compact-body">
+            <div class="card-compact-header">
+                <span class="card-compact-title">Server Dashboard</span>
+            </div>
+            <p class="card-compact-description">Understand the Server Dashboard overview, including Premium status, linked account details, connected Realms, and where to configure server-wide settings.</p>
+        </div>
+    </a>
+</div>
+</div>
+</div>
 
                 
                 <!-- Required only on API pages -->

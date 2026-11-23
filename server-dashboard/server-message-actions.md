@@ -1,6 +1,6 @@
 # Message Actions
 
-The **Message Actions** page allows you to configure the messages Realm Bot sends when moderation actions are performed. These messages help players understand what happened, why it happened, and what to do next-while keeping your enforcement consistent across staff.
+Choose which Xbox messages Realm Bot sends to players after a kick, ban, unban or warning.
 
 ![Message Actions Notice and Variables](/images/server-message-actions-explanation.png)
 
@@ -25,15 +25,13 @@ For each moderation action, you can:
 2. Customise the message text
 3. Insert variables so the message automatically adapts to each case
 
-When enabled, Realm Bot will send the configured message to the affected player when the corresponding action occurs.
-
 ![Message Templates (Kick / Ban / Unban / Warn)](/images/server-message-actions-messages.png)
 
 ---
 
 ## Available Variables
 
-You can insert variables at the cursor position to dynamically populate details:
+Insert a variable where you want its value to appear:
 
 - `{user}` - the staff member or account that performed the action
 - `{target}` - the player who received the action
@@ -48,43 +46,16 @@ You can insert variables at the cursor position to dynamically populate details:
 
 ## Message Types
 
-### Kick Message
-Sent when a player is **kicked**.
-
-Recommended content:
-- What occurred (kick)
-- Reason
-- Next step (rejoin allowed unless otherwise stated)
-
-### Ban Message
-Sent when a player is **banned**.
-
-Recommended content:
-- What occurred (ban)
-- Reason
-- Duration (if temporary)
-- Appeal path (if you support appeals)
-
-### Unban Message
-Sent when a player is **unbanned**.
-
-Recommended content:
-- Confirmation of unban
-- Reminder of rules/expectations
-
-### Warn Message
-Sent when a player receives a **warning**.
-
-Recommended content:
-- Warning reason
-- Behaviour expected going forward
-- Escalation note (optional, avoid threats)
+| Message | What to include |
+|---|---|
+| **Kick** | The reason and whether the player can rejoin. |
+| **Ban** | The reason, duration if temporary, and where to appeal. |
+| **Unban** | Confirmation that the ban has been removed and any conditions for rejoining. |
+| **Warn** | The behaviour to change and the consequence of another warning. |
 
 ---
 
 ## Suggested Templates (Copy/Paste)
-
-These templates are intentionally short, neutral, and procedural.
 
 ### Kick
 `{target}, you were removed from {realm}. Reason: {reason}. You may rejoin if you follow the rules.`

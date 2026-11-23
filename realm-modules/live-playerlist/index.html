@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.845749462594">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.848762291073">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -44,11 +44,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../favicon.ico" />
-    <link href="../../resources/css/retype.css?v=4.6.0.845749462594" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.6.0.848762291073" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.845749462594" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.848762291073" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.845749462594" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.848762291073" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -140,6 +140,32 @@
             <div class="relative retype-markdown" id="retype-content">
                 <!-- Rendered if sidebar right is enabled -->
                 <div id="retype-sidebar-right-toggle"></div>
+                <nav id="retype-breadcrumb" class="breadcrumb" aria-label="Breadcrumb">
+                    <ol role="list">
+                        <li class="pr-4">
+                            <a href="../../" class="pr-4">
+                                Landing
+                            </a>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/>
+                            </svg>
+                        </li>
+                        <li class="pr-4">
+                            <span class="pr-4">
+                                Realm Modules
+                            </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/>
+                            </svg>
+                        </li>
+                        <li class="pr-4">
+                            <a href="../../realm-modules/live-playerlist/" class="pr-4">
+                                Live Playerlist
+                            </a>
+                        </li>
+                    </ol>
+                </nav>
+
                 <doc-page-actions></doc-page-actions>
 
                 <!-- Page content  -->
@@ -157,50 +183,22 @@
 </div>
 
 <div id="retype-page-description" class="description-display text-description font-description leading-description mb-description-margin-bottom mt-description-margin-top tracking-description text-transform-description">Publish an automatically updating list of online Realm players to a Discord channel, with optional playtime and device identification.</div>
-<p>Live Playerlist publishes a near-real-time view of who is currently online in your Realm to a selected Discord channel. It is designed for staff awareness and community visibility, providing a consistent &quot;who&#x27;s online&quot; reference without requiring players to be in-game to check.</p>
-<p>This feature is located under <strong>Realm Modules</strong> and can be enabled per Realm.</p>
-<hr>
-<h2 id="what-live-playerlist-does">What Live Playerlist Does</h2>
-<p>When enabled, Realm Bot will:</p>
-<ul>
-<li>Post a live list of players currently online in the Realm</li>
-<li>Update the output automatically every <strong>5 minutes</strong></li>
-<li>Maintain a single message that refreshes over time, recreating it if the previous message is unavailable</li>
-</ul>
-<p>This makes it suitable for:</p>
-<ul>
-<li>moderation coverage (knowing when activity is high)</li>
-<li>event coordination (confirming attendance)</li>
-<li>community engagement (players can see who is active)</li>
-</ul>
+<p>Live Playerlist shows who&#x27;s online in a Realm in one Discord message. Realm Bot updates it every <strong>five minutes</strong> and creates a replacement if the original message is unavailable.</p>
+<p>It requires an active Realm Bot Premium subscription and a connected Relay Account. The GameTest Pack and Beta APIs are not required.</p>
 <hr>
 <h2 id="example-output">Example Output</h2>
 <figure class="content-center">
     <img src="../../images/live-playerlist-example.png" alt="Live Playerlist Example" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="368" height="147" />
     <figcaption class="caption">Live Playerlist Example</figcaption>
 </figure>
-<p>Depending on your configuration, the player list can include:</p>
-<ul>
-<li>the player name (gamertag)</li>
-<li>optional device/platform indicators (e.g., Android, Windows)</li>
-<li>optional recorded total playtime</li>
-</ul>
+<p>Each entry shows a gamertag, optionally with total playtime and device type.</p>
 <hr>
 <h2 id="configuration">Configuration</h2>
 <figure class="content-center">
     <img src="../../images/live-playerlist.png" alt="Live Playerlist Configuration" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="902" height="548" />
     <figcaption class="caption">Live Playerlist Configuration</figcaption>
 </figure>
-<h3 id="enable-live-playerlist">Enable Live Playerlist</h3>
-<p>Use the primary toggle at the top of the module to enable or disable Live Playerlist for the selected Realm.</p>
-<h3 id="discord-destination">Discord Destination</h3>
-<p>Select the Discord channel where the live playerlist will be posted and updated.</p>
-<p>Recommended channel choices:</p>
-<ul>
-<li><code translate="no" v-pre>#players-online</code></li>
-<li><code translate="no" v-pre>#realm-status</code></li>
-<li><code translate="no" v-pre>#realm-activity</code></li>
-</ul>
+<p>In <strong>Realm Modules</strong>, enable <strong>Live Playerlist</strong> for the selected Realm. Under <strong>Discord Destination</strong>, select a channel such as <code translate="no" v-pre>#players-online</code>.</p>
 <p>Ensure the bot has:</p>
 <ul>
 <li><strong>View Channel</strong></li>
@@ -209,46 +207,11 @@
 <li><strong>Read Message History</strong></li>
 </ul>
 <h3 id="display-settings">Display Settings</h3>
-<p>You can control which information appears alongside each player entry:</p>
-<h4 id="display-playtime">Display Playtime</h4>
-<p>When enabled, the playerlist includes the player&#x27;s recorded total playtime. It is not a timer for only the current session.</p>
-<p>Use this if you want:</p>
 <ul>
-<li>clearer staff context during incidents</li>
-<li>broader activity context for staff</li>
+<li><strong>Display Playtime</strong> shows the player&#x27;s recorded total across sessions, not the length of the current session.</li>
+<li><strong>Device Identification</strong> shows the platform, such as Android, Windows or a console, when it can be detected.</li>
 </ul>
-<h4 id="device-identification">Device Identification</h4>
-<p>When enabled, the playerlist displays each player&#x27;s device/platform indicator (where detectable), such as:</p>
-<ul>
-<li>Android</li>
-<li>Windows</li>
-<li>Console platforms (where supported)</li>
-</ul>
-<p>Use this if you want:</p>
-<ul>
-<li>platform visibility for staff (especially when running device-restricted communities)</li>
-<li>quick indicators when investigating suspicious join patterns</li>
-</ul>
-<hr>
-<h2 id="update-interval">Update Interval</h2>
-<p>Live Playerlist updates every <strong>5 minutes</strong>. This interval is designed to balance:</p>
-<ul>
-<li>reasonably current visibility</li>
-<li>minimal spam and operational overhead</li>
-<li>predictable refresh timing for staff</li>
-</ul>
-<blockquote>
-<p><strong>Note:</strong> The playerlist is &quot;live&quot; in the operational sense (regular refresh), not second-by-second.</p>
-</blockquote>
-<p>Live Playerlist requires an active Realm Bot Premium subscription and a connected Relay Account. It does not require the GameTest Pack or Beta APIs.</p>
-<hr>
-<h2 id="best-practices">Best Practices</h2>
-<ul>
-<li>Use a dedicated channel and keep it low-noise.</li>
-<li>Restrict who can post in the destination channel (optional) so the output remains easy to read.</li>
-<li>Enable <strong>Device Identification</strong> if you enforce platform-specific rules or run competitive modes where device context matters.</li>
-<li>Enable <strong>Display Playtime</strong> if your staff workflow benefits from session context.</li>
-</ul>
+<p>For a read-only player list, restrict who can post in the destination channel.</p>
 <hr>
 <h2 id="troubleshooting">Troubleshooting</h2>
 <h3 id="the-playerlist-does-not-appear">The playerlist does not appear</h3>

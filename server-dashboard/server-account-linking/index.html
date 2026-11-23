@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.845749462594">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.848762291073">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -44,11 +44,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../favicon.ico" />
-    <link href="../../resources/css/retype.css?v=4.6.0.845749462594" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.6.0.848762291073" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.845749462594" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.848762291073" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.845749462594" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.848762291073" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -140,6 +140,32 @@
             <div class="relative retype-markdown" id="retype-content">
                 <!-- Rendered if sidebar right is enabled -->
                 <div id="retype-sidebar-right-toggle"></div>
+                <nav id="retype-breadcrumb" class="breadcrumb" aria-label="Breadcrumb">
+                    <ol role="list">
+                        <li class="pr-4">
+                            <a href="../../" class="pr-4">
+                                Landing
+                            </a>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/>
+                            </svg>
+                        </li>
+                        <li class="pr-4">
+                            <span class="pr-4">
+                                Server Dashboard
+                            </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/>
+                            </svg>
+                        </li>
+                        <li class="pr-4">
+                            <a href="../../server-dashboard/server-account-linking/" class="pr-4">
+                                Account Linking
+                            </a>
+                        </li>
+                    </ol>
+                </nav>
+
                 <doc-page-actions></doc-page-actions>
 
                 <!-- Page content  -->
@@ -157,27 +183,15 @@
 </div>
 
 <div id="retype-page-description" class="description-display text-description font-description leading-description mb-description-margin-bottom mt-description-margin-top tracking-description text-transform-description">Configure how members link their Minecraft account to Discord, including automatic role assignment, optional nickname syncing, auto-invites to selected Realms, and join log reporting.</div>
-<p>Account Linking allows members to associate their <strong>Minecraft (Microsoft/Xbox)</strong> identity with their <strong>Discord</strong> account. Once enabled, Realm Bot can automate common onboarding tasks such as <strong>role assignment</strong> and <strong>Realm invitations</strong>, while providing clear audit logs for staff.</p>
+<p>Account Linking verifies that a Discord member controls the Minecraft account they link.</p>
 <figure class="content-center">
     <img src="../../images/server-account-linking.png" alt="Account Linking Configuration" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="1280" height="660" />
     <figcaption class="caption">Account Linking Configuration</figcaption>
 </figure>
 <hr>
-<h2 id="what-account-linking-is-for">What Account Linking is for</h2>
-<p>Account Linking is designed to help you:</p>
-<ul>
-<li>Verify that a Discord member controls the Minecraft account they claim</li>
-<li>Automatically grant roles when a member successfully links</li>
-<li>Optionally sync Discord nicknames to match Minecraft usernames</li>
-<li>Automatically invite linked users to one or more connected Realms</li>
-<li>Log linking events to a dedicated channel for transparency</li>
-</ul>
-<hr>
 <h2 id="user-settings">User Settings</h2>
-<p>These settings control whether linking is enabled and how it behaves for users.</p>
 <h3 id="account-linking-1">Account Linking</h3>
 <p>When enabled, members can link their Minecraft account to Discord using the Realm Bot linking flow.</p>
-<p><strong>Recommended:</strong> Enable this for most communities, especially public or semi-public servers, as it supports verification and automation.</p>
 <h3 id="change-nickname">Change Nickname</h3>
 <p>When enabled, Realm Bot will update a user’s <strong>Discord nickname</strong> to match their Minecraft username after linking.</p>
 <p><strong>Before enabling, ensure:</strong></p>
@@ -191,24 +205,11 @@
 </blockquote>
 <hr>
 <h2 id="server-integration">Server Integration</h2>
-<p>These settings define what happens <em>after</em> an account is linked.</p>
 <h3 id="linked-account-roles">Linked Account Roles</h3>
 <p>Select one or more Discord roles to automatically assign when a member successfully links.</p>
-<p>Common uses:</p>
-<ul>
-<li>Grant access to member-only channels after verification</li>
-<li>Separate verified players from unverified users</li>
-<li>Apply moderation or gameplay roles tied to account ownership</li>
-</ul>
 <p><strong>Best practice:</strong> Assign only the minimum role(s) needed for access. Keep staff roles manual.</p>
 <h3 id="auto-invite-to-realms">Auto-invite to Realms</h3>
 <p>Choose which connected Realm(s) should automatically invite users when they link their account.</p>
-<p>This is ideal for:</p>
-<ul>
-<li>Whitelisted Realms</li>
-<li>Member-only Realms</li>
-<li>Servers that want a “link → join instantly” onboarding flow</li>
-</ul>
 <p><strong>Operational notes:</strong></p>
 <ul>
 <li>Auto-invite should be limited to trusted Realms (avoid auto-inviting to testing/admin Realms).</li>
@@ -229,7 +230,6 @@
 </ul>
 <hr>
 <h2 id="recommended-configuration">Recommended Configuration</h2>
-<p>For most servers, this is the cleanest configuration:</p>
 <ol>
 <li>Enable <strong>Account Linking</strong></li>
 <li>Set <strong>Linked Account Roles</strong> to a standard member role (e.g., <code translate="no" v-pre>Member</code> / <code translate="no" v-pre>Verified</code>)</li>
@@ -258,6 +258,51 @@
 <li>If your Realm has strict membership limits, ensure you have capacity for new invites.</li>
 </ul>
 <hr>
+<div id="retype-backlinks">
+    <h2>See also</h2>
+<div class="card-compact-group">
+<div class="card-compact-container">
+    <a href="/commands/verify/embed/" class="group card-compact no-link">
+        <div class="card-compact-body">
+            <div class="card-compact-header">
+                <span class="card-compact-title">/verify embed</span>
+            </div>
+            <p class="card-compact-description">Post Realm Bot's Microsoft/Xbox account-linking panel in the current Discord channel.</p>
+        </div>
+    </a>
+</div>
+<div class="card-compact-container">
+    <a href="/server-dashboard/overview/" class="group card-compact no-link">
+        <div class="card-compact-body">
+            <div class="card-compact-header">
+                <span class="card-compact-title">Server Dashboard</span>
+            </div>
+            <p class="card-compact-description">Understand the Server Dashboard overview, including Premium status, linked account details, connected Realms, and where to configure server-wide settings.</p>
+        </div>
+    </a>
+</div>
+<div class="card-compact-container">
+    <a href="/server-dashboard/server-setup/" class="group card-compact no-link">
+        <div class="card-compact-body">
+            <div class="card-compact-header">
+                <span class="card-compact-title">Server Setup</span>
+            </div>
+            <p class="card-compact-description">Complete the recommended setup checklist for your Discord server, including logging, permissions, warn presets, and account linking.</p>
+        </div>
+    </a>
+</div>
+<div class="card-compact-container">
+    <a href="/commands/verify/" class="group card-compact no-link">
+        <div class="card-compact-body">
+            <div class="card-compact-header">
+                <span class="card-compact-title">Verify Commands</span>
+            </div>
+            <p class="card-compact-description">Publish Realm Bot's Microsoft/Xbox account-linking panel for Discord members.</p>
+        </div>
+    </a>
+</div>
+</div>
+</div>
 
                 
                 <!-- Required only on API pages -->

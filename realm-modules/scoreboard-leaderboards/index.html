@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.845749462594">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.848762291073">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -44,11 +44,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../favicon.ico" />
-    <link href="../../resources/css/retype.css?v=4.6.0.845749462594" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.6.0.848762291073" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.845749462594" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.848762291073" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.845749462594" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.848762291073" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -140,6 +140,32 @@
             <div class="relative retype-markdown" id="retype-content">
                 <!-- Rendered if sidebar right is enabled -->
                 <div id="retype-sidebar-right-toggle"></div>
+                <nav id="retype-breadcrumb" class="breadcrumb" aria-label="Breadcrumb">
+                    <ol role="list">
+                        <li class="pr-4">
+                            <a href="../../" class="pr-4">
+                                Landing
+                            </a>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/>
+                            </svg>
+                        </li>
+                        <li class="pr-4">
+                            <span class="pr-4">
+                                Realm Modules
+                            </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/>
+                            </svg>
+                        </li>
+                        <li class="pr-4">
+                            <a href="../../realm-modules/scoreboard-leaderboards/" class="pr-4">
+                                Scoreboard Leaderboards
+                            </a>
+                        </li>
+                    </ol>
+                </nav>
+
                 <doc-page-actions></doc-page-actions>
 
                 <!-- Page content  -->
@@ -157,14 +183,9 @@
 </div>
 
 <div id="retype-page-description" class="description-display text-description font-description leading-description mb-description-margin-bottom mt-description-margin-top tracking-description text-transform-description">Publish live in-game scoreboard rankings to Discord, allowing players to track progress and compete through automated leaderboard embeds.</div>
-<p>Scoreboard Leaderboards allow you to display a live leaderboard for an in-game <strong>Minecraft scoreboard objective</strong> directly inside a Discord channel. This enables communities to track progress, promote competition, and keep key statistics visible without requiring players to join the Realm to view rankings.</p>
-<p>Leaderboards are rendered as Discord embeds and can be configured per scoreboard, per channel.</p>
-<h3 id="how-it-works">How it Works</h3>
-<p>Scoreboard Leaderboards operate by reading a selected scoreboard objective from your Realm and publishing the results to Discord.</p>
-<p>In practice:</p>
+<p>Publish the rankings for a Minecraft scoreboard objective in a Discord channel. Each leaderboard has its own objective and destination.</p>
+<h2 id="how-it-works">How it Works</h2>
 <ul>
-<li>You select a <strong>Discord channel</strong> where the leaderboard will be posted.</li>
-<li>You choose the <strong>Minecraft scoreboard</strong> (objective) you want to display.</li>
 <li>Realm Bot retrieves scoreboard values approximately <strong>once per minute</strong> and updates the embed.</li>
 <li>You can configure up to <strong>10 leaderboards</strong>, each showing up to <strong>10 entries</strong>.</li>
 <li>Realm Bot edits the existing Discord message where possible and recreates it if that message is no longer available.</li>
@@ -172,22 +193,19 @@
 <blockquote>
 <p><strong>Important:</strong> This feature is dependent on the Realm runtime environment. If the required in-game components are not active, leaderboards cannot update.</p>
 </blockquote>
-<h3 id="requirements">Requirements</h3>
-<p>Scoreboard Leaderboards require:</p>
+<h2 id="requirements">Requirements</h2>
 <ul>
 <li>The <strong>Relay Account</strong> to be actively <strong>in-game</strong>.</li>
 <li>The <strong>Realm Bot GameTest Pack</strong> installed and current.</li>
-<li><strong>Beta APIs</strong> enabled for the Realm.</li>
 <li>An active Realm Bot Premium subscription.</li>
 <li>At least one valid in-game <strong>scoreboard objective</strong> to display.</li>
 </ul>
-<p>If any requirement is missing (Relay Account offline, pack disabled, or scoreboard not present), leaderboard updates may fail or show no data.</p>
-<h3 id="how-to-set-up">How to Set Up</h3>
+<h2 id="how-to-set-up">How to Set Up</h2>
 <ol>
-<li>Open the <strong>Scoreboard Leaderboards</strong> module in the Realm Bot Dashboard and enable it.<br/>
+<li>Open the <strong>Scoreboard Leaderboards</strong> module in the Realm Bot Dashboard and enable it.
 <img src="../../images/scoreboard.png" alt="Scoreboard Leaderboards Main Page" class="max-w-full h-auto" width="1277" height="549" /></li>
 <li>Select <strong>Create Leaderboard</strong>.</li>
-<li>Configure the leaderboard using the creation menu.<br/>
+<li>Configure the leaderboard using the creation menu.
 <img src="../../images/scoreboard-definitions.png" alt="Create Scoreboard Leaderboard Menu" class="max-w-full h-auto" width="787" height="563" /></li>
 <li>Set the following:
 <ul>
@@ -198,14 +216,13 @@
 <li>(Optional) Customise the embed appearance:
 <ul>
 <li><strong>Embed Title</strong> - the label shown at the top of the embed.</li>
-<li><strong>Embed Color</strong> - the accent color used for the embed.</li>
+<li><strong>Embed Colour</strong> - the accent colour used for the embed.</li>
 </ul>
 </li>
 <li>Save the leaderboard configuration.</li>
 </ol>
-<p>Once created, the leaderboard will begin updating in the selected channel when the Relay Account is online and the Gametest Pack is active.</p>
 <p>Realm Bot requires <strong>View Channel</strong>, <strong>Send Messages</strong>, <strong>Embed Links</strong>, and <strong>Read Message History</strong> in each destination channel.</p>
-<h3 id="recommended-usage">Recommended Usage</h3>
+<h2 id="recommended-usage">Recommended Usage</h2>
 <p>Scoreboard Leaderboards are ideal for:</p>
 <ul>
 <li>Factions / prisons progression metrics</li>
@@ -219,31 +236,45 @@
 <li>Keep one leaderboard per channel unless you have a structured layout (multiple leaderboards in one channel can become difficult to read).</li>
 <li>Use clear embed titles aligned with your scoreboard objective name (for example: “Top Kills”, “Top Balance”, “Top Wins”).</li>
 </ul>
-<h3 id="common-issues">Common Issues</h3>
-<p><strong>The leaderboard shows no entries</strong></p>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<h3 id="the-leaderboard-shows-no-entries">The leaderboard shows no entries</h3>
 <ul>
 <li>Confirm the selected scoreboard objective exists in-game and contains values.</li>
 <li>Ensure the Relay Account is online in the Realm.</li>
 <li>Verify the Realm Bot GameTest Pack is installed and current.</li>
-<li>Confirm Beta APIs are enabled.</li>
 </ul>
-<p><strong>The leaderboard is not posting to Discord</strong></p>
+<h3 id="the-leaderboard-is-not-posting-to-discord">The leaderboard is not posting to Discord</h3>
 <ul>
 <li>Confirm the bot has permission to <strong>View Channel</strong>, <strong>Send Messages</strong>, <strong>Embed Links</strong>, and <strong>Read Message History</strong> in the selected channel.</li>
 <li>Verify the correct channel was selected during setup.</li>
 </ul>
-<p><strong>The scoreboard name is not appearing in the dropdown</strong></p>
+<h3 id="the-scoreboard-name-is-not-appearing-in-the-dropdown">The scoreboard name is not appearing in the dropdown</h3>
 <ul>
 <li>The scoreboard objective may not be created in-game yet, or the environment may not be detectable if the required pack/account is offline.</li>
 <li>Create or validate the scoreboard in-game, then refresh the dashboard and try again.</li>
-<li>Confirm the Relay Account joined after the GameTest Pack and Beta APIs were enabled.</li>
+<li>Confirm the Relay Account is connected and the GameTest bridge is responding.</li>
 </ul>
-<h3 id="best-practices">Best Practices</h3>
+<h2 id="best-practices">Best Practices</h2>
 <ul>
 <li>Treat leaderboard channels as read-only where possible to keep output clean.</li>
 <li>Standardise scoreboard objective naming in-game to reduce confusion in the dashboard.</li>
 <li>If you are using leaderboards competitively, ensure your scoreboard values cannot be trivially manipulated by players.</li>
 </ul>
+<div id="retype-backlinks">
+    <h2>See also</h2>
+<div class="card-compact-group">
+<div class="card-compact-container">
+    <a href="/commands/stats/leaderboard/" class="group card-compact no-link">
+        <div class="card-compact-body">
+            <div class="card-compact-header">
+                <span class="card-compact-title">/leaderboard</span>
+            </div>
+            <p class="card-compact-description">Open the Discord server's public Realm Bot web leaderboard.</p>
+        </div>
+    </a>
+</div>
+</div>
+</div>
 
                 
                 <!-- Required only on API pages -->
@@ -253,11 +284,11 @@
             
                 <nav id="retype-nextprev" class="print:hidden flex mt-14">
                     <div class="w-1/2">
-                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../realm-modules/member-gate/">
+                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../realm-modules/realm-security/">
                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                             <span>
                                 <span class="block text-xs font-normal text-base-text-muted">Previous</span>
-                                <span class="block mt-1">Member Gate</span>
+                                <span class="block mt-1">Realm Security</span>
                             </span>
                         </a>
                     </div>

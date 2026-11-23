@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.845749462594">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.848762291073">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -44,11 +44,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../favicon.ico" />
-    <link href="../../resources/css/retype.css?v=4.6.0.845749462594" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.6.0.848762291073" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.845749462594" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.848762291073" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.845749462594" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.848762291073" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -140,6 +140,32 @@
             <div class="relative retype-markdown" id="retype-content">
                 <!-- Rendered if sidebar right is enabled -->
                 <div id="retype-sidebar-right-toggle"></div>
+                <nav id="retype-breadcrumb" class="breadcrumb" aria-label="Breadcrumb">
+                    <ol role="list">
+                        <li class="pr-4">
+                            <a href="../../" class="pr-4">
+                                Landing
+                            </a>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/>
+                            </svg>
+                        </li>
+                        <li class="pr-4">
+                            <span class="pr-4">
+                                Server Dashboard
+                            </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/>
+                            </svg>
+                        </li>
+                        <li class="pr-4">
+                            <a href="../../server-dashboard/server-mod-logs/" class="pr-4">
+                                Moderation Logs
+                            </a>
+                        </li>
+                    </ol>
+                </nav>
+
                 <doc-page-actions></doc-page-actions>
 
                 <!-- Page content  -->
@@ -157,28 +183,11 @@
 </div>
 
 <div id="retype-page-description" class="description-display text-description font-description leading-description mb-description-margin-bottom mt-description-margin-top tracking-description text-transform-description">Review and audit moderation actions taken across your connected realms, with filtering and per-user history views.</div>
-<p>The <strong>Moderation Logs</strong> page provides an auditable record of moderation actions taken across your connected realms. It is designed for transparency, staff accountability, and quick investigation of repeat offenders.</p>
+<p>Use <strong>Moderation Logs</strong> to review bans, kicks, warnings and reversals across your connected Realms.</p>
 <figure class="content-center">
     <img src="../../images/server-mod-logs.png" alt="Moderation Logs" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="1475" height="764" />
     <figcaption class="caption">Moderation Logs</figcaption>
 </figure>
-<hr>
-<h2 id="what-you-can-do-here">What You Can Do Here</h2>
-<h3 id="track-actions-across-realms">Track actions across realms</h3>
-<p>Moderation Logs consolidate actions taken through Realm Bot, including:</p>
-<ul>
-<li>bans</li>
-<li>kicks</li>
-<li>warnings (if enabled in your configuration)</li>
-<li>unbans and other reversal actions (where applicable)</li>
-</ul>
-<p>Each event is stored with enough context to understand:</p>
-<ul>
-<li><strong>what happened</strong></li>
-<li><strong>who performed the action</strong></li>
-<li><strong>when it happened</strong></li>
-<li><strong>which realm the action applied to</strong></li>
-</ul>
 <hr>
 <h2 id="timeline-view">Timeline View</h2>
 <p>By default, Moderation Logs use a <strong>timeline view</strong> that groups actions by user.</p>
@@ -203,34 +212,15 @@
 </ul>
 </li>
 </ul>
-<blockquote>
-<p><strong>Tip:</strong> Timeline view is ideal when you are investigating a player’s pattern of behaviour.</p>
-</blockquote>
 <hr>
 <h2 id="search--filtering">Search &amp; Filtering</h2>
 <h3 id="search">Search</h3>
-<p>Use the <strong>Search</strong> bar to locate a player quickly. This is the fastest way to:</p>
-<ul>
-<li>find a specific user</li>
-<li>confirm whether prior action has been taken</li>
-<li>review previous reasons and outcomes</li>
-</ul>
+<p>Search for a player to review their previous actions and reasons.</p>
 <h3 id="action-filter">Action Filter</h3>
-<p>Use the <strong>All Actions</strong> dropdown to filter by action type. This is useful for:</p>
-<ul>
-<li>reviewing bans issued over a time period</li>
-<li>auditing kick usage by staff</li>
-<li>isolating warning activity if your server uses it heavily</li>
-</ul>
+<p>Select a type in <strong>All Actions</strong> to show only bans, kicks, warnings or reversals.</p>
 <hr>
 <h2 id="table-view">Table View</h2>
-<p>You can switch to <strong>Table View</strong> to see a more structured, list-based layout.</p>
-<p>Table View is useful when you need:</p>
-<ul>
-<li>a quick scan of recent actions</li>
-<li>a clean view for moderation review sessions</li>
-<li>faster comparisons across multiple users/actions</li>
-</ul>
+<p>Use <strong>Table View</strong> to compare recent actions across players rather than opening each player&#x27;s timeline.</p>
 <hr>
 <h2 id="best-practices">Best Practices</h2>
 <ul>
@@ -245,6 +235,32 @@
 <li>If your staff use additional in-game-only moderation, those actions may not appear unless they are executed through Realm Bot workflows.</li>
 </ul>
 <hr>
+<div id="retype-backlinks">
+    <h2>See also</h2>
+<div class="card-compact-group">
+<div class="card-compact-container">
+    <a href="/server-dashboard/overview/" class="group card-compact no-link">
+        <div class="card-compact-body">
+            <div class="card-compact-header">
+                <span class="card-compact-title">Server Dashboard</span>
+            </div>
+            <p class="card-compact-description">Understand the Server Dashboard overview, including Premium status, linked account details, connected Realms, and where to configure server-wide settings.</p>
+        </div>
+    </a>
+</div>
+<div class="card-compact-container">
+    <a href="/" class="group card-compact no-link">
+        <div class="card-compact-body">
+            <div class="card-compact-header">
+                <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M11.03 2.59a1.501 1.501 0 0 1 1.94 0l7.5 6.363a1.5 1.5 0 0 1 .53 1.144V19.5a1.5 1.5 0 0 1-1.5 1.5h-5.75a.75.75 0 0 1-.75-.75V14h-2v6.25a.75.75 0 0 1-.75.75H4.5A1.5 1.5 0 0 1 3 19.5v-9.403c0-.44.194-.859.53-1.144ZM12 3.734l-7.5 6.363V19.5h5v-6.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v6.25h5v-9.403Z"/></svg></span>
+                <span class="card-compact-title">Welcome to Realm Bot Documentation</span>
+            </div>
+            <p class="card-compact-description">Official Realm Bot documentation for managing Minecraft Bedrock Realms through Discord-setup guides, modules, security tools, and integrations.</p>
+        </div>
+    </a>
+</div>
+</div>
+</div>
 
                 
                 <!-- Required only on API pages -->

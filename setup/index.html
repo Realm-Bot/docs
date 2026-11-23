@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.845749462594">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.848762291073">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -12,7 +12,7 @@
     <!-- Primary Meta Tags -->
     <title>Getting Started | Realm Bot Docs</title>
     <meta name="title" content="Getting Started | Realm Bot Docs">
-    <meta name="description" content="Connect your Minecraft Bedrock Realm to Discord in three steps. Link your Microsoft account, run the connect command, then configure modules and settings.">
+    <meta name="description" content="Link your Microsoft account, connect your Bedrock Realms to a Discord server from the dashboard or Discord, and configure Realm Bot.">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://help.realmbot.dev/setup/">
@@ -22,7 +22,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://help.realmbot.dev/setup/">
     <meta property="og:title" content="Getting Started | Realm Bot Docs">
-    <meta property="og:description" content="Connect your Minecraft Bedrock Realm to Discord in three steps. Link your Microsoft account, run the connect command, then configure modules and settings.">
+    <meta property="og:description" content="Link your Microsoft account, connect your Bedrock Realms to a Discord server from the dashboard or Discord, and configure Realm Bot.">
     <meta property="og:image" content="https://help.realmbot.dev/images/getting-started-step-1.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -34,7 +34,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://help.realmbot.dev/setup/">
     <meta name="twitter:title" content="Getting Started | Realm Bot Docs">
-    <meta name="twitter:description" content="Connect your Minecraft Bedrock Realm to Discord in three steps. Link your Microsoft account, run the connect command, then configure modules and settings.">
+    <meta name="twitter:description" content="Link your Microsoft account, connect your Bedrock Realms to a Discord server from the dashboard or Discord, and configure Realm Bot.">
     <meta name="twitter:image" content="https://help.realmbot.dev/images/getting-started-step-1.png">
     <meta name="twitter:image:alt" content="Getting Started | Realm Bot Docs">
 
@@ -44,11 +44,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../favicon.ico" />
-    <link href="../resources/css/retype.css?v=4.6.0.845749462594" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=4.6.0.848762291073" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=4.6.0.845749462594" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=4.6.0.848762291073" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.6.0.845749462594" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.6.0.848762291073" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -140,6 +140,24 @@
             <div class="relative retype-markdown" id="retype-content">
                 <!-- Rendered if sidebar right is enabled -->
                 <div id="retype-sidebar-right-toggle"></div>
+                <nav id="retype-breadcrumb" class="breadcrumb" aria-label="Breadcrumb">
+                    <ol role="list">
+                        <li class="pr-4">
+                            <a href="../" class="pr-4">
+                                Landing
+                            </a>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/>
+                            </svg>
+                        </li>
+                        <li class="pr-4">
+                            <a href="../setup/" class="pr-4">
+                                Getting Started
+                            </a>
+                        </li>
+                    </ol>
+                </nav>
+
                 <doc-page-actions></doc-page-actions>
 
                 <!-- Page content  -->
@@ -163,23 +181,14 @@
     </div>
 </div>
 
-<div id="retype-page-description" class="description-display text-description font-description leading-description mb-description-margin-bottom mt-description-margin-top tracking-description text-transform-description">Connect your Minecraft Bedrock Realm to Discord in three steps. Link your Microsoft account, run the connect command, then configure modules and settings.</div>
-<p>This guide walks you through the official setup flow to connect your Minecraft Bedrock Realm to Discord using Realm Bot. The onboarding process is designed to be completed in a few minutes and is separated into three stages:</p>
-<ol>
-<li><strong>Link Microsoft Account</strong></li>
-<li><strong>Run Discord Command</strong></li>
-<li><strong>Configure Settings</strong></li>
-</ol>
-<figure class="content-center">
-    <img src="../images/getting-started-step-1.png" alt="Setup Flow Overview" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="700" height="622" />
-    <figcaption class="caption">Setup Flow Overview</figcaption>
-</figure>
+<div id="retype-page-description" class="description-display text-description font-description leading-description mb-description-margin-bottom mt-description-margin-top tracking-description text-transform-description">Link your Microsoft account, connect your Bedrock Realms to a Discord server from the dashboard or Discord, and configure Realm Bot.</div>
+<p>Link your Microsoft account, connect its Realms to your Discord server, then choose the modules you want to use.</p>
 <hr>
 <h2 id="before-you-begin">Before You Begin</h2>
 <h3 id="1-invite-realm-bot-to-your-discord-server">1) Invite Realm Bot to Your Discord Server</h3>
 <p>Realm Bot must be present in your Discord server before you can run the connection command.</p>
 <ul>
-<li>Use the <code translate="no" v-pre>/invite</code> command <strong>or</strong> invite via: <a href="https://realmbot.dev/invite">https://realmbot.dev/invite</a></li>
+<li>Use the <code translate="no" v-pre>/invite</code> command <strong>or</strong> invite via: <a href="https://realmbot.dev/invite" class="outbound" target="_blank"><span>https://realmbot.dev/invite</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a></li>
 <li>Grant the required permissions. <strong>Administrator</strong> is recommended for full functionality.</li>
 </ul>
 <blockquote>
@@ -189,13 +198,13 @@
 <p>You should be:</p>
 <ul>
 <li>The Realm Owner, or a trusted administrator with access to manage the Realm</li>
-<li>A Discord administrator (or equivalent) in the server you are connecting</li>
+<li>The Discord server owner or an <strong>Administrator</strong> to select the server in the dashboard. <strong>Manage Server</strong> alone is not sufficient.</li>
 </ul>
 <hr>
 <h2 id="step-1---link-your-microsoft-account">Step 1 - Link Your Microsoft Account</h2>
-<p>Realms are owned and managed through a Microsoft/Xbox account. Realm Bot requires you to link a Microsoft account so it can detect and manage your available Realms.</p>
+<p>Link the Microsoft/Xbox account that manages the Realms you want to connect.</p>
 <ol>
-<li>Go to the dashboard: <a href="https://dashboard.realmbot.dev">https://dashboard.realmbot.dev</a></li>
+<li>Go to the dashboard: <a href="https://dashboard.realmbot.dev" class="outbound" target="_blank"><span>https://dashboard.realmbot.dev</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a></li>
 <li>Sign in with Discord.</li>
 <li>Select <strong>Connect Microsoft Account</strong> to link your Microsoft/Xbox account.</li>
 </ol>
@@ -207,53 +216,25 @@
 <p><strong>Security Note:</strong> Only link an account you trust to administrate the Realm. Treat account linking as privileged access.</p>
 </blockquote>
 <hr>
-<h2 id="step-2---run-the-discord-connection-command">Step 2 - Run the Discord Connection Command</h2>
-<p>After your Microsoft account is linked, the next step is to connect that account to the correct Discord server.</p>
-<ol>
-<li>Open the Discord server you want to connect.</li>
-<li>Run the following command in any channel where Realm Bot can respond:</li>
-</ol>
-<p><code translate="no" v-pre>/connect</code></p>
-<figure class="content-center">
-    <img src="../images/getting-started-step-2.png" alt="Run Discord Command" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="693" height="609" />
-    <figcaption class="caption">Run Discord Command</figcaption>
-</figure>
-<h3 id="what-connect-does">What <code translate="no" v-pre>/connect</code> Does</h3>
-<ul>
-<li>Verifies your linked Microsoft account</li>
-<li>Associates the current Discord server with your Realm management context</li>
-<li>Enables the dashboard to load and configure Realm-specific settings and modules</li>
-</ul>
+<h2 id="step-2---connect-your-realms">Step 2 - Connect Your Realms</h2>
 <blockquote>
-<p><strong>Tip:</strong> If you manage multiple servers, ensure you run <code translate="no" v-pre>/connect</code> in the correct server first. You can repeat the process per server if needed.</p>
+<p><strong>Warning:</strong> Check the selected Discord server and Xbox account before connecting. If a returned Realm is already associated with another Discord server, connecting <strong>moves</strong> its association, disables its Realm Bot modules and clears their configurations. Record any settings you need to keep. This does not transfer ownership in Minecraft.</p>
 </blockquote>
+<p>Choose <strong>one</strong> route. Both refresh the Realms associated with your linked Xbox account:</p>
+<ul>
+<li><strong>Dashboard:</strong> Select the intended server. After <strong>Connect Microsoft Account</strong>, select <strong>Connect Realms</strong>. On a server with no connected Realms, the same action is available from <strong>Server Overview &gt; Connect Realms</strong>.</li>
+<li><strong>Discord:</strong> In the intended server, run <a href="../commands/utility/connect/"><code translate="no" v-pre>/connect</code></a> in a channel where Realm Bot can respond. If someone referred you, you can enter their code in the optional <code translate="no" v-pre>referral_code</code> field. See <a href="../tools/referrals/">Referrals</a> for eligibility.</li>
+</ul>
+<p>Confirm that the expected Realms appear in the server dashboard before configuring modules.</p>
 <hr>
 <h2 id="step-3---configure-your-realm-settings">Step 3 - Configure Your Realm Settings</h2>
-<p>Once your connection is established, you can configure your Realm using the dashboard and the relevant module pages.</p>
-<p>Recommended configuration sequence:</p>
 <ol>
 <li><strong>Choose your Realm</strong> (if prompted)</li>
 <li>Review <strong>Bot Join Settings</strong> (how the relay/bot connects)</li>
 <li>Configure <strong>Gametest Pack Management</strong> (only if required by your modules)</li>
-<li>Enable and configure any <strong>Realm Modules</strong> you plan to use:
-<ul>
-<li>Chat Relay</li>
-<li>Realm Console</li>
-<li>Bot Detection</li>
-<li>Member Gate</li>
-<li>Skin Filtering</li>
-<li>Leveling</li>
-<li>Scoreboard Leaderboards</li>
-<li>Live Playerlist</li>
-<li>Vanity URL</li>
-<li>(Optional) Tebex Integration</li>
-</ul>
-</li>
+<li>Enable the features you need in <a href="../realm-modules/overview/">Realm Modules</a>. If you use a Tebex store, follow <a href="../integrations/tebex/">Tebex setup</a>.</li>
 </ol>
-<p>You can also view command help in Discord at any time:</p>
-<ul>
-<li><code translate="no" v-pre>/help</code></li>
-</ul>
+<p>For command help in Discord, run <code translate="no" v-pre>/help</code>.</p>
 <hr>
 <h2 id="common-issues">Common Issues</h2>
 <h3 id="i-cant-see-my-realms-in-the-dashboard">“I can’t see my Realms in the dashboard.”</h3>
@@ -263,26 +244,98 @@
 <li>Re-open the dashboard and refresh after linking.</li>
 </ul>
 <h3 id="connect-does-nothing-or-fails"><code translate="no" v-pre>/connect</code> does nothing or fails.</h3>
-<p>Check the following:</p>
 <ul>
 <li>Realm Bot is invited to the server and is online.</li>
 <li>You are running <code translate="no" v-pre>/connect</code> in a server channel where the bot has permission to respond.</li>
 <li>Your role has sufficient permissions to run management commands (server admin recommended).</li>
 </ul>
 <h3 id="xboxmicrosoft-privacy-blocks-linking-or-access">Xbox/Microsoft privacy blocks linking or access.</h3>
-<p>If linking or Realm access fails, review your Xbox privacy settings to ensure external services can function correctly.</p>
-<blockquote>
-<p><strong>Important:</strong> Privacy settings can prevent applications from accessing required profile/realm data. If issues persist, adjust the relevant Xbox privacy options and retry linking.</p>
-</blockquote>
+<p>Check whether the linked Xbox account&#x27;s privacy settings allow access to the required profile and Realm information, then retry.</p>
 <hr>
 <h2 id="next-steps">Next Steps</h2>
-<p>Once setup is complete:</p>
 <ul>
 <li>Open the <a href="../realm-modules/overview/">Realm Modules Overview</a> to configure features.</li>
 <li>Review <a href="../realm-modules/relay-account-and-gametest/">Relay Account and GameTest Dependencies</a> before enabling live or GameTest-dependent modules.</li>
 <li>Configure <a href="../server-dashboard/server-permissions/">Permissions</a> and Discord channel access before giving staff operational control.</li>
 <li>Use <a href="../troubleshooting/private-title-history/">Troubleshooting</a> when an automated entry check reports private title history.</li>
 </ul>
+<div id="retype-backlinks">
+    <h2>See also</h2>
+<div class="card-compact-group">
+<div class="card-compact-container">
+    <a href="/commands/utility/connect/" class="group card-compact no-link">
+        <div class="card-compact-body">
+            <div class="card-compact-header">
+                <span class="card-compact-title">/connect</span>
+            </div>
+            <p class="card-compact-description">Associate the current Discord server with the invoking member's linked Microsoft/Xbox Realm account.</p>
+        </div>
+    </a>
+</div>
+<div class="card-compact-container">
+    <a href="/commands/troubleshooting/" class="group card-compact no-link">
+        <div class="card-compact-body">
+            <div class="card-compact-header">
+                <span class="card-compact-title">Command Troubleshooting</span>
+            </div>
+            <p class="card-compact-description">Resolve common Realm Bot slash-command permission, connection, Premium, Relay Account, GameTest, and input errors.</p>
+        </div>
+    </a>
+</div>
+<div class="card-compact-container">
+    <a href="/commands/" class="group card-compact no-link">
+        <div class="card-compact-body">
+            <div class="card-compact-header">
+                <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M8.75 8h6.5a.75.75 0 0 1 .75.75v6.5a.75.75 0 0 1-.75.75h-6.5a.75.75 0 0 1-.75-.75v-6.5A.75.75 0 0 1 8.75 8Zm.75 6.5h5v-5h-5Z"/><path d="M15.25 1a.75.75 0 0 1 .75.75V4h2.25c.966 0 1.75.784 1.75 1.75V8h2.25a.75.75 0 0 1 0 1.5H20v5h2.25a.75.75 0 0 1 0 1.5H20v2.25A1.75 1.75 0 0 1 18.25 20H16v2.25a.75.75 0 0 1-1.5 0V20h-5v2.25a.75.75 0 0 1-1.5 0V20H5.75A1.75 1.75 0 0 1 4 18.25V16H1.75a.75.75 0 0 1 0-1.5H4v-5H1.75a.75.75 0 0 1 0-1.5H4V5.75C4 4.784 4.784 4 5.75 4H8V1.75a.75.75 0 0 1 1.5 0V4h5V1.75a.75.75 0 0 1 .75-.75Zm3 17.5a.25.25 0 0 0 .25-.25V5.75a.25.25 0 0 0-.25-.25H5.75a.25.25 0 0 0-.25.25v12.5c0 .138.112.25.25.25Z"/></svg></span>
+                <span class="card-compact-title">Commands</span>
+            </div>
+            <p class="card-compact-description">Use Realm Bot's Discord slash commands to manage connected Minecraft Bedrock Realms, players, activity, and live Relay features.</p>
+        </div>
+    </a>
+</div>
+<div class="card-compact-container">
+    <a href="/realm-page/realm-overview/" class="group card-compact no-link">
+        <div class="card-compact-body">
+            <div class="card-compact-header">
+                <span class="card-compact-title">Realm Overview</span>
+            </div>
+            <p class="card-compact-description">View essential Realm status, slots, settings, and recent activity from a single dashboard page, with quick access to official Realm management.</p>
+        </div>
+    </a>
+</div>
+<div class="card-compact-container">
+    <a href="/global-ban/realm-protection/" class="group card-compact no-link">
+        <div class="card-compact-body">
+            <div class="card-compact-header">
+                <span class="card-compact-title">Realm Protection</span>
+            </div>
+            <p class="card-compact-description">Configure which active Realm Hub Global Ban categories Realm Bot applies to a connected Realm.</p>
+        </div>
+    </a>
+</div>
+<div class="card-compact-container">
+    <a href="/tools/referrals/" class="group card-compact no-link">
+        <div class="card-compact-body">
+            <div class="card-compact-header">
+                <span class="card-compact-title">Referrals</span>
+            </div>
+            <p class="card-compact-description">Share a referral code, check eligibility, and track earned Realm Bot Premium time.</p>
+        </div>
+    </a>
+</div>
+<div class="card-compact-container">
+    <a href="/" class="group card-compact no-link">
+        <div class="card-compact-body">
+            <div class="card-compact-header">
+                <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M11.03 2.59a1.501 1.501 0 0 1 1.94 0l7.5 6.363a1.5 1.5 0 0 1 .53 1.144V19.5a1.5 1.5 0 0 1-1.5 1.5h-5.75a.75.75 0 0 1-.75-.75V14h-2v6.25a.75.75 0 0 1-.75.75H4.5A1.5 1.5 0 0 1 3 19.5v-9.403c0-.44.194-.859.53-1.144ZM12 3.734l-7.5 6.363V19.5h5v-6.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v6.25h5v-9.403Z"/></svg></span>
+                <span class="card-compact-title">Welcome to Realm Bot Documentation</span>
+            </div>
+            <p class="card-compact-description">Official Realm Bot documentation for managing Minecraft Bedrock Realms through Discord-setup guides, modules, security tools, and integrations.</p>
+        </div>
+    </a>
+</div>
+</div>
+</div>
 
                 
                 <!-- Required only on API pages -->

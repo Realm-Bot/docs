@@ -1,108 +1,70 @@
 # Server Dashboard
 
-The **Server Dashboard** is the central control panel for your Discord server within Realm Bot. It provides:
-
-- A high-level overview of your server’s current status (including Premium state)
-- Confirmation of which Discord and Xbox accounts are linked
-- A list of connected Realms with quick “View” access
-- A structured navigation sidebar for all server-wide configuration pages
+Open your Discord server's **Overview** to check Premium status, verify the linked accounts, or select a connected Realm.
 
 ![Server Dashboard Overview](/images/server-dashboard-overview.png)
 
 ---
 
-## What the Server Dashboard is for
+## Premium Status
 
-Use the Server Dashboard to:
-
-- Confirm the server is connected and configured correctly
-- Verify the **correct linked accounts** are being used for management and Realm access
-- Navigate to **server-wide settings** (logging, permissions, command configuration)
-- Jump into **Realm-specific dashboards** from the Connected Realms list
-
-This page is intended as an **at-a-glance operational overview**, while the sidebar contains the detailed configuration pages.
+**Premium Status** shows whether Premium is active and how much time remains.
 
 ---
 
-## Premium Status
+## Bot Server Profile
 
-The top section shows your server identity and Premium indicator (when applicable), alongside a **Premium Status** progress bar and remaining time.
+With Premium, use **Bot Server Profile** to change Realm Bot's avatar and nickname for this Discord server.
 
-Typical uses:
-- Confirm Premium is active before configuring Premium-only modules
-- Validate remaining subscription time for operational planning
+See [Bot Server Profile](bot-server-profile.md) for supported images, nickname limits, and reset controls.
 
-> **Note:** Some features and modules may only function when Premium is active for the server.
+---
+
+## Bot Updates & Announcements
+
+Choose a Discord channel to receive official Realm Bot announcements. See [Updates Channel](server-setup.md#updates-channel) for subscribing, changing the destination or stopping delivery.
 
 ---
 
 ## Linked User Information
 
-The **Linked User Information** section confirms the identities attached to this server configuration.
+Check the Discord username and Xbox gamertag. The Xbox account identifier (XUID) may also be shown.
 
-It typically includes:
-
-### Discord Account
-- The Discord profile currently linked to the server dashboard context
-- Username and handle (as displayed on Discord)
-
-### Xbox Account
-- The Xbox gamertag currently linked for Realm access
-- An identifier such as **XUID** (Xbox User ID), where shown
-
-This section is important for troubleshooting:
-- Missing Realms often indicates the **wrong Microsoft/Xbox account** is linked.
+- If a Realm is missing, check that the correct Microsoft/Xbox account is linked.
 - Unexpected permissions or access issues can be caused by linking a non-owner account.
 
 ---
 
 ## Connected Realms
 
-The **Connected Realms** panel displays all Realms detected/connected under your linked Xbox account(s). Each Realm card typically includes:
-
-- Realm name and sub-label (if applicable)
-- A **View** button to open that Realm’s dashboard pages
-
-This is the fastest way to switch between Realms without searching through menus.
-
-Operational guidance:
-- Keep Realm naming consistent so staff can identify the correct Realm quickly.
-- If a Realm is missing, verify account linking and permissions first.
+Select **View** beside the Realm you want to manage.
 
 ---
 
 ## Navigation Sidebar
 
-The left sidebar is the entry point to all Server Dashboard pages and is divided into clear sections.
-
 ![Server Dashboard Navigation List](/images/server-dashboard-list.png)
 
 ### Overview
-- **Overview** - the page you are currently viewing
-- **Server Setup** - guided or consolidated setup tooling (where available)
+- [Server Setup](server-setup.md) - configure logging, role permissions, warning presets and account linking.
 
 ### Manage
-Server-wide configuration pages used for daily operations:
-
-- **Log Channels** - choose where operational logs are posted
-- **Account Linking** - manage Discord/Microsoft linking state and related flows
-- **Message Actions** - configure automated message behaviours (where supported)
-- **Warn Settings** - configure warning/discipline behaviour and thresholds (where supported)
-- **Command Settings** - control how commands display information
-- **Permissions** - define who can access server features and dashboards
-- **Allowlist** - restrict access to approved users/roles (where applicable)
-- **Logs** - view recorded events and administrative activity (where available)
+- [Log Channels](server-logs.md) - choose Discord destinations for moderation logs.
+- [Account Linking](server-account-linking.md) - assign roles or invite verified members to a Realm.
+- [Message Actions](server-message-actions.md) - customise the messages players receive after moderation actions.
+- [Warn Settings](server-warnings.md) - set warning reasons and ban thresholds.
+- [Command Settings](server-command-settings.md) - choose how much player information appears in Discord.
+- [Permissions](server-permissions.md) - assign commands to staff roles.
+- [Allowlist](server-allowlist.md) - exempt trusted players from automated checks.
+- [Moderation Logs](server-mod-logs.md) - review past actions by player or action type.
+- [Invite Links](server-invites.md) - create and manage Realm invitations.
 
 ### Realms
 A list of all connected Realms is shown at the bottom. Selecting a Realm expands its available Realm pages and configuration areas.
 
-> **Best Practice:** Treat server-wide settings (permissions, allowlist, command controls) as your security foundation before enabling high-impact modules on individual Realms.
-
 ---
 
 ## Recommended Setup Order
-
-For a clean, secure deployment:
 
 1. Confirm Premium status (if applicable)
 2. Verify **Linked User Information** (correct Discord + Xbox account)

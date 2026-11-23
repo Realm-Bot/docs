@@ -1,6 +1,6 @@
 # `/realm backup-create`
 
-Starts a backup request for one selected Realm. The command reports when creation has started; it does not guarantee that asynchronous processing has fully completed.
+Request a backup of one Realm. The initial response confirms the request, not a completed backup.
 
 ## Syntax
 
@@ -22,8 +22,6 @@ Starts a backup request for one selected Realm. The command reports when creatio
 ## Example
 
 `/realm backup-create realm:<selected Realm> name:Before event`
-
-Realm Bot submits the backup request and reports that creation has started.
 
 ## Verify the Backup
 

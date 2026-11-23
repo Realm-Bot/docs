@@ -21,7 +21,7 @@ The server's [Command Settings](<../../Server Dashboard/server-command-settings.
 - **Compact** displays the gamertag and detected device.
 - **Detailed** can also display the player's official Realm permission.
 
-The runtime does not currently provide gamerscore or an Xbox Gold/Silver indicator through this command.
+The command does not show gamerscore or Xbox Gold/Silver status.
 
 When several Realms are displayed, the public controls move between Realm results.
 

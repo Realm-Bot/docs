@@ -11,6 +11,8 @@ Realm commands use the connected Microsoft/Xbox account to manage official Minec
 - [`/realm kick`](kick.md)
 - [`/realm invite`](invite.md)
 - [`/realm permission`](permission.md)
+- [`/realm lockdown`](<../../Realm Modules/realm-security.md#activate-or-end-lockdown>) (Premium)
+- [`/realm unlock`](<../../Realm Modules/realm-security.md#activate-or-end-lockdown>) (Premium)
 
 ## Realm Administration
 
@@ -29,6 +31,7 @@ Realm commands use the connected Microsoft/Xbox account to manage official Minec
 - [`/realm lastseen`](lastseen.md)
 - [`/realm playtime`](playtime.md)
 - [`/realm sessions`](sessions.md)
+- [`/realm perf`](perf.md) (Minecraft Realms Pro)
 
 ## Backups and Recovery
 

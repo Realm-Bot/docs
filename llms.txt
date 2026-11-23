@@ -3,8 +3,9 @@
 > Official Realm Bot documentation for managing Minecraft Bedrock Realms through Discord-setup guides, modules, security tools, and integrations.
 
 - [Welcome to Realm Bot Documentation](https://help.realmbot.dev/readme.md): Welcome to Realm Bot Documentation
-- [Getting Started](https://help.realmbot.dev/setup.md): Connect your Minecraft Bedrock Realm to Discord in three steps. Link your Microsoft account, run the connect command, then configure modules and settings.
+- [Getting Started](https://help.realmbot.dev/setup.md): Link your Microsoft account, connect your Bedrock Realms to a Discord server from the dashboard or Discord, and configure Realm Bot.
 - [Commands](https://help.realmbot.dev/commands/index.md): Use Realm Bot's Discord slash commands to manage connected Minecraft Bedrock Realms, players, activity, and live Relay features.
+- [Global Ban](https://help.realmbot.dev/global-ban/index.md): Understand Realm Bot's shared moderation database, Realm protection, public records, reporting, appeals, and custom lists.
 
 ## Server Dashboard
 
@@ -19,26 +20,31 @@
 - [Allowlist](https://help.realmbot.dev/server-dashboard/server-allowlist.md): Maintain an allowlist of trusted users who can bypass automated enforcement systems such as Member Gate, Bot Detection, and Skin Filtering.
 - [Moderation Logs](https://help.realmbot.dev/server-dashboard/server-mod-logs.md): Review and audit moderation actions taken across your connected realms, with filtering and per-user history views.
 - [Invite Links](https://help.realmbot.dev/server-dashboard/server-invites.md): Create secure, shareable invite links (realmbot.link/...) that let players join your Minecraft Bedrock Realms through a controlled, auditable flow with optional VPN/Tor blocking.
+- [Bot Server Profile](https://help.realmbot.dev/server-dashboard/bot-server-profile.md): Change or reset Realm Bot's avatar and nickname for one Discord server.
 
 ## Realm Modules
 
-- [Overview](https://help.realmbot.dev/realm-modules/overview.md): A central hub for managing your Realm connection, bot join behaviour, Gametest pack dependencies, and all available Realm Modules.
+- [Overview](https://help.realmbot.dev/realm-modules/overview.md): A central hub for managing your Realm connection, bot join behaviour, GameTest Pack dependencies, and all available Realm Modules.
 - [Chat Relay](https://help.realmbot.dev/realm-modules/chat-relay.md): Connect your Realm and Discord with a two-way chat bridge, including configurable message types, emote relaying, and built-in anti-spam controls.
 - [Realm Console](https://help.realmbot.dev/realm-modules/realm-console.md): Execute Minecraft commands directly from a secured Discord channel, using your in-game Relay Account as the command runner.
 - [Bot Detection](https://help.realmbot.dev/realm-modules/bot-detection.md): Detect and remove suspected automated accounts from connected public Realms, with optional experimental checks and automatic bans.
 - [Member Gate](https://help.realmbot.dev/realm-modules/member-gate.md): Evaluate joining players against device, gamerscore, and social-profile rules, with private-title-history and automated entry checks.
+- [Realm Security](https://help.realmbot.dev/realm-modules/realm-security.md): Configure temporary Realm lockdowns and staff alerts for watched players using the Lockdown and Watchlist controls.
 - [Scoreboard Leaderboards](https://help.realmbot.dev/realm-modules/scoreboard-leaderboards.md): Publish live in-game scoreboard rankings to Discord, allowing players to track progress and compete through automated leaderboard embeds.
 - [Vanity URL](https://help.realmbot.dev/realm-modules/vanity-url.md): Create a stable, memorable realmbot.link address that uses Realm Bot's managed Microsoft-authenticated invite flow.
 - [Skin Filtering](https://help.realmbot.dev/realm-modules/skin-filtering.md): Automatically detect and remove players using irregular skins (small, invisible/transparent, or 4D/Horion-style skins) to improve fairness and reduce exploit abuse.
 - [Leveling System](https://help.realmbot.dev/realm-modules/leveling-system.md): Award XP for eligible chat activity and online play, with persistent levels, rankings, leaderboards, and configurable level-up announcements.
 - [Live Playerlist](https://help.realmbot.dev/realm-modules/live-playerlist.md): Publish an automatically updating list of online Realm players to a Discord channel, with optional playtime and device identification.
-- [Relay Account and GameTest Dependencies](https://help.realmbot.dev/realm-modules/relay-account-and-gametest.md): Understand the shared Relay Account, GameTest Pack, Beta API, permission, and connection requirements used by Realm Bot modules.
+- [Relay Account and GameTest Dependencies](https://help.realmbot.dev/realm-modules/relay-account-and-gametest.md): Check Relay Account access, install the GameTest bridge, and diagnose connection-dependent Realm Bot features.
 
 ## Realm Page
 
 - [Realm Overview](https://help.realmbot.dev/realm-page/realm-overview.md): View essential Realm status, slots, settings, and recent activity from a single dashboard page, with quick access to official Realm management.
+- [Server Performance](https://help.realmbot.dev/realm-page/server-performance.md): Read live Minecraft Realms Pro metrics, compare recent history, and download performance data.
 - [Realm Activity](https://help.realmbot.dev/realm-page/realm-activity.md): Track player sessions, total playtime, daily activity trends, peak hours, and recent sessions to understand when your Realm is active and who is playing.
-- [World Management](https://help.realmbot.dev/realm-page/realm-world.md): Manage your Realm’s active world slot, download backups, replace worlds, and control Behaviour/Resource packs (including upload, enable/disable, and pack priority).
+- [Realms Hub](https://help.realmbot.dev/realm-page/realms-hub.md): Manage Minecraft Realm preferences, members, invitations, and administrative history.
+- [Scheduled Restart](https://help.realmbot.dev/realm-page/scheduled-restart.md): Schedule Realm restarts by local time and weekday and configure reminders for players.
+- [World Management](https://help.realmbot.dev/realm-page/realm-world.md): Manage world slots, backups, world replacement, packs, and gamerules for your Bedrock Realm.
 
 ## Commands
 
@@ -55,7 +61,7 @@
 - [Banlist Commands](https://help.realmbot.dev/commands/banlist/index.md): Inspect official Minecraft Realm blocklists and submit players for Realm Bot Global Ban review.
 - [/banlist all](https://help.realmbot.dev/commands/banlist/all.md): List players on a selected Minecraft Realm's official blocklist.
 - [/banlist lookup](https://help.realmbot.dev/commands/banlist/lookup.md): Check a player's official blocklist status in one or all connected Minecraft Realms.
-- [/db report](https://help.realmbot.dev/commands/banlist/report.md): Submit a Minecraft player and supporting evidence for Realm Bot Global Ban review.
+- [/db report](https://help.realmbot.dev/commands/banlist/report.md): Submit an evidence-backed Minecraft player report for Realm Hub Global Ban review.
 
 ### Player
 
@@ -84,6 +90,7 @@
 - [/realm sessions](https://help.realmbot.dev/commands/realm/sessions.md): Display a player's recorded Realm activity intervals grouped by day.
 - [/realm backup-create](https://help.realmbot.dev/commands/realm/backup-create.md): Start a named backup request for a selected Minecraft Bedrock Realm.
 - [/realm backup-list](https://help.realmbot.dev/commands/realm/backup-list.md): List, save, and restore automatic or manual backups for a selected Realm.
+- [/realm perf](https://help.realmbot.dev/commands/realm/perf.md): Display a recent performance graph for a Minecraft Realms Pro Realm in Discord.
 
 ### Invites
 
@@ -131,9 +138,20 @@
 - [/world execute](https://help.realmbot.dev/commands/world/execute.md): Execute a Minecraft command through the active Relay Account with its in-game authority.
 - [Command Troubleshooting](https://help.realmbot.dev/commands/troubleshooting.md): Resolve common Realm Bot slash-command permission, connection, Premium, Relay Account, GameTest, and input errors.
 
+## Global Ban
+
+- [Global Ban Overview](https://help.realmbot.dev/global-ban/overview.md): Understand the Realm Hub Global Ban Database, its public features, source boundaries, and moderation lifecycle.
+- [Realm Protection](https://help.realmbot.dev/global-ban/realm-protection.md): Configure which active Realm Hub Global Ban categories Realm Bot applies to a connected Realm.
+- [Ban List Explorer](https://help.realmbot.dev/global-ban/ban-list-explorer.md): Browse public moderation records, preview a GitHub ban list, and save a source to your account.
+- [Reporting Players](https://help.realmbot.dev/global-ban/reporting-players.md): Submit an evidence-backed Realm Hub Global Ban report and track its review status.
+- [Appeals](https://help.realmbot.dev/global-ban/appeals.md): Appeal an eligible Realm Hub Global Ban record through the Microsoft/Xbox account that owns it.
+- [Custom Ban List Format](https://help.realmbot.dev/global-ban/custom-ban-list-format.md): Prepare and validate a public GitHub JSON source for previewing, saving, and optional Realm protection.
+
 ## Tools
 
 - [Embed Panel](https://help.realmbot.dev/tools/embed-panel.md): Create a persistent Discord embed with up to five link or Realm-action buttons.
+- [Realm Stories](https://help.realmbot.dev/tools/realm-stories.md): Share new Minecraft Realm Story Feed posts, screenshots, and supported events in a selected Discord channel.
+- [Referrals](https://help.realmbot.dev/tools/referrals.md): Share a referral code, check eligibility, and track earned Realm Bot Premium time.
 
 ## Integrations
 

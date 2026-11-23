@@ -1,6 +1,6 @@
 # Member Gate
 
-Member Gate evaluates players as they join a Realm and removes those who match configured entry rules. It is intended for communities that apply platform restrictions or cautious profile-based onboarding.
+Member Gate checks players when they join and removes those who match your entry rules.
 
 > **Important:** Profile signals can be incomplete or private and may produce false positives. Member Gate should support, not replace, staff review and a clear appeal process.
 
@@ -14,7 +14,7 @@ Member Gate evaluates players as they join a Realm and removes those who match c
 
 Although the dashboard may display Kick and Ban choices, current rule enforcement removes matching players with a **kick**. Do not rely on a Ban selection for persistent enforcement.
 
-Realm Bot may also apply additional account-consistency checks while Member Gate is enabled. These checks are intentionally not exposed in detail.
+Realm Bot can also check account consistency while Member Gate is enabled.
 
 ## Available Conditions
 

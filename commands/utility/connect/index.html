@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.845749462594">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.848762291073">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -38,11 +38,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../../favicon.ico" />
-    <link href="../../../resources/css/retype.css?v=4.6.0.845749462594" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=4.6.0.848762291073" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.6.0.845749462594" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.6.0.848762291073" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.6.0.845749462594" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.6.0.848762291073" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -134,6 +134,40 @@
             <div class="relative retype-markdown" id="retype-content">
                 <!-- Rendered if sidebar right is enabled -->
                 <div id="retype-sidebar-right-toggle"></div>
+                <nav id="retype-breadcrumb" class="breadcrumb" aria-label="Breadcrumb">
+                    <ol role="list">
+                        <li class="pr-4">
+                            <a href="../../../" class="pr-4">
+                                Landing
+                            </a>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/>
+                            </svg>
+                        </li>
+                        <li class="pr-4">
+                            <a href="../../../commands/" class="pr-4">
+                                Commands
+                            </a>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/>
+                            </svg>
+                        </li>
+                        <li class="pr-4">
+                            <a href="../../../commands/utility/" class="pr-4">
+                                Utility
+                            </a>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/>
+                            </svg>
+                        </li>
+                        <li class="pr-4">
+                            <a href="../../../commands/utility/connect/" class="pr-4">
+                                /connect
+                            </a>
+                        </li>
+                    </ol>
+                </nav>
+
                 <doc-page-actions></doc-page-actions>
 
                 <!-- Page content  -->
@@ -159,8 +193,13 @@
 
 <div id="retype-page-description" class="description-display text-description font-description leading-description mb-description-margin-bottom mt-description-margin-top tracking-description text-transform-description">Associate the current Discord server with the invoking member's linked Microsoft/Xbox Realm account.</div>
 <p>Connects the current Discord server to the invoking member&#x27;s linked Microsoft/Xbox account and refreshes the Realms available through that account.</p>
+<blockquote>
+<p><strong>Warning:</strong> Check the Discord server and linked Xbox account first. If a returned Realm is associated with another server, connecting moves its association, disables its Realm Bot modules and clears their configurations. It does not copy the settings or transfer Minecraft ownership.</p>
+</blockquote>
 <h2 id="syntax">Syntax</h2>
-<p><code translate="no" v-pre>/connect</code></p>
+<p><code translate="no" v-pre>/connect [referral_code]</code></p>
+<p>If you were referred, enter the code from your referrer. The code is optional; see <a href="../../../tools/referrals/">Referrals</a> for eligibility.</p>
+<p><strong>Dashboard alternative:</strong> In onboarding, select <strong>Connect Realms</strong> after linking Microsoft, or use <strong>Server Overview &gt; Connect Realms</strong> on a server with no connected Realms. The same migration warning applies.</p>
 <h2 id="requirements">Requirements</h2>
 <ul>
 <li>The invoking Discord member must first link their Microsoft/Xbox account in the Realm Bot Dashboard.</li>
@@ -178,17 +217,7 @@
 <li>Reports the connected Realms.</li>
 </ol>
 <p>Ensure each Realm has usable access or invite information, commonly a permanent official code where the configured workflow requires one.</p>
-<h2 id="migration-warning">Migration Warning</h2>
-<blockquote>
-<p><strong>Warning:</strong> Connecting a Realm that is already associated with another Discord server can move that Realm&#x27;s stored association to the new server and reset its Realm Module configuration. There is no separate migration confirmation.</p>
-</blockquote>
-<p>Before running <code translate="no" v-pre>/connect</code>:</p>
-<ul>
-<li>Confirm the intended Discord server and Microsoft/Xbox account.</li>
-<li>Record important module destinations and settings.</li>
-<li>Check whether the same Realms are already managed from another server.</li>
-</ul>
-<p>Command registration can take a short time after the connection response.</p>
+<p>Command registration can take a short time after the response. If the Realm list cannot be refreshed, check the linked Xbox account, the Bedrock Realm and its permanent invite code. Relink the account if the refresh continues to fail.</p>
 <h2 id="related-commands">Related Commands</h2>
 <ul>
 <li><a href="../disconnect/"><code translate="no" v-pre>/disconnect</code></a></li>
@@ -196,6 +225,62 @@
 <li><a href="../../../setup/">Getting Started</a></li>
 <li><a href="../../troubleshooting/">Command Troubleshooting</a></li>
 </ul>
+<div id="retype-backlinks">
+    <h2>See also</h2>
+<div class="card-compact-group">
+<div class="card-compact-container">
+    <a href="/commands/utility/dashboard/" class="group card-compact no-link">
+        <div class="card-compact-body">
+            <div class="card-compact-header">
+                <span class="card-compact-title">/dashboard</span>
+            </div>
+            <p class="card-compact-description">Open Realm Bot Dashboard, account, and current-server management links.</p>
+        </div>
+    </a>
+</div>
+<div class="card-compact-container">
+    <a href="/commands/utility/disconnect/" class="group card-compact no-link">
+        <div class="card-compact-body">
+            <div class="card-compact-header">
+                <span class="card-compact-title">/disconnect</span>
+            </div>
+            <p class="card-compact-description">Clear the server's connected account association or remove its primary stored Guild record.</p>
+        </div>
+    </a>
+</div>
+<div class="card-compact-container">
+    <a href="/setup/" class="group card-compact no-link">
+        <div class="card-compact-body">
+            <div class="card-compact-header">
+                <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M20.322.75h1.176a1.75 1.75 0 0 1 1.75 1.749v1.177a10.75 10.75 0 0 1-2.925 7.374l-1.228 1.304a23.699 23.699 0 0 1-1.596 1.542v5.038c0 .615-.323 1.184-.85 1.5l-4.514 2.709a.75.75 0 0 1-1.12-.488l-.963-4.572a1.305 1.305 0 0 1-.14-.129L8.04 15.96l-1.994-1.873a1.305 1.305 0 0 1-.129-.14l-4.571-.963a.75.75 0 0 1-.49-1.12l2.71-4.514c.316-.527.885-.85 1.5-.85h5.037a23.668 23.668 0 0 1 1.542-1.594l1.304-1.23A10.753 10.753 0 0 1 20.321.75Zm-6.344 4.018v-.001l-1.304 1.23a22.275 22.275 0 0 0-3.255 3.851l-2.193 3.29 1.859 1.744a.545.545 0 0 1 .034.034l1.743 1.858 3.288-2.192a22.263 22.263 0 0 0 3.854-3.257l1.228-1.303a9.251 9.251 0 0 0 2.517-6.346V2.5a.25.25 0 0 0-.25-.25h-1.177a9.252 9.252 0 0 0-6.344 2.518ZM6.5 21c-1.209 1.209-3.901 1.445-4.743 1.49a.236.236 0 0 1-.18-.067.236.236 0 0 1-.067-.18c.045-.842.281-3.534 1.49-4.743.9-.9 2.6-.9 3.5 0 .9.9.9 2.6 0 3.5Zm-.592-8.588L8.17 9.017c.23-.346.47-.685.717-1.017H5.066a.25.25 0 0 0-.214.121l-2.167 3.612ZM16 15.112c-.333.248-.672.487-1.018.718l-3.393 2.262.678 3.223 3.612-2.167a.25.25 0 0 0 .121-.214ZM17.5 8a1.5 1.5 0 1 1-3.001-.001A1.5 1.5 0 0 1 17.5 8Z"/></svg></span>
+                <span class="card-compact-title">Getting Started</span>
+            </div>
+            <p class="card-compact-description">Link your Microsoft account, connect your Bedrock Realms to a Discord server from the dashboard or Discord, and configure Realm Bot.</p>
+        </div>
+    </a>
+</div>
+<div class="card-compact-container">
+    <a href="/tools/referrals/" class="group card-compact no-link">
+        <div class="card-compact-body">
+            <div class="card-compact-header">
+                <span class="card-compact-title">Referrals</span>
+            </div>
+            <p class="card-compact-description">Share a referral code, check eligibility, and track earned Realm Bot Premium time.</p>
+        </div>
+    </a>
+</div>
+<div class="card-compact-container">
+    <a href="/commands/utility/" class="group card-compact no-link">
+        <div class="card-compact-body">
+            <div class="card-compact-header">
+                <span class="card-compact-title">Utility Commands</span>
+            </div>
+            <p class="card-compact-description">Connect Realm Bot, open service resources, review subscription information, and view bot status.</p>
+        </div>
+    </a>
+</div>
+</div>
+</div>
 
                 
                 <!-- Required only on API pages -->

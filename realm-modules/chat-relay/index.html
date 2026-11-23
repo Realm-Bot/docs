@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.845749462594">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.848762291073">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -44,11 +44,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../favicon.ico" />
-    <link href="../../resources/css/retype.css?v=4.6.0.845749462594" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.6.0.848762291073" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.845749462594" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.848762291073" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.845749462594" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.848762291073" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -140,6 +140,32 @@
             <div class="relative retype-markdown" id="retype-content">
                 <!-- Rendered if sidebar right is enabled -->
                 <div id="retype-sidebar-right-toggle"></div>
+                <nav id="retype-breadcrumb" class="breadcrumb" aria-label="Breadcrumb">
+                    <ol role="list">
+                        <li class="pr-4">
+                            <a href="../../" class="pr-4">
+                                Landing
+                            </a>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/>
+                            </svg>
+                        </li>
+                        <li class="pr-4">
+                            <span class="pr-4">
+                                Realm Modules
+                            </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/>
+                            </svg>
+                        </li>
+                        <li class="pr-4">
+                            <a href="../../realm-modules/chat-relay/" class="pr-4">
+                                Chat Relay
+                            </a>
+                        </li>
+                    </ol>
+                </nav>
+
                 <doc-page-actions></doc-page-actions>
 
                 <!-- Page content  -->
@@ -157,10 +183,10 @@
 </div>
 
 <div id="retype-page-description" class="description-display text-description font-description leading-description mb-description-margin-bottom mt-description-margin-top tracking-description text-transform-description">Connect your Realm and Discord with a two-way chat bridge, including configurable message types, emote relaying, and built-in anti-spam controls.</div>
-<p>Chat Relay is a <strong>two-way communication bridge</strong> between your <strong>Minecraft Bedrock Realm chat</strong> and a selected <strong>Discord channel</strong>. It is designed to keep staff and community members aligned in real time, reducing platform switching, improving response time, and providing better visibility during incidents and events.</p>
+<p>Chat Relay connects Minecraft Bedrock Realm chat with Discord. Players can send messages in either direction.</p>
 <hr>
 <h2 id="what-chat-relay-relays">What Chat Relay Relays</h2>
-<p>Chat Relay can relay multiple categories of activity from Minecraft to Discord, depending on your configuration:</p>
+<p>Choose which Realm events to send to Discord:</p>
 <ul>
 <li><strong>Player Chat Messages</strong> - standard messages sent by players in Realm chat</li>
 <li><strong>Tellraw Messages</strong> - command-generated formatted outputs (announcements, scripted events, systems output)</li>
@@ -197,13 +223,12 @@
 </blockquote>
 <hr>
 <h2 id="requirements">Requirements</h2>
-<p>To use Chat Relay reliably, ensure the following are in place:</p>
 <ul>
 <li>A Realm connected to Realm Bot via the authorised account-linking flow</li>
 <li>An active Realm Bot Premium subscription</li>
 <li>A Relay Account connected to and present in the Realm</li>
 <li>A Discord destination channel for each enabled message category</li>
-<li>The Realm Bot GameTest Pack and Beta APIs when relaying player emotes</li>
+<li>A working Realm Bot GameTest Pack when relaying player emotes</li>
 </ul>
 <p>Chat Relay may temporarily stop during Realm disconnections or Microsoft/Xbox authentication failures. See <a href="../relay-account-and-gametest/">Relay Account and GameTest Dependencies</a> for dependency guidance.</p>
 <hr>
@@ -217,7 +242,7 @@
 <p>Enable <strong>Chat Relay</strong> using the main toggle.</p>
 </li>
 <li>
-<p>Set a <strong>Discord Destination</strong> for each message category you enable. Categories can share a channel or use separate channels.</p>
+<p>Set a <strong>Discord Destination</strong> for each message category you enable. <strong>Set all channels</strong> fills the individual destinations with the same channel; you can still choose separate channels.</p>
 </li>
 <li>
 <p>Under <strong>Message Types</strong>, enable the categories you want relayed:</p>
@@ -236,19 +261,63 @@
 <p>Select a <strong>Fun Mode</strong> only if you want player-chat presentation altered.</p>
 </li>
 </ol>
-<p>Once enabled, relay output begins when relevant events occur and the Relay Account connection is healthy.</p>
+<hr>
+<h2 id="tellraw-translations">Tellraw Translations</h2>
+<p>Use <strong>Chat Relay &gt; Customizations &gt; Tellraw Message Customizations</strong> for the selected Realm to change how Tellraw translation keys appear <strong>in Discord</strong>. This does not translate ordinary chat or change a player&#x27;s game language. Chat Relay must be operational, with <strong>Tellraw Messages</strong> enabled and a Discord destination selected.</p>
+<ul>
+<li><strong>Add translation:</strong> Enter the key used by the Minecraft message and the text to display in Discord. For example, the language-file entry <code translate="no" v-pre>myrealm.welcome=Welcome back, %s!</code> only affects messages that use <code translate="no" v-pre>myrealm.welcome</code>.</li>
+<li><strong>Import file:</strong> Select a <code translate="no" v-pre>.lang</code>, <code translate="no" v-pre>.mcpack</code> or <code translate="no" v-pre>.zip</code> file. For a pack, select one of its <code translate="no" v-pre>texts/*.lang</code> files, then choose <strong>Import language</strong>. The languages available depend on the pack.</li>
+</ul>
+<p>Manual entries override imports, and custom entries override bundled English. Removing an override restores the next available translation. If the top-level key is unknown, Discord displays its identifier.</p>
+<retype-table copy-text="| Limit | Maximum |
+|---|---:|
+| Upload | 10 MiB |
+| Language files per pack | 100 |
+| Selected extracted file | 5,242,880 characters |
+| Dictionary entries | 50,000 |
+| Key / value | 512 / 16,000 characters |">
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Limit</th>
+<th style="text-align: right;">Maximum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Upload</td>
+<td style="text-align: right;">10 MiB</td>
+</tr>
+<tr>
+<td>Language files per pack</td>
+<td style="text-align: right;">100</td>
+</tr>
+<tr>
+<td>Selected extracted file</td>
+<td style="text-align: right;">5,242,880 characters</td>
+</tr>
+<tr>
+<td>Dictionary entries</td>
+<td style="text-align: right;">50,000</td>
+</tr>
+<tr>
+<td>Key / value</td>
+<td style="text-align: right;">512 / 16,000 characters</td>
+</tr>
+</tbody>
+</table>
+</div>
+</retype-table>
+<p>If an entry is rejected, check for a duplicate manual key. If another session saved changes first, reload the dictionary before editing again.</p>
 <hr>
 <h2 id="anti-spam-configuration">Anti-Spam Configuration</h2>
-<p>Chat Relay includes an <strong>Anti-Spam</strong> system for player chat. It is designed to reduce relay flooding during high activity or abuse attempts.</p>
-<p>The anti-spam controls apply a simple threshold rule:</p>
+<p>Set two values to limit repeated player chat:</p>
 <ul>
 <li><strong>Message Threshold</strong> - the maximum number of messages allowed before the system triggers</li>
 <li><strong>Window (seconds)</strong> - the time window used to count messages</li>
 </ul>
-<p>Example logic:</p>
-<ul>
-<li>If <strong>Threshold = 10</strong> and <strong>Window = 10 seconds</strong>, then more than 10 relay events within 10 seconds will trigger the anti-spam behaviour for that window.</li>
-</ul>
+<p>For example, a threshold of <strong>10</strong> and a window of <strong>10 seconds</strong> allow ten messages within that window. An eleventh exceeds the threshold.</p>
 <p>When the threshold is exceeded, the affected player is removed from the Realm and the action is logged. Players on the Realm Bot allowlist are exempt from this anti-spam action.</p>
 <p>Operational guidance:</p>
 <ul>
@@ -270,22 +339,9 @@
 <p>Use <strong>Normal</strong> for moderation or archival channels where preserving the original wording is important.</p>
 <hr>
 <h2 id="player-emotes">Player Emotes</h2>
-<p>When <strong>Player Emotes</strong> are enabled, Chat Relay will relay emotes performed by players in-game to the Discord destination channel.</p>
-<p>Emote relaying requires the <strong>Realm Bot GameTest Pack</strong>, <strong>Beta APIs</strong>, and a connected Relay Account. Other Chat Relay message categories do not all share this dependency.</p>
-<p>This is useful for:</p>
-<ul>
-<li>giving staff a clearer picture of in-game interaction (especially social spaces)</li>
-<li>improving community &quot;presence&quot; in Discord without joining in-game</li>
-<li>reinforcing activity awareness during events</li>
-</ul>
-<p>Recommendations:</p>
-<ul>
-<li>Enable Emotes only if your relay channel is community-facing or if staff explicitly want behavioural context</li>
-<li>Disable Emotes in staff-only operational channels where signal-to-noise is critical</li>
-</ul>
+<p>Enable <strong>Player Emotes</strong> to send in-game emotes to Discord. Unlike ordinary player chat, emotes require the <strong>Realm Bot GameTest Pack</strong> as well as a connected Relay Account.</p>
 <hr>
 <h2 id="recommended-configuration">Recommended Configuration</h2>
-<p>For a clean, professional relay channel that remains usable during peak activity:</p>
 <ul>
 <li>Use a dedicated channel such as <code translate="no" v-pre>#realm-chat</code>, <code translate="no" v-pre>#chat-relay</code>, or <code translate="no" v-pre>#realm-live</code>.</li>
 <li>Enable only the message types you actually need:
@@ -317,7 +373,7 @@
 <li>A destination channel is selected for the affected message category</li>
 <li>Realm Bot has View Channel + Send Messages permission</li>
 <li>The Relay Account is online and connected to the correct Realm</li>
-<li>For emotes, the GameTest Pack is current and Beta APIs are enabled</li>
+<li>For emotes, the GameTest bridge is current and responding</li>
 </ul>
 <h3 id="relay-is-too-noisy">Relay is too noisy</h3>
 <ul>
@@ -340,6 +396,32 @@
 <li>Confirm the Discord user has permission to send messages in the channel.</li>
 </ul>
 <hr>
+<div id="retype-backlinks">
+    <h2>See also</h2>
+<div class="card-compact-group">
+<div class="card-compact-container">
+    <a href="/realm-page/scheduled-restart/" class="group card-compact no-link">
+        <div class="card-compact-body">
+            <div class="card-compact-header">
+                <span class="card-compact-title">Scheduled Restart</span>
+            </div>
+            <p class="card-compact-description">Schedule Realm restarts by local time and weekday and configure reminders for players.</p>
+        </div>
+    </a>
+</div>
+<div class="card-compact-container">
+    <a href="/" class="group card-compact no-link">
+        <div class="card-compact-body">
+            <div class="card-compact-header">
+                <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M11.03 2.59a1.501 1.501 0 0 1 1.94 0l7.5 6.363a1.5 1.5 0 0 1 .53 1.144V19.5a1.5 1.5 0 0 1-1.5 1.5h-5.75a.75.75 0 0 1-.75-.75V14h-2v6.25a.75.75 0 0 1-.75.75H4.5A1.5 1.5 0 0 1 3 19.5v-9.403c0-.44.194-.859.53-1.144ZM12 3.734l-7.5 6.363V19.5h5v-6.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v6.25h5v-9.403Z"/></svg></span>
+                <span class="card-compact-title">Welcome to Realm Bot Documentation</span>
+            </div>
+            <p class="card-compact-description">Official Realm Bot documentation for managing Minecraft Bedrock Realms through Discord-setup guides, modules, security tools, and integrations.</p>
+        </div>
+    </a>
+</div>
+</div>
+</div>
 
                 
                 <!-- Required only on API pages -->
