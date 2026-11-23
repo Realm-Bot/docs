@@ -1,6 +1,6 @@
 ---
 label: Getting Started
-description: Connect your Minecraft Bedrock Realm to Discord in three steps. Link your Microsoft account, run the connect command, then configure modules and settings.
+description: Link your Microsoft account, connect your Bedrock Realms to a Discord server from the dashboard or Discord, and configure Realm Bot.
 icon: rocket
 order: 101
 authors:
@@ -12,13 +12,7 @@ authors:
 
 # Getting Started
 
-This guide walks you through the official setup flow to connect your Minecraft Bedrock Realm to Discord using Realm Bot. The onboarding process is designed to be completed in a few minutes and is separated into three stages:
-
-1. **Link Microsoft Account**
-2. **Run Discord Command**
-3. **Configure Settings**
-
-![Setup Flow Overview](/images/getting-started-step-1.png)
+Link your Microsoft account, connect its Realms to your Discord server, then choose the modules you want to use.
 
 ---
 
@@ -35,13 +29,13 @@ Realm Bot must be present in your Discord server before you can run the connecti
 ### 2) Ensure You Have the Correct Access
 You should be:
 - The Realm Owner, or a trusted administrator with access to manage the Realm
-- A Discord administrator (or equivalent) in the server you are connecting
+- The Discord server owner or an **Administrator** to select the server in the dashboard. **Manage Server** alone is not sufficient.
 
 ---
 
 ## Step 1 - Link Your Microsoft Account
 
-Realms are owned and managed through a Microsoft/Xbox account. Realm Bot requires you to link a Microsoft account so it can detect and manage your available Realms.
+Link the Microsoft/Xbox account that manages the Realms you want to connect.
 
 1. Go to the dashboard: https://dashboard.realmbot.dev
 2. Sign in with Discord.
@@ -53,49 +47,27 @@ Realms are owned and managed through a Microsoft/Xbox account. Realm Bot require
 
 ---
 
-## Step 2 - Run the Discord Connection Command
+## Step 2 - Connect Your Realms
 
-After your Microsoft account is linked, the next step is to connect that account to the correct Discord server.
+> **Warning:** Check the selected Discord server and Xbox account before connecting. If a returned Realm is already associated with another Discord server, connecting **moves** its association, disables its Realm Bot modules and clears their configurations. Record any settings you need to keep. This does not transfer ownership in Minecraft.
 
-1. Open the Discord server you want to connect.
-2. Run the following command in any channel where Realm Bot can respond:
+Choose **one** route. Both refresh the Realms associated with your linked Xbox account:
 
-`/connect`
+- **Dashboard:** Select the intended server. After **Connect Microsoft Account**, select **Connect Realms**. On a server with no connected Realms, the same action is available from **Server Overview > Connect Realms**.
+- **Discord:** In the intended server, run [`/connect`](Commands/Utility/connect.md) in a channel where Realm Bot can respond. If someone referred you, you can enter their code in the optional `referral_code` field. See [Referrals](Tools/referrals.md) for eligibility.
 
-![Run Discord Command](/images/getting-started-step-2.png)
-
-### What `/connect` Does
-- Verifies your linked Microsoft account
-- Associates the current Discord server with your Realm management context
-- Enables the dashboard to load and configure Realm-specific settings and modules
-
-> **Tip:** If you manage multiple servers, ensure you run `/connect` in the correct server first. You can repeat the process per server if needed.
+Confirm that the expected Realms appear in the server dashboard before configuring modules.
 
 ---
 
 ## Step 3 - Configure Your Realm Settings
 
-Once your connection is established, you can configure your Realm using the dashboard and the relevant module pages.
-
-Recommended configuration sequence:
-
 1. **Choose your Realm** (if prompted)
 2. Review **Bot Join Settings** (how the relay/bot connects)
 3. Configure **Gametest Pack Management** (only if required by your modules)
-4. Enable and configure any **Realm Modules** you plan to use:
-   - Chat Relay
-   - Realm Console
-   - Bot Detection
-   - Member Gate
-   - Skin Filtering
-   - Leveling
-   - Scoreboard Leaderboards
-   - Live Playerlist
-   - Vanity URL
-   - (Optional) Tebex Integration
+4. Enable the features you need in [Realm Modules](<Realm Modules/overview.md>). If you use a Tebex store, follow [Tebex setup](Integrations/tebex.md).
 
-You can also view command help in Discord at any time:
-- `/help`
+For command help in Discord, run `/help`.
 
 ---
 
@@ -107,21 +79,16 @@ You can also view command help in Discord at any time:
 - Re-open the dashboard and refresh after linking.
 
 ### `/connect` does nothing or fails.
-Check the following:
 - Realm Bot is invited to the server and is online.
 - You are running `/connect` in a server channel where the bot has permission to respond.
 - Your role has sufficient permissions to run management commands (server admin recommended).
 
 ### Xbox/Microsoft privacy blocks linking or access.
-If linking or Realm access fails, review your Xbox privacy settings to ensure external services can function correctly.
-
-> **Important:** Privacy settings can prevent applications from accessing required profile/realm data. If issues persist, adjust the relevant Xbox privacy options and retry linking.
+Check whether the linked Xbox account's privacy settings allow access to the required profile and Realm information, then retry.
 
 ---
 
 ## Next Steps
-
-Once setup is complete:
 
 - Open the [Realm Modules Overview](<Realm Modules/overview.md>) to configure features.
 - Review [Relay Account and GameTest Dependencies](<Realm Modules/relay-account-and-gametest.md>) before enabling live or GameTest-dependent modules.

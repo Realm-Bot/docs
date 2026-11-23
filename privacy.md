@@ -1,8 +1,14 @@
 ---
-label: Data & Privacy policy 
+label: Data & Privacy Policy
+description: Review how Realm Bot describes data collection, account linking, invite security, and data-access requests.
 order: 3
-icon: info 
+icon: info
 visibility: hidden
+authors:
+  - name: SeaLeopard35302
+    avatar: https://avatars.githubusercontent.com/u/78130400?s=96&v=4
+  - name: Frazer
+    avatar: https://avatars.githubusercontent.com/u/136254012?s=96&v=4
 ---
 
 # Data & Privacy policy

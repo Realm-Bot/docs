@@ -1,0 +1,61 @@
+# Allowlist
+
+Use the **Allowlist** to exempt specific trusted players from automated checks.
+
+![Allowlist](/images/server-allowlist.png)
+
+---
+
+## What the Allowlist Does
+
+When a user is on the allowlist:
+
+- They can bypass **Member Gate**
+- They can bypass **Bot Detection**
+- They can bypass **Skin Filtering**
+
+> **Important:** The allowlist is designed for exceptions. Adding too many users reduces the effectiveness of your automated protections.
+
+---
+
+## Adding Users
+
+Use the **Search or Add** field to find a player and add them to your allowlist.
+
+For example, add a staff or test account that needs an exception to a specific rule.
+
+---
+
+## Removing Users
+
+Each allowlisted entry can be removed using the delete icon on the right-hand side of the row.
+
+**Best practice:** Remove access when:
+- a staff member steps down
+- a trusted account changes hands
+- you no longer need exceptions for a temporary tester
+
+---
+
+## Security Guidance
+
+Periodically review the list (weekly or monthly for large servers), especially if your realm uses public codes or sees frequent traffic.
+
+### Prefer Fixing the Rule Before Allowlisting Everyone
+If many legitimate players are being blocked, consider:
+- loosening Member Gate conditions
+- disabling Experimental Bot Detection
+- adjusting thresholds (e.g., gamerscore criteria)
+- using allowlist only for edge cases
+
+---
+
+## Common Questions
+
+### “Does allowlisting bypass bans?”
+No. The allowlist is intended to bypass automated gatekeeping systems such as Member Gate, Bot Detection, and Skin Filtering. It does not override manual bans or realm-level enforcement actions.
+
+### “Should we allowlist all staff?”
+Only staff who need reliable access should be allowlisted. For larger teams, consider allowlisting senior roles only, and rely on correct Member Gate rules for everyone else.
+
+---

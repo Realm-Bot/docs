@@ -9,7 +9,7 @@ authors:
 
 # Allowlist
 
-The **Allowlist** is a safety control that marks specific users as trusted. Users added to the allowlist can **bypass automated enforcement**, ensuring that legitimate players (staff, creators, testers, known community members) are not incorrectly removed by security systems.
+Use the **Allowlist** to exempt specific trusted players from automated checks.
 
 ![Allowlist](/images/server-allowlist.png)
 
@@ -23,12 +23,6 @@ When a user is on the allowlist:
 - They can bypass **Bot Detection**
 - They can bypass **Skin Filtering**
 
-This is particularly useful if you:
-- run strict Member Gate rules (device locks, gamerscore thresholds, etc.)
-- enable Experimental Bot Detection and want protection against false positives
-- use Skin Filtering and want to protect trusted players from Beta false positives
-- have trusted alt accounts, testers, or staff joining frequently
-
 > **Important:** The allowlist is designed for exceptions. Adding too many users reduces the effectiveness of your automated protections.
 
 ---
@@ -37,11 +31,7 @@ This is particularly useful if you:
 
 Use the **Search or Add** field to find a player and add them to your allowlist.
 
-Recommended use cases:
-- Realm staff accounts
-- Verified community members
-- Long-term players with known identities
-- Test accounts used during development or maintenance
+For example, add a staff or test account that needs an exception to a specific rule.
 
 ---
 
@@ -58,10 +48,6 @@ Each allowlisted entry can be removed using the delete icon on the right-hand si
 
 ## Security Guidance
 
-### Treat Allowlisting as Privileged Access
-Allowlisted users are exempt from key protections. Only allowlist users you genuinely trust.
-
-### Keep an Audit Habit
 Periodically review the list (weekly or monthly for large servers), especially if your realm uses public codes or sees frequent traffic.
 
 ### Prefer Fixing the Rule Before Allowlisting Everyone

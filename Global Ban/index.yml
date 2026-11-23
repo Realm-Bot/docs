@@ -1,0 +1,8 @@
+label: Global Ban
+description: Understand Realm Bot's shared moderation database, Realm protection, public records, reporting, appeals, and custom lists.
+order: 96
+expanded: false
+icon: shield
+authors:
+  - name: Frazer
+    avatar: https://avatars.githubusercontent.com/u/136254012?s=96&v=4

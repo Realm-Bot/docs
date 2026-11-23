@@ -11,17 +11,11 @@ authors:
 
 # Automod kicked me for “Private Title History”
 
-If you were removed from a Realm with the reason **“Private Title History”**, your Xbox privacy settings are preventing Realm Bot from reading the minimum public profile signals needed to confirm basic account context, most commonly **device/platform identification**.
-
-This check is commonly used alongside automated entry and security systems, for example device-based gating. When title history is private, the system cannot validate that signal reliably, and you may be removed automatically.
+The **Private Title History** kick means Realm Bot could not use your Xbox game history to check your account, usually to identify your device for a Realm entry rule.
 
 ## What you need to change
 
-You must set the Xbox privacy option:
-
-**“Others can see your game and app history”** -> **Everybody**
-
-After updating the setting, rejoin the Realm and try again.
+On the Microsoft account you use for Minecraft, set **Others can see your game and app history** to **Everybody**, then rejoin the Realm.
 
 > Note: If you change this setting back to private later, the same kick may occur again depending on the Realm’s configuration.
 
@@ -47,16 +41,11 @@ If you do not see these options or cannot change them, your account may be a chi
 3. Open **Online status & history**.
 4. Set **Others can see your game and app history** to **Everybody**.
 
-Practical reminders:
-
-- Ensure you are signed into the correct Microsoft account, the one that owns your Minecraft profile.
-- After saving, wait briefly and try joining again.
+Allow a little time for the change to apply before rejoining.
 
 ---
 
 ## If it still kicks you
-
-Check the following:
 
 - You changed the correct setting: **Others can see your game and app history** is set to **Everybody**.
 - You are signed into the correct Microsoft account. Many users have more than one.

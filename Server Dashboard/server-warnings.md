@@ -14,8 +14,6 @@ The **Warn Settings** page allows you to define structured **warning types** for
 - A **reason** (what the warning represents)
 - A **Warnings Until Ban** threshold (how many times that warning type can be issued before an automatic ban)
 
-This ensures moderation is consistent across staff and enables predictable escalation for repeat behaviour.
-
 ![Warning System Configuration](/images/server-warnings.png)
 
 ---
@@ -35,10 +33,10 @@ The configured **Warnings Until Ban** value determines the automatic escalation 
 
 ## Creating a Warning Type
 
-In the **Create Warning Type** panel, you will configure:
+Open **Create Warning Type** and set the following fields.
 
 ### Warning Reason
-A short label for the behaviour being warned (maximum length may be enforced in the UI).
+Enter a short reason that matches a server rule.
 
 Examples:
 - `Spamming`
@@ -63,17 +61,11 @@ When ready, select **Add Warning Type** to create it.
 
 ## Managing Warning Types
 
-The **Warning Types** panel lists all configured warning types and their thresholds.
-
-Each entry shows:
-- The warning reason/name
-- The ban threshold (e.g., “Ban after 3 warnings”)
-
-You can manage each warning type using the action buttons (where available):
+Find the warning type by its reason and threshold, then choose an action:
 - **Edit** (pencil icon) - change the reason or threshold
 - **Delete** (trash icon) - remove the warning type
 
-> **Important:** If you delete a warning type, ensure your moderation workflow and staff guidance are updated. Consistency matters more than complexity.
+> **Important:** If you delete a warning type, update the staff guidance that refers to it.
 
 ---
 
@@ -95,7 +87,7 @@ Set thresholds based on the harm level:
 - Multi-strike for behaviour that can be corrected
 
 ### Write Staff Guidance
-Your warning system is only effective if staff use it consistently. Consider documenting:
+Tell staff:
 - which warning types to use for common situations
 - what evidence is required for severe types (e.g., cheating)
 

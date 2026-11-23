@@ -1,0 +1,48 @@
+# Automod kicked me for “Private Title History”
+
+The **Private Title History** kick means Realm Bot could not use your Xbox game history to check your account, usually to identify your device for a Realm entry rule.
+
+## What you need to change
+
+On the Microsoft account you use for Minecraft, set **Others can see your game and app history** to **Everybody**, then rejoin the Realm.
+
+> Note: If you change this setting back to private later, the same kick may occur again depending on the Realm’s configuration.
+
+---
+
+## Fix on Xbox Console (Xbox One / Series X|S)
+
+1. Press the **Xbox** button to open the guide.
+2. Go to **Profile & system** -> **Settings**.
+3. Select **Account** -> **Privacy & online safety** -> **Xbox privacy**.
+4. Select **View details & customise**.
+5. Open **Online status & history**.
+6. Set **Others can see your game and app history** to **Everybody**.
+
+If you do not see these options or cannot change them, your account may be a child account managed by a family organiser. In that case, a parent or organiser must update the privacy settings.
+
+---
+
+## Fix on Web (Nintendo / PlayStation / PC / Mobile users)
+
+1. Sign in to Xbox privacy settings using the Microsoft account you use for Minecraft.
+2. Navigate to **Privacy & online safety** -> **Xbox privacy** -> **View details & customise**.
+3. Open **Online status & history**.
+4. Set **Others can see your game and app history** to **Everybody**.
+
+Allow a little time for the change to apply before rejoining.
+
+---
+
+## If it still kicks you
+
+- You changed the correct setting: **Others can see your game and app history** is set to **Everybody**.
+- You are signed into the correct Microsoft account. Many users have more than one.
+- Your account is not restricted by family controls.
+- You waited long enough for the setting to apply, then rejoined.
+
+If the issue persists after confirming the above, contact the server staff and provide:
+
+- your gamertag
+- the approximate time of the kick
+- confirmation that title history is set to Everybody

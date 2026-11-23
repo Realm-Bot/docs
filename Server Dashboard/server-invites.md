@@ -26,8 +26,6 @@ Invite Links help Realm Owners:
 - Limit exposure using **max uses** and **expiry dates**
 - Disable or rotate links quickly if a link is leaked or targeted
 
-This feature is particularly valuable for public communities that regularly advertise their Realm and are more likely to be targeted by disruptive join attempts.
-
 ---
 
 ## How Joining Works (Player Experience)
@@ -40,7 +38,6 @@ To accept the invite, the user will be asked to securely sign in with their **Mi
 
 - the Realm invite is applied to their Microsoft account
 - the Realm appears in their **Minecraft Realms list** in-game
-- they can join the Realm normally through Minecraft
 
 Server **Account Linking** can also support automatic invitations, but it is a separate Microsoft verification workflow rather than the same public Invite Link acceptance page.
 
@@ -49,8 +46,6 @@ Server **Account Linking** can also support automatic invitations, but it is a s
 ---
 
 ## Security Settings
-
-Invite Links include security options intended to mitigate common abuse patterns.
 
 ### Block VPN/Hosting/Tor
 When enabled, players attempting to use invite links through VPNs, hosting providers, or Tor can be blocked from completing the invite flow.
@@ -69,8 +64,6 @@ Use the **Create Link** button to generate a new invite link.
 ![Create Link Modal](/images/realm-invites-create-link.png)
 
 ### Link Details
-
-When creating a link, you can configure:
 
 - **Realm**  
   Select which connected Realm the invite should apply to.
