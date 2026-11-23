@@ -25,7 +25,7 @@ Use [Chat Relay](<Realm Modules/chat-relay.md>) for two-way chat between Minecra
 
 ### Game Settings and Administration
 
-Open [World Management](<Realm Page/realm-world.md>) to edit gamerules, manage packs or replace a world.
+Open [World Management](<Realm Page/realm-world.md>) to edit gamerules, manage packs or replace a world.  
 Open [Realms Hub](<Realm Page/realms-hub.md>) to edit server preferences, stories, scheduled restarts, view & manage members and admin logs.
 
 ### Broadcasting and Messaging
