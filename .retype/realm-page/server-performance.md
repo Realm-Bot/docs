@@ -4,9 +4,15 @@ Use **Realm manager > Overview > Server Performance** to check how the Realm is 
 
 You need a linked Xbox account with game-settings permission on a **Minecraft Realms Pro** Realm.
 
+![Server Performance Dashboard](../images/server-performance.png)
+
+---
+
 ## Read Live Metrics
 
 The live cards show **CPU usage (%)**, **memory usage (%)**, **tick time (milliseconds)** and **player count**. They refresh about every ten seconds unless paused. If the Realm is offline, the cards indicate that live data is unavailable, not that usage is zero.
+
+---
 
 ## Compare and Download History
 
@@ -14,4 +20,6 @@ The live cards show **CPU usage (%)**, **memory usage (%)**, **tick time (millis
 2. Refresh the chart manually for newer history. The ten-second live refresh does not refresh this chart, and recent samples can take up to ten minutes to appear.
 3. Select **Download data** for a CSV of the returned timestamps and **all four metrics**, even if you selected only one on the chart.
 
-A blank value in the CSV means the measurement is missing. It does not mean zero players or zero usage. For a snapshot of recent history in Discord, use [`/realm perf`](<../Commands/Realm/perf.md>).
+A blank value in the CSV means the measurement is missing. It does not mean zero players or zero usage. For a snapshot of recent history in Discord, use [`/realm perf`](../Commands/Realm/perf.md).
+
+---

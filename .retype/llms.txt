@@ -48,7 +48,6 @@
 
 ## Commands
 
-
 ### Allowlist
 
 - [Allowlist Commands](https://help.realmbot.dev/commands/allowlist/index.md): Manage Realm Bot's server-level exemption list for supported automated systems.

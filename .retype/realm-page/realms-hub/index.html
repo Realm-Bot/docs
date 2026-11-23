@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.848714876486">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.848772229369">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -23,6 +23,10 @@
     <meta property="og:url" content="https://help.realmbot.dev/realm-page/realms-hub/">
     <meta property="og:title" content="Realms Hub | Realm Bot Docs">
     <meta property="og:description" content="Manage Minecraft Realm preferences, members, invitations, and administrative history.">
+    <meta property="og:image" content="https://help.realmbot.dev/images/server-preferences.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Realms Hub | Realm Bot Docs">
     <meta property="og:site_name" content="Realm Bot">
     <meta property="og:locale" content="en_US">
 
@@ -31,6 +35,8 @@
     <meta name="twitter:url" content="https://help.realmbot.dev/realm-page/realms-hub/">
     <meta name="twitter:title" content="Realms Hub | Realm Bot Docs">
     <meta name="twitter:description" content="Manage Minecraft Realm preferences, members, invitations, and administrative history.">
+    <meta name="twitter:image" content="https://help.realmbot.dev/images/server-preferences.png">
+    <meta name="twitter:image:alt" content="Realms Hub | Realm Bot Docs">
 
     <!-- Alternate Markdown -->
     <link rel="alternate" type="text/markdown" href="https://help.realmbot.dev/realm-page/realms-hub.md">
@@ -38,11 +44,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../favicon.ico" />
-    <link href="../../resources/css/retype.css?v=4.6.0.848714876486" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.6.0.848772229369" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.848714876486" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.848772229369" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.848714876486" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.848772229369" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -59,7 +65,7 @@
                 <div class="flex items-center px-2 md:px-6">
                     <a id="retype-branding-logo" href="https://help.realmbot.dev/" class="flex items-center leading-snug text-2xl">
                         <span class="w-10 mr-2 grow-0 shrink-0 overflow-hidden">
-                            <img class="max-h-10 md:inline-block" src="../../images/logo.png" alt="" width="40" height="40">
+                            <img class="max-h-10 md:inline-block" src="../../images/brand/icon.png" alt="" width="40" height="40">
                         </span>
                         <span class="dark:text-white font-bold line-clamp-1 md:line-clamp-2">Realm Bot</span>
                     </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">Docs</span>
@@ -134,32 +140,6 @@
             <div class="relative retype-markdown" id="retype-content">
                 <!-- Rendered if sidebar right is enabled -->
                 <div id="retype-sidebar-right-toggle"></div>
-                <nav id="retype-breadcrumb" class="breadcrumb" aria-label="Breadcrumb">
-                    <ol role="list">
-                        <li class="pr-4">
-                            <a href="../../" class="pr-4">
-                                Landing
-                            </a>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
-                                <path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/>
-                            </svg>
-                        </li>
-                        <li class="pr-4">
-                            <span class="pr-4">
-                                Realm Page
-                            </span>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
-                                <path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/>
-                            </svg>
-                        </li>
-                        <li class="pr-4">
-                            <a href="../../realm-page/realms-hub/" class="pr-4">
-                                Realms Hub
-                            </a>
-                        </li>
-                    </ol>
-                </nav>
-
                 <doc-page-actions></doc-page-actions>
 
                 <!-- Page content  -->
@@ -178,16 +158,25 @@
 
 <div id="retype-page-description" class="description-display text-description font-description leading-description mb-description-margin-bottom mt-description-margin-top tracking-description text-transform-description">Manage Minecraft Realm preferences, members, invitations, and administrative history.</div>
 <p>Open the <strong>Realm manager &gt; Realms Hub</strong> for the Minecraft Realm you want to manage. The Hub opens on <strong>Settings</strong>. Use <strong>Members</strong> to manage access and <strong>Admin Logs</strong> to review changes. These controls apply to the Minecraft Realm itself, not the Discord server or the Global Ban database.</p>
+<hr>
 <h2 id="who-can-use-the-hub">Who Can Use the Hub?</h2>
 <p>Sign in with the linked Xbox account that owns the Realm or has been made a <strong>Realm Admin</strong> in Minecraft. The owner has access to all Hub actions. A delegated Admin can use only the actions Minecraft grants them. Being a Discord Administrator does not grant either role.</p>
+<hr>
 <h2 id="server-preferences">Server Preferences</h2>
 <p>Under <strong>Settings &gt; Server preferences</strong>, use the minimum, maximum and default displayed for your Realm. Player counts and distances use whole numbers. Changing these settings requires game-settings permission.</p>
-<retype-table copy-text="| Setting | What to check |
-|---|---|
-| Maximum players | Requires Minecraft **Realms Pro**. Check the value again after changing session mode. |
-| Simulation distance | Requires Minecraft **Realms Pro**. Use the range shown for this Realm. |
-| Render distance | Available limits depend on the Realm. Minecraft must supply a valid range before you can change it. |
-| Session mode | Requires Minecraft **Realms Pro**. Choose **Play and Editor**, **Play Only** or **Editor Only**. Changing mode can reset maximum players. |">
+<figure class="content-center">
+    <img src="../../images/server-preferences.png" alt="Server Preferences Configuration" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="610" height="544" />
+    <figcaption class="caption">Server Preferences Configuration</figcaption>
+</figure>
+<retype-table copy-text="| Setting                   | What to check                                                                                                                                                      |
+| ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Maximum players           | Requires Minecraft **Realms Pro**. Check the value again after changing session mode.                                                                              |
+| Simulation distance       | Requires Minecraft **Realms Pro**. Use the range shown for this Realm.                                                                                             |
+| Render distance           | Available limits depend on the Realm. Minecraft must supply a valid range before you can change it.                                                                |
+| Session mode              | Requires Minecraft **Realms Pro**. Choose **Play and Editor**, **Play Only** or **Editor Only**. Changing mode can reset maximum players.                          |
+| Default player permission | Choose the starting permission for new Realm members: **Visitor**, **Member**, or **Operator**.                                                                    |
+| Region selection          | Choose **Automatic (first to join session)**, **Automatic (Realm owner connection)**, or **Preferred region** to control how the Realm selects its hosting region. |
+| Preferred region          | Only available when Region selection is set to **Preferred region**. Select from the regions provided by Mojang.                                                   |">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -213,11 +202,73 @@
 <td>Session mode</td>
 <td>Requires Minecraft <strong>Realms Pro</strong>. Choose <strong>Play and Editor</strong>, <strong>Play Only</strong> or <strong>Editor Only</strong>. Changing mode can reset maximum players.</td>
 </tr>
+<tr>
+<td>Default player permission</td>
+<td>Choose the starting permission for new Realm members: <strong>Visitor</strong>, <strong>Member</strong>, or <strong>Operator</strong>.</td>
+</tr>
+<tr>
+<td>Region selection</td>
+<td>Choose <strong>Automatic (first to join session)</strong>, <strong>Automatic (Realm owner connection)</strong>, or <strong>Preferred region</strong> to control how the Realm selects its hosting region.</td>
+</tr>
+<tr>
+<td>Preferred region</td>
+<td>Only available when Region selection is set to <strong>Preferred region</strong>. Select from the regions provided by Mojang.</td>
+</tr>
 </tbody>
 </table>
 </div>
 </retype-table>
 <p>To restart the Realm on specific days, see <a href="../scheduled-restart/">Scheduled Restart</a>.</p>
+<hr>
+<h2 id="realm-stories">Realm Stories</h2>
+<p>Under **Settings &gt; Realm Stories**, control how players share their adventures and how Realm activity appears in Stories. Changing these settings requires the appropriate Realm management
+permissions.</p>
+<figure class="content-center">
+    <img src="../../images/realms-hub-realm-stories.png" alt="Realm Stories Configuration" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="615" height="565" />
+    <figcaption class="caption">Realm Stories Configuration</figcaption>
+</figure>
+<retype-table copy-text="| Setting                | What to check                                                                                 |
+| ---------------------- | --------------------------------------------------------------------------------------------- |
+| Enable Realm Stories   | Allow players to participate in this Realm's Stories. Disabling this turns off Realm Stories. |
+| Automatic stories      | Automatically create stories for player milestones and Realm events.                          |
+| Show coordinates       | Include location coordinates in supported Realm events.                                       |
+| Player timeline        | Enable the player activity timeline in Realm Stories.                                         |
+| Require Stories opt-in | Require players to opt in before participating in Realm Stories.                              |">
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Setting</th>
+<th>What to check</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Enable Realm Stories</td>
+<td>Allow players to participate in this Realm&#x27;s Stories. Disabling this turns off Realm Stories.</td>
+</tr>
+<tr>
+<td>Automatic stories</td>
+<td>Automatically create stories for player milestones and Realm events.</td>
+</tr>
+<tr>
+<td>Show coordinates</td>
+<td>Include location coordinates in supported Realm events.</td>
+</tr>
+<tr>
+<td>Player timeline</td>
+<td>Enable the player activity timeline in Realm Stories.</td>
+</tr>
+<tr>
+<td>Require Stories opt-in</td>
+<td>Require players to opt in before participating in Realm Stories.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</retype-table>
+<p>These settings control Realm Stories for the Realm, not <a href="../../tools/realm-stories/">Realm Stories</a> under Tools.</p>
+<hr>
 <h2 id="members">Members</h2>
 <ol>
 <li>Open <strong>Members</strong>. Search for a player or sort by name or last played. Filters include gameplay permission, Realm role, pending invitations and blocked players. When presence information is available, filter by online, playing or offline.</li>
@@ -225,45 +276,19 @@
 <li>Choose the action for that entry: cancel a pending invitation, remove a member, block or unblock a player, or open <strong>Roles &amp; permissions</strong>.</li>
 </ol>
 <p><strong>Visitor</strong>, <strong>Member</strong> and <strong>Operator</strong> govern in-game permissions. <strong>Player</strong> and <strong>Admin</strong> govern Realm management. Only the owner can change Realm roles. A delegated Admin cannot change the owner or manage another Admin as an ordinary player.</p>
+<figure class="content-center">
+    <img src="../../images/realms-hub-members.png" alt="Members List" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="1246" height="700" />
+    <figcaption class="caption">Members List</figcaption>
+</figure>
+<hr>
 <h2 id="admin-logs">Admin Logs</h2>
 <p>Open <strong>Admin Logs</strong> to see the actor, action and time, newest first. Search by player or action, or filter by <strong>Settings</strong>, <strong>Members</strong>, <strong>World</strong>, <strong>Packs</strong>, <strong>Stories</strong> or <strong>Other</strong>. For example, use <strong>Members</strong> to investigate an invitation, or <strong>World</strong> when reviewing a slot change.</p>
 <p>Manual refresh has a five-minute cooldown. If a refresh fails, the previous results can remain visible; wait for the cooldown and refresh again before treating them as current.</p>
-<div id="retype-backlinks">
-    <h2>See also</h2>
-<div class="card-compact-group">
-<div class="card-compact-container">
-    <a href="/realm-page/realm-overview/" class="group card-compact no-link">
-        <div class="card-compact-body">
-            <div class="card-compact-header">
-                <span class="card-compact-title">Realm Overview</span>
-            </div>
-            <p class="card-compact-description">View essential Realm status, slots, settings, and recent activity from a single dashboard page, with quick access to official Realm management.</p>
-        </div>
-    </a>
-</div>
-<div class="card-compact-container">
-    <a href="/realm-page/scheduled-restart/" class="group card-compact no-link">
-        <div class="card-compact-body">
-            <div class="card-compact-header">
-                <span class="card-compact-title">Scheduled Restart</span>
-            </div>
-            <p class="card-compact-description">Schedule Realm restarts by local time and weekday and configure reminders for players.</p>
-        </div>
-    </a>
-</div>
-<div class="card-compact-container">
-    <a href="/" class="group card-compact no-link">
-        <div class="card-compact-body">
-            <div class="card-compact-header">
-                <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M11.03 2.59a1.501 1.501 0 0 1 1.94 0l7.5 6.363a1.5 1.5 0 0 1 .53 1.144V19.5a1.5 1.5 0 0 1-1.5 1.5h-5.75a.75.75 0 0 1-.75-.75V14h-2v6.25a.75.75 0 0 1-.75.75H4.5A1.5 1.5 0 0 1 3 19.5v-9.403c0-.44.194-.859.53-1.144ZM12 3.734l-7.5 6.363V19.5h5v-6.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v6.25h5v-9.403Z"/></svg></span>
-                <span class="card-compact-title">Welcome to Realm Bot Documentation</span>
-            </div>
-            <p class="card-compact-description">Official Realm Bot documentation for managing Minecraft Bedrock Realms through Discord-setup guides, modules, security tools, and integrations.</p>
-        </div>
-    </a>
-</div>
-</div>
-</div>
+<figure class="content-center">
+    <img src="../../images/realms-hub-admin-logs.png" alt="Members List" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="1256" height="704" />
+    <figcaption class="caption">Members List</figcaption>
+</figure>
+<hr>
 
                 
                 <!-- Required only on API pages -->

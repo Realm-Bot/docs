@@ -4,7 +4,7 @@ url: https://help.realmbot.dev
 branding:
   title: Realm Bot
   label: Docs
-  logo: ./images/logo.png
+  logo: ./images/brand/icon.png
 meta:
   title: " | Realm Bot Docs"
 links:

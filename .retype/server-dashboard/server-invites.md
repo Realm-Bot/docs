@@ -39,9 +39,11 @@ Server **Account Linking** can also support automatic invitations, but it is a s
 ## Security Settings
 
 ### Block VPN/Hosting/Tor
+
 When enabled, players attempting to use invite links through VPNs, hosting providers, or Tor can be blocked from completing the invite flow.
 
 This is recommended for:
+
 - public invite advertising
 - Realms that are frequently targeted by ban evasion
 - communities seeing repeated “throwaway account” join behaviour
@@ -61,13 +63,14 @@ Use the **Create Link** button to generate a new invite link.
 
 - **Max Uses** (optional)  
   Limit how many successful joins the link can be used for.  
-  A value of `0` means unlimited.
+  Defaults to `∞` for unlimited uses
 
 - **Expiration Date** (optional)  
   Set a date/time when the link stops working automatically.  
-  Leave empty for no expiry.
+  Defaults to `never` for no expiration date
 
 Operational recommendations:
+
 - Use **Max Uses** for short-term promotions, events, or controlled onboarding.
 - Use an **Expiry Date** for public adverts so links naturally rotate over time.
 - Create separate links for different campaigns (TikTok, Discord, partner servers) so you can disable one source without disrupting others.
@@ -82,16 +85,17 @@ Once created, links appear in the Invite Links table.
 
 Each entry typically shows:
 
-- **Realm** - which Realm the link targets  
-- **Slug / URL** - the short link players will open  
-- **Uses** - current uses vs limit (or unlimited)  
-- **Expires In** - time until expiry (or “Never”)  
-- **Status** - toggle to enable/disable the link quickly  
+- **Realm** - which Realm the link targets
+- **Slug / URL** - the short link players will open
+- **Uses** - current uses vs limit (or unlimited)
+- **Expires In** - time until expiry (or “Never”)
+- **Status** - toggle to enable/disable the link quickly
 - **Actions** - common actions include copying the link and deleting it
 
 Disabled links, expired links, and links that have reached their maximum use count cannot accept further joins.
 
 ### Recommended Workflow
+
 - If a link is being abused, **disable it immediately** using the Status toggle.
 - If you want to retire a link permanently, **delete** it and create a replacement.
 - Keep older links disabled rather than deleted if you want a record of what was shared and where.
@@ -111,16 +115,19 @@ Disabled links, expired links, and links that have reached their maximum use cou
 ## Troubleshooting
 
 ### The link opens, but the player cannot accept the invite
+
 - Confirm the link is **enabled**.
 - Check whether the link has **expired** or reached **max uses**.
 - If VPN blocking is enabled, ensure the player is not using a VPN/Proxy/Tor.
 
 ### The player accepted, but the Realm does not appear in Minecraft
+
 - Ask the player to confirm they signed into the **correct Microsoft account**.
 - Have them restart Minecraft and refresh their Realms list.
 - If they accepted on a different Microsoft account, they must repeat the process with the intended account.
 
 ### A link is being targeted
+
 - Disable the link immediately via the Status toggle.
 - Create a new link with a tighter **Max Uses** and an **Expiry Date**.
 - Consider enabling VPN/Hosting/Tor blocking if not already enabled.

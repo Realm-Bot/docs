@@ -55,8 +55,7 @@ The GameTest Pack is not required for Member Gate.
 
 ## How to Set Up
 
-1. Open **Member Gate** in the Realm Bot Dashboard.
-   ![Member Gate Configuration](/images/member-gate.png)
+1. Open **Member Gate** in the Realm Bot Dashboard. ![Member Gate Configuration](/images/member-gate.png)
 2. Enable the module and select an Automod destination.
 3. Configure whether private title history should be checked.
 4. Create a clearly named rule and add only the conditions required for that policy.

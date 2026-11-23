@@ -13,6 +13,8 @@ Bot Server Profile lets you give Realm Bot a **custom avatar and nickname** in o
 
 This is a **Realm Bot Premium** feature. It is configured from the server's **Overview** page and applies to the Discord server as a whole, rather than an individual Minecraft Realm.
 
+![Bot Server Profile](../images/bot-server-profile.png)
+
 ---
 
 ## Requirements
@@ -54,11 +56,11 @@ Clearing the field and saving restores the default bot name. The avatar and nick
 
 ## Reset the Profile
 
-| Control | Effect | How to apply it |
-|---|---|---|
-| **Reset** beside the avatar | Prepare a return to the default avatar | Select **Save Changes** |
-| Clear **Server Nickname** | Prepare a return to the default bot name | Select **Save Changes** |
-| **Reset to Default** in the card header | Reset both the avatar and nickname | Select **Confirm Reset** in the confirmation dialog |
+| Control                                 | Effect                                   | How to apply it                                     |
+| --------------------------------------- | ---------------------------------------- | --------------------------------------------------- |
+| **Reset** beside the avatar             | Prepare a return to the default avatar   | Select **Save Changes**                             |
+| Clear **Server Nickname**               | Prepare a return to the default bot name | Select **Save Changes**                             |
+| **Reset to Default** in the card header | Reset both the avatar and nickname       | Select **Confirm Reset** in the confirmation dialog |
 
 ---
 

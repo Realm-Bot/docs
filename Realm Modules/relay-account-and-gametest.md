@@ -31,17 +31,17 @@ The **Realm Bot GameTest Pack** provides an in-game bridge for features such as 
 
 ## Feature Dependency Matrix
 
-| Feature | GameTest required | Connected Relay Account required |
-|---|---|---|
-| Chat Relay player chat | No | Yes |
-| Chat Relay emotes | Yes | Yes |
-| Scoreboard Leaderboards | Yes | Yes |
-| Player Lookup enriched live data | Conditional | Yes for live data |
-| Tebex empty-slot conditions | Conditional | Yes |
-| Live Playerlist, Leveling System | No | Yes |
-| Bot Detection, Member Gate, Skin Filtering | No | Yes |
-| Realm Console | No | Yes |
-| Realm Stories | No | No; linked account access is still required |
+| Feature                                    | GameTest required | Connected Relay Account required            |
+| ------------------------------------------ | ----------------- | ------------------------------------------- |
+| Chat Relay player chat                     | No                | Yes                                         |
+| Chat Relay emotes                          | No                | Yes                                         |
+| Scoreboard Leaderboards                    | Yes               | Yes                                         |
+| Player Lookup enriched live data           | Conditional       | Yes for live data                           |
+| Tebex empty-slot conditions                | Conditional       | Yes                                         |
+| Live Playerlist, Leveling System           | No                | Yes                                         |
+| Bot Detection, Member Gate, Skin Filtering | No                | Yes                                         |
+| Realm Console                              | No                | Yes                                         |
+| Realm Stories                              | No                | No; linked account access is still required |
 
 **Conditional** means the feature can use GameTest for a specific data source or condition but may retain more limited behaviour without it.
 

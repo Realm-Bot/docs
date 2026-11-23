@@ -37,7 +37,7 @@ Lockdown kicks do **not** create permanent bans or close the Realm.
 
 ### Configure Lockdown
 
-1. Open **Automod > Security** and select the **Lockdown** tab.
+1. Open **Automod > Security** and select the **Lockdown** tab. ![Lockdown Configuration](/images/lockdown.png)
 2. Enable **Lockdown Configuration**.
 3. Choose whether to **Allow Operators**.
 4. Add any approved players to the **Lockdown Exempt List** using their gamertag or XUID.
@@ -48,13 +48,13 @@ An **XUID** is a player's Xbox account identifier. The exempt list shows each pl
 
 ### Who Can Remain
 
-| Player group | Allowed during lockdown |
-|---|---|
-| Realm owner | Yes |
-| Account used by the bot | Yes |
-| Players on the Lockdown Exempt List | Yes |
-| Minecraft Realm operators | Only when **Allow Operators** is enabled |
-| Other players | No |
+| Player group                        | Allowed during lockdown                  |
+| ----------------------------------- | ---------------------------------------- |
+| Realm owner                         | Yes                                      |
+| Account used by the bot             | Yes                                      |
+| Players on the Lockdown Exempt List | Yes                                      |
+| Minecraft Realm operators           | Only when **Allow Operators** is enabled |
+| Other players                       | No                                       |
 
 **Allow Operators** is enabled by default. Turning it off leaves access to the Realm owner, the bot account, and explicitly exempted players.
 
@@ -64,10 +64,10 @@ A Discord staff role does not automatically make someone a Minecraft operator or
 
 Run these commands in Discord, selecting the intended Realm:
 
-| Command | Purpose |
-|---|---|
+| Command                                  | Purpose                                            |
+| ---------------------------------------- | -------------------------------------------------- |
 | `/realm lockdown realm:<selected Realm>` | Activate lockdown and check players already online |
-| `/realm unlock realm:<selected Realm>` | End the active lockdown |
+| `/realm unlock realm:<selected Realm>`   | End the active lockdown                            |
 
 Omitting `realm` applies the action across the account's Realms available through the command. Select one Realm explicitly when you intend to affect only that Realm.
 
@@ -91,7 +91,7 @@ Watchlist is an alerting feature. Adding a player does not ban or remove them, a
 
 ### Configure Watchlist
 
-1. Open **Automod > Security** and select the **Watchlist** tab.
+1. Open **Automod > Security** and select the **Watchlist** tab. ![Watchlist Configuration](/images/watchlist.png)
 2. Enable **Watchlist Configuration**.
 3. Select the **Discord Destination** for alerts.
 4. Optionally select a **Ping Role**.
@@ -101,11 +101,11 @@ Entries are matched using Xbox account identity. The list shows names and XUIDs,
 
 ### Manage Players from Discord
 
-| Command | Purpose |
-|---|---|
-| `/watchlist add user:<gamertag-or-XUID> realm:<selected Realm>` | Add a player to the selected Realm's watchlist |
-| `/watchlist remove user:<gamertag-or-XUID> realm:<selected Realm>` | Remove a watched player |
-| `/watchlist list realm:<selected Realm>` | Show the watched players |
+| Command                                                            | Purpose                                        |
+| ------------------------------------------------------------------ | ---------------------------------------------- |
+| `/watchlist add user:<gamertag-or-XUID> realm:<selected Realm>`    | Add a player to the selected Realm's watchlist |
+| `/watchlist remove user:<gamertag-or-XUID> realm:<selected Realm>` | Remove a watched player                        |
+| `/watchlist list realm:<selected Realm>`                           | Show the watched players                       |
 
 Adding a player through a command does not enable Watchlist notifications or choose a destination. Configure those settings in the dashboard. Discord lists include navigation buttons when there are more than ten entries.
 
@@ -117,12 +117,12 @@ Watchlist reports only joins detected in the configured Realm. It does not track
 
 Discord Administrators pass Realm Bot's command-permission check automatically. Other staff need the relevant permission assigned to one of their roles through [Server Permissions](<../Server Dashboard/server-permissions.md>).
 
-| Action | Required Realm Bot permission |
-|---|---|
-| Activate or end Lockdown | **Manage Lockdown System** |
-| Add a watched player | **Watchlist Add** |
-| View watched players | **Watchlist List** |
-| Remove a watched player | **Watchlist Remove** |
+| Action                   | Required Realm Bot permission |
+| ------------------------ | ----------------------------- |
+| Activate or end Lockdown | **Manage Lockdown System**    |
+| Add a watched player     | **Watchlist Add**             |
+| View watched players     | **Watchlist List**            |
+| Remove a watched player  | **Watchlist Remove**          |
 
 These commands also require the relevant account connection and Premium access. Permission to manage Lockdown does not itself exempt a staff member's Minecraft account from enforcement.
 

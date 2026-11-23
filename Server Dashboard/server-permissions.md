@@ -36,9 +36,11 @@ Realm Bot role settings do not replace careful Discord channel permission config
 ## Managing Role Permissions
 
 ### 1) Select a Role
+
 Find the role in **Manage Role Permissions**. Search by role name if needed.
 
 ### 2) Edit the Role
+
 Select the edit icon on the role card to open that role’s permission configuration.
 
 ---
@@ -55,6 +57,8 @@ Permissions are grouped by feature area. When editing a role, you will see categ
 - **Verify** (verification/embed or onboarding utilities)
 - **Banlist** (lookup or list ban records, where supported)
 - **Watchlist** (add, list, and remove watched players)
+- **Invites** (create/temp/list/delete invite links)
+- **Banlist** (all, lookup)
 
 Each category includes a **Select All** option to quickly grant everything within that section—use this cautiously.
 
@@ -72,7 +76,9 @@ These permissions do not exempt a staff member's Minecraft account from Lockdown
 ## Recommended Role Model (Best Practice)
 
 ### Owner / Head Admin
+
 Grant full permissions, including:
+
 - Realm code changes
 - Ban/unban
 - World execute
@@ -80,14 +86,18 @@ Grant full permissions, including:
 - Permission editing itself (if available)
 
 ### Senior Staff / Managers
+
 Grant operational moderation + management, but limit high-risk actions:
+
 - Kick/ban/unban (optional)
 - Player lookup, realm players, recents
 - Warnings and allowlist management
 - Limited world actions if required (broadcast/live), avoid `World Execute` unless fully trusted
 
 ### Moderators
+
 Grant routine moderation only:
+
 - Kick (optional)
 - Warn add/lookup/remove
 - Player lookup
@@ -95,7 +105,9 @@ Grant routine moderation only:
 - View realm players
 
 ### Support / Helpers
+
 Minimal access:
+
 - Player lookup
 - Allowlist check/list
 - Verify tools (if your server uses them)
@@ -108,11 +120,13 @@ Minimal access:
 ## Common Misconfiguration Pitfalls
 
 ### “Staff can’t use commands they should have”
+
 - Confirm the correct role was edited (many servers have similarly named roles).
 - Ensure the user actually has that role in Discord.
 - Check that you enabled the specific permission (e.g., `Realm Kick` is separate from `Realm Ban`).
 
 ### “Too many people can run dangerous commands”
+
 - Remove **Select All** usage for broad categories.
 - Create a dedicated “Technical Admin” role for high-impact permissions.
 - Split moderation (Warn/Kick) from infrastructure controls (Code Change/Execute).

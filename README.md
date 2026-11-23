@@ -2,7 +2,7 @@
 label: Landing
 icon: home
 order: 150
-description: Official Realm Bot documentation for managing Minecraft Bedrock Realms through Discord-setup guides, modules, security tools, and integrations.
+description: Official Realm Bot documentation for managing Minecraft Bedrock Realms through Discord, including setup guides, modules, security tools, and integrations.
 authors:
   - name: Kaii
     avatar: https://avatars.githubusercontent.com/u/72093371?s=96&v=4
@@ -10,7 +10,8 @@ authors:
     avatar: https://avatars.githubusercontent.com/u/78130400?s=96&v=4
   - name: Frazer
     avatar: https://avatars.githubusercontent.com/u/136254012?s=96&v=4
-
+  - name: SerialxxV
+    avatar: https://avatars.githubusercontent.com/u/295983043?s=96&v=4
 ---
 
 # Welcome to Realm Bot Documentation
@@ -24,40 +25,51 @@ Realm Bot connects your **Minecraft Bedrock Realms** to Discord. Start with [Get
 ## Core Capabilities
 
 ### Realm Management
+
 - **Open and close** your Realm when required.
 - **Invite and remove players** without manual in-game administration.
 - Manage membership and server preferences in the [Realms Hub](<Realm Page/realms-hub.md>) or configure a [Scheduled Restart](<Realm Page/scheduled-restart.md>).
 
 ### Moderation and Access Control
+
 - Use [Realm commands](Commands/Realm/index.md) to kick or ban a player.
 - Configure [Member Gate](<Realm Modules/member-gate.md>) entry rules and [allowlist exceptions](<Server Dashboard/server-allowlist.md>) for trusted players.
 
 ### Chat Relay and Communication
+
 Use [Chat Relay](<Realm Modules/chat-relay.md>) for two-way chat between Minecraft and Discord.
 
 ### Game Settings and Administration
+
 Open [World Management](<Realm Page/realm-world.md>) to edit gamerules, manage packs or replace a world.
+Open [Realms Hub](<Realm Page/realms-hub.md>) to edit server preferences, stories, scheduled restarts, view & manage members and admin logs.
 
 ### Broadcasting and Messaging
+
 Use [`/world broadcast`](Commands/World/broadcast.md) to send an in-game announcement.
 
 ### Logging and Visibility
+
 - Check [Moderation Logs](<Server Dashboard/server-mod-logs.md>) to see who took an action, when, and on which Realm.
 - Share new Story Feed posts and supported milestones with [Realm Stories](Tools/realm-stories.md) (Premium, Beta).
 
 ### Security and Stability Tooling
+
 - [Realm Security](<Realm Modules/realm-security.md>) (Premium) for temporary Lockdown restrictions and Watchlist join alerts.
 
 ### Integrations
+
 - [Tebex](Integrations/tebex.md) integration (Premium) for in-game fulfilment workflows where supported by your setup.
 
 ### Global Ban and Shared Moderation
+
 - Browse and filter supported records in the [Ban List Explorer](<Global Ban/ban-list-explorer.md>).
 - Configure category-based [Realm Protection](<Global Ban/realm-protection.md>).
 - Submit and track reports through [Reporting Players](<Global Ban/reporting-players.md>).
 - Review eligibility and process in [Appeals](<Global Ban/appeals.md>).
 
 ### Tools and Troubleshooting
+
 - Build Discord messages with the [Embed Panel](Tools/embed-panel.md).
 - Resolve common access issues in [Troubleshooting](Troubleshooting/private-title-history.md).
 - Diagnose command-specific problems with [Command Troubleshooting](Commands/troubleshooting.md).

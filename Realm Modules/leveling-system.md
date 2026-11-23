@@ -67,8 +67,7 @@ The GameTest Pack is not required for Leveling progression.
 
 ## How to Set Up
 
-1. Open the **Leveling System** module inside the Realm Bot Dashboard.
-   ![Leveling System Configuration](/images/leveling-system.png)
+1. Open the **Leveling System** module inside the Realm Bot Dashboard. ![Leveling System Configuration](/images/leveling-system.png)
 2. Enable the **Leveling System** toggle.
 3. Optionally select a **Discord Destination** for level-up announcements.
 4. Choose whether to **Send In-Game Messages** for level-ups.

@@ -2,95 +2,95 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://help.realmbot.dev/</loc>
-    <lastmod>2026-10-24T13:00:05Z</lastmod>
+    <lastmod>2026-11-23T02:08:28Z</lastmod>
   </url>
   <url>
     <loc>https://help.realmbot.dev/commands/</loc>
-    <lastmod>2026-10-24T13:00:05Z</lastmod>
+    <lastmod>2026-11-23T02:08:28Z</lastmod>
   </url>
   <url>
     <loc>https://help.realmbot.dev/setup/</loc>
-    <lastmod>2026-07-27T04:32:23Z</lastmod>
+    <lastmod>2026-11-23T02:08:28Z</lastmod>
   </url>
   <url>
     <loc>https://help.realmbot.dev/commands/troubleshooting/</loc>
-    <lastmod>2026-07-27T04:32:23Z</lastmod>
+    <lastmod>2026-11-23T02:08:28Z</lastmod>
   </url>
   <url>
     <loc>https://help.realmbot.dev/server-dashboard/overview/</loc>
-    <lastmod>2026-10-24T13:00:05Z</lastmod>
+    <lastmod>2026-11-23T02:08:28Z</lastmod>
   </url>
   <url>
     <loc>https://help.realmbot.dev/server-dashboard/server-permissions/</loc>
-    <lastmod>2026-10-24T13:00:05Z</lastmod>
+    <lastmod>2026-11-23T02:08:28Z</lastmod>
   </url>
   <url>
     <loc>https://help.realmbot.dev/commands/realm/</loc>
-    <lastmod>2026-10-24T13:00:05Z</lastmod>
+    <lastmod>2026-11-23T02:08:28Z</lastmod>
   </url>
   <url>
     <loc>https://help.realmbot.dev/server-dashboard/server-setup/</loc>
-    <lastmod>2026-02-07T03:01:58Z</lastmod>
+    <lastmod>2026-11-23T02:08:28Z</lastmod>
   </url>
   <url>
     <loc>https://help.realmbot.dev/server-dashboard/server-account-linking/</loc>
-    <lastmod>2026-02-07T03:07:39Z</lastmod>
+    <lastmod>2026-11-23T02:08:28Z</lastmod>
   </url>
   <url>
     <loc>https://help.realmbot.dev/server-dashboard/server-warnings/</loc>
-    <lastmod>2026-02-07T03:40:56Z</lastmod>
+    <lastmod>2026-11-23T02:08:28Z</lastmod>
   </url>
   <url>
     <loc>https://help.realmbot.dev/server-dashboard/server-invites/</loc>
-    <lastmod>2026-07-27T04:32:23Z</lastmod>
+    <lastmod>2026-11-23T02:08:28Z</lastmod>
   </url>
   <url>
     <loc>https://help.realmbot.dev/realm-modules/overview/</loc>
-    <lastmod>2026-10-24T13:00:05Z</lastmod>
+    <lastmod>2026-11-23T02:08:28Z</lastmod>
   </url>
   <url>
     <loc>https://help.realmbot.dev/server-dashboard/server-logs/</loc>
-    <lastmod>2026-02-07T03:01:58Z</lastmod>
+    <lastmod>2026-11-23T02:08:28Z</lastmod>
   </url>
   <url>
     <loc>https://help.realmbot.dev/server-dashboard/server-command-settings/</loc>
-    <lastmod>2026-02-07T03:40:56Z</lastmod>
+    <lastmod>2026-11-23T02:08:28Z</lastmod>
   </url>
   <url>
     <loc>https://help.realmbot.dev/realm-modules/relay-account-and-gametest/</loc>
-    <lastmod>2026-10-24T13:00:05Z</lastmod>
+    <lastmod>2026-11-23T02:08:28Z</lastmod>
   </url>
   <url>
     <loc>https://help.realmbot.dev/server-dashboard/server-message-actions/</loc>
-    <lastmod>2026-02-07T03:40:56Z</lastmod>
+    <lastmod>2026-11-23T02:08:28Z</lastmod>
   </url>
   <url>
     <loc>https://help.realmbot.dev/server-dashboard/server-allowlist/</loc>
-    <lastmod>2026-04-04T00:55:50Z</lastmod>
+    <lastmod>2026-11-23T02:08:28Z</lastmod>
   </url>
   <url>
     <loc>https://help.realmbot.dev/server-dashboard/server-mod-logs/</loc>
-    <lastmod>2026-02-07T03:40:56Z</lastmod>
+    <lastmod>2026-11-23T02:08:28Z</lastmod>
   </url>
   <url>
     <loc>https://help.realmbot.dev/server-dashboard/bot-server-profile/</loc>
-    <lastmod>2026-10-24T13:00:05Z</lastmod>
+    <lastmod>2026-11-23T02:08:28Z</lastmod>
   </url>
   <url>
     <loc>https://help.realmbot.dev/realm-modules/chat-relay/</loc>
-    <lastmod>2026-07-27T04:32:23Z</lastmod>
+    <lastmod>2026-11-23T02:08:28Z</lastmod>
   </url>
   <url>
     <loc>https://help.realmbot.dev/realm-modules/realm-security/</loc>
-    <lastmod>2026-10-24T13:00:05Z</lastmod>
+    <lastmod>2026-11-23T02:08:28Z</lastmod>
   </url>
   <url>
     <loc>https://help.realmbot.dev/realm-modules/member-gate/</loc>
-    <lastmod>2026-07-27T04:32:23Z</lastmod>
+    <lastmod>2026-11-23T02:08:28Z</lastmod>
   </url>
   <url>
     <loc>https://help.realmbot.dev/realm-modules/realm-console/</loc>
-    <lastmod>2026-10-24T13:00:05Z</lastmod>
+    <lastmod>2026-11-23T02:08:28Z</lastmod>
   </url>
   <url>
     <loc>https://help.realmbot.dev/realm-modules/bot-detection/</loc>
@@ -98,7 +98,7 @@
   </url>
   <url>
     <loc>https://help.realmbot.dev/realm-modules/scoreboard-leaderboards/</loc>
-    <lastmod>2026-10-24T13:00:05Z</lastmod>
+    <lastmod>2026-11-23T02:08:28Z</lastmod>
   </url>
   <url>
     <loc>https://help.realmbot.dev/realm-modules/leveling-system/</loc>
@@ -106,7 +106,7 @@
   </url>
   <url>
     <loc>https://help.realmbot.dev/realm-page/realm-overview/</loc>
-    <lastmod>2026-10-24T13:00:05Z</lastmod>
+    <lastmod>2026-11-23T02:08:28Z</lastmod>
   </url>
   <url>
     <loc>https://help.realmbot.dev/commands/allowlist/</loc>
@@ -114,19 +114,23 @@
   </url>
   <url>
     <loc>https://help.realmbot.dev/global-ban/</loc>
-    <lastmod>2026-10-24T13:00:05Z</lastmod>
+    <lastmod>2026-11-23T02:08:28Z</lastmod>
   </url>
   <url>
     <loc>https://help.realmbot.dev/realm-modules/vanity-url/</loc>
-    <lastmod>2026-07-27T04:32:23Z</lastmod>
+    <lastmod>2026-11-23T02:08:28Z</lastmod>
   </url>
   <url>
     <loc>https://help.realmbot.dev/realm-modules/skin-filtering/</loc>
-    <lastmod>2026-07-27T04:32:23Z</lastmod>
+    <lastmod>2026-11-23T02:08:28Z</lastmod>
   </url>
   <url>
     <loc>https://help.realmbot.dev/realm-modules/live-playerlist/</loc>
-    <lastmod>2026-07-27T04:32:23Z</lastmod>
+    <lastmod>2026-11-23T02:08:28Z</lastmod>
+  </url>
+  <url>
+    <loc>https://help.realmbot.dev/realm-page/realms-hub/</loc>
+    <lastmod>2026-11-23T02:08:28Z</lastmod>
   </url>
   <url>
     <loc>https://help.realmbot.dev/commands/banlist/</loc>
@@ -134,20 +138,19 @@
   </url>
   <url>
     <loc>https://help.realmbot.dev/realm-page/server-performance/</loc>
+    <lastmod>2026-11-23T02:08:28Z</lastmod>
   </url>
   <url>
     <loc>https://help.realmbot.dev/realm-page/realm-activity/</loc>
-    <lastmod>2026-02-07T01:56:20Z</lastmod>
-  </url>
-  <url>
-    <loc>https://help.realmbot.dev/realm-page/realms-hub/</loc>
+    <lastmod>2026-11-23T02:08:28Z</lastmod>
   </url>
   <url>
     <loc>https://help.realmbot.dev/realm-page/scheduled-restart/</loc>
+    <lastmod>2026-11-23T02:08:28Z</lastmod>
   </url>
   <url>
     <loc>https://help.realmbot.dev/realm-page/realm-world/</loc>
-    <lastmod>2026-07-27T04:32:23Z</lastmod>
+    <lastmod>2026-11-23T02:08:28Z</lastmod>
   </url>
   <url>
     <loc>https://help.realmbot.dev/commands/player/</loc>
@@ -183,7 +186,7 @@
   </url>
   <url>
     <loc>https://help.realmbot.dev/global-ban/realm-protection/</loc>
-    <lastmod>2026-10-24T13:00:05Z</lastmod>
+    <lastmod>2026-11-23T02:08:28Z</lastmod>
   </url>
   <url>
     <loc>https://help.realmbot.dev/commands/allowlist/add/</loc>
@@ -211,11 +214,11 @@
   </url>
   <url>
     <loc>https://help.realmbot.dev/global-ban/overview/</loc>
-    <lastmod>2026-10-24T13:00:05Z</lastmod>
+    <lastmod>2026-11-23T02:08:28Z</lastmod>
   </url>
   <url>
     <loc>https://help.realmbot.dev/global-ban/ban-list-explorer/</loc>
-    <lastmod>2026-10-24T13:00:05Z</lastmod>
+    <lastmod>2026-11-23T02:08:28Z</lastmod>
   </url>
   <url>
     <loc>https://help.realmbot.dev/commands/banlist/all/</loc>
@@ -227,15 +230,19 @@
   </url>
   <url>
     <loc>https://help.realmbot.dev/global-ban/reporting-players/</loc>
-    <lastmod>2026-10-24T13:00:05Z</lastmod>
+    <lastmod>2026-11-23T02:08:28Z</lastmod>
   </url>
   <url>
     <loc>https://help.realmbot.dev/global-ban/appeals/</loc>
-    <lastmod>2026-10-24T13:00:05Z</lastmod>
+    <lastmod>2026-11-23T02:08:28Z</lastmod>
   </url>
   <url>
     <loc>https://help.realmbot.dev/global-ban/custom-ban-list-format/</loc>
-    <lastmod>2026-10-24T13:00:05Z</lastmod>
+    <lastmod>2026-11-23T02:08:28Z</lastmod>
+  </url>
+  <url>
+    <loc>https://help.realmbot.dev/tools/realm-stories/</loc>
+    <lastmod>2026-11-23T02:08:28Z</lastmod>
   </url>
   <url>
     <loc>https://help.realmbot.dev/commands/player/lookup/</loc>
@@ -258,11 +265,8 @@
     <lastmod>2026-07-27T04:32:23Z</lastmod>
   </url>
   <url>
-    <loc>https://help.realmbot.dev/tools/realm-stories/</loc>
-    <lastmod>2026-10-24T13:00:05Z</lastmod>
-  </url>
-  <url>
     <loc>https://help.realmbot.dev/tools/referrals/</loc>
+    <lastmod>2026-11-23T02:08:28Z</lastmod>
   </url>
   <url>
     <loc>https://help.realmbot.dev/commands/realm/open/</loc>
@@ -274,15 +278,15 @@
   </url>
   <url>
     <loc>https://help.realmbot.dev/commands/realm/players/</loc>
-    <lastmod>2026-07-27T04:32:23Z</lastmod>
+    <lastmod>2026-11-23T02:08:28Z</lastmod>
   </url>
   <url>
     <loc>https://help.realmbot.dev/tools/embed-panel/</loc>
-    <lastmod>2026-07-27T04:32:23Z</lastmod>
+    <lastmod>2026-11-23T02:08:28Z</lastmod>
   </url>
   <url>
     <loc>https://help.realmbot.dev/integrations/tebex/</loc>
-    <lastmod>2026-07-27T04:32:23Z</lastmod>
+    <lastmod>2026-11-23T02:08:28Z</lastmod>
   </url>
   <url>
     <loc>https://help.realmbot.dev/commands/realm/close/</loc>
@@ -318,15 +322,15 @@
   </url>
   <url>
     <loc>https://help.realmbot.dev/troubleshooting/private-title-history/</loc>
-    <lastmod>2026-04-05T17:00:24Z</lastmod>
+    <lastmod>2026-11-23T02:08:28Z</lastmod>
   </url>
   <url>
     <loc>https://help.realmbot.dev/commands/realm/lastseen/</loc>
-    <lastmod>2026-07-27T04:32:23Z</lastmod>
+    <lastmod>2026-11-23T02:08:28Z</lastmod>
   </url>
   <url>
     <loc>https://help.realmbot.dev/commands/realm/backup-create/</loc>
-    <lastmod>2026-07-27T04:32:23Z</lastmod>
+    <lastmod>2026-11-23T02:08:28Z</lastmod>
   </url>
   <url>
     <loc>https://help.realmbot.dev/commands/realm/backup-list/</loc>
@@ -338,6 +342,7 @@
   </url>
   <url>
     <loc>https://help.realmbot.dev/commands/realm/perf/</loc>
+    <lastmod>2026-11-23T02:08:28Z</lastmod>
   </url>
   <url>
     <loc>https://help.realmbot.dev/commands/invites/temp/</loc>
@@ -349,7 +354,7 @@
   </url>
   <url>
     <loc>https://help.realmbot.dev/commands/stats/leaderboard/</loc>
-    <lastmod>2026-07-27T04:32:23Z</lastmod>
+    <lastmod>2026-11-23T02:08:28Z</lastmod>
   </url>
   <url>
     <loc>https://help.realmbot.dev/commands/utility/dashboard/</loc>
@@ -361,11 +366,11 @@
   </url>
   <url>
     <loc>https://help.realmbot.dev/commands/utility/connect/</loc>
-    <lastmod>2026-07-27T04:32:23Z</lastmod>
+    <lastmod>2026-11-23T02:08:28Z</lastmod>
   </url>
   <url>
     <loc>https://help.realmbot.dev/commands/utility/premium/</loc>
-    <lastmod>2026-07-27T04:32:23Z</lastmod>
+    <lastmod>2026-11-23T02:08:28Z</lastmod>
   </url>
   <url>
     <loc>https://help.realmbot.dev/commands/utility/botinfo/</loc>
@@ -373,7 +378,7 @@
   </url>
   <url>
     <loc>https://help.realmbot.dev/commands/utility/disconnect/</loc>
-    <lastmod>2026-07-27T04:32:23Z</lastmod>
+    <lastmod>2026-11-23T02:08:28Z</lastmod>
   </url>
   <url>
     <loc>https://help.realmbot.dev/commands/utility/help/</loc>
@@ -393,7 +398,7 @@
   </url>
   <url>
     <loc>https://help.realmbot.dev/commands/warn/remove/</loc>
-    <lastmod>2026-07-27T04:32:23Z</lastmod>
+    <lastmod>2026-11-23T02:08:28Z</lastmod>
   </url>
   <url>
     <loc>https://help.realmbot.dev/commands/world/join/</loc>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.848714876486">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.848772229369">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -44,11 +44,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../favicon.ico" />
-    <link href="../../resources/css/retype.css?v=4.6.0.848714876486" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.6.0.848772229369" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.848714876486" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.848772229369" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.848714876486" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.848772229369" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -65,7 +65,7 @@
                 <div class="flex items-center px-2 md:px-6">
                     <a id="retype-branding-logo" href="https://help.realmbot.dev/" class="flex items-center leading-snug text-2xl">
                         <span class="w-10 mr-2 grow-0 shrink-0 overflow-hidden">
-                            <img class="max-h-10 md:inline-block" src="../../images/logo.png" alt="" width="40" height="40">
+                            <img class="max-h-10 md:inline-block" src="../../images/brand/icon.png" alt="" width="40" height="40">
                         </span>
                         <span class="dark:text-white font-bold line-clamp-1 md:line-clamp-2">Realm Bot</span>
                     </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">Docs</span>
@@ -140,32 +140,6 @@
             <div class="relative retype-markdown" id="retype-content">
                 <!-- Rendered if sidebar right is enabled -->
                 <div id="retype-sidebar-right-toggle"></div>
-                <nav id="retype-breadcrumb" class="breadcrumb" aria-label="Breadcrumb">
-                    <ol role="list">
-                        <li class="pr-4">
-                            <a href="../../" class="pr-4">
-                                Landing
-                            </a>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
-                                <path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/>
-                            </svg>
-                        </li>
-                        <li class="pr-4">
-                            <span class="pr-4">
-                                Realm Modules
-                            </span>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
-                                <path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/>
-                            </svg>
-                        </li>
-                        <li class="pr-4">
-                            <a href="../../realm-modules/chat-relay/" class="pr-4">
-                                Chat Relay
-                            </a>
-                        </li>
-                    </ol>
-                </nav>
-
                 <doc-page-actions></doc-page-actions>
 
                 <!-- Page content  -->
@@ -188,12 +162,13 @@
 <h2 id="what-chat-relay-relays">What Chat Relay Relays</h2>
 <p>Choose which Realm events to send to Discord:</p>
 <ul>
-<li><strong>Player Chat Messages</strong> - standard messages sent by players in Realm chat</li>
-<li><strong>Tellraw Messages</strong> - command-generated formatted outputs (announcements, scripted events, systems output)</li>
+<li><strong>Player Join and Leave Messages</strong> - connection notices, with optional platform and Realm identification under <doc-anchor-trigger to="#relay-customizations">Relay Customizations</doc-anchor-trigger>.</li>
+<li><strong>Player Chat Messages</strong> - standard chat messages sent by players in-game.</li>
+<li><strong>Tellraw Messages</strong> - formatted messages generated by commands, announcements, or scripts.</li>
 <li><strong>Death Messages</strong> - player death notifications for gameplay visibility and moderation review</li>
 <li><strong>Player Emotes</strong> - player emotes performed in-game (useful for social visibility and activity context)</li>
-<li><strong>Player Join and Leave Messages</strong> - connection notices, with optional platform and Realm identification</li>
-<li><strong>Connection Notices</strong> - configurable connection messages and disconnection warnings</li>
+<li><strong>Executed Commands</strong> - player commands executed in-game</li>
+<li><strong>Connection Notices</strong> - configurable connection messages and disconnection warnings, enabled under <doc-anchor-trigger to="#relay-customizations">Relay Customizations</doc-anchor-trigger></li>
 </ul>
 <blockquote>
 <p><strong>Note:</strong> Chat Relay is a communications utility. It does not independently &quot;secure&quot; or &quot;protect&quot; a Realm. All relayed content remains subject to your Realm rules and Discord policies.</p>
@@ -234,48 +209,79 @@
 <hr>
 <h2 id="how-to-set-up">How to Set Up</h2>
 <ol>
-<li>
-<p>Open the <strong>Chat Relay</strong> module inside the Realm Bot Dashboard.<br />
-<img src="../../images/chat-relay.png" alt="Chat Relay Configuration" class="max-w-full h-auto" width="1121" height="836" /></p>
-</li>
-<li>
-<p>Enable <strong>Chat Relay</strong> using the main toggle.</p>
-</li>
-<li>
-<p>Set a <strong>Discord Destination</strong> for each message category you enable. <strong>Set all channels</strong> fills the individual destinations with the same channel; you can still choose separate channels.</p>
-</li>
-<li>
-<p>Under <strong>Message Types</strong>, enable the categories you want relayed:</p>
+<li>Open the <strong>Chat Relay</strong> module inside the Realm Bot Dashboard. <img src="../../images/chat-relay.png" alt="Chat Relay Configuration" class="max-w-full h-auto" width="1117" height="780" /></li>
+<li>Enable <strong>Chat Relay</strong> using the main toggle.</li>
+<li>Under the <strong>Relay</strong> tab, configure which messages are sent to Discord.</li>
+<li>Under <strong>Message routing</strong>, select a Discord channel for each message type. Use <strong>Set all channels</strong> to assign the same channel to every message type.</li>
+<li>Enable the message types you want to relay:
 <ul>
-<li>Player Chat Messages</li>
-<li>Tellraw Messages</li>
-<li>Death Messages</li>
-<li>Player Emotes</li>
-<li>Player Join and Leave Messages</li>
+<li><strong>Join &amp; Leave Messages</strong> – Player join and leave notifications.</li>
+<li><strong>Player Chat Messages</strong> – Regular in-game chat messages.</li>
+<li><strong>Tellraw Messages</strong> – Command-generated formatted messages.</li>
+<li><strong>Death Messages</strong> – Player death notifications.</li>
+<li><strong>Player Emotes</strong> – Emotes performed by players.</li>
+<li><strong>Executed Commands</strong> – Commands executed by players.</li>
 </ul>
 </li>
-<li>
-<p>Review <strong>Customisation</strong> settings for system messages, join messages, device identification, and Realm identification.</p>
-</li>
-<li>
-<p>Select a <strong>Fun Mode</strong> only if you want player-chat presentation altered.</p>
-</li>
+<li>Optionally configure <doc-anchor-trigger to="#anti-spam-configuration"><strong>Anti-Spam</strong></doc-anchor-trigger> and <doc-anchor-trigger to="#relay-customizations"><strong>Customizations</strong></doc-anchor-trigger> using their respective tabs.</li>
+<li>Optionally select a <strong>Fun Mode</strong> to change how player chat messages are presented.</li>
 </ol>
 <hr>
+<h2 id="anti-spam-configuration">Anti-Spam Configuration</h2>
+<figure class="content-center">
+    <img src="../../images/anti-spam.png" alt="Anti-Spam Configuration" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="1231" height="238" />
+    <figcaption class="caption">Anti-Spam Configuration</figcaption>
+</figure>
+<p>Set two values to limit repeated player chat:</p>
+<ul>
+<li><strong>Message Threshold</strong> - the maximum number of messages allowed before the system triggers</li>
+<li><strong>Window (seconds)</strong> - the time window used to count messages</li>
+</ul>
+<p>For example, a threshold of <strong>10</strong> and a window of <strong>10 seconds</strong> allow ten messages within that window. An eleventh exceeds the threshold.</p>
+<p>When the threshold is exceeded, the affected player is removed from the Realm and the action is logged. Players on the Realm Bot allowlist are exempt from this anti-spam action.</p>
+<p>Operational guidance:</p>
+<ul>
+<li>Start conservative for public communities (e.g., 10-15 messages in 10-15 seconds)</li>
+<li>Increase thresholds for high-volume servers where relay spam is expected during events</li>
+<li>Pair anti-spam with Discord slowmode if your relay channel is public-facing</li>
+</ul>
+<blockquote>
+<p><strong>Important:</strong> Setting threshold/window to extremely low values can suppress legitimate activity. Tune this gradually based on real traffic.</p>
+</blockquote>
+<hr>
+<h2 id="relay-customizations">Relay Customizations</h2>
+<figure class="content-center">
+    <img src="../../images/relay-customizations.png" alt="Relay Customizations" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="1230" height="625" />
+    <figcaption class="caption">Relay Customizations</figcaption>
+</figure>
+<p>Use <strong>Chat Relay &gt; Customizations &gt; Relay Customizations</strong> for the selected Realm to control how messages are displayed and handled between Discord and Minecraft. Each setting can be enabled independently.</p>
+<ul>
+<li><strong>System Messages</strong> - Send Realm Bot connection notices to Discord, including when the relay connects or disconnects.</li>
+<li><strong>Player Join Message</strong> - Sends a custom in-game message when a player joins the Realm.</li>
+<li><strong>Chat Device Identification</strong> - Replace the default footer on Discord chat messages with the device the player is using.</li>
+<li><strong>Join/Leave Realm Identification</strong> - Include the Realm name in join and leave notifications, helping distinguish activity across multiple Realms.</li>
+<li><strong>Discord -&gt; Realm Relay Reactions</strong> - React to Discord messages with a check or cross emoji depending on whether the message was successfully relayed into the Realm.</li>
+</ul>
+<p>These options do not enable or disable individual message categories. Use <strong>Chat Relay &gt; Relay &gt; Message routing</strong> to configure which messages are sent to Discord and their destination channels.</p>
+<hr>
 <h2 id="tellraw-translations">Tellraw Translations</h2>
+<figure class="content-center">
+    <img src="../../images/tellraw-translations.png" alt="Tellraw Translations" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="1234" height="402" />
+    <figcaption class="caption">Tellraw Translations</figcaption>
+</figure>
 <p>Use <strong>Chat Relay &gt; Customizations &gt; Tellraw Message Customizations</strong> for the selected Realm to change how Tellraw translation keys appear <strong>in Discord</strong>. This does not translate ordinary chat or change a player&#x27;s game language. Chat Relay must be operational, with <strong>Tellraw Messages</strong> enabled and a Discord destination selected.</p>
 <ul>
 <li><strong>Add translation:</strong> Enter the key used by the Minecraft message and the text to display in Discord. For example, the language-file entry <code translate="no" v-pre>myrealm.welcome=Welcome back, %s!</code> only affects messages that use <code translate="no" v-pre>myrealm.welcome</code>.</li>
 <li><strong>Import file:</strong> Select a <code translate="no" v-pre>.lang</code>, <code translate="no" v-pre>.mcpack</code> or <code translate="no" v-pre>.zip</code> file. For a pack, select one of its <code translate="no" v-pre>texts/*.lang</code> files, then choose <strong>Import language</strong>. The languages available depend on the pack.</li>
 </ul>
 <p>Manual entries override imports, and custom entries override bundled English. Removing an override restores the next available translation. If the top-level key is unknown, Discord displays its identifier.</p>
-<retype-table copy-text="| Limit | Maximum |
-|---|---:|
-| Upload | 10 MiB |
-| Language files per pack | 100 |
-| Selected extracted file | 5,242,880 characters |
-| Dictionary entries | 50,000 |
-| Key / value | 512 / 16,000 characters |">
+<retype-table copy-text="| Limit                   |                 Maximum |
+| ----------------------- | ----------------------: |
+| Upload                  |                  10 MiB |
+| Language files per pack |                     100 |
+| Selected extracted file |    5,242,880 characters |
+| Dictionary entries      |                  50,000 |
+| Key / value             | 512 / 16,000 characters |">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -311,24 +317,6 @@
 </retype-table>
 <p>If an entry is rejected, check for a duplicate manual key. If another session saved changes first, reload the dictionary before editing again.</p>
 <hr>
-<h2 id="anti-spam-configuration">Anti-Spam Configuration</h2>
-<p>Set two values to limit repeated player chat:</p>
-<ul>
-<li><strong>Message Threshold</strong> - the maximum number of messages allowed before the system triggers</li>
-<li><strong>Window (seconds)</strong> - the time window used to count messages</li>
-</ul>
-<p>For example, a threshold of <strong>10</strong> and a window of <strong>10 seconds</strong> allow ten messages within that window. An eleventh exceeds the threshold.</p>
-<p>When the threshold is exceeded, the affected player is removed from the Realm and the action is logged. Players on the Realm Bot allowlist are exempt from this anti-spam action.</p>
-<p>Operational guidance:</p>
-<ul>
-<li>Start conservative for public communities (e.g., 10-15 messages in 10-15 seconds)</li>
-<li>Increase thresholds for high-volume servers where relay spam is expected during events</li>
-<li>Pair anti-spam with Discord slowmode if your relay channel is public-facing</li>
-</ul>
-<blockquote>
-<p><strong>Important:</strong> Setting threshold/window to extremely low values can suppress legitimate activity. Tune this gradually based on real traffic.</p>
-</blockquote>
-<hr>
 <h2 id="fun-mode">Fun Mode</h2>
 <p>Fun Mode changes how relayed player-chat messages are presented in Discord. Available modes are:</p>
 <ul>
@@ -337,9 +325,6 @@
 <li><strong>Pirate</strong> - applies a pirate-style transformation</li>
 </ul>
 <p>Use <strong>Normal</strong> for moderation or archival channels where preserving the original wording is important.</p>
-<hr>
-<h2 id="player-emotes">Player Emotes</h2>
-<p>Enable <strong>Player Emotes</strong> to send in-game emotes to Discord. Unlike ordinary player chat, emotes require the <strong>Realm Bot GameTest Pack</strong> as well as a connected Relay Account.</p>
 <hr>
 <h2 id="recommended-configuration">Recommended Configuration</h2>
 <ul>
@@ -373,11 +358,9 @@
 <li>A destination channel is selected for the affected message category</li>
 <li>Realm Bot has View Channel + Send Messages permission</li>
 <li>The Relay Account is online and connected to the correct Realm</li>
-<li>For emotes, the GameTest bridge is current and responding</li>
 </ul>
 <h3 id="relay-is-too-noisy">Relay is too noisy</h3>
 <ul>
-<li>Disable <strong>Emotes</strong></li>
 <li>Enable <strong>Anti-Spam</strong> with a moderate threshold/window</li>
 <li>Consider Discord slowmode</li>
 <li>Restrict who can speak in the relay channel (if Discord -&gt; Realm relaying is enabled in your setup)</li>
@@ -396,32 +379,6 @@
 <li>Confirm the Discord user has permission to send messages in the channel.</li>
 </ul>
 <hr>
-<div id="retype-backlinks">
-    <h2>See also</h2>
-<div class="card-compact-group">
-<div class="card-compact-container">
-    <a href="/realm-page/scheduled-restart/" class="group card-compact no-link">
-        <div class="card-compact-body">
-            <div class="card-compact-header">
-                <span class="card-compact-title">Scheduled Restart</span>
-            </div>
-            <p class="card-compact-description">Schedule Realm restarts by local time and weekday and configure reminders for players.</p>
-        </div>
-    </a>
-</div>
-<div class="card-compact-container">
-    <a href="/" class="group card-compact no-link">
-        <div class="card-compact-body">
-            <div class="card-compact-header">
-                <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M11.03 2.59a1.501 1.501 0 0 1 1.94 0l7.5 6.363a1.5 1.5 0 0 1 .53 1.144V19.5a1.5 1.5 0 0 1-1.5 1.5h-5.75a.75.75 0 0 1-.75-.75V14h-2v6.25a.75.75 0 0 1-.75.75H4.5A1.5 1.5 0 0 1 3 19.5v-9.403c0-.44.194-.859.53-1.144ZM12 3.734l-7.5 6.363V19.5h5v-6.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v6.25h5v-9.403Z"/></svg></span>
-                <span class="card-compact-title">Welcome to Realm Bot Documentation</span>
-            </div>
-            <p class="card-compact-description">Official Realm Bot documentation for managing Minecraft Bedrock Realms through Discord-setup guides, modules, security tools, and integrations.</p>
-        </div>
-    </a>
-</div>
-</div>
-</div>
 
                 
                 <!-- Required only on API pages -->
