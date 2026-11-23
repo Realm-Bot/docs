@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.848762291073">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.848773149508">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -23,6 +23,10 @@
     <meta property="og:url" content="https://help.realmbot.dev/realm-page/server-performance/">
     <meta property="og:title" content="Server Performance | Realm Bot Docs">
     <meta property="og:description" content="Read live Minecraft Realms Pro metrics, compare recent history, and download performance data.">
+    <meta property="og:image" content="https://help.realmbot.dev/images/server-performance.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Server Performance | Realm Bot Docs">
     <meta property="og:site_name" content="Realm Bot">
     <meta property="og:locale" content="en_US">
 
@@ -31,6 +35,8 @@
     <meta name="twitter:url" content="https://help.realmbot.dev/realm-page/server-performance/">
     <meta name="twitter:title" content="Server Performance | Realm Bot Docs">
     <meta name="twitter:description" content="Read live Minecraft Realms Pro metrics, compare recent history, and download performance data.">
+    <meta name="twitter:image" content="https://help.realmbot.dev/images/server-performance.png">
+    <meta name="twitter:image:alt" content="Server Performance | Realm Bot Docs">
 
     <!-- Alternate Markdown -->
     <link rel="alternate" type="text/markdown" href="https://help.realmbot.dev/realm-page/server-performance.md">
@@ -38,11 +44,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../favicon.ico" />
-    <link href="../../resources/css/retype.css?v=4.6.0.848762291073" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.6.0.848773149508" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.848762291073" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.848773149508" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.848762291073" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.848773149508" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -59,7 +65,7 @@
                 <div class="flex items-center px-2 md:px-6">
                     <a id="retype-branding-logo" href="https://help.realmbot.dev/" class="flex items-center leading-snug text-2xl">
                         <span class="w-10 mr-2 grow-0 shrink-0 overflow-hidden">
-                            <img class="max-h-10 md:inline-block" src="../../images/logo.png" alt="" width="40" height="40">
+                            <img class="max-h-10 md:inline-block" src="../../images/brand/icon.png" alt="" width="40" height="40">
                         </span>
                         <span class="dark:text-white font-bold line-clamp-1 md:line-clamp-2">Realm Bot</span>
                     </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">Docs</span>
@@ -179,8 +185,14 @@
 <div id="retype-page-description" class="description-display text-description font-description leading-description mb-description-margin-bottom mt-description-margin-top tracking-description text-transform-description">Read live Minecraft Realms Pro metrics, compare recent history, and download performance data.</div>
 <p>Use <strong>Realm manager &gt; Overview &gt; Server Performance</strong> to check how the Realm is running. This is separate from <a href="../realm-activity/">Realm Activity</a>, which tracks player sessions and playtime.</p>
 <p>You need a linked Xbox account with game-settings permission on a <strong>Minecraft Realms Pro</strong> Realm.</p>
+<figure class="content-center">
+    <img src="../../images/server-performance.png" alt="Server Performance Dashboard" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="883" height="853" />
+    <figcaption class="caption">Server Performance Dashboard</figcaption>
+</figure>
+<hr>
 <h2 id="read-live-metrics">Read Live Metrics</h2>
 <p>The live cards show <strong>CPU usage (%)</strong>, <strong>memory usage (%)</strong>, <strong>tick time (milliseconds)</strong> and <strong>player count</strong>. They refresh about every ten seconds unless paused. If the Realm is offline, the cards indicate that live data is unavailable, not that usage is zero.</p>
+<hr>
 <h2 id="compare-and-download-history">Compare and Download History</h2>
 <ol>
 <li>Open the history chart to view the <strong>last 30 minutes</strong>. CPU is selected initially; select additional metrics to compare them.</li>
@@ -188,6 +200,7 @@
 <li>Select <strong>Download data</strong> for a CSV of the returned timestamps and <strong>all four metrics</strong>, even if you selected only one on the chart.</li>
 </ol>
 <p>A blank value in the CSV means the measurement is missing. It does not mean zero players or zero usage. For a snapshot of recent history in Discord, use <a href="../../commands/realm/perf/"><code translate="no" v-pre>/realm perf</code></a>.</p>
+<hr>
 <div id="retype-backlinks">
     <h2>See also</h2>
 <div class="card-compact-group">

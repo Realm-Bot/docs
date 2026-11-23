@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.848762291073">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.848773149508">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -44,11 +44,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../favicon.ico" />
-    <link href="../../resources/css/retype.css?v=4.6.0.848762291073" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.6.0.848773149508" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.848762291073" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.848773149508" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.848762291073" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.848773149508" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -65,7 +65,7 @@
                 <div class="flex items-center px-2 md:px-6">
                     <a id="retype-branding-logo" href="https://help.realmbot.dev/" class="flex items-center leading-snug text-2xl">
                         <span class="w-10 mr-2 grow-0 shrink-0 overflow-hidden">
-                            <img class="max-h-10 md:inline-block" src="../../images/logo.png" alt="" width="40" height="40">
+                            <img class="max-h-10 md:inline-block" src="../../images/brand/icon.png" alt="" width="40" height="40">
                         </span>
                         <span class="dark:text-white font-bold line-clamp-1 md:line-clamp-2">Realm Bot</span>
                     </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">Docs</span>
@@ -188,7 +188,7 @@
 <p><strong>Platform Note:</strong> Invite Links are intended for <strong>Minecraft Bedrock Realms</strong>.</p>
 </blockquote>
 <figure class="content-center">
-    <img src="../../images/realm-invites-management.png" alt="Realm Invites Management" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="1496" height="899" />
+    <img src="../../images/realm-invites-management.png" alt="Realm Invites Management" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="1250" height="784" />
     <figcaption class="caption">Realm Invites Management</figcaption>
 </figure>
 <hr>
@@ -230,7 +230,7 @@
 <h2 id="creating-a-new-invite-link">Creating a New Invite Link</h2>
 <p>Use the <strong>Create Link</strong> button to generate a new invite link.</p>
 <figure class="content-center">
-    <img src="../../images/realm-invites-create-link.png" alt="Create Link Modal" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="479" height="476" />
+    <img src="../../images/realm-invites-create-link.png" alt="Create Link Modal" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="390" height="481" />
     <figcaption class="caption">Create Link Modal</figcaption>
 </figure>
 <h3 id="link-details">Link Details</h3>
@@ -242,12 +242,12 @@ Select which connected Realm the invite should apply to.</p>
 <li>
 <p><strong>Max Uses</strong> (optional)<br />
 Limit how many successful joins the link can be used for.<br />
-A value of <code translate="no" v-pre>0</code> means unlimited.</p>
+Defaults to <code translate="no" v-pre>∞</code> for unlimited uses</p>
 </li>
 <li>
 <p><strong>Expiration Date</strong> (optional)<br />
 Set a date/time when the link stops working automatically.<br />
-Leave empty for no expiry.</p>
+Defaults to <code translate="no" v-pre>never</code> for no expiration date</p>
 </li>
 </ul>
 <p>Operational recommendations:</p>
@@ -260,7 +260,7 @@ Leave empty for no expiry.</p>
 <h2 id="managing-existing-links">Managing Existing Links</h2>
 <p>Once created, links appear in the Invite Links table.</p>
 <figure class="content-center">
-    <img src="../../images/realm-invites-table.png" alt="Invite Links Table" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="1464" height="400" />
+    <img src="../../images/realm-invites-table.png" alt="Invite Links Table" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="1245" height="398" />
     <figcaption class="caption">Invite Links Table</figcaption>
 </figure>
 <p>Each entry typically shows:</p>

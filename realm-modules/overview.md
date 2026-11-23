@@ -39,9 +39,6 @@ Install the GameTest Pack for features that need in-game scripting, such as scor
 
 ![GameTest Pack Management](/images/overview-gametest.png)
 
-- **Beta API Requirement**  
-  Some GameTest functionality requires **Beta APIs** to be enabled in your Realm settings. If prompted, enable **Use Beta APIs** under your Realm’s experimental features.
-
 - **Auto Update GameTest Pack**
   Installs an available update when Realm Bot next joins the Realm. This is not a continuous background update.
 
@@ -52,7 +49,7 @@ Install the GameTest Pack for features that need in-game scripting, such as scor
   - **Manual Download** - provides a download option for manual deployment workflows
   - **Check For Updates** - checks whether a newer pack version is available
 
-> **Note:** If a module is not behaving as expected and it depends on GameTest, first confirm the pack is installed, enabled, and current.
+> **Note:** If a module is not behaving as expected and it depends on Gametest, first confirm the pack is installed, enabled, and current.
 
 See [Relay Account and GameTest Dependencies](relay-account-and-gametest.md) for installation requirements and the feature dependency matrix.
 

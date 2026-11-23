@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.848762291073">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.848773149508">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -23,6 +23,10 @@
     <meta property="og:url" content="https://help.realmbot.dev/server-dashboard/bot-server-profile/">
     <meta property="og:title" content="Bot Server Profile | Realm Bot Docs">
     <meta property="og:description" content="Change or reset Realm Bot's avatar and nickname for one Discord server.">
+    <meta property="og:image" content="https://help.realmbot.dev/images/bot-server-profile.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Bot Server Profile | Realm Bot Docs">
     <meta property="og:site_name" content="Realm Bot">
     <meta property="og:locale" content="en_US">
 
@@ -31,6 +35,8 @@
     <meta name="twitter:url" content="https://help.realmbot.dev/server-dashboard/bot-server-profile/">
     <meta name="twitter:title" content="Bot Server Profile | Realm Bot Docs">
     <meta name="twitter:description" content="Change or reset Realm Bot's avatar and nickname for one Discord server.">
+    <meta name="twitter:image" content="https://help.realmbot.dev/images/bot-server-profile.png">
+    <meta name="twitter:image:alt" content="Bot Server Profile | Realm Bot Docs">
 
     <!-- Alternate Markdown -->
     <link rel="alternate" type="text/markdown" href="https://help.realmbot.dev/server-dashboard/bot-server-profile.md">
@@ -38,11 +44,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../favicon.ico" />
-    <link href="../../resources/css/retype.css?v=4.6.0.848762291073" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.6.0.848773149508" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.848762291073" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.848773149508" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.848762291073" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.848773149508" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -59,7 +65,7 @@
                 <div class="flex items-center px-2 md:px-6">
                     <a id="retype-branding-logo" href="https://help.realmbot.dev/" class="flex items-center leading-snug text-2xl">
                         <span class="w-10 mr-2 grow-0 shrink-0 overflow-hidden">
-                            <img class="max-h-10 md:inline-block" src="../../images/logo.png" alt="" width="40" height="40">
+                            <img class="max-h-10 md:inline-block" src="../../images/brand/icon.png" alt="" width="40" height="40">
                         </span>
                         <span class="dark:text-white font-bold line-clamp-1 md:line-clamp-2">Realm Bot</span>
                     </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">Docs</span>
@@ -179,6 +185,10 @@
 <div id="retype-page-description" class="description-display text-description font-description leading-description mb-description-margin-bottom mt-description-margin-top tracking-description text-transform-description">Change or reset Realm Bot's avatar and nickname for one Discord server.</div>
 <p>Bot Server Profile lets you give Realm Bot a <strong>custom avatar and nickname</strong> in one Discord server. Use it to match your community&#x27;s branding while keeping the bot&#x27;s appearance in other servers independent.</p>
 <p>This is a <strong>Realm Bot Premium</strong> feature. It is configured from the server&#x27;s <strong>Overview</strong> page and applies to the Discord server as a whole, rather than an individual Minecraft Realm.</p>
+<figure class="content-center">
+    <img src="../../images/bot-server-profile.png" alt="Bot Server Profile" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="1245" height="247" />
+    <figcaption class="caption">Bot Server Profile</figcaption>
+</figure>
 <hr>
 <h2 id="requirements">Requirements</h2>
 <ul>
@@ -209,11 +219,11 @@
 <p>Clearing the field and saving restores the default bot name. The avatar and nickname can be changed together or independently.</p>
 <hr>
 <h2 id="reset-the-profile">Reset the Profile</h2>
-<retype-table copy-text="| Control | Effect | How to apply it |
-|---|---|---|
-| **Reset** beside the avatar | Prepare a return to the default avatar | Select **Save Changes** |
-| Clear **Server Nickname** | Prepare a return to the default bot name | Select **Save Changes** |
-| **Reset to Default** in the card header | Reset both the avatar and nickname | Select **Confirm Reset** in the confirmation dialog |">
+<retype-table copy-text="| Control                                 | Effect                                   | How to apply it                                     |
+| --------------------------------------- | ---------------------------------------- | --------------------------------------------------- |
+| **Reset** beside the avatar             | Prepare a return to the default avatar   | Select **Save Changes**                             |
+| Clear **Server Nickname**               | Prepare a return to the default bot name | Select **Save Changes**                             |
+| **Reset to Default** in the card header | Reset both the avatar and nickname       | Select **Confirm Reset** in the confirmation dialog |">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -310,7 +320,7 @@
                 <span class="card-compact-icon inline-flex shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><!--icon--><path d="M11.03 2.59a1.501 1.501 0 0 1 1.94 0l7.5 6.363a1.5 1.5 0 0 1 .53 1.144V19.5a1.5 1.5 0 0 1-1.5 1.5h-5.75a.75.75 0 0 1-.75-.75V14h-2v6.25a.75.75 0 0 1-.75.75H4.5A1.5 1.5 0 0 1 3 19.5v-9.403c0-.44.194-.859.53-1.144ZM12 3.734l-7.5 6.363V19.5h5v-6.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v6.25h5v-9.403Z"/></svg></span>
                 <span class="card-compact-title">Welcome to Realm Bot Documentation</span>
             </div>
-            <p class="card-compact-description">Official Realm Bot documentation for managing Minecraft Bedrock Realms through Discord-setup guides, modules, security tools, and integrations.</p>
+            <p class="card-compact-description">Official Realm Bot documentation for managing Minecraft Bedrock Realms through Discord, including setup guides, modules, security tools, and integrations.</p>
         </div>
     </a>
 </div>

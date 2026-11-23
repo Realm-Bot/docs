@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.848762291073">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.848773149508">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -44,11 +44,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../favicon.ico" />
-    <link href="../../resources/css/retype.css?v=4.6.0.848762291073" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.6.0.848773149508" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.848762291073" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.848773149508" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.848762291073" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.848773149508" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -65,7 +65,7 @@
                 <div class="flex items-center px-2 md:px-6">
                     <a id="retype-branding-logo" href="https://help.realmbot.dev/" class="flex items-center leading-snug text-2xl">
                         <span class="w-10 mr-2 grow-0 shrink-0 overflow-hidden">
-                            <img class="max-h-10 md:inline-block" src="../../images/logo.png" alt="" width="40" height="40">
+                            <img class="max-h-10 md:inline-block" src="../../images/brand/icon.png" alt="" width="40" height="40">
                         </span>
                         <span class="dark:text-white font-bold line-clamp-1 md:line-clamp-2">Realm Bot</span>
                     </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">Docs</span>
@@ -188,14 +188,14 @@
 <h2 id="manage-your-realm">Manage Your Realm</h2>
 <p>Check the name on the Realm card, then select <strong>Manage</strong>.</p>
 <figure class="content-center">
-    <img src="../../images/overview-realm.png" alt="Realm Card (Manage Realm)" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="1507" height="146" />
+    <img src="../../images/overview-realm.png" alt="Realm Card (Manage Realm)" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="1248" height="117" />
     <figcaption class="caption">Realm Card (Manage Realm)</figcaption>
 </figure>
 <hr>
 <h2 id="bot-join-settings">Bot Join Settings</h2>
 <p>Choose how the Relay Account joins this Realm.</p>
 <figure class="content-center">
-    <img src="../../images/overview-bot.png" alt="Bot Join Settings" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="1403" height="440" />
+    <img src="../../images/overview-bot.png" alt="Bot Join Settings" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="1241" height="385" />
     <figcaption class="caption">Bot Join Settings</figcaption>
 </figure>
 <ul>
@@ -220,14 +220,10 @@ Allows Realm Bot to join using an alternative account. This is commonly used whe
 <h2 id="gametest-pack-management">GameTest Pack Management</h2>
 <p>Install the GameTest Pack for features that need in-game scripting, such as scoreboard retrieval.</p>
 <figure class="content-center">
-    <img src="../../images/overview-gametest.png" alt="GameTest Pack Management" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="1410" height="444" />
+    <img src="../../images/overview-gametest.png" alt="GameTest Pack Management" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="1242" height="474" />
     <figcaption class="caption">GameTest Pack Management</figcaption>
 </figure>
 <ul>
-<li>
-<p><strong>Beta API Requirement</strong><br />
-Some GameTest functionality requires <strong>Beta APIs</strong> to be enabled in your Realm settings. If prompted, enable <strong>Use Beta APIs</strong> under your Realm’s experimental features.</p>
-</li>
 <li>
 <p><strong>Auto Update GameTest Pack</strong>
 Installs an available update when Realm Bot next joins the Realm. This is not a continuous background update.</p>
@@ -244,14 +240,14 @@ Installs an available update when Realm Bot next joins the Realm. This is not a 
 </li>
 </ul>
 <blockquote>
-<p><strong>Note:</strong> If a module is not behaving as expected and it depends on GameTest, first confirm the pack is installed, enabled, and current.</p>
+<p><strong>Note:</strong> If a module is not behaving as expected and it depends on Gametest, first confirm the pack is installed, enabled, and current.</p>
 </blockquote>
 <p>See <a href="../relay-account-and-gametest/">Relay Account and GameTest Dependencies</a> for installation requirements and the feature dependency matrix.</p>
 <hr>
 <h2 id="realm-modules">Realm Modules</h2>
 <p>Select <strong>Configure</strong> beside the module you want to change.</p>
 <figure class="content-center">
-    <img src="../../images/overview-realm-modules.png" alt="Realm Modules" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="1259" height="698" />
+    <img src="../../images/overview-realm-modules.png" alt="Realm Modules" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="1111" height="781" />
     <figcaption class="caption">Realm Modules</figcaption>
 </figure>
 <ul>

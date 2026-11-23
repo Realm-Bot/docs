@@ -1,6 +1,6 @@
 ﻿#  | Realm Bot Docs
 
-> Official Realm Bot documentation for managing Minecraft Bedrock Realms through Discord-setup guides, modules, security tools, and integrations.
+> Official Realm Bot documentation for managing Minecraft Bedrock Realms through Discord, including setup guides, modules, security tools, and integrations.
 
 - [Welcome to Realm Bot Documentation](https://help.realmbot.dev/readme.md): Welcome to Realm Bot Documentation
 - [Getting Started](https://help.realmbot.dev/setup.md): Link your Microsoft account, connect your Bedrock Realms to a Discord server from the dashboard or Discord, and configure Realm Bot.
