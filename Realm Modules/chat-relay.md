@@ -199,6 +199,7 @@ Check the following in order:
 - A destination channel is selected for the affected message category
 - Realm Bot has View Channel + Send Messages permission
 - The Relay Account is online and connected to the correct Realm
+- For messages sent from Discord to the Realm, **Cheats** are enabled in the Realm settings
 
 ### Relay is too noisy
 
